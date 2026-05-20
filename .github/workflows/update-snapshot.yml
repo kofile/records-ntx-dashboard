@@ -1,0 +1,85 @@
+name: Update dashboard snapshot
+
+# Triggers whenever a file is added or modified in the jira-exports/ folder.
+# This is what makes the daily refresh "drag-and-drop" for Gargee — she uploads
+# a Jira HTML file via GitHub's web UI, and this workflow takes care of the rest.
+
+on:
+  push:
+    paths:
+      - 'jira-exports/**.html'
+  workflow_dispatch:  # also allow manual trigger from the Actions tab
+
+# Permissions: the workflow needs to commit the updated snapshots.json back to the repo.
+permissions:
+  contents: write
+
+jobs:
+  update-snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+        with:
+          # Fetch full history so the commit-back works cleanly
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Find Jira HTML files that need processing
+        id: find_files
+        run: |
+          # List all HTML files in jira-exports/, sorted by name (which usually sorts by date if dates are in filenames)
+          # We process the MOST RECENTLY MODIFIED file each run — that's the file Gargee just uploaded.
+          # Using git log to find the file changed in the latest commit, which is more reliable than mtime.
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- 'jira-exports/*.html' 2>/dev/null || echo "")
+          if [ -z "$CHANGED_FILES" ]; then
+            # Fallback: most recently modified HTML file
+            CHANGED_FILES=$(ls -t jira-exports/*.html 2>/dev/null | head -1)
+          fi
+          echo "Files to process: $CHANGED_FILES"
+          echo "files<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$CHANGED_FILES" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      - name: Run update_snapshots.py on each changed file
+        if: steps.find_files.outputs.files != ''
+        run: |
+          set -e
+          # Process each file (typically just one — the one Gargee just uploaded)
+          while IFS= read -r file; do
+            if [ -n "$file" ] && [ -f "$file" ]; then
+              echo "============================================"
+              echo "Processing: $file"
+              echo "============================================"
+              python3 update_snapshots.py "$file" snapshots.json
+            fi
+          done <<< "${{ steps.find_files.outputs.files }}"
+
+      - name: Commit and push the updated snapshots.json
+        run: |
+          # Configure git identity for the auto-commit
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # If nothing changed, exit gracefully
+          if git diff --quiet snapshots.json; then
+            echo "snapshots.json unchanged — nothing to commit."
+            exit 0
+          fi
+
+          # Pull the captured date from snapshots.json for a nice commit message
+          CAPTURED=$(python3 -c "import json; print(json.load(open('snapshots.json'))['today'])")
+          TICKETS=$(python3 -c "import json; print(len(json.load(open('snapshots.json'))['tickets']))")
+
+          git add snapshots.json
+          git commit -m "auto: update snapshot to $CAPTURED ($TICKETS tickets)"
+          git push
+
+      - name: Summary
+        run: |
+          echo "Dashboard data updated. It will be live at the GitHub Pages URL within 1-2 minutes."
+          echo "Check the Pages deployment status at: https://github.com/${{ github.repository }}/actions"
