@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21T11:15:36Z",
+  "updated_at": "2026-05-21T19:25:04Z",
   "today": "2026-05-21",
   "exported_at": "21 May 2026",
   "tickets": [
@@ -20,103 +20,28 @@
       "created": "18/Jul/25 3:13 PM",
       "created_iso": "2025-07-18",
       "age_days": 307,
-      "updated": "20/May/26 3:00 PM",
-      "updated_iso": "2026-05-20",
+      "updated": "21/May/26 3:17 PM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
-      "labels_raw": "TXEscalation",
-      "delivery_targets": [],
-      "current_delivery_target": null
-    },
-    {
-      "key": "CR-2086653",
-      "summary": "BLOCKED: 1 of X SB503: Marks & Brands updates",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "On Hold",
-      "status_family": "Blocked",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "CR - Team 1",
-      "tenant_raw": "",
-      "tenants": [
-        "(untagged)"
+      "labels_raw": "Oct-2026, TXEscalation",
+      "delivery_targets": [
+        {
+          "label": "Oct-2026",
+          "month_index": 9,
+          "year": 2026,
+          "sortable": 24321
+        }
       ],
-      "created": "06/Oct/25 9:40 AM",
-      "created_iso": "2025-10-06",
-      "age_days": 227,
-      "updated": "13/May/26 10:35 AM",
-      "updated_iso": "2026-05-13",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "",
-      "comments_count": "",
-      "labels_raw": "TXEscalation",
-      "delivery_targets": [],
-      "current_delivery_target": null
-    },
-    {
-      "key": "CR-2091219",
-      "summary": "ML Informal eForm | HB1193 Checkbox",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Requirements clarification",
-      "status_family": "In triage",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "CR - Team 1",
-      "tenant_raw": "Collin, Dallas, Denton, Johnson",
-      "tenants": [
-        "Collin",
-        "Dallas",
-        "Denton",
-        "Johnson"
-      ],
-      "created": "08/May/26 5:22 PM",
-      "created_iso": "2026-05-08",
-      "age_days": 13,
-      "updated": "19/May/26 9:10 AM",
-      "updated_iso": "2026-05-19",
-      "end_date": "19/Jun/26",
-      "end_date_iso": "2026-06-19",
-      "ships_month": "Jun 2026",
-      "sprint": "CR 2026.Q2-5",
-      "comments_count": "1 comment",
-      "labels_raw": "TXEscalation",
-      "delivery_targets": [],
-      "current_delivery_target": null
-    },
-    {
-      "key": "CSC-3028",
-      "summary": "Johnson County Cloud Search | Additional Party Name (Notary)",
-      "project": "CSC",
-      "issue_type": "Story",
-      "status": "Waiting for Info",
-      "status_family": "In triage",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "None",
-      "tenant_raw": "Johnson",
-      "tenants": [
-        "Johnson"
-      ],
-      "created": "14/May/26 1:34 PM",
-      "created_iso": "2026-05-14",
-      "age_days": 7,
-      "updated": "15/May/26 12:31 PM",
-      "updated_iso": "2026-05-15",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "",
-      "comments_count": "1 comment",
-      "labels_raw": "TXEscalation",
-      "delivery_targets": [],
-      "current_delivery_target": null
+      "current_delivery_target": {
+        "label": "Oct-2026",
+        "month_index": 9,
+        "year": 2026,
+        "sortable": 24321
+      }
     },
     {
       "key": "CR-2090940",
@@ -203,14 +128,54 @@
       "created": "13/May/26 2:35 PM",
       "created_iso": "2026-05-13",
       "age_days": 8,
-      "updated": "20/May/26 12:05 PM",
-      "updated_iso": "2026-05-20",
+      "updated": "21/May/26 9:54 AM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
       "comments_count": "5 comments",
-      "labels_raw": "May-2026, TXEscalation",
+      "labels_raw": "May-2026, TOP_5, TXEscalation",
+      "delivery_targets": [
+        {
+          "label": "May-2026",
+          "month_index": 4,
+          "year": 2026,
+          "sortable": 24316
+        }
+      ],
+      "current_delivery_target": {
+        "label": "May-2026",
+        "month_index": 4,
+        "year": 2026,
+        "sortable": 24316
+      }
+    },
+    {
+      "key": "VTC-27361",
+      "summary": "Dallas County Front Office | Additional Party Name Maintenance",
+      "project": "VTC",
+      "issue_type": "Story",
+      "status": "Ready to test on UAT",
+      "status_family": "Other",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "None",
+      "tenant_raw": "Dallas",
+      "tenants": [
+        "Dallas"
+      ],
+      "created": "14/May/26 1:24 PM",
+      "created_iso": "2026-05-14",
+      "age_days": 7,
+      "updated": "21/May/26 12:27 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "",
+      "end_date_iso": null,
+      "ships_month": null,
+      "sprint": "",
+      "comments_count": "4 comments",
+      "labels_raw": "May-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
           "label": "May-2026",
@@ -243,14 +208,14 @@
       "created": "15/May/26 2:36 PM",
       "created_iso": "2026-05-15",
       "age_days": 6,
-      "updated": "19/May/26 1:59 PM",
-      "updated_iso": "2026-05-19",
+      "updated": "21/May/26 2:06 PM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
-      "comments_count": "1 comment",
-      "labels_raw": "May-2026, TXEscalation",
+      "comments_count": "2 comments",
+      "labels_raw": "May-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
           "label": "May-2026",
@@ -267,8 +232,8 @@
       }
     },
     {
-      "key": "VTC-27361",
-      "summary": "Dallas County Front Office | Additional Party Name Maintenance",
+      "key": "VTC-27222",
+      "summary": "Collin County Indexing | Notary Name Grid for Assumed Names",
       "project": "VTC",
       "issue_type": "Story",
       "status": "Ready to merge to UAT",
@@ -276,21 +241,21 @@
       "delivery_bucket": "open",
       "is_open": true,
       "team": "None",
-      "tenant_raw": "Dallas",
+      "tenant_raw": "Collin",
       "tenants": [
-        "Dallas"
+        "Collin"
       ],
-      "created": "14/May/26 1:24 PM",
-      "created_iso": "2026-05-14",
-      "age_days": 7,
-      "updated": "21/May/26 5:33 AM",
+      "created": "05/May/26 6:05 PM",
+      "created_iso": "2026-05-05",
+      "age_days": 16,
+      "updated": "21/May/26 1:00 PM",
       "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
-      "comments_count": "4 comments",
-      "labels_raw": "May-2026, TOP_5, TXEscalation",
+      "comments_count": "7 comments",
+      "labels_raw": "May-2026, On_Hold, TXEscalation",
       "delivery_targets": [
         {
           "label": "May-2026",
@@ -347,46 +312,6 @@
       }
     },
     {
-      "key": "VTC-27222",
-      "summary": "Collin County Indexing | Notary Name Grid for Assumed Names",
-      "project": "VTC",
-      "issue_type": "Story",
-      "status": "Open",
-      "status_family": "Open",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "None",
-      "tenant_raw": "Collin",
-      "tenants": [
-        "Collin"
-      ],
-      "created": "05/May/26 6:05 PM",
-      "created_iso": "2026-05-05",
-      "age_days": 16,
-      "updated": "20/May/26 6:33 PM",
-      "updated_iso": "2026-05-20",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "",
-      "comments_count": "3 comments",
-      "labels_raw": "May-2026, TXEscalation",
-      "delivery_targets": [
-        {
-          "label": "May-2026",
-          "month_index": 4,
-          "year": 2026,
-          "sortable": 24316
-        }
-      ],
-      "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
-        "year": 2026,
-        "sortable": 24316
-      }
-    },
-    {
       "key": "VTC-27040",
       "summary": "Denton eSubmission Add VitalChek Payment Method",
       "project": "VTC",
@@ -403,14 +328,54 @@
       "created": "15/Apr/26 10:09 AM",
       "created_iso": "2026-04-15",
       "age_days": 36,
-      "updated": "21/May/26 6:21 AM",
+      "updated": "21/May/26 10:00 AM",
       "updated_iso": "2026-05-21",
-      "end_date": "01/May/26",
-      "end_date_iso": "2026-05-01",
-      "ships_month": "May 2026",
+      "end_date": "30/Jun/26",
+      "end_date_iso": "2026-06-30",
+      "ships_month": "Jun 2026",
       "sprint": "",
-      "comments_count": "7 comments",
+      "comments_count": "8 comments",
       "labels_raw": "June-2026, TOP_5, TXEscalation, Top_10",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
+    },
+    {
+      "key": "CSC-3028",
+      "summary": "Johnson County Cloud Search | Additional Party Name (Notary)",
+      "project": "CSC",
+      "issue_type": "Story",
+      "status": "Waiting for Info",
+      "status_family": "In triage",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "None",
+      "tenant_raw": "Johnson",
+      "tenants": [
+        "Johnson"
+      ],
+      "created": "14/May/26 1:34 PM",
+      "created_iso": "2026-05-14",
+      "age_days": 7,
+      "updated": "21/May/26 3:19 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "",
+      "end_date_iso": null,
+      "ships_month": null,
+      "sprint": "",
+      "comments_count": "1 comment",
+      "labels_raw": "June-2026, TXEscalation",
       "delivery_targets": [
         {
           "label": "Jun-2026",
@@ -443,11 +408,11 @@
       "created": "28/Oct/25 1:53 PM",
       "created_iso": "2025-10-28",
       "age_days": 205,
-      "updated": "13/May/26 9:40 AM",
-      "updated_iso": "2026-05-13",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 8:50 AM",
+      "updated_iso": "2026-05-21",
+      "end_date": "30/Jun/26",
+      "end_date_iso": "2026-06-30",
+      "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "1 comment",
       "labels_raw": "June-2026, TOP_5, TXEscalation, Top_10",
@@ -483,11 +448,11 @@
       "created": "28/Oct/25 1:49 PM",
       "created_iso": "2025-10-28",
       "age_days": 205,
-      "updated": "13/May/26 9:41 AM",
-      "updated_iso": "2026-05-13",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 8:50 AM",
+      "updated_iso": "2026-05-21",
+      "end_date": "30/Jun/26",
+      "end_date_iso": "2026-06-30",
+      "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "1 comment",
       "labels_raw": "June-2026, TOP_5, TXEscalation, Top_10",
@@ -507,6 +472,46 @@
       }
     },
     {
+      "key": "CR-2086653",
+      "summary": "BLOCKED: 1 of X SB503: Marks & Brands updates",
+      "project": "CR",
+      "issue_type": "Story",
+      "status": "On Hold",
+      "status_family": "Blocked",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "CR - Team 1",
+      "tenant_raw": "",
+      "tenants": [
+        "(untagged)"
+      ],
+      "created": "06/Oct/25 9:40 AM",
+      "created_iso": "2025-10-06",
+      "age_days": 227,
+      "updated": "21/May/26 3:22 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "17/Jul/26",
+      "end_date_iso": "2026-07-17",
+      "ships_month": "Jul 2026",
+      "sprint": "",
+      "comments_count": "",
+      "labels_raw": "July-2026, TXEscalation",
+      "delivery_targets": [
+        {
+          "label": "Jul-2026",
+          "month_index": 6,
+          "year": 2026,
+          "sortable": 24318
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jul-2026",
+        "month_index": 6,
+        "year": 2026,
+        "sortable": 24318
+      }
+    },
+    {
       "key": "VTC-27322",
       "summary": "Johnson County Clerk Search | Additional Party Name Clerk Search",
       "project": "VTC",
@@ -523,14 +528,14 @@
       "created": "13/May/26 2:29 PM",
       "created_iso": "2026-05-13",
       "age_days": 8,
-      "updated": "19/May/26 4:38 PM",
-      "updated_iso": "2026-05-19",
+      "updated": "21/May/26 9:54 AM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
       "comments_count": "5 comments",
-      "labels_raw": "Johnson, May-2026, TXEscalation",
+      "labels_raw": "Johnson, May-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
           "label": "May-2026",
@@ -603,54 +608,14 @@
       "created": "04/May/26 10:58 AM",
       "created_iso": "2026-05-04",
       "age_days": 17,
-      "updated": "18/May/26 1:02 PM",
-      "updated_iso": "2026-05-18",
+      "updated": "21/May/26 9:15 AM",
+      "updated_iso": "2026-05-21",
       "end_date": "29/May/26",
       "end_date_iso": "2026-05-29",
       "ships_month": "May 2026",
       "sprint": "CR 2026.Q2-4",
-      "comments_count": "4 comments",
+      "comments_count": "5 comments",
       "labels_raw": "May-2026, TXEscalation, jira_escalated, sprint.Q2-4",
-      "delivery_targets": [
-        {
-          "label": "May-2026",
-          "month_index": 4,
-          "year": 2026,
-          "sortable": 24316
-        }
-      ],
-      "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
-        "year": 2026,
-        "sortable": 24316
-      }
-    },
-    {
-      "key": "SSRS-2980",
-      "summary": "Johnson - User productivity Report questions",
-      "project": "SSRS",
-      "issue_type": "Bug",
-      "status": "Verify Production",
-      "status_family": "Other",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "None",
-      "tenant_raw": "Johnson",
-      "tenants": [
-        "Johnson"
-      ],
-      "created": "05/Mar/26 11:35 AM",
-      "created_iso": "2026-03-05",
-      "age_days": 77,
-      "updated": "20/May/26 4:22 PM",
-      "updated_iso": "2026-05-20",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "",
-      "comments_count": "24 comments",
-      "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
           "label": "May-2026",
@@ -751,11 +716,11 @@
       "created": "24/Apr/26 12:34 PM",
       "created_iso": "2026-04-24",
       "age_days": 27,
-      "updated": "18/May/26 6:24 AM",
-      "updated_iso": "2026-05-18",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:19 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "19/Jun/26",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "3 comments",
       "labels_raw": "June-2026, TXEscalation, jira_escalated, sprint.Q2-4",
@@ -871,14 +836,14 @@
       "created": "15/May/25 10:41 AM",
       "created_iso": "2025-05-15",
       "age_days": 371,
-      "updated": "21/May/26 3:04 AM",
+      "updated": "21/May/26 12:29 PM",
       "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
       "comments_count": "19 comments",
-      "labels_raw": "May-2026, Non-Configurable, TXEscalation, jira_escalated, top5_hold",
+      "labels_raw": "May-2026, Non-Configurable, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
           "label": "May-2026",
@@ -892,46 +857,6 @@
         "month_index": 4,
         "year": 2026,
         "sortable": 24316
-      }
-    },
-    {
-      "key": "CR-2091083",
-      "summary": "Dallas | Latency/Slowness/Buffering of the Neumo System",
-      "project": "CR",
-      "issue_type": "Bug",
-      "status": "Requirements clarification",
-      "status_family": "In triage",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "CR - Team 2",
-      "tenant_raw": "Dallas",
-      "tenants": [
-        "Dallas"
-      ],
-      "created": "01/May/26 11:56 AM",
-      "created_iso": "2026-05-01",
-      "age_days": 20,
-      "updated": "19/May/26 8:00 AM",
-      "updated_iso": "2026-05-19",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CR 2026.Q2-4",
-      "comments_count": "17 comments",
-      "labels_raw": "June-2026, TXEscalation, jira_escalated",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
       }
     },
     {
@@ -1031,13 +956,13 @@
       "created": "04/May/26 10:45 AM",
       "created_iso": "2026-05-04",
       "age_days": 17,
-      "updated": "20/May/26 11:06 AM",
-      "updated_iso": "2026-05-20",
+      "updated": "21/May/26 9:39 AM",
+      "updated_iso": "2026-05-21",
       "end_date": "19/Jun/26",
       "end_date_iso": "2026-06-19",
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
-      "comments_count": "5 comments",
+      "comments_count": "7 comments",
       "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -1163,30 +1088,30 @@
       "current_delivery_target": null
     },
     {
-      "key": "CR-2090084",
-      "summary": "DATA FIX Johnson: Order # 20260130000144 - Incorrect OIT",
-      "project": "CR",
+      "key": "SSRS-2980",
+      "summary": "Johnson - User productivity Report questions",
+      "project": "SSRS",
       "issue_type": "Bug",
-      "status": "Closed",
+      "status": "Done",
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "CR - Team 4",
+      "team": "None",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
       ],
-      "created": "13/Mar/26 4:55 PM",
-      "created_iso": "2026-03-13",
-      "age_days": 69,
-      "updated": "14/May/26 8:44 AM",
-      "updated_iso": "2026-05-14",
+      "created": "05/Mar/26 11:35 AM",
+      "created_iso": "2026-03-05",
+      "age_days": 77,
+      "updated": "21/May/26 2:43 PM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
-      "sprint": "CR 2026.Q2-2, CR 2026.Q2-4",
-      "comments_count": "32 comments",
-      "labels_raw": "May-2026, TXEscalation, jira_escalated, swatlog",
+      "sprint": "",
+      "comments_count": "26 comments",
+      "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
           "label": "May-2026",
@@ -1200,6 +1125,46 @@
         "month_index": 4,
         "year": 2026,
         "sortable": 24316
+      }
+    },
+    {
+      "key": "CR-2091083",
+      "summary": "Dallas | Latency/Slowness/Buffering of the Neumo System",
+      "project": "CR",
+      "issue_type": "Bug",
+      "status": "Closed",
+      "status_family": "Done",
+      "delivery_bucket": "delivered",
+      "is_open": false,
+      "team": "CR - Team 2",
+      "tenant_raw": "Dallas",
+      "tenants": [
+        "Dallas"
+      ],
+      "created": "01/May/26 11:56 AM",
+      "created_iso": "2026-05-01",
+      "age_days": 20,
+      "updated": "21/May/26 11:37 AM",
+      "updated_iso": "2026-05-21",
+      "end_date": "",
+      "end_date_iso": null,
+      "ships_month": null,
+      "sprint": "CR 2026.Q2-4",
+      "comments_count": "18 comments",
+      "labels_raw": "June-2026, TXEscalation, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
       }
     },
     {
@@ -1735,16 +1700,28 @@
       "created": "17/Dec/25 5:17 PM",
       "created_iso": "2025-12-17",
       "age_days": 155,
-      "updated": "20/May/26 1:39 PM",
-      "updated_iso": "2026-05-20",
+      "updated": "21/May/26 3:12 PM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "4 comments",
-      "labels_raw": "Non-Configurable, TOP_5, TXEscalation, Top_10, jira_escalated",
-      "delivery_targets": [],
-      "current_delivery_target": null
+      "labels_raw": "July-2026, Non-Configurable, TOP_5, TXEscalation, Top_10, UX-dependency, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jul-2026",
+          "month_index": 6,
+          "year": 2026,
+          "sortable": 24318
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jul-2026",
+        "month_index": 6,
+        "year": 2026,
+        "sortable": 24318
+      }
     },
     {
       "key": "CRD-482",
@@ -1884,7 +1861,7 @@
     },
     {
       "key": "VTC-25256",
-      "summary": "Collin: Enable KDI Import Notary information",
+      "summary": "Collin: Enable US Imaging Data Indexing Including New Notary information",
       "project": "VTC",
       "issue_type": "Story",
       "status": "Vanguard Code Dependency",
@@ -1899,27 +1876,27 @@
       "created": "09/Sep/25 11:57 AM",
       "created_iso": "2025-09-09",
       "age_days": 254,
-      "updated": "15/May/26 12:23 PM",
-      "updated_iso": "2026-05-15",
+      "updated": "21/May/26 10:22 AM",
+      "updated_iso": "2026-05-21",
       "end_date": "20/Mar/26",
       "end_date_iso": "2026-03-20",
       "ships_month": "Mar 2026",
       "sprint": "",
-      "comments_count": "11 comments",
-      "labels_raw": "May-2026, TOP_5, TXEscalation, Top_10, jira_escalated",
+      "comments_count": "12 comments",
+      "labels_raw": "June-2026, On_Hold, TOP_5, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
-          "label": "May-2026",
-          "month_index": 4,
+          "label": "Jun-2026",
+          "month_index": 5,
           "year": 2026,
-          "sortable": 24316
+          "sortable": 24317
         }
       ],
       "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
+        "label": "Jun-2026",
+        "month_index": 5,
         "year": 2026,
-        "sortable": 24316
+        "sortable": 24317
       }
     },
     {
@@ -1939,14 +1916,14 @@
       "created": "01/Mar/23 1:50 AM",
       "created_iso": "2023-03-01",
       "age_days": 1177,
-      "updated": "21/May/26 5:37 AM",
+      "updated": "21/May/26 8:40 AM",
       "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
       "comments_count": "3 comments",
-      "labels_raw": "July-2026, TXEscalation, Top_10, jira_escalated, jira_update",
+      "labels_raw": "July-2026, TXEscalation, Top_10, TriageReady, jira_escalated, jira_update",
       "delivery_targets": [
         {
           "label": "Jul-2026",
@@ -1979,16 +1956,56 @@
       "created": "21/Aug/25 5:44 PM",
       "created_iso": "2025-08-21",
       "age_days": 273,
-      "updated": "13/May/26 10:57 AM",
-      "updated_iso": "2026-05-13",
+      "updated": "21/May/26 3:06 PM",
+      "updated_iso": "2026-05-21",
       "end_date": "20/Mar/26",
       "end_date_iso": "2026-03-20",
       "ships_month": "Mar 2026",
       "sprint": "CR 2026.Q2-3",
-      "comments_count": "19 comments",
+      "comments_count": "22 comments",
       "labels_raw": "TXEscalation, jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
+    },
+    {
+      "key": "VTC-27356",
+      "summary": "Johnson County Indexing/Verification/ReIndex | Enable Notary Name Indexing, Verification, Re-Index",
+      "project": "VTC",
+      "issue_type": "Story",
+      "status": "Testing on UAT",
+      "status_family": "Other",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "None",
+      "tenant_raw": "Johnson",
+      "tenants": [
+        "Johnson"
+      ],
+      "created": "13/May/26 4:15 PM",
+      "created_iso": "2026-05-13",
+      "age_days": 8,
+      "updated": "21/May/26 1:25 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "",
+      "end_date_iso": null,
+      "ships_month": null,
+      "sprint": "",
+      "comments_count": "5 comments",
+      "labels_raw": "May-2026, TOP_5, TXEscalation, Top_10, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "May-2026",
+          "month_index": 4,
+          "year": 2026,
+          "sortable": 24316
+        }
+      ],
+      "current_delivery_target": {
+        "label": "May-2026",
+        "month_index": 4,
+        "year": 2026,
+        "sortable": 24316
+      }
     },
     {
       "key": "VTC-27223",
@@ -2087,8 +2104,8 @@
       "created": "13/May/26 11:41 AM",
       "created_iso": "2026-05-13",
       "age_days": 8,
-      "updated": "19/May/26 10:44 AM",
-      "updated_iso": "2026-05-19",
+      "updated": "21/May/26 1:59 PM",
+      "updated_iso": "2026-05-21",
       "end_date": "20/Feb/26",
       "end_date_iso": "2026-02-20",
       "ships_month": "Feb 2026",
@@ -2167,11 +2184,11 @@
       "created": "29/Oct/25 3:41 PM",
       "created_iso": "2025-10-29",
       "age_days": 204,
-      "updated": "18/May/26 1:04 PM",
-      "updated_iso": "2026-05-18",
-      "end_date": "01/May/26",
-      "end_date_iso": "2026-05-01",
-      "ships_month": "May 2026",
+      "updated": "21/May/26 3:18 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "19/Jun/26",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "6 comments",
       "labels_raw": "June-2026, TXEscalation, jira_escalated",
@@ -2247,6 +2264,46 @@
       "current_delivery_target": null
     },
     {
+      "key": "CR-2077601",
+      "summary": "PENDING Dallas: Disable USPS Zipcode Lookup for Marriages",
+      "project": "CR",
+      "issue_type": "Story",
+      "status": "Requirements clarification",
+      "status_family": "In triage",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "CR - Team 1",
+      "tenant_raw": "Dallas",
+      "tenants": [
+        "Dallas"
+      ],
+      "created": "19/Nov/21 11:29 AM",
+      "created_iso": "2021-11-19",
+      "age_days": 1644,
+      "updated": "21/May/26 3:12 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "",
+      "end_date_iso": null,
+      "ships_month": null,
+      "sprint": "CR 2025.Q4.productStaging",
+      "comments_count": "9 comments",
+      "labels_raw": "June-2026, TXEscalation, jira_escalated, support",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
+    },
+    {
       "key": "VTC-26095",
       "summary": "All - HB1193: Configuration for Texas Informal Marriage License updates",
       "project": "VTC",
@@ -2263,11 +2320,11 @@
       "created": "18/Dec/25 9:48 AM",
       "created_iso": "2025-12-18",
       "age_days": 154,
-      "updated": "14/May/26 2:16 PM",
-      "updated_iso": "2026-05-14",
-      "end_date": "24/Apr/26",
-      "end_date_iso": "2026-04-24",
-      "ships_month": "Apr 2026",
+      "updated": "21/May/26 8:50 AM",
+      "updated_iso": "2026-05-21",
+      "end_date": "30/Jun/26",
+      "end_date_iso": "2026-06-30",
+      "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "10 comments",
       "labels_raw": "June-2026, TXEscalation, Top_10, jira_escalated",
@@ -2303,27 +2360,27 @@
       "created": "18/Feb/26 9:36 AM",
       "created_iso": "2026-02-18",
       "age_days": 92,
-      "updated": "19/May/26 9:28 AM",
-      "updated_iso": "2026-05-19",
+      "updated": "21/May/26 9:29 AM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
-      "comments_count": "2 comments",
-      "labels_raw": "May-2026, TXEscalation, jira_escalated",
+      "comments_count": "3 comments",
+      "labels_raw": "June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
-          "label": "May-2026",
-          "month_index": 4,
+          "label": "Jun-2026",
+          "month_index": 5,
           "year": 2026,
-          "sortable": 24316
+          "sortable": 24317
         }
       ],
       "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
+        "label": "Jun-2026",
+        "month_index": 5,
         "year": 2026,
-        "sortable": 24316
+        "sortable": 24317
       }
     },
     {
@@ -2423,11 +2480,11 @@
       "created": "22/Sep/25 2:35 PM",
       "created_iso": "2025-09-22",
       "age_days": 241,
-      "updated": "19/May/26 9:38 AM",
-      "updated_iso": "2026-05-19",
-      "end_date": "20/Mar/26",
-      "end_date_iso": "2026-03-20",
-      "ships_month": "Mar 2026",
+      "updated": "21/May/26 8:50 AM",
+      "updated_iso": "2026-05-21",
+      "end_date": "30/Jun/26",
+      "end_date_iso": "2026-06-30",
+      "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "13 comments",
       "labels_raw": "June-2026, TXEscalation, Top_10, jira_escalated",
@@ -2527,46 +2584,6 @@
       }
     },
     {
-      "key": "CR-2078061",
-      "summary": "\ud83c\udfaf Texas Vitals | Refactor Retrieve/ Validation of Vital Records to be by Event Year",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Closed",
-      "status_family": "Done",
-      "delivery_bucket": "delivered",
-      "is_open": false,
-      "team": "CR - Team 4",
-      "tenant_raw": "Anderson, Collin",
-      "tenants": [
-        "Collin"
-      ],
-      "created": "31/Jul/24 9:38 AM",
-      "created_iso": "2024-07-31",
-      "age_days": 659,
-      "updated": "14/May/26 8:14 AM",
-      "updated_iso": "2026-05-14",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CR 2025.Q4-7",
-      "comments_count": "12 comments",
-      "labels_raw": "May-2026, TXEscalation, jira_escalated, jira_update",
-      "delivery_targets": [
-        {
-          "label": "May-2026",
-          "month_index": 4,
-          "year": 2026,
-          "sortable": 24316
-        }
-      ],
-      "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
-        "year": 2026,
-        "sortable": 24316
-      }
-    },
-    {
       "key": "CR-2083035",
       "summary": "CANCELLED Collin Marriage eForm - Disallow Users to Continue If Applicant is Under 18",
       "project": "CR",
@@ -2583,14 +2600,14 @@
       "created": "06/Mar/25 6:08 PM",
       "created_iso": "2025-03-06",
       "age_days": 441,
-      "updated": "19/May/26 2:59 PM",
-      "updated_iso": "2026-05-19",
+      "updated": "21/May/26 9:19 AM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "5 comments",
-      "labels_raw": "May-2026, NorthTX26, TXEscalation, jira_escalated, jira_update",
+      "labels_raw": "May-2026, NorthTX26, jira_escalated, jira_update",
       "delivery_targets": [
         {
           "label": "May-2026",
@@ -2651,11 +2668,11 @@
       "created": "29/Apr/26 3:30 PM",
       "created_iso": "2026-04-29",
       "age_days": 22,
-      "updated": "14/May/26 6:59 AM",
-      "updated_iso": "2026-05-14",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:22 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "19/Jun/26",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "6 comments",
       "labels_raw": "June-2026, TXEscalation, jira_escalated",
@@ -2691,11 +2708,11 @@
       "created": "30/Apr/26 9:19 AM",
       "created_iso": "2026-04-30",
       "age_days": 21,
-      "updated": "18/May/26 1:02 PM",
-      "updated_iso": "2026-05-18",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:18 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "19/Jun/26",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "1 comment",
       "labels_raw": "June-2026, TXEscalation, jira_escalated, jira_update, swatlog",
@@ -2731,11 +2748,11 @@
       "created": "10/Mar/26 1:30 PM",
       "created_iso": "2026-03-10",
       "age_days": 72,
-      "updated": "18/May/26 7:12 AM",
-      "updated_iso": "2026-05-18",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:19 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "19/Jun/26",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "2 comments",
       "labels_raw": "June-2026, TXEscalation, TriageReady, jira_escalated, jira_update",
@@ -2771,13 +2788,13 @@
       "created": "12/Nov/25 5:25 PM",
       "created_iso": "2025-11-12",
       "age_days": 190,
-      "updated": "20/May/26 5:40 PM",
-      "updated_iso": "2026-05-20",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:15 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "17/Jul/26",
+      "end_date_iso": "2026-07-17",
+      "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q2-5",
-      "comments_count": "3 comments",
+      "comments_count": "4 comments",
       "labels_raw": "TXEscalation, Top_10, WAITING_FOR_SUPPORT, jira_escalated, jira_update, swatlog",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2799,14 +2816,14 @@
       "created": "22/Apr/26 10:44 AM",
       "created_iso": "2026-04-22",
       "age_days": 29,
-      "updated": "14/May/26 3:22 PM",
-      "updated_iso": "2026-05-14",
+      "updated": "21/May/26 8:28 AM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
-      "comments_count": "3 comments",
-      "labels_raw": "TXEscalation, Top_10, jira_escalated, jira_update",
+      "comments_count": "4 comments",
+      "labels_raw": "TXEscalation, Top_10, TriageReady, jira_escalated, jira_update",
       "delivery_targets": [],
       "current_delivery_target": null
     },
@@ -2987,55 +3004,27 @@
       "created": "06/Oct/25 12:18 PM",
       "created_iso": "2025-10-06",
       "age_days": 227,
-      "updated": "14/May/26 3:42 PM",
-      "updated_iso": "2026-05-14",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:20 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "17/Jul/26",
+      "end_date_iso": "2026-07-17",
+      "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "10 comments",
-      "labels_raw": "TXEscalation, Top_10, jira_escalated",
-      "delivery_targets": [],
-      "current_delivery_target": null
-    },
-    {
-      "key": "CR-2090797",
-      "summary": "Dallas - Request to have receipt print out before cover pages",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Ready for Dev",
-      "status_family": "In dev",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "CR - Team 1",
-      "tenant_raw": "Dallas",
-      "tenants": [
-        "Dallas"
-      ],
-      "created": "06/Mar/26 1:40 PM",
-      "created_iso": "2026-03-06",
-      "age_days": 76,
-      "updated": "14/May/26 10:13 AM",
-      "updated_iso": "2026-05-14",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CR 2026.Q2-4",
-      "comments_count": "6 comments",
-      "labels_raw": "June-2026, TXEscalation, jira_escalated",
+      "labels_raw": "July-2026, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
-          "label": "Jun-2026",
-          "month_index": 5,
+          "label": "Jul-2026",
+          "month_index": 6,
           "year": 2026,
-          "sortable": 24317
+          "sortable": 24318
         }
       ],
       "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
+        "label": "Jul-2026",
+        "month_index": 6,
         "year": 2026,
-        "sortable": 24317
+        "sortable": 24318
       }
     },
     {
@@ -3055,83 +3044,27 @@
       "created": "04/Mar/26 11:42 AM",
       "created_iso": "2026-03-04",
       "age_days": 78,
-      "updated": "14/May/26 3:18 PM",
-      "updated_iso": "2026-05-14",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:21 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "17/Jul/26",
+      "end_date_iso": "2026-07-17",
+      "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "",
-      "labels_raw": "TXEscalation, Top_10, jira_escalated",
-      "delivery_targets": [],
-      "current_delivery_target": null
-    },
-    {
-      "key": "CR-2077601",
-      "summary": "PENDING Dallas: Disable USPS Zipcode Lookup for Marriages",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Open",
-      "status_family": "Open",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "CR - Team 1",
-      "tenant_raw": "Dallas",
-      "tenants": [
-        "Dallas"
-      ],
-      "created": "19/Nov/21 11:29 AM",
-      "created_iso": "2021-11-19",
-      "age_days": 1644,
-      "updated": "18/May/26 6:15 AM",
-      "updated_iso": "2026-05-18",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CR 2025.Q4.productStaging",
-      "comments_count": "9 comments",
-      "labels_raw": "TXEscalation, jira_escalated, support",
-      "delivery_targets": [],
-      "current_delivery_target": null
-    },
-    {
-      "key": "VTC-27356",
-      "summary": "Johnson County Indexing/Verification/ReIndex | Enable Notary Name Indexing, Verification, Re-Index",
-      "project": "VTC",
-      "issue_type": "Story",
-      "status": "Open",
-      "status_family": "Open",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "None",
-      "tenant_raw": "Johnson",
-      "tenants": [
-        "Johnson"
-      ],
-      "created": "13/May/26 4:15 PM",
-      "created_iso": "2026-05-13",
-      "age_days": 8,
-      "updated": "20/May/26 8:37 PM",
-      "updated_iso": "2026-05-20",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "",
-      "comments_count": "5 comments",
-      "labels_raw": "May-2026, TOP_5, TXEscalation, Top_10, jira_escalated",
+      "labels_raw": "July-2026, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
-          "label": "May-2026",
-          "month_index": 4,
+          "label": "Jul-2026",
+          "month_index": 6,
           "year": 2026,
-          "sortable": 24316
+          "sortable": 24318
         }
       ],
       "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
+        "label": "Jul-2026",
+        "month_index": 6,
         "year": 2026,
-        "sortable": 24316
+        "sortable": 24318
       }
     },
     {
@@ -3191,14 +3124,14 @@
       "created": "10/Apr/26 2:50 AM",
       "created_iso": "2026-04-10",
       "age_days": 41,
-      "updated": "11/May/26 5:13 AM",
-      "updated_iso": "2026-05-11",
+      "updated": "21/May/26 9:43 AM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
-      "comments_count": "4 comments",
-      "labels_raw": "May-2026, TOP_5, TXEscalation, jira_escalated",
+      "comments_count": "5 comments",
+      "labels_raw": "May-2026, On_Hold, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
           "label": "May-2026",
@@ -3231,11 +3164,11 @@
       "created": "27/Aug/25 12:53 PM",
       "created_iso": "2025-08-27",
       "age_days": 267,
-      "updated": "14/May/26 9:17 AM",
-      "updated_iso": "2026-05-14",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:21 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "19/Jun/26",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "21 comments",
       "labels_raw": "Investigate, June-2026, TXEscalation",
@@ -3391,13 +3324,13 @@
       "created": "04/Feb/25 4:20 PM",
       "created_iso": "2025-02-04",
       "age_days": 471,
-      "updated": "14/May/26 10:02 AM",
-      "updated_iso": "2026-05-14",
-      "end_date": "24/Apr/26",
-      "end_date_iso": "2026-04-24",
-      "ships_month": "Apr 2026",
+      "updated": "21/May/26 3:15 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "17/Jul/26",
+      "end_date_iso": "2026-07-17",
+      "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q2-4",
-      "comments_count": "21 comments",
+      "comments_count": "23 comments",
       "labels_raw": "July-2026, On_hold, TOP_5, TXEscalation, Top_10, improper_req, jira_escalated",
       "delivery_targets": [
         {
@@ -3413,34 +3346,6 @@
         "year": 2026,
         "sortable": 24318
       }
-    },
-    {
-      "key": "CR-2078390",
-      "summary": "Enhancement: Collin - Marriage Application Flag for Applicants Under 18",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Closed",
-      "status_family": "Done",
-      "delivery_bucket": "delivered",
-      "is_open": false,
-      "team": "CR - Team 2",
-      "tenant_raw": "Collin",
-      "tenants": [
-        "Collin"
-      ],
-      "created": "03/Sep/24 1:02 PM",
-      "created_iso": "2024-09-03",
-      "age_days": 625,
-      "updated": "19/May/26 2:59 PM",
-      "updated_iso": "2026-05-19",
-      "end_date": "04/May/26",
-      "end_date_iso": "2026-05-04",
-      "ships_month": "May 2026",
-      "sprint": "CR Q3-4 20250818-20250829_74",
-      "comments_count": "21 comments",
-      "labels_raw": "HealDesk, TXEscalation, jira_escalated",
-      "delivery_targets": [],
-      "current_delivery_target": null
     },
     {
       "key": "VTC-17322",
@@ -3459,27 +3364,27 @@
       "created": "12/Jun/23 9:40 AM",
       "created_iso": "2023-06-12",
       "age_days": 1074,
-      "updated": "13/May/26 3:35 AM",
-      "updated_iso": "2026-05-13",
+      "updated": "21/May/26 12:52 PM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "12.24.24-01.06.25, 01.21.25-02.04.25, 11.26.14-12.09.14, 12.10.24-12.23.24",
-      "comments_count": "29 comments",
-      "labels_raw": "HealDesk, May-2026, On_hold, TOP_5, TXEscalation, TriageReady, jira_escalated",
+      "comments_count": "31 comments",
+      "labels_raw": "HealDesk, July-2026, On_hold, TOP_5, TXEscalation, TriageReady, jira_escalated",
       "delivery_targets": [
         {
-          "label": "May-2026",
-          "month_index": 4,
+          "label": "Jul-2026",
+          "month_index": 6,
           "year": 2026,
-          "sortable": 24316
+          "sortable": 24318
         }
       ],
       "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
+        "label": "Jul-2026",
+        "month_index": 6,
         "year": 2026,
-        "sortable": 24316
+        "sortable": 24318
       }
     },
     {
@@ -3567,13 +3472,13 @@
       "created": "24/Feb/26 4:02 PM",
       "created_iso": "2026-02-24",
       "age_days": 86,
-      "updated": "20/May/26 3:02 PM",
-      "updated_iso": "2026-05-20",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:16 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "19/Jun/26",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
-      "comments_count": "6 comments",
+      "comments_count": "7 comments",
       "labels_raw": "DataFix, June-2026, TXEscalation, TriageReady, WAITING_FOR_SUPPORT, jira_escalated",
       "delivery_targets": [
         {
@@ -3592,7 +3497,7 @@
     },
     {
       "key": "CR-2090782",
-      "summary": "Jefferson - Remove Marriage Date",
+      "summary": "DATA FIX Jefferson - Remove Marriage Date",
       "project": "CR",
       "issue_type": "Story",
       "status": "Closed",
@@ -3607,8 +3512,8 @@
       "created": "16/Apr/26 5:37 PM",
       "created_iso": "2026-04-16",
       "age_days": 35,
-      "updated": "18/May/26 6:24 AM",
-      "updated_iso": "2026-05-18",
+      "updated": "21/May/26 9:31 AM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
@@ -3619,52 +3524,12 @@
       "current_delivery_target": null
     },
     {
-      "key": "VTC-27096",
-      "summary": "Dallas County Clerk Search | Additional Party Name Clerk Search",
-      "project": "VTC",
-      "issue_type": "Story",
-      "status": "Ready to merge to UAT",
-      "status_family": "In testing",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "None",
-      "tenant_raw": "Dallas",
-      "tenants": [
-        "Dallas"
-      ],
-      "created": "20/Apr/26 10:32 AM",
-      "created_iso": "2026-04-20",
-      "age_days": 31,
-      "updated": "21/May/26 5:38 AM",
-      "updated_iso": "2026-05-21",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "",
-      "comments_count": "1 comment",
-      "labels_raw": "Dallas, May-2026, TOP_5, TXEscalation",
-      "delivery_targets": [
-        {
-          "label": "May-2026",
-          "month_index": 4,
-          "year": 2026,
-          "sortable": 24316
-        }
-      ],
-      "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
-        "year": 2026,
-        "sortable": 24316
-      }
-    },
-    {
       "key": "VTC-25814",
       "summary": "Dallas County Order Entry | Enable Notary Name Data Entry",
       "project": "VTC",
       "issue_type": "Story",
-      "status": "Ready to merge to UAT",
-      "status_family": "In testing",
+      "status": "Testing on UAT",
+      "status_family": "Other",
       "delivery_bucket": "open",
       "is_open": true,
       "team": "None",
@@ -3675,8 +3540,8 @@
       "created": "18/Nov/25 8:59 AM",
       "created_iso": "2025-11-18",
       "age_days": 184,
-      "updated": "19/May/26 1:30 PM",
-      "updated_iso": "2026-05-19",
+      "updated": "21/May/26 12:39 PM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
@@ -3699,43 +3564,43 @@
       }
     },
     {
-      "key": "CR-2066221",
-      "summary": "Feature Request: Dallas - Changes to Assumed Name eForm confirmation pop up",
-      "project": "CR",
+      "key": "VTC-27096",
+      "summary": "Dallas County Clerk Search | Additional Party Name Clerk Search",
+      "project": "VTC",
       "issue_type": "Story",
-      "status": "Ready for Dev",
-      "status_family": "In dev",
+      "status": "Ready to test on UAT",
+      "status_family": "Other",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "CR - Team 1",
+      "team": "None",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
       ],
-      "created": "06/Apr/23 10:24 AM",
-      "created_iso": "2023-04-06",
-      "age_days": 1141,
-      "updated": "14/May/26 9:34 AM",
-      "updated_iso": "2026-05-14",
+      "created": "20/Apr/26 10:32 AM",
+      "created_iso": "2026-04-20",
+      "age_days": 31,
+      "updated": "21/May/26 12:27 PM",
+      "updated_iso": "2026-05-21",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
-      "sprint": "CR 2026.Q2-5",
-      "comments_count": "26 comments",
-      "labels_raw": "CR-NA, June-2026, NorthTX26, TXEscalation, jira_escalated, support",
+      "sprint": "",
+      "comments_count": "1 comment",
+      "labels_raw": "Dallas, May-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
-          "label": "Jun-2026",
-          "month_index": 5,
+          "label": "May-2026",
+          "month_index": 4,
           "year": 2026,
-          "sortable": 24317
+          "sortable": 24316
         }
       ],
       "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
+        "label": "May-2026",
+        "month_index": 4,
         "year": 2026,
-        "sortable": 24317
+        "sortable": 24316
       }
     },
     {
@@ -3767,44 +3632,114 @@
       "current_delivery_target": null
     },
     {
-      "key": "CR-2089564",
-      "summary": "All Customers: Address Zip Code not Automatically adding in City/State",
+      "key": "CR-2091219",
+      "summary": "ML Informal eForm | HB1193 Checkbox",
       "project": "CR",
-      "issue_type": "Bug",
-      "status": "Closed",
-      "status_family": "Done",
-      "delivery_bucket": "delivered",
-      "is_open": false,
-      "team": "CR - Team 2",
-      "tenant_raw": "Collin, Jefferson TX",
+      "issue_type": "Story",
+      "status": "Requirements clarification",
+      "status_family": "In triage",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "CR - Team 1",
+      "tenant_raw": "Collin, Dallas, Denton, Johnson",
       "tenants": [
         "Collin",
-        "Jefferson"
+        "Dallas",
+        "Denton",
+        "Johnson"
       ],
-      "created": "23/Feb/26 1:21 PM",
-      "created_iso": "2026-02-23",
-      "age_days": 87,
-      "updated": "18/May/26 1:00 PM",
-      "updated_iso": "2026-05-18",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CR 2026.Q2-3",
-      "comments_count": "18 comments",
-      "labels_raw": "CR-External, May-2026, TXEscalation, Top_10, jira_escalated",
+      "created": "08/May/26 5:22 PM",
+      "created_iso": "2026-05-08",
+      "age_days": 13,
+      "updated": "21/May/26 8:13 AM",
+      "updated_iso": "2026-05-21",
+      "end_date": "19/Jun/26",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
+      "sprint": "CR 2026.Q2-5",
+      "comments_count": "1 comment",
+      "labels_raw": "CR2026Q2-5, TXEscalation",
+      "delivery_targets": [],
+      "current_delivery_target": null
+    },
+    {
+      "key": "CR-2090797",
+      "summary": "Dallas - Request to have receipt print out before cover pages",
+      "project": "CR",
+      "issue_type": "Story",
+      "status": "Ready for Dev",
+      "status_family": "In dev",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "CR - Team 1",
+      "tenant_raw": "Dallas",
+      "tenants": [
+        "Dallas"
+      ],
+      "created": "06/Mar/26 1:40 PM",
+      "created_iso": "2026-03-06",
+      "age_days": 76,
+      "updated": "21/May/26 3:15 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "19/Jun/26",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
+      "sprint": "CR 2026.Q2-5",
+      "comments_count": "6 comments",
+      "labels_raw": "CR2026Q2-5, June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
-          "label": "May-2026",
-          "month_index": 4,
+          "label": "Jun-2026",
+          "month_index": 5,
           "year": 2026,
-          "sortable": 24316
+          "sortable": 24317
         }
       ],
       "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
+        "label": "Jun-2026",
+        "month_index": 5,
         "year": 2026,
-        "sortable": 24316
+        "sortable": 24317
+      }
+    },
+    {
+      "key": "CR-2066221",
+      "summary": "Feature Request: Dallas - Changes to Assumed Name eForm confirmation pop up",
+      "project": "CR",
+      "issue_type": "Story",
+      "status": "Ready for Dev",
+      "status_family": "In dev",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "CR - Team 1",
+      "tenant_raw": "Dallas",
+      "tenants": [
+        "Dallas"
+      ],
+      "created": "06/Apr/23 10:24 AM",
+      "created_iso": "2023-04-06",
+      "age_days": 1141,
+      "updated": "21/May/26 3:16 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "26/Jun/26",
+      "end_date_iso": "2026-06-26",
+      "ships_month": "Jun 2026",
+      "sprint": "CR 2026.Q2-5",
+      "comments_count": "26 comments",
+      "labels_raw": "CR-NA, CR2026Q2-5, June-2026, NorthTX26, TXEscalation, jira_escalated, support",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
       }
     },
     {
@@ -3904,11 +3839,11 @@
       "created": "22/Apr/26 9:32 AM",
       "created_iso": "2026-04-22",
       "age_days": 29,
-      "updated": "14/May/26 10:12 AM",
-      "updated_iso": "2026-05-14",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:21 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "19/Jun/26",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5, CR Q3-2 20250721-20250801_72",
       "comments_count": "13 comments",
       "labels_raw": "June-2026, TXEscalation, as_designed, jira_escalated",
@@ -3984,11 +3919,11 @@
       "created": "08/Dec/25 1:16 PM",
       "created_iso": "2025-12-08",
       "age_days": 164,
-      "updated": "18/May/26 1:25 PM",
-      "updated_iso": "2026-05-18",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:18 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "29/May/26",
+      "end_date_iso": "2026-05-29",
+      "ships_month": "May 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "5 comments",
       "labels_raw": "2026_Customer, June-2026, TXEscalation, WAITING_FOR_SUPPORT, jira_escalated, top5_hold",
@@ -4024,23 +3959,35 @@
       "created": "05/Feb/25 2:53 PM",
       "created_iso": "2025-02-05",
       "age_days": 470,
-      "updated": "04/May/26 6:23 PM",
-      "updated_iso": "2026-05-04",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:22 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "17/Jul/26",
+      "end_date_iso": "2026-07-17",
+      "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "11 comments",
-      "labels_raw": "2026_Customer, NorthTX26, jira_escalated",
-      "delivery_targets": [],
-      "current_delivery_target": null
+      "labels_raw": "2026_Customer, July-2026, NorthTX26, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jul-2026",
+          "month_index": 6,
+          "year": 2026,
+          "sortable": 24318
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jul-2026",
+        "month_index": 6,
+        "year": 2026,
+        "sortable": 24318
+      }
     },
     {
       "key": "CR-2088790",
-      "summary": "AD_User Profile Signature and image available as Keyword",
+      "summary": "Adding additional keywords for processing of fully digital marriage applications (Dallas)",
       "project": "CR",
       "issue_type": "Story",
-      "status": "Requirements clarification",
+      "status": "Waiting for Info",
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
@@ -4052,11 +3999,11 @@
       "created": "08/Jan/26 1:30 PM",
       "created_iso": "2026-01-08",
       "age_days": 133,
-      "updated": "18/May/26 1:09 PM",
-      "updated_iso": "2026-05-18",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "21/May/26 3:14 PM",
+      "updated_iso": "2026-05-21",
+      "end_date": "17/Jul/26",
+      "end_date_iso": "2026-07-17",
+      "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "5 comments",
       "labels_raw": "2026_Customer, July-2026, Keywords, TXEscalation, jira_escalated, jira_update",
