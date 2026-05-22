@@ -346,6 +346,59 @@
   .coverage-mini { text-align: right; flex: 1; max-width: 140px; }
   .coverage-mini-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-faint); }
   .coverage-mini-text { font-size: 10px; color: var(--ink-soft); margin-top: 3px; font-family: var(--mono); }
+
+  /* Tile 2: filter row */
+  .ships-filter-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 10px 0 14px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 12px;
+  }
+  .ships-filter-label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px;
+    color: var(--ink-faint);
+  }
+  .ships-filter {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 12px;
+  }
+  .ships-filter-name {
+    color: var(--ink-soft);
+  }
+  .ships-filter-select {
+    font: inherit; font-size: 12px;
+    background: var(--bg);
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    padding: 4px 8px;
+    color: var(--ink);
+    cursor: pointer;
+    min-width: 100px;
+  }
+  .ships-filter-select:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .ships-filter-clear {
+    background: transparent;
+    border: none;
+    color: var(--accent);
+    font: inherit; font-size: 11px;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+  }
+  .ships-filter-clear:hover { color: var(--ink); }
+  .ships-filter-count {
+    margin-left: auto;
+    font-size: 11px;
+    color: var(--ink-soft);
+    font-family: var(--mono);
+  }
+
   .ships-summary {
     display: flex; align-items: baseline; gap: 24px;
     padding-bottom: 14px; margin-bottom: 14px;
@@ -503,62 +556,6 @@
   .tenant-warn { color: var(--warn); font-family: var(--sans); font-style: italic; }
   .tenant-card.active { background: #F5F2EA; }
 
-  /* Tile 5: Divergence */
-  .divergence-banner {
-    display: flex; align-items: center; gap: 16px;
-    margin-bottom: 14px;
-    padding: 10px 14px;
-    background: var(--warn-bg);
-    border-radius: 4px;
-    font-size: 12px;
-    color: var(--warn);
-  }
-  .divergence-banner strong { font-weight: 500; }
-  .retirement-clock {
-    margin-left: auto;
-    font-family: var(--mono); font-size: 11px;
-  }
-  .divergence-stats {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
-    margin-bottom: 16px;
-  }
-  .div-stat {
-    border-left: 2px solid var(--line-strong);
-    padding-left: 14px;
-  }
-  .div-stat.match { border-left-color: var(--success); }
-  .div-stat.diverge { border-left-color: var(--warn); }
-  .div-stat.untracked { border-left-color: var(--ink-soft); }
-  .div-stat .num {
-    font-family: var(--serif); font-size: 30px; font-weight: 400; line-height: 1;
-  }
-  .div-stat .lbl {
-    font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px;
-    color: var(--ink-faint); margin-top: 4px;
-  }
-  .div-stat .sub { font-size: 11px; color: var(--ink-soft); margin-top: 2px; }
-
-  .div-toggle {
-    display: flex; gap: 8px; margin: 14px 0 10px;
-    font-size: 11px;
-  }
-  .div-toggle button {
-    background: var(--neutral-bg); border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font: inherit; font-size: 11px;
-    color: var(--ink-soft);
-    cursor: pointer;
-  }
-  .div-toggle button.active {
-    background: var(--ink); color: var(--bg);
-  }
-  .div-list {
-    max-height: 280px; overflow-y: auto;
-    border-top: 1px solid var(--line);
-    margin-top: 10px;
-  }
-
   /* Customer-prep view */
   .customer-prep .tenant-tabs {
     display: flex; gap: 0;
@@ -630,7 +627,18 @@
   @media print {
     .toolbar { position: static; }
     .upload-area { display: none; }
+    .prep-filter-row { display: none !important; }
+    .prep-export { display: none !important; }
     body { background: white; }
+  }
+  .prep-filter-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 10px 0 14px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--line);
   }
 </style>
 </head>
@@ -795,6 +803,33 @@
             </div>
           </div>
         </div>
+        <div class="ships-filter-row" role="group" aria-label="Filter the table below">
+          <span class="ships-filter-label">Filter:</span>
+          <label class="ships-filter">
+            <span class="ships-filter-name">Tenant</span>
+            <select id="ships-filter-tenant" class="ships-filter-select">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label class="ships-filter">
+            <span class="ships-filter-name">Stage</span>
+            <select id="ships-filter-stage" class="ships-filter-select">
+              <option value="">All</option>
+              <option value="delivered">Delivered: In Production</option>
+              <option value="pending_release">Pending Release</option>
+              <option value="in_progress">In Progress</option>
+              <option value="open">Open</option>
+            </select>
+          </label>
+          <label class="ships-filter">
+            <span class="ships-filter-name">Board</span>
+            <select id="ships-filter-board" class="ships-filter-select">
+              <option value="">All</option>
+            </select>
+          </label>
+          <button class="ships-filter-clear" id="ships-filter-clear" type="button" hidden>clear filters</button>
+          <span class="ships-filter-count" id="ships-filter-count"></span>
+        </div>
         <table class="records" id="ships-table">
           <thead><tr>
             <th style="width:110px;">Key</th>
@@ -847,49 +882,7 @@
     </section>
 
     <!-- TILE 5 -->
-    <section class="tile">
-      <div class="tile-header">
-        <div>
-          <span class="tile-num">№ 5</span>
-          <h2 class="tile-title">Jira vs. Consolidated list</h2>
-        </div>
-        <span class="tile-subtitle">Transitional · retiring in 5–10 business days</span>
-      </div>
-      <div class="tile-body">
-        <div class="divergence-banner">
-          <span><strong id="divergence-pct">—%</strong> of shared tickets show different status between Jira and the spreadsheet.</span>
-          <span class="retirement-clock">RETIRE BY: <strong>~28 May 2026</strong></span>
-        </div>
-        <div class="divergence-stats">
-          <div class="div-stat match">
-            <div class="num" id="div-match">—</div>
-            <div class="lbl">Match</div>
-            <div class="sub">Jira status matches spreadsheet</div>
-          </div>
-          <div class="div-stat diverge">
-            <div class="num" id="div-diverged">—</div>
-            <div class="lbl">Diverged</div>
-            <div class="sub">Status disagrees</div>
-          </div>
-          <div class="div-stat untracked">
-            <div class="num" id="div-jira-only">—</div>
-            <div class="lbl">Jira only</div>
-            <div class="sub">In filter, not in spreadsheet</div>
-          </div>
-          <div class="div-stat untracked">
-            <div class="num" id="div-sheet-only">—</div>
-            <div class="lbl">Sheet only</div>
-            <div class="sub">Tracked manually, not in filter</div>
-          </div>
-        </div>
-        <div class="div-toggle">
-          <button class="active" data-mode="diverged">Diverged status</button>
-          <button data-mode="jira-only">Jira-only tickets</button>
-          <button data-mode="sheet-only">Spreadsheet-only tickets</button>
-        </div>
-        <div class="div-list" id="div-list"></div>
-      </div>
-    </section>
+    <!-- Tile 5 removed: Jira vs Consolidated divergence panel retired -->
   </div>
 
   <!-- CUSTOMER PREP VIEW -->
@@ -899,15 +892,42 @@
       <h2 class="prep-title" id="prep-title">—</h2>
       <button class="prep-export" onclick="window.print()">Export · print or save PDF</button>
     </div>
+    <div class="prep-filter-row" role="group" aria-label="Filter and sort the per-county view">
+      <span class="ships-filter-label">Filter:</span>
+      <label class="ships-filter">
+        <span class="ships-filter-name">Stage</span>
+        <select id="prep-filter-stage" class="ships-filter-select">
+          <option value="">All</option>
+          <option value="delivered">Delivered: In Production</option>
+          <option value="pending_release">Pending Release</option>
+          <option value="in_progress">In Progress</option>
+          <option value="open">Open</option>
+        </select>
+      </label>
+      <label class="ships-filter">
+        <span class="ships-filter-name">Board</span>
+        <select id="prep-filter-board" class="ships-filter-select">
+          <option value="">All</option>
+        </select>
+      </label>
+      <span style="margin-left: 12px; padding-left: 12px; border-left: 1px solid var(--line);"></span>
+      <span class="ships-filter-label">Sort:</span>
+      <label class="ships-filter">
+        <span class="ships-filter-name">By</span>
+        <select id="prep-sort" class="ships-filter-select">
+          <option value="delivery">Delivery target</option>
+          <option value="end_date">End date</option>
+        </select>
+      </label>
+      <button class="ships-filter-clear" id="prep-filter-clear" type="button" hidden>clear filters</button>
+      <span class="ships-filter-count" id="prep-filter-count"></span>
+    </div>
     <div id="prep-body"></div>
   </div>
 
   <div class="footer-note">
-    <strong>How to use this dashboard.</strong>
-    Open this file in a browser at the start of standup. The baseline snapshot is loaded automatically.
-    Each morning, export Jira filter #29799 as HTML, click <em>"Add tomorrow's snapshot"</em>, select the file —
-    trend numbers, deltas, and the divergence panel recompute. Snapshots are kept in browser local storage; clear it to reset.
-    Built for the NTX support spike, May 2026.
+    <strong>How this dashboard works.</strong>
+    Data refreshes automatically from Jira filter #29799 four times per business day (8am, 12pm, 4pm, 8pm ET). The "data as of" indicator at the top-right shows the latest refresh — green if fresh, amber if stale, red if the auto-refresh is failing. Daily snapshots accumulate into the trend chart over time. Built for the NTX support spike, May–July 2026.
   </div>
 
 </main>
@@ -6294,7 +6314,6 @@ function renderExec(current, previous, baseline, allSnaps) {
   renderShips(current);
   renderBottleneck(current);
   renderTenants(current);
-  renderDivergence(current);
 }
 
 // Build the cumulative chart.
@@ -6454,6 +6473,30 @@ function renderTrendChart(current, allSnaps) {
   }
 }
 
+// Project key → board label. Multiple keys map to the same label.
+// Any project key not in this map falls into "Other" — which only appears in the
+// dropdown if such tickets exist (no clutter when everything's mapped).
+const PROJECT_BOARD = {
+  CRD: "Neumo Records",
+  CR: "Neumo Records",
+  CSD: "Neumo Search",
+  PS: "Neumo Search",
+  VTC: "Configuration",
+  CSC: "Configuration",
+  SSRS: "Reporting/SSRS",
+};
+const BOARD_ORDER = ["Neumo Records", "Neumo Search", "Configuration", "Reporting/SSRS"];
+
+function boardOf(t) {
+  const key = (t.key || "").split("-")[0];
+  return PROJECT_BOARD[key] || "Other";
+}
+
+// Filter state for Tile 2 — reset on every page load
+let _shipsFilterState = { tenant: "", stage: "", board: "" };
+// The current "union" of delivery + end-date tickets being rendered (recomputed each call)
+let _shipsAllRows = [];
+
 function renderShips(snap) {
   // Current month, computed from today (not hardcoded)
   const today = new Date(DATA.meta.today + "T00:00:00");
@@ -6471,7 +6514,7 @@ function renderShips(snap) {
   document.getElementById("coverage-text").textContent = `${endCov} of ${snap.tickets.length} (${endPct}%)`;
   document.getElementById("coverage-fill").style.background = endPct < 50 ? "var(--warn)" : "var(--success)";
 
-  // Delivery Target (customer commitment) — new logic
+  // Delivery Target (customer commitment)
   const deliveryTickets = snap.tickets.filter(t =>
     (t.current_delivery_target && t.current_delivery_target.label === targetMonthLabel)
   );
@@ -6484,48 +6527,136 @@ function renderShips(snap) {
     ? "label not yet in filter"
     : `${delCov} of ${snap.tickets.length} (${delPct}%)`;
 
-  // Table: union of both groups, deduped
+  // Union of both groups, deduped — this is the unfiltered row set
   const union = new Map();
   deliveryTickets.forEach(t => union.set(t.key, t));
   endTickets.forEach(t => union.set(t.key, t));
-  const rows = [...union.values()].sort((a,b) => {
+  _shipsAllRows = [...union.values()].sort((a, b) => {
     const aEnd = a.end_date_iso || "9999";
     const bEnd = b.end_date_iso || "9999";
     return aEnd.localeCompare(bEnd);
   });
 
+  // Populate filter dropdowns from the data we just computed
+  populateShipsFilters(_shipsAllRows, endDateMonthLabel);
+
+  // Render the table with current filter state applied
+  applyShipsFilters(endDateMonthLabel, delCov);
+}
+
+function populateShipsFilters(rows, monthLabel) {
+  // Tenant options — collect distinct tenants from the union
+  const tenants = new Set();
+  rows.forEach(t => (t.tenants || []).forEach(x => tenants.add(x)));
+  // Sort: NTX-5 first in the documented order, then anything else alphabetically
+  const NTX_5 = ["Dallas", "Denton", "Johnson", "Collin", "Jefferson"];
+  const sortedTenants = [
+    ...NTX_5.filter(x => tenants.has(x)),
+    ...[...tenants].filter(x => !NTX_5.includes(x)).sort(),
+  ];
+
+  // Board options — sort by BOARD_ORDER, then add "Other" if any unmapped projects show up
+  const boardsPresent = new Set(rows.map(boardOf));
+  const sortedBoards = [
+    ...BOARD_ORDER.filter(b => boardsPresent.has(b)),
+    ...(boardsPresent.has("Other") ? ["Other"] : []),
+  ];
+
+  // Rebuild dropdown options (preserving current selection)
+  const tenantSel = document.getElementById("ships-filter-tenant");
+  const stageSel = document.getElementById("ships-filter-stage");
+  const boardSel = document.getElementById("ships-filter-board");
+
+  rebuildSelect(tenantSel, ["", ...sortedTenants], _shipsFilterState.tenant, v => v || "All");
+  rebuildSelect(boardSel, ["", ...sortedBoards], _shipsFilterState.board, v => v || "All");
+  // Stage dropdown is static (already in HTML); just sync state
+  stageSel.value = _shipsFilterState.stage;
+
+  // Wire up handlers (idempotent — replace any prior handler with current closure)
+  tenantSel.onchange = () => { _shipsFilterState.tenant = tenantSel.value; applyShipsFilters(monthLabel, null); };
+  stageSel.onchange = () => { _shipsFilterState.stage = stageSel.value; applyShipsFilters(monthLabel, null); };
+  boardSel.onchange = () => { _shipsFilterState.board = boardSel.value; applyShipsFilters(monthLabel, null); };
+
+  const clearBtn = document.getElementById("ships-filter-clear");
+  clearBtn.onclick = () => {
+    _shipsFilterState = { tenant: "", stage: "", board: "" };
+    tenantSel.value = ""; stageSel.value = ""; boardSel.value = "";
+    applyShipsFilters(monthLabel, null);
+  };
+}
+
+function rebuildSelect(sel, values, current, labelFor) {
+  // Preserve the current value if it still exists in the new value set
+  const willPreserve = values.includes(current) ? current : "";
+  sel.innerHTML = values.map(v => {
+    const sel_attr = v === willPreserve ? " selected" : "";
+    return `<option value="${v}"${sel_attr}>${labelFor(v)}</option>`;
+  }).join("");
+}
+
+function applyShipsFilters(endDateMonthLabel, delCovForEmpty) {
+  const { tenant, stage, board } = _shipsFilterState;
+  const hasActiveFilter = Boolean(tenant || stage || board);
+
+  // Apply filters as AND
+  const filtered = _shipsAllRows.filter(t => {
+    if (tenant && !(t.tenants || []).includes(tenant)) return false;
+    if (stage && deliveryBucket(t.status) !== stage) return false;
+    if (board && boardOf(t) !== board) return false;
+    return true;
+  });
+
+  // Update count + clear button visibility
+  const countEl = document.getElementById("ships-filter-count");
+  const clearBtn = document.getElementById("ships-filter-clear");
+  if (hasActiveFilter) {
+    countEl.textContent = `showing ${filtered.length} of ${_shipsAllRows.length}`;
+    clearBtn.hidden = false;
+  } else {
+    countEl.textContent = "";
+    clearBtn.hidden = true;
+  }
+
+  // Render the table body
   const tbody = document.querySelector("#ships-table tbody");
   tbody.innerHTML = "";
   const note = document.getElementById("ships-empty-note");
-  if (rows.length === 0) {
+
+  if (filtered.length === 0) {
     note.style.display = "block";
-    note.textContent = delCov === 0
-      ? "No tickets shipping or committed for " + endDateMonthLabel + ". Note: Delivery-target labels (e.g., May-2026) are not yet present in the filter export — add the Labels field to the filter to populate this view."
-      : "No tickets shipping or committed for " + endDateMonthLabel + ".";
-  } else {
-    note.style.display = "none";
-    rows.forEach(t => {
-      const tr = document.createElement("tr");
-      // Delivery cell — show current target if exists, with slip indicator if multiple targets exist
-      const dt = t.current_delivery_target;
-      const slipped = (t.delivery_targets || []).length > 1;
-      const deliveryCell = dt
-        ? `<span class="delivery-pill${slipped ? " slipped" : ""}" title="${slipped ? "Slip history: " + t.delivery_targets.map(x => x.label).join(" → ") : ""}">${dt.label}${slipped ? " ⚠" : ""}</span>`
-        : `<span class="delivery-pill empty">—</span>`;
-      const endCell = t.end_date
-        ? `<span style="font-family: var(--mono); font-size: 11px; color: var(--ink-soft);">${t.end_date}</span>`
-        : `<span class="delivery-pill empty">—</span>`;
-      tr.innerHTML = `
-        <td class="key-cell"><a href="https://neumo.atlassian.net/browse/${t.key}" target="_blank">${t.key}</a></td>
-        <td class="tenant-cell">${(t.tenants || []).join(", ")}</td>
-        <td><span class="pill ${FAMILY_PILL_CLASS[t.status_family]}">${t.status}</span></td>
-        <td>${escapeHtml(t.summary)}</td>
-        <td>${deliveryCell}</td>
-        <td>${endCell}</td>
-      `;
-      tbody.appendChild(tr);
-    });
+    if (hasActiveFilter) {
+      note.textContent = "No tickets match the current filters. Try widening your selection.";
+    } else if (_shipsAllRows.length === 0) {
+      // Use the existing baseline note if no filters AND no data
+      const baselineNote = delCovForEmpty === 0
+        ? "No tickets shipping or committed for " + endDateMonthLabel + ". Note: Delivery-target labels (e.g., May-2026) are not yet present in the filter export — add the Labels field to the filter to populate this view."
+        : "No tickets shipping or committed for " + endDateMonthLabel + ".";
+      note.textContent = baselineNote;
+    }
+    return;
   }
+
+  note.style.display = "none";
+  filtered.forEach(t => {
+    const tr = document.createElement("tr");
+    const dt = t.current_delivery_target;
+    const slipped = (t.delivery_targets || []).length > 1;
+    const deliveryCell = dt
+      ? `<span class="delivery-pill${slipped ? " slipped" : ""}" title="${slipped ? "Slip history: " + t.delivery_targets.map(x => x.label).join(" → ") : ""}">${dt.label}${slipped ? " ⚠" : ""}</span>`
+      : `<span class="delivery-pill empty">—</span>`;
+    const endCell = t.end_date
+      ? `<span style="font-family: var(--mono); font-size: 11px; color: var(--ink-soft);">${t.end_date}</span>`
+      : `<span class="delivery-pill empty">—</span>`;
+    tr.innerHTML = `
+      <td class="key-cell"><a href="https://neumo.atlassian.net/browse/${t.key}" target="_blank">${t.key}</a></td>
+      <td class="tenant-cell">${(t.tenants || []).join(", ")}</td>
+      <td><span class="pill ${FAMILY_PILL_CLASS[t.status_family]}">${t.status}</span></td>
+      <td>${escapeHtml(t.summary)}</td>
+      <td>${deliveryCell}</td>
+      <td>${endCell}</td>
+    `;
+    tbody.appendChild(tr);
+  });
 }
 
 function renderBottleneck(snap) {
@@ -6591,90 +6722,8 @@ function renderTenants(snap) {
   }).join("");
 }
 
-function renderDivergence(snap) {
-  // For the embedded baseline we have the precomputed divergence;
-  // for newer snapshots, recompute against the original spreadsheet snapshot
-  let div;
-  if (snap.divergence) {
-    div = snap.divergence;
-  } else {
-    div = computeDivergence(snap.tickets, DATA.spreadsheet);
-  }
-  const inBoth = div.match + div.diverged + div.no_status_in_sheet;
-  const pct = inBoth > 0 ? Math.round(100 * div.diverged / inBoth) : 0;
-  document.getElementById("divergence-pct").textContent = pct + "%";
-  document.getElementById("div-match").textContent = div.match;
-  document.getElementById("div-diverged").textContent = div.diverged;
-  document.getElementById("div-jira-only").textContent = div.in_jira_only.length;
-  document.getElementById("div-sheet-only").textContent = div.spreadsheet_only.length;
-  renderDivList(div, "diverged");
-
-  document.querySelectorAll(".div-toggle button").forEach(b => {
-    b.onclick = () => {
-      document.querySelectorAll(".div-toggle button").forEach(x => x.classList.remove("active"));
-      b.classList.add("active");
-      renderDivList(div, b.dataset.mode);
-    };
-  });
-}
-
-function computeDivergence(tickets, sheet) {
-  const norm = s => (s||"").toLowerCase().trim().replace(/[,.]/g,"");
-  const out = { match: 0, diverged: 0, no_status_in_sheet: 0,
-                in_jira_only: [], diverged_list: [], spreadsheet_only: [] };
-  const jiraKeys = new Set(tickets.map(t => t.key));
-  tickets.forEach(t => {
-    const info = sheet[t.key];
-    if (!info) { out.in_jira_only.push(t.key); return; }
-    const ss = info.jira_status_text;
-    if (!ss) out.no_status_in_sheet++;
-    else if (norm(ss) === norm(t.status)) out.match++;
-    else {
-      out.diverged++;
-      out.diverged_list.push({
-        key: t.key, jira_status: t.status, sheet_status: ss,
-        summary: t.summary.slice(0,80), tenant: (t.tenants||[]).join(",")
-      });
-    }
-  });
-  Object.keys(sheet).forEach(k => {
-    if (!jiraKeys.has(k) && ["CR","VTC"].includes(k.split("-")[0])) {
-      out.spreadsheet_only.push({ key: k, subject: (sheet[k].subject||"").slice(0,80),
-                                  sheet_status: sheet[k].jira_status_text });
-    }
-  });
-  return out;
-}
-
-function renderDivList(div, mode) {
-  const list = document.getElementById("div-list");
-  let rows = [];
-  if (mode === "diverged") {
-    rows = div.diverged_list.map(d => `
-      <div style="display: grid; grid-template-columns: 110px 1fr 140px 140px; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 12px;">
-        <span class="key-cell"><a href="https://neumo.atlassian.net/browse/${d.key}" target="_blank">${d.key}</a></span>
-        <span>${escapeHtml(d.summary)}</span>
-        <span><span class="pill triage" title="Spreadsheet says">${escapeHtml(d.sheet_status)}</span></span>
-        <span><span class="pill open" title="Jira says">${escapeHtml(d.jira_status)}</span></span>
-      </div>`);
-    if (rows.length) rows.unshift(`<div style="display:grid;grid-template-columns:110px 1fr 140px 140px;gap:12px;padding:6px 0;font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:var(--ink-faint);border-bottom:1px solid var(--line);">
-      <span>Key</span><span>Summary</span><span>Spreadsheet says</span><span>Jira says</span></div>`);
-  } else if (mode === "jira-only") {
-    rows = div.in_jira_only.map(k => `
-      <div style="display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 12px;">
-        <span class="key-cell"><a href="https://neumo.atlassian.net/browse/${k}" target="_blank">${k}</a></span>
-        <span>${escapeHtml((DATA.tickets.find(t=>t.key===k)||{}).summary || "")}</span>
-      </div>`);
-  } else if (mode === "sheet-only") {
-    rows = div.spreadsheet_only.map(d => `
-      <div style="display: grid; grid-template-columns: 110px 1fr 140px; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 12px;">
-        <span class="key-cell"><a href="https://neumo.atlassian.net/browse/${d.key}" target="_blank">${d.key}</a></span>
-        <span>${escapeHtml(d.subject || "(no subject)")}</span>
-        <span style="font-size:11px;color:var(--ink-soft);">${escapeHtml(d.sheet_status || "—")}</span>
-      </div>`);
-  }
-  list.innerHTML = rows.length ? rows.join("") : `<p style="padding:20px;text-align:center;color:var(--ink-faint);font-style:italic;">Nothing here — clean.</p>`;
-}
+// Filter & sort state for Customer Prep — reset on every page load
+let _prepFilterState = { stage: "", board: "", sort: "delivery", tenant: null };
 
 // CUSTOMER PREP VIEW
 function renderCustomerPrep(snap) {
@@ -6683,23 +6732,93 @@ function renderCustomerPrep(snap) {
     const cnt = snap.tickets.filter(tk => tk.tenants.includes(t)).length;
     return `<button class="${i===0?"active":""}" data-tenant="${t}">${t}<span class="count">${cnt||"—"}</span></button>`;
   }).join("");
+
+  // Initial tenant if not yet set
+  if (!_prepFilterState.tenant) _prepFilterState.tenant = NTX[0];
+
   tabs.querySelectorAll("button").forEach(b => {
+    if (b.dataset.tenant === _prepFilterState.tenant) {
+      tabs.querySelectorAll("button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+    }
     b.onclick = () => {
       tabs.querySelectorAll("button").forEach(x => x.classList.remove("active"));
       b.classList.add("active");
-      drawPrep(b.dataset.tenant, snap);
+      _prepFilterState.tenant = b.dataset.tenant;
+      drawPrep(snap);
     };
   });
-  drawPrep(NTX[0], snap);
+
+  // Populate Board filter dropdown from data (same approach as Tile 2)
+  populatePrepFilters(snap);
+
+  // Render with current state
+  drawPrep(snap);
 }
 
-function drawPrep(tenant, snap) {
+function populatePrepFilters(snap) {
+  // Boards present in the entire snapshot
+  const boardsPresent = new Set(snap.tickets.map(boardOf));
+  const sortedBoards = [
+    ...BOARD_ORDER.filter(b => boardsPresent.has(b)),
+    ...(boardsPresent.has("Other") ? ["Other"] : []),
+  ];
+
+  const stageSel = document.getElementById("prep-filter-stage");
+  const boardSel = document.getElementById("prep-filter-board");
+  const sortSel = document.getElementById("prep-sort");
+  const clearBtn = document.getElementById("prep-filter-clear");
+
+  // Rebuild board dropdown (preserving selection if still valid)
+  rebuildSelect(boardSel, ["", ...sortedBoards], _prepFilterState.board, v => v || "All");
+  stageSel.value = _prepFilterState.stage;
+  sortSel.value = _prepFilterState.sort;
+
+  stageSel.onchange = () => { _prepFilterState.stage = stageSel.value; drawPrep(snap); };
+  boardSel.onchange = () => { _prepFilterState.board = boardSel.value; drawPrep(snap); };
+  sortSel.onchange = () => { _prepFilterState.sort = sortSel.value; drawPrep(snap); };
+  clearBtn.onclick = () => {
+    _prepFilterState.stage = "";
+    _prepFilterState.board = "";
+    _prepFilterState.sort = "delivery";
+    stageSel.value = ""; boardSel.value = ""; sortSel.value = "delivery";
+    drawPrep(snap);
+  };
+}
+
+function drawPrep(snap) {
+  const tenant = _prepFilterState.tenant;
+  const { stage, board, sort } = _prepFilterState;
+
   document.getElementById("prep-title").textContent = `${tenant} — current Jira status`;
-  const tickets = snap.tickets.filter(t => t.tenants.includes(tenant));
+
+  // Filter by tenant first (the tab controls this)
+  let tickets = snap.tickets.filter(t => t.tenants.includes(tenant));
+  const totalForTenant = tickets.length;
+
+  // Apply Stage and Board filters
+  const hasActiveFilter = Boolean(stage || board);
+  if (stage) tickets = tickets.filter(t => deliveryBucket(t.status) === stage);
+  if (board) tickets = tickets.filter(t => boardOf(t) === board);
+
+  // Update filter count + clear button
+  const countEl = document.getElementById("prep-filter-count");
+  const clearBtn = document.getElementById("prep-filter-clear");
+  if (hasActiveFilter) {
+    countEl.textContent = `showing ${tickets.length} of ${totalForTenant} ${tenant} tickets`;
+    clearBtn.hidden = false;
+  } else {
+    countEl.textContent = totalForTenant ? `${totalForTenant} ${tenant} tickets` : "";
+    clearBtn.hidden = true;
+  }
+
   if (!tickets.length) {
-    document.getElementById("prep-body").innerHTML = `<p style="color:var(--ink-soft);font-style:italic;">No tickets for ${tenant} in this filter. (Worth flagging — is ${tenant} actually being tracked in this filter?)</p>`;
+    document.getElementById("prep-body").innerHTML = hasActiveFilter
+      ? `<p style="color:var(--ink-soft);font-style:italic;">No ${tenant} tickets match the current filters. Try widening your selection or switching to a different county.</p>`
+      : `<p style="color:var(--ink-soft);font-style:italic;">No tickets for ${tenant} in this filter. (Worth flagging — is ${tenant} actually being tracked in this filter?)</p>`;
     return;
   }
+
   // Compute current month dynamically
   const today = new Date(DATA.meta.today + "T00:00:00");
   const targetMonthLabel = today.toLocaleString("en-US", { month: "short" }) + "-" + today.getFullYear();
@@ -6718,6 +6837,12 @@ function drawPrep(tenant, snap) {
   // De-dup: tickets in the "Committed" group should not also appear in the "Production release" group
   const committedKeys = new Set((groups[`Committed to deliver ${targetMonthLabel}`] || []).map(t => t.key));
   groups[`Production release targeted ${endDateMonthLabel}`] = (groups[`Production release targeted ${endDateMonthLabel}`] || []).filter(t => !committedKeys.has(t.key));
+
+  // Apply sort within each group
+  const sortFn = sortComparator(sort);
+  Object.keys(groups).forEach(label => {
+    groups[label] = groups[label].sort(sortFn);
+  });
 
   let html = "";
   Object.entries(groups).forEach(([label, group]) => {
@@ -6749,6 +6874,23 @@ function drawPrep(tenant, snap) {
     </div>`;
   });
   document.getElementById("prep-body").innerHTML = html;
+}
+
+function sortComparator(mode) {
+  if (mode === "end_date") {
+    // Sort by end_date_iso ascending; nulls last
+    return (a, b) => {
+      const aE = a.end_date_iso || "9999-99-99";
+      const bE = b.end_date_iso || "9999-99-99";
+      return aE.localeCompare(bE);
+    };
+  }
+  // Default: sort by delivery target (sortable index = year*12 + month-index)
+  return (a, b) => {
+    const aS = (a.current_delivery_target && a.current_delivery_target.sortable) || 99999;
+    const bS = (b.current_delivery_target && b.current_delivery_target.sortable) || 99999;
+    return aS - bS;
+  };
 }
 
 // UTIL
