@@ -6886,7 +6886,7 @@ async function init() {
     baseline = embedded;
   }
 
-  // Update status line
+  // Update status line — color-code by freshness
   const statusEl = document.getElementById("snap-status");
   if (remote) {
     const updatedDisplay = dataAsOf
@@ -6894,7 +6894,30 @@ async function init() {
           { day: "numeric", month: "short", year: "numeric",
             hour: "numeric", minute: "2-digit", hour12: true })
       : "unknown";
-    statusEl.textContent = `data as of ${updatedDisplay} · ${allSnaps.length} snapshot${allSnaps.length>1?"s":""}`;
+
+    // Determine freshness color
+    let freshnessColor = "var(--ink-soft)";  // default neutral
+    let staleNote = "";
+    if (dataAsOf) {
+      const ageMs = Date.now() - new Date(dataAsOf).getTime();
+      const ageHr = ageMs / (1000 * 60 * 60);
+      if (ageHr < 6) {
+        freshnessColor = "var(--success)";
+      } else if (ageHr < 24) {
+        freshnessColor = "var(--ink-soft)";
+      } else if (ageHr < 48) {
+        freshnessColor = "var(--warn)";
+        staleNote = " · auto-refresh may be delayed";
+      } else {
+        freshnessColor = "var(--danger)";
+        staleNote = " · auto-refresh failing — see GitHub Actions tab";
+      }
+    }
+
+    statusEl.innerHTML =
+      `<span style="color: ${freshnessColor};">data as of ${updatedDisplay}</span>` +
+      ` · ${allSnaps.length} snapshot${allSnaps.length>1?"s":""}` +
+      (staleNote ? `<span style="color: var(--warn); font-style: italic;">${staleNote}</span>` : "");
   } else {
     statusEl.innerHTML = '<span style="color: var(--warn);">⚠ Using embedded baseline (snapshots.json not found)</span>';
   }
