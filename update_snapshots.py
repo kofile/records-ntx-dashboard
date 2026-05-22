@@ -115,12 +115,25 @@ def family(s):
 
 
 def delivery_bucket(s):
-    """delivered (in customer hands), pending (dev done, release pending), open (everything else)."""
-    x = (s or "").lower()
+    """4-stage bucket — mirrors JS deliveryBucket() in index.html.
+
+    Stages:
+      delivered:       released to production (Closed, Done)
+      pending_release: dev/QA done, release-train pending
+                       (Ready for Production, Verified on UAT, Deployed to UAT, Verify Production)
+      in_progress:     actively being worked
+                       (In Dev, Ready for UAT, Ready to merge to UAT,
+                        Ready to test on UAT, Testing on UAT, Ready To Test)
+      open:            logged but not yet started; catch-all.
+    """
+    x = (s or "").lower().strip()
     if x in ("closed", "done"):
         return "delivered"
-    if x in ("ready for production", "verified on uat", "deployed to uat"):
-        return "pending"
+    if x in ("ready for production", "verified on uat", "deployed to uat", "verify production"):
+        return "pending_release"
+    if x in ("in dev", "ready for uat", "ready to merge to uat",
+             "ready to test on uat", "testing on uat", "ready to test"):
+        return "in_progress"
     return "open"
 
 

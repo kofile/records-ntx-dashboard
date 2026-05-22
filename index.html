@@ -181,6 +181,8 @@
   }
   .winning-bar-delivered { background: var(--success); transition: width 0.4s ease; }
   .winning-bar-pending { background: var(--accent); opacity: 0.55; transition: width 0.4s ease; }
+  .winning-bar-progress { background: var(--warn); opacity: 0.7; transition: width 0.4s ease; }
+  .winning-bar-open { background: transparent; transition: width 0.4s ease; }
   .winning-legend {
     display: flex; gap: 18px; font-size: 12px; color: var(--ink-soft);
     flex-wrap: wrap;
@@ -192,6 +194,7 @@
   }
   .winning-legend .dot.delivered { background: var(--success); }
   .winning-legend .dot.pending { background: var(--accent); opacity: 0.55; }
+  .winning-legend .dot.progress { background: var(--warn); opacity: 0.7; }
   .winning-legend .dot.open { background: var(--neutral-bg); border: 1px solid var(--line-strong); }
   .winning-deltas {
     display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
@@ -210,10 +213,59 @@
   }
   .delta-value.pending { color: var(--ink-faint); font-style: italic; font-size: 14px; }
   .delta-explain { font-size: 11px; color: var(--ink-soft); margin-top: 4px; }
+
+  /* Row 2: mapping panel left, trend chart right */
+  .winning-row2 {
+    display: grid;
+    grid-template-columns: minmax(220px, 280px) 1fr;
+    gap: 28px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    align-items: start;
+  }
+  @media (max-width: 760px) {
+    .winning-row2 { grid-template-columns: 1fr; gap: 16px; }
+  }
+  .stage-mapping {
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+  .stage-mapping-title {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px;
+    color: var(--ink-faint);
+    margin: 0 0 10px 0; font-weight: 500;
+    font-family: var(--sans);
+  }
+  .stage-mapping-list { margin: 0; padding: 0; }
+  .stage-mapping-list .stage-row {
+    margin: 0 0 12px 0;
+  }
+  .stage-mapping-list .stage-row:last-child { margin-bottom: 0; }
+  .stage-mapping-list dt {
+    color: var(--ink);
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 3px;
+    font-family: var(--sans);
+  }
+  .stage-mapping-list dt .dot {
+    display: inline-block; width: 9px; height: 9px; border-radius: 2px;
+    vertical-align: middle; margin-right: 6px;
+  }
+  .stage-mapping-list dt .dot.delivered { background: var(--success); }
+  .stage-mapping-list dt .dot.pending { background: var(--accent); opacity: 0.55; }
+  .stage-mapping-list dt .dot.progress { background: var(--warn); opacity: 0.7; }
+  .stage-mapping-list dt .dot.open { background: var(--neutral-bg); border: 1px solid var(--line-strong); }
+  .stage-mapping-list dd {
+    margin: 0 0 0 15px;
+    line-height: 1.45;
+    color: var(--ink-soft);
+  }
+
   .trend-chart-wrap {
     width: 100%;
-    max-width: 820px;
-    margin: 0 auto;
+    min-width: 0;  /* allow grid cell to shrink */
   }
   #trend-chart {
     display: block;
@@ -593,7 +645,7 @@
     </div>
   </div>
   <div class="dateline">
-    <span>Source: Jira filter <a href="https://neumo.atlassian.net/issues/?filter=29799" style="color: inherit;">#29799</a> · CR + VTC</span>
+    <span>Source: Jira filter <a href="https://neumo.atlassian.net/issues/?filter=29799" style="color: inherit;">#29799</a> · Neumo Records, Search, Configuration and Reporting/SSRS</span>
     <span class="dateline-sep">Scope: Dallas, Denton, Johnson, Collin, Jefferson</span>
     <span class="dateline-sep">Snapshot from <span id="exported-at">—</span></span>
   </div>
@@ -625,17 +677,21 @@
         <span class="tile-subtitle">Winning = delivering work. Gap narrowing over time = winning.</span>
       </div>
       <div class="tile-body">
+        <!-- Row 1: Headline + bar (full width) with deltas on the right -->
         <div class="winning-grid">
           <div class="winning-headline">
             <div class="winning-rate" id="winning-rate">—%</div>
             <div class="winning-fraction" id="winning-fraction">— of — delivered</div>
             <div class="winning-bar">
-              <div class="winning-bar-delivered" id="winning-bar-delivered" style="width:0;" title="Delivered"></div>
-              <div class="winning-bar-pending" id="winning-bar-pending" style="width:0;" title="Pending delivery"></div>
+              <div class="winning-bar-delivered" id="winning-bar-delivered" style="width:0;" title="Delivered: In Production"></div>
+              <div class="winning-bar-pending" id="winning-bar-pending" style="width:0;" title="Pending Production Release"></div>
+              <div class="winning-bar-progress" id="winning-bar-progress" style="width:0;" title="In Progress"></div>
+              <div class="winning-bar-open" id="winning-bar-open" style="width:0;" title="Open"></div>
             </div>
             <div class="winning-legend">
-              <span><span class="dot delivered"></span> Delivered <strong id="lgnd-delivered">0</strong></span>
-              <span><span class="dot pending"></span> Pending <strong id="lgnd-pending">0</strong></span>
+              <span><span class="dot delivered"></span> Delivered: In Production <strong id="lgnd-delivered">0</strong></span>
+              <span><span class="dot pending"></span> Pending Release <strong id="lgnd-pending">0</strong></span>
+              <span><span class="dot progress"></span> In Progress <strong id="lgnd-progress">0</strong></span>
               <span><span class="dot open"></span> Open <strong id="lgnd-open">0</strong></span>
             </div>
           </div>
@@ -653,17 +709,42 @@
           </div>
         </div>
 
-        <div class="trend-chart-wrap">
-          <div class="trend-chart-header">
-            <span class="trend-title">Cumulative · total logged vs. delivered</span>
-            <span class="trend-legend">
-              <span><span class="line-key total"></span> Total logged</span>
-              <span><span class="line-key delivered"></span> Delivered</span>
-              <span><span class="line-key gap"></span> Gap (open + pending)</span>
-            </span>
+        <!-- Row 2: Stage mapping panel (left) + trend chart (right) -->
+        <div class="winning-row2">
+          <aside class="stage-mapping" aria-label="How Jira statuses map to the 4 stages">
+            <h3 class="stage-mapping-title">How statuses map to stages</h3>
+            <dl class="stage-mapping-list">
+              <div class="stage-row">
+                <dt><span class="dot delivered"></span> Delivered: In Production</dt>
+                <dd>Closed, Done</dd>
+              </div>
+              <div class="stage-row">
+                <dt><span class="dot pending"></span> Pending Release</dt>
+                <dd>Ready for Production, Verified on UAT, Deployed to UAT, Verify Production</dd>
+              </div>
+              <div class="stage-row">
+                <dt><span class="dot progress"></span> In Progress</dt>
+                <dd>In Dev, Ready for UAT, Ready to merge to UAT, Ready to test on UAT, Testing on UAT, Ready To Test</dd>
+              </div>
+              <div class="stage-row">
+                <dt><span class="dot open"></span> Open</dt>
+                <dd>Open, Ready for Dev, Requirements clarification, Waiting for Info, On Hold, Vanguard Code Dependency, Discovery &amp; Design, Parking lot, and any unrecognized status</dd>
+              </div>
+            </dl>
+          </aside>
+
+          <div class="trend-chart-wrap">
+            <div class="trend-chart-header">
+              <span class="trend-title">Cumulative · total logged vs. delivered</span>
+              <span class="trend-legend">
+                <span><span class="line-key total"></span> Total logged</span>
+                <span><span class="line-key delivered"></span> Delivered</span>
+                <span><span class="line-key gap"></span> Gap (open + pending)</span>
+              </span>
+            </div>
+            <svg id="trend-chart" viewBox="0 0 700 220" preserveAspectRatio="xMidYMid meet"></svg>
+            <p class="trend-note" id="trend-note"></p>
           </div>
-          <svg id="trend-chart" viewBox="0 0 700 220" preserveAspectRatio="xMidYMid meet"></svg>
-          <p class="trend-note" id="trend-note"></p>
         </div>
       </div>
     </section>
@@ -6105,14 +6186,24 @@ function family(s) {
 }
 
 // Delivery bucket — drives "Are we winning?" tile.
-// Three buckets, no overlap:
-//   Delivered:        ticket is in customer hands (Closed, Done)
-//   Pending delivery: dev/QA done, release-train pending (Ready for Production, Verified on UAT, Deployed to UAT)
-//   Open:             everything else
+// Four stages, no overlap:
+//   delivered:       ticket is released to production (Closed, Done)
+//   pending_release: dev/QA done, release-train pending
+//                    (Ready for Production, Verified on UAT, Deployed to UAT, Verify Production)
+//   in_progress:     actively being worked
+//                    (In Dev, Ready for UAT, Ready to merge to UAT,
+//                     Ready to test on UAT, Testing on UAT, Ready To Test)
+//   open:            logged but not yet started; catch-all for everything else
+//                    (Open, Ready for Dev, Ready for Development,
+//                     Requirements clarification, Waiting for Info,
+//                     On Hold, Vanguard Code Dependency,
+//                     Discovery & Design, Parking lot, unrecognized)
 function deliveryBucket(s) {
-  const x = (s || "").toLowerCase();
+  const x = (s || "").toLowerCase().trim();
   if (x === "closed" || x === "done") return "delivered";
-  if (["ready for production","verified on uat","deployed to uat"].includes(x)) return "pending";
+  if (["ready for production", "verified on uat", "deployed to uat", "verify production"].includes(x)) return "pending_release";
+  if (["in dev", "ready for uat", "ready to merge to uat",
+       "ready to test on uat", "testing on uat", "ready to test"].includes(x)) return "in_progress";
   return "open";
 }
 function tenantsFor(raw) {
@@ -6144,36 +6235,43 @@ function renderExec(current, previous, baseline, allSnaps) {
   document.getElementById("today-str").textContent = formatToday(new Date().toISOString().slice(0,10));
   document.getElementById("exported-at").textContent = current.label || DATA.meta.exported_at;
 
-  // Buckets
-  const buckets = { delivered: 0, pending: 0, open: 0 };
+  // Buckets — 4 stages
+  const buckets = { delivered: 0, pending_release: 0, in_progress: 0, open: 0 };
   current.tickets.forEach(t => {
-    const b = t.delivery_bucket || (t.is_open ? "open" : "delivered");
+    // Re-derive bucket from status to handle stale data with old "pending" string
+    const b = deliveryBucket(t.status);
     buckets[b] = (buckets[b] || 0) + 1;
   });
   const total = current.tickets.length;
   const delivered = buckets.delivered;
-  const pending = buckets.pending;
+  const pending = buckets.pending_release;
+  const inProgress = buckets.in_progress;
   const openCt = buckets.open;
   const pct = total ? Math.round(100 * delivered / total) : 0;
   const pctPending = total ? Math.round(100 * pending / total) : 0;
+  const pctProgress = total ? Math.round(100 * inProgress / total) : 0;
+  const pctOpen = total ? Math.round(100 * openCt / total) : 0;
 
   document.getElementById("winning-rate").textContent = pct + "%";
-  document.getElementById("winning-fraction").textContent = `${delivered} of ${total} delivered · ${pending} pending`;
+  document.getElementById("winning-fraction").textContent =
+    `${delivered} of ${total} in production · ${pending} pending release`;
   document.getElementById("winning-bar-delivered").style.width = pct + "%";
   document.getElementById("winning-bar-pending").style.width = pctPending + "%";
+  document.getElementById("winning-bar-progress").style.width = pctProgress + "%";
+  document.getElementById("winning-bar-open").style.width = pctOpen + "%";
   document.getElementById("lgnd-delivered").textContent = delivered;
   document.getElementById("lgnd-pending").textContent = pending;
+  document.getElementById("lgnd-progress").textContent = inProgress;
   document.getElementById("lgnd-open").textContent = openCt;
 
-  // Deltas — now measured by delivered count (winning = more delivered)
+  // Deltas — measured by delivered count (winning = more in production)
   if (previous) {
-    const prev_delivered = previous.tickets.filter(t => (t.delivery_bucket || (t.is_open ? "open" : "delivered")) === "delivered").length;
+    const prev_delivered = previous.tickets.filter(t => deliveryBucket(t.status) === "delivered").length;
     const d = delivered - prev_delivered;
     const el = document.getElementById("delta-day");
     el.classList.remove("pending");
     el.innerHTML = (d >= 0 ? "+" : "") + d;
     el.style.color = d > 0 ? "var(--success)" : (d < 0 ? "var(--danger)" : "var(--ink-soft)");
-    // count of new vs. closed for the explainer
     const prev_keys = new Set(previous.tickets.map(t => t.key));
     const cur_keys = new Set(current.tickets.map(t => t.key));
     const newly_added = [...cur_keys].filter(k => !prev_keys.has(k));
@@ -6181,7 +6279,7 @@ function renderExec(current, previous, baseline, allSnaps) {
       `+${newly_added.length} new logged`;
   }
   if (baseline && baseline !== current) {
-    const base_delivered = baseline.tickets.filter(t => (t.delivery_bucket || (t.is_open ? "open" : "delivered")) === "delivered").length;
+    const base_delivered = baseline.tickets.filter(t => deliveryBucket(t.status) === "delivered").length;
     const d = delivered - base_delivered;
     const el = document.getElementById("delta-baseline");
     el.classList.remove("pending");
