@@ -140,49 +140,60 @@ def extract_delivery_targets(labels):
 # Jira API client (stdlib only)
 # --------------------------------------------------------------------------
 
-def jira_request(host, user, token, path, params=None):
-    """GET against Jira REST API. Returns parsed JSON. Raises on non-2xx."""
+def jira_request(host, user, token, path, method="GET", params=None, body=None):
+    """Request against Jira REST API. Returns parsed JSON. Raises on non-2xx."""
     url = f"https://{host}{path}"
     if params:
         url += "?" + urllib.parse.urlencode(params)
     auth = base64.b64encode(f"{user}:{token}".encode()).decode()
-    req = urllib.request.Request(url, headers={
+    headers = {
         "Authorization": f"Basic {auth}",
         "Accept": "application/json",
-    })
+    }
+    data_bytes = None
+    if body is not None:
+        headers["Content-Type"] = "application/json"
+        data_bytes = json.dumps(body).encode("utf-8")
+    req = urllib.request.Request(url, data=data_bytes, headers=headers, method=method)
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             return json.loads(resp.read())
     except urllib.error.HTTPError as e:
-        body = e.read().decode(errors="replace")[:500]
-        raise RuntimeError(f"Jira API error {e.code} at {path}: {body}") from e
+        body_text = e.read().decode(errors="replace")[:500]
+        raise RuntimeError(f"Jira API error {e.code} at {path}: {body_text}") from e
 
 
 def fetch_filter_issues(host, user, token, filter_id):
-    """Fetch all issues matching a saved filter. Paginates."""
+    """Fetch all issues matching a saved filter via /rest/api/3/search/jql.
+
+    Uses the new endpoint (POST + cursor pagination via nextPageToken).
+    The old /rest/api/3/search endpoint was removed by Atlassian in 2025.
+    """
     jql = f"filter = {filter_id}"
-    fields = ",".join([
+    fields = [
         "issuetype", "summary", "status", "created", "updated",
         "labels", "customfield_10019",  # Sprint
         CF_END_DATE, CF_TENANT,
         "comment",
-    ])
+    ]
     all_issues = []
-    start_at = 0
+    next_token = None
     page_size = 100
     while True:
-        params = {
+        body = {
             "jql": jql,
             "fields": fields,
-            "startAt": start_at,
             "maxResults": page_size,
         }
-        page = jira_request(host, user, token, "/rest/api/3/search", params)
+        if next_token:
+            body["nextPageToken"] = next_token
+        page = jira_request(host, user, token, "/rest/api/3/search/jql",
+                           method="POST", body=body)
         issues = page.get("issues", [])
         all_issues.extend(issues)
-        total = page.get("total", 0)
-        start_at += len(issues)
-        if start_at >= total or not issues:
+        next_token = page.get("nextPageToken")
+        is_last = page.get("isLast", True)
+        if is_last or not next_token or not issues:
             break
     return all_issues
 
