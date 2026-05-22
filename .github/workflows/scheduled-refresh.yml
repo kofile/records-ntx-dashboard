@@ -1,0 +1,128 @@
+name: Scheduled dashboard refresh
+
+# Pulls Jira filter #29799 directly from the Atlassian API, transforms the
+# response into the dashboard's snapshot format, and commits it. Runs four
+# times per business day so the dashboard is never more than ~4 hours stale
+# during working hours.
+#
+# Schedule reference: cron is in UTC. ET is UTC-4 in summer, UTC-5 in winter.
+# This workflow uses UTC times that target ET business hours year-round (we
+# bias toward the summer offset since the spike runs May-July).
+
+on:
+  schedule:
+    # 8am ET = 12:00 UTC, 12pm ET = 16:00 UTC, 4pm ET = 20:00 UTC, 8pm ET = 00:00 UTC (next day)
+    # Mon-Fri only (1-5 = Mon-Fri in cron). Note: 8pm ET (00:00 UTC) needs Tue-Sat to align with weekdays.
+    - cron: '0 12 * * 1-5'   # 8am ET Mon-Fri
+    - cron: '0 16 * * 1-5'   # 12pm ET Mon-Fri
+    - cron: '0 20 * * 1-5'   # 4pm ET Mon-Fri
+    - cron: '0 0 * * 2-6'    # 8pm ET Mon-Fri (UTC midnight Tue-Sat)
+  workflow_dispatch:  # allow manual trigger from Actions tab
+
+permissions:
+  contents: write
+  issues: write    # needed to open issues on failure
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch Jira filter and update snapshots.json
+        id: fetch
+        env:
+          JIRA_USER: ${{ secrets.JIRA_USER }}
+          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          JIRA_HOST: ${{ secrets.JIRA_HOST }}
+          FILTER_ID: '29799'
+        run: |
+          set -euo pipefail
+          python3 fetch_jira_filter.py \
+            --host "$JIRA_HOST" \
+            --user "$JIRA_USER" \
+            --token "$JIRA_TOKEN" \
+            --filter-id "$FILTER_ID" \
+            --output snapshots.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet snapshots.json; then
+            echo "snapshots.json unchanged — nothing to commit."
+            exit 0
+          fi
+
+          CAPTURED=$(python3 -c "import json; print(json.load(open('snapshots.json'))['today'])")
+          TICKETS=$(python3 -c "import json; print(len(json.load(open('snapshots.json'))['tickets']))")
+
+          git add snapshots.json
+          git commit -m "auto: scheduled refresh — $CAPTURED ($TICKETS tickets)"
+          git push
+
+      - name: On failure, open an issue
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            const now = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '') + ' UTC';
+            const title = `Auto-refresh failed at ${now}`;
+            const body = [
+              '## Scheduled dashboard refresh failed',
+              '',
+              `**When:** ${now}`,
+              `**Run:** ${runUrl}`,
+              '',
+              '### What this means',
+              '',
+              'The scheduled Action that pulls Jira data into the dashboard could not complete. The dashboard will continue showing the last successful snapshot until this is resolved.',
+              '',
+              '### Likely causes',
+              '',
+              '1. **Jira API token expired or revoked** — most common. Generate a new token at https://id.atlassian.com/manage-profile/security/api-tokens and update the `JIRA_TOKEN` secret in repo Settings → Secrets.',
+              '2. **Filter #29799 was deleted or its permissions changed** — verify the filter still exists and is accessible to the token-holder.',
+              '3. **Jira API outage** — check https://status.atlassian.com/. If outage, no action needed; will recover automatically.',
+              '4. **Snapshot data parsing failed** — Jira may have introduced new statuses or fields. Review the run logs.',
+              '',
+              '### Backup workflow still works',
+              '',
+              'While this is broken, anyone can still manually upload a Jira HTML export to the `jira-exports/` folder. The existing manual-update workflow will process it normally.',
+              '',
+              '### How to close this issue',
+              '',
+              'Once the scheduled Action runs successfully again, close this issue manually. (Successful runs do not auto-close issues.)'
+            ].join('\n');
+
+            // Check if there's already an open auto-refresh-failed issue — avoid duplicates
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'auto-refresh-failure'
+            });
+            if (existing.data.length > 0) {
+              // Comment on the existing issue instead of opening a new one
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.data[0].number,
+                body: `Another failure at ${now}. Run: ${runUrl}`
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['auto-refresh-failure']
+              });
+            }
