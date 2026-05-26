@@ -294,59 +294,35 @@
     background: linear-gradient(90deg, var(--neutral-bg) 50%, transparent 50%);
     height: 6px; border-radius: 1px;
   }
+
+  /* Tile 2 stacked area chart */
+  .ships-trend-wrap {
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto 16px;
+  }
+  #ships-trend-chart {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 700 / 220;
+  }
+  .stack-key {
+    display: inline-block; width: 10px; height: 10px;
+    border-radius: 2px;
+    vertical-align: middle; margin-right: 5px;
+  }
+  .stack-key.delivered { background: var(--success); }
+  .stack-key.pending { background: var(--accent); opacity: 0.55; }
+  .stack-key.progress { background: var(--warn); opacity: 0.7; }
+  .stack-key.open { background: var(--neutral-bg); border: 1px solid var(--line-strong); }
+
   .trend-note {
     margin: 8px 0 0; font-size: 11px; color: var(--ink-faint);
     font-style: italic;
   }
 
   /* Tile 2: ships */
-  .ships-dual {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    border: 1px solid var(--line);
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 16px;
-  }
-  .ships-half {
-    padding: 14px 16px;
-  }
-  .ships-half + .ships-half {
-    border-left: 1px solid var(--line);
-  }
-  .ships-half-header {
-    margin-bottom: 12px;
-  }
-  .ships-half-label {
-    font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px;
-    color: var(--ink-faint);
-    margin: 0;
-  }
-  .ships-half-source {
-    font-size: 11px; color: var(--ink-soft);
-    margin: 4px 0 0;
-  }
-  .ships-half-source code {
-    font-family: var(--mono); font-size: 10px;
-    background: var(--neutral-bg);
-    padding: 1px 5px;
-    border-radius: 2px;
-  }
-  .ships-half-numbers {
-    display: flex; align-items: flex-end; gap: 16px;
-    justify-content: space-between;
-  }
-  .ships-half-numbers .num {
-    font-family: var(--serif); font-size: 38px; font-weight: 400; line-height: 1;
-  }
-  .ships-half-numbers .num-label {
-    font-size: 11px; color: var(--ink-soft); margin-top: 4px;
-  }
-  .coverage-mini { text-align: right; flex: 1; max-width: 140px; }
-  .coverage-mini-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-faint); }
-  .coverage-mini-text { font-size: 10px; color: var(--ink-soft); margin-top: 3px; font-family: var(--mono); }
-
   /* Tile 2: filter row */
   .ships-filter-row {
     display: flex;
@@ -399,26 +375,6 @@
     font-family: var(--mono);
   }
 
-  .ships-summary {
-    display: flex; align-items: baseline; gap: 24px;
-    padding-bottom: 14px; margin-bottom: 14px;
-    border-bottom: 1px solid var(--line);
-  }
-  .ships-summary .num {
-    font-family: var(--serif); font-size: 44px; font-weight: 400; line-height: 1;
-  }
-  .ships-summary .label {
-    font-size: 13px; color: var(--ink-soft);
-  }
-  .coverage-bar {
-    margin-left: auto; text-align: right;
-  }
-  .coverage-track {
-    width: 100%; height: 4px; background: var(--neutral-bg);
-    border-radius: 2px; overflow: hidden; margin: 6px 0 4px auto;
-  }
-  .coverage-fill { height: 100%; background: var(--warn); }
-  .coverage-text { font-size: 11px; color: var(--ink-soft); }
   .delivery-pill {
     display: inline-block;
     font-family: var(--mono); font-size: 10px;
@@ -767,42 +723,22 @@
         <span class="tile-subtitle">Delivery target (customer) vs. End date (production)</span>
       </div>
       <div class="tile-body">
-        <div class="ships-dual">
-          <div class="ships-half">
-            <div class="ships-half-header">
-              <p class="ships-half-label">Delivery target · customer commitment</p>
-              <p class="ships-half-source">Source: Jira label <code>May-2026</code></p>
-            </div>
-            <div class="ships-half-numbers">
-              <div>
-                <div class="num" id="delivery-count">—</div>
-                <div class="num-label">committed</div>
-              </div>
-              <div class="coverage-mini">
-                <div class="coverage-mini-label">Labeled</div>
-                <div class="coverage-track"><div class="coverage-fill" id="delivery-coverage-fill" style="width: 0%;"></div></div>
-                <div class="coverage-mini-text" id="delivery-coverage-text">—</div>
-              </div>
-            </div>
+
+        <!-- Tile 2 trend chart: 4-stage stacked area, dynamic scope -->
+        <div class="ships-trend-wrap">
+          <div class="trend-chart-header">
+            <span class="trend-title">This month's pipeline · over time</span>
+            <span class="trend-legend">
+              <span><span class="stack-key delivered"></span> Delivered</span>
+              <span><span class="stack-key pending"></span> Pending Release</span>
+              <span><span class="stack-key progress"></span> In Progress</span>
+              <span><span class="stack-key open"></span> Open</span>
+            </span>
           </div>
-          <div class="ships-half">
-            <div class="ships-half-header">
-              <p class="ships-half-label">End date · production release</p>
-              <p class="ships-half-source">Source: Jira End Date field</p>
-            </div>
-            <div class="ships-half-numbers">
-              <div>
-                <div class="num" id="ships-count">—</div>
-                <div class="num-label">targeted</div>
-              </div>
-              <div class="coverage-mini">
-                <div class="coverage-mini-label">End Date set</div>
-                <div class="coverage-track"><div class="coverage-fill" id="coverage-fill" style="width: 0%;"></div></div>
-                <div class="coverage-mini-text" id="coverage-text">—</div>
-              </div>
-            </div>
-          </div>
+          <svg id="ships-trend-chart" viewBox="0 0 700 220" preserveAspectRatio="xMidYMid meet"></svg>
+          <p class="trend-note" id="ships-trend-note"></p>
         </div>
+
         <div class="ships-filter-row" role="group" aria-label="Filter the table below">
           <span class="ships-filter-label">Filter:</span>
           <label class="ships-filter">
@@ -6311,7 +6247,7 @@ function renderExec(current, previous, baseline, allSnaps) {
   // Trend chart
   renderTrendChart(current, allSnaps);
 
-  renderShips(current);
+  renderShips(current, allSnaps);
   renderBottleneck(current);
   renderTenants(current);
 }
@@ -6497,7 +6433,7 @@ let _shipsFilterState = { tenant: "", stage: "", board: "" };
 // The current "union" of delivery + end-date tickets being rendered (recomputed each call)
 let _shipsAllRows = [];
 
-function renderShips(snap) {
+function renderShips(snap, allSnaps) {
   // Current month, computed from today (not hardcoded)
   const today = new Date(DATA.meta.today + "T00:00:00");
   const monthShort = today.toLocaleString("en-US", { month: "short" }); // "May"
@@ -6505,27 +6441,14 @@ function renderShips(snap) {
   const targetMonthLabel = `${monthShort}-${yearNum}`;        // "May-2026"
   const endDateMonthLabel = `${monthShort} ${yearNum}`;        // "May 2026"
 
-  // End Date (production) — existing logic
+  // Tickets in this month's commitment scope: either labeled OR end-date-targeted
   const endTickets = snap.tickets.filter(t => t.ships_month === endDateMonthLabel);
-  document.getElementById("ships-count").textContent = endTickets.length;
-  const endCov = snap.tickets.filter(t => t.end_date_iso).length;
-  const endPct = snap.tickets.length ? Math.round(100 * endCov / snap.tickets.length) : 0;
-  document.getElementById("coverage-fill").style.width = endPct + "%";
-  document.getElementById("coverage-text").textContent = `${endCov} of ${snap.tickets.length} (${endPct}%)`;
-  document.getElementById("coverage-fill").style.background = endPct < 50 ? "var(--warn)" : "var(--success)";
-
-  // Delivery Target (customer commitment)
   const deliveryTickets = snap.tickets.filter(t =>
     (t.current_delivery_target && t.current_delivery_target.label === targetMonthLabel)
   );
-  document.getElementById("delivery-count").textContent = deliveryTickets.length;
-  const delCov = snap.tickets.filter(t => t.delivery_targets && t.delivery_targets.length).length;
-  const delPct = snap.tickets.length ? Math.round(100 * delCov / snap.tickets.length) : 0;
-  document.getElementById("delivery-coverage-fill").style.width = delPct + "%";
-  document.getElementById("delivery-coverage-fill").style.background = delPct < 50 ? "var(--warn)" : "var(--success)";
-  document.getElementById("delivery-coverage-text").textContent = delCov === 0
-    ? "label not yet in filter"
-    : `${delCov} of ${snap.tickets.length} (${delPct}%)`;
+
+  // Render the stacked area chart of this month's pipeline over time
+  renderShipsTrendChart(allSnaps || [snap], targetMonthLabel, endDateMonthLabel);
 
   // Union of both groups, deduped — this is the unfiltered row set
   const union = new Map();
@@ -6540,8 +6463,185 @@ function renderShips(snap) {
   // Populate filter dropdowns from the data we just computed
   populateShipsFilters(_shipsAllRows, endDateMonthLabel);
 
+  // Coverage of delivery-target labels — referenced by the table's empty-state copy below
+  const delCov = snap.tickets.filter(t => t.delivery_targets && t.delivery_targets.length).length;
+
   // Render the table with current filter state applied
   applyShipsFilters(endDateMonthLabel, delCov);
+}
+
+// Tile 2 stacked area chart: this month's pipeline composition over time.
+// Each snapshot becomes a vertical slice. Bands stack bottom-up:
+// Delivered → Pending Release → In Progress → Open.
+// Dynamic scope: for each snapshot, recompute who counted as "this month"
+// on that day (tickets labeled targetMonthLabel OR with End Date in
+// endDateMonthLabel, deduped).
+function renderShipsTrendChart(allSnaps, targetMonthLabel, endDateMonthLabel) {
+  const svg = document.getElementById("ships-trend-chart");
+  const note = document.getElementById("ships-trend-note");
+  if (!svg) return;
+  svg.innerHTML = "";
+
+  // For each snapshot, compute the 4-bucket counts for this-month tickets
+  const points = (allSnaps || []).map(s => {
+    const inScope = s.tickets.filter(t => {
+      const labelMatch = t.current_delivery_target &&
+        t.current_delivery_target.label === targetMonthLabel;
+      const endDateMatch = t.ships_month === endDateMonthLabel;
+      return labelMatch || endDateMatch;
+    });
+    const buckets = { delivered: 0, pending_release: 0, in_progress: 0, open: 0 };
+    inScope.forEach(t => {
+      const b = deliveryBucket(t.status);
+      buckets[b] = (buckets[b] || 0) + 1;
+    });
+    return {
+      date: s.captured ? new Date(s.captured + "T00:00:00") : new Date(),
+      dateIso: s.captured,
+      total: inScope.length,
+      delivered: buckets.delivered,
+      pending: buckets.pending_release,
+      progress: buckets.in_progress,
+      open: buckets.open,
+    };
+  })
+    .filter(p => p.date && !isNaN(p.date.getTime()))
+    .sort((a, b) => a.date - b.date);
+
+  // Handle sparse-data case explicitly
+  if (points.length < 2) {
+    note.textContent = points.length === 1
+      ? `Only one snapshot in this month's scope so far (${points[0].dateIso}). Chart will populate as more snapshots accumulate.`
+      : "No snapshot data yet for this month's scope.";
+    // Draw an empty axis box so the space isn't blank
+    const W = 700, H = 220;
+    const ns = "http://www.w3.org/2000/svg";
+    const rect = document.createElementNS(ns, "rect");
+    rect.setAttribute("x", 36); rect.setAttribute("y", 12);
+    rect.setAttribute("width", W - 60); rect.setAttribute("height", H - 42);
+    rect.setAttribute("fill", "none");
+    rect.setAttribute("stroke", "var(--line)");
+    rect.setAttribute("stroke-width", "0.5");
+    svg.appendChild(rect);
+    return;
+  }
+
+  const W = 700, H = 220;
+  const PAD = { top: 12, right: 24, bottom: 30, left: 36 };
+  const innerW = W - PAD.left - PAD.right;
+  const innerH = H - PAD.top - PAD.bottom;
+
+  const startDate = points[0].date;
+  const endDate = points[points.length - 1].date;
+  const span = Math.max(1, (endDate - startDate) / 86400000);  // days
+
+  const yMax = Math.max(...points.map(p => p.total), 5);
+  const x = (date) => PAD.left + ((date - startDate) / 86400000) / span * innerW;
+  const y = (val) => PAD.top + innerH - (val / yMax) * innerH;
+
+  const ns = "http://www.w3.org/2000/svg";
+
+  // Gridlines (y axis): 0, 25%, 50%, 75%, 100%
+  for (let i = 0; i <= 4; i++) {
+    const val = Math.round(yMax * i / 4);
+    const yp = y(val);
+    const line = document.createElementNS(ns, "line");
+    line.setAttribute("x1", PAD.left); line.setAttribute("x2", W - PAD.right);
+    line.setAttribute("y1", yp); line.setAttribute("y2", yp);
+    line.setAttribute("stroke", "var(--line)"); line.setAttribute("stroke-width", i === 0 ? "1" : "0.5");
+    svg.appendChild(line);
+    const txt = document.createElementNS(ns, "text");
+    txt.setAttribute("x", PAD.left - 6); txt.setAttribute("y", yp + 3);
+    txt.setAttribute("text-anchor", "end");
+    txt.setAttribute("font-size", "10");
+    txt.setAttribute("fill", "var(--ink-faint)");
+    txt.textContent = val;
+    svg.appendChild(txt);
+  }
+
+  // X-axis labels: each snapshot date
+  points.forEach((p, idx) => {
+    // Always show first and last; show middle ones only if there's space
+    const show = idx === 0 || idx === points.length - 1 ||
+                 (points.length <= 7) ||
+                 (points.length > 7 && idx % Math.ceil(points.length / 6) === 0);
+    if (!show) return;
+    const txt = document.createElementNS(ns, "text");
+    txt.setAttribute("x", x(p.date)); txt.setAttribute("y", H - PAD.bottom + 16);
+    txt.setAttribute("text-anchor", "middle");
+    txt.setAttribute("font-size", "10");
+    txt.setAttribute("fill", "var(--ink-faint)");
+    txt.textContent = p.date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+    svg.appendChild(txt);
+  });
+
+  // Stacked area bands. Stack order bottom-up:
+  //   delivered, pending, progress, open
+  // For each band, the lower edge is the cumulative sum of bands below,
+  // the upper edge is the cumulative sum including this band.
+  const bands = [
+    { key: "delivered", fill: "var(--success)", opacity: 0.85, label: "Delivered" },
+    { key: "pending",   fill: "var(--accent)",  opacity: 0.55, label: "Pending Release" },
+    { key: "progress",  fill: "var(--warn)",    opacity: 0.7,  label: "In Progress" },
+    { key: "open",      fill: "var(--neutral-bg)", opacity: 1, stroke: "var(--line-strong)", label: "Open" },
+  ];
+
+  // Precompute cumulative running totals for each snapshot
+  const cum = points.map(p => {
+    const c = [0];
+    c.push(c[0] + p.delivered);
+    c.push(c[1] + p.pending);
+    c.push(c[2] + p.progress);
+    c.push(c[3] + p.open);
+    return c;  // [0, delivered, +pending, +progress, +open]
+  });
+
+  bands.forEach((band, bi) => {
+    // Build path: forward along the upper edge, back along the lower edge
+    const upper = points.map((p, i) => `${x(p.date)},${y(cum[i][bi + 1])}`);
+    const lower = points.slice().reverse().map((p, i) => {
+      const origIdx = points.length - 1 - i;
+      return `${x(p.date)},${y(cum[origIdx][bi])}`;
+    });
+    const d = "M " + upper.join(" L ") + " L " + lower.join(" L ") + " Z";
+    const path = document.createElementNS(ns, "path");
+    path.setAttribute("d", d);
+    path.setAttribute("fill", band.fill);
+    path.setAttribute("opacity", band.opacity);
+    if (band.stroke) {
+      path.setAttribute("stroke", band.stroke);
+      path.setAttribute("stroke-width", "0.5");
+    }
+    svg.appendChild(path);
+  });
+
+  // Total-line on top for clarity, plus dots at each snapshot
+  const totalLine = points.map(p => `${x(p.date)},${y(p.total)}`).join(" L ");
+  const tl = document.createElementNS(ns, "path");
+  tl.setAttribute("d", "M " + totalLine);
+  tl.setAttribute("fill", "none");
+  tl.setAttribute("stroke", "var(--ink)");
+  tl.setAttribute("stroke-width", "1");
+  tl.setAttribute("opacity", "0.6");
+  svg.appendChild(tl);
+
+  points.forEach(p => {
+    const c = document.createElementNS(ns, "circle");
+    c.setAttribute("cx", x(p.date));
+    c.setAttribute("cy", y(p.total));
+    c.setAttribute("r", "2.5");
+    c.setAttribute("fill", "var(--ink)");
+    const title = document.createElementNS(ns, "title");
+    title.textContent = `${p.dateIso}: ${p.total} in scope · ${p.delivered} delivered, ${p.pending} pending, ${p.progress} in progress, ${p.open} open`;
+    c.appendChild(title);
+    svg.appendChild(c);
+  });
+
+  const latest = points[points.length - 1];
+  note.textContent =
+    `${points.length} snapshot${points.length>1?"s":""} · scope at ${latest.dateIso}: ` +
+    `${latest.total} tickets (${latest.delivered} delivered, ${latest.pending} pending release, ${latest.progress} in progress, ${latest.open} open). ` +
+    `Scope is dynamic — total height shifts as tickets are added to or removed from this month's commitment.`;
 }
 
 function populateShipsFilters(rows, monthLabel) {
