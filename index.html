@@ -318,8 +318,8 @@
   .stack-key.open { background: var(--neutral-bg); border: 1px solid var(--line-strong); }
 
   .trend-note {
-    margin: 8px 0 0; font-size: 11px; color: var(--ink-faint);
-    font-style: italic;
+    margin: 8px 0 0; font-size: 11px; color: var(--ink);
+    font-weight: 500;
   }
 
   /* Tile 2: ships */
@@ -368,6 +368,14 @@
     padding: 0;
   }
   .ships-filter-clear:hover { color: var(--ink); }
+  .ships-filter-divider {
+    display: inline-block;
+    width: 1px;
+    align-self: stretch;
+    background: var(--line-strong);
+    margin: 0 4px;
+    min-height: 22px;
+  }
   .ships-filter-count {
     margin-left: auto;
     font-size: 11px;
@@ -718,7 +726,7 @@
       <div class="tile-header">
         <div>
           <span class="tile-num">№ 2</span>
-          <h2 class="tile-title">What's committed and shipping this month</h2>
+          <h2 class="tile-title">What's committed month by month</h2>
         </div>
         <span class="tile-subtitle">Delivery target (customer) vs. End date (production)</span>
       </div>
@@ -727,7 +735,7 @@
         <!-- Tile 2 trend chart: 4-stage stacked area, dynamic scope -->
         <div class="ships-trend-wrap">
           <div class="trend-chart-header">
-            <span class="trend-title">This month's pipeline · over time</span>
+            <span class="trend-title" id="ships-trend-title">Pipeline for May 2026 · over time</span>
             <span class="trend-legend">
               <span><span class="stack-key delivered"></span> Delivered</span>
               <span><span class="stack-key pending"></span> Pending Release</span>
@@ -741,6 +749,11 @@
 
         <div class="ships-filter-row" role="group" aria-label="Filter the table below">
           <span class="ships-filter-label">Filter:</span>
+          <label class="ships-filter">
+            <span class="ships-filter-name">Month</span>
+            <select id="ships-filter-month" class="ships-filter-select"></select>
+          </label>
+          <span class="ships-filter-divider" aria-hidden="true"></span>
           <label class="ships-filter">
             <span class="ships-filter-name">Tenant</span>
             <select id="ships-filter-tenant" class="ships-filter-select">
@@ -6428,27 +6441,63 @@ function boardOf(t) {
   return PROJECT_BOARD[key] || "Other";
 }
 
-// Filter state for Tile 2 — reset on every page load
-let _shipsFilterState = { tenant: "", stage: "", board: "" };
+// Filter state for Tile 2 — reset on every page load.
+// month is a Jira label like "May-2026"; defaults to current month on first render.
+let _shipsFilterState = { month: null, tenant: "", stage: "", board: "" };
 // The current "union" of delivery + end-date tickets being rendered (recomputed each call)
 let _shipsAllRows = [];
+// Latest snapshot reference so filter handlers can re-render without re-walking the pipeline
+let _shipsLatestSnap = null;
+let _shipsLatestAllSnaps = null;
+
+// Months available in the Tile 2 filter — May 2026 through December 2026.
+// Kept as a const so we don't drift across page renders.
+const SHIPS_MONTH_OPTIONS = (() => {
+  const out = [];
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const monthsLong = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  for (let m = 4; m <= 11; m++) {  // May (index 4) through December (index 11)
+    out.push({
+      labelShort: `${months[m]}-2026`,     // "May-2026" — matches Jira label
+      labelEndDate: `${months[m]} 2026`,   // "May 2026" — matches ships_month
+      displayName: `${monthsLong[m]} 2026`,// "May 2026" — shown in dropdown
+      year: 2026,
+      monthIndex: m,
+    });
+  }
+  return out;
+})();
+
+function getCurrentMonthOption() {
+  const today = new Date();
+  const cur = SHIPS_MONTH_OPTIONS.find(o =>
+    o.year === today.getFullYear() && o.monthIndex === today.getMonth());
+  return cur || SHIPS_MONTH_OPTIONS[0];  // fallback to May if today is out of range
+}
 
 function renderShips(snap, allSnaps) {
-  // Current month, computed from today (not hardcoded)
-  const today = new Date(DATA.meta.today + "T00:00:00");
-  const monthShort = today.toLocaleString("en-US", { month: "short" }); // "May"
-  const yearNum = today.getFullYear();
-  const targetMonthLabel = `${monthShort}-${yearNum}`;        // "May-2026"
-  const endDateMonthLabel = `${monthShort} ${yearNum}`;        // "May 2026"
+  _shipsLatestSnap = snap;
+  _shipsLatestAllSnaps = allSnaps || [snap];
 
-  // Tickets in this month's commitment scope: either labeled OR end-date-targeted
+  // Default month to current month if not yet set
+  if (!_shipsFilterState.month) {
+    _shipsFilterState.month = getCurrentMonthOption().labelShort;
+  }
+
+  // Resolve selected month's labels
+  const selectedOpt = SHIPS_MONTH_OPTIONS.find(o => o.labelShort === _shipsFilterState.month)
+                      || getCurrentMonthOption();
+  const targetMonthLabel = selectedOpt.labelShort;   // e.g., "May-2026"
+  const endDateMonthLabel = selectedOpt.labelEndDate; // e.g., "May 2026"
+
+  // Tickets in selected month's commitment scope
   const endTickets = snap.tickets.filter(t => t.ships_month === endDateMonthLabel);
   const deliveryTickets = snap.tickets.filter(t =>
     (t.current_delivery_target && t.current_delivery_target.label === targetMonthLabel)
   );
 
-  // Render the stacked area chart of this month's pipeline over time
-  renderShipsTrendChart(allSnaps || [snap], targetMonthLabel, endDateMonthLabel);
+  // Render the stacked area chart for the selected month
+  renderShipsTrendChart(_shipsLatestAllSnaps, targetMonthLabel, endDateMonthLabel, selectedOpt.displayName);
 
   // Union of both groups, deduped — this is the unfiltered row set
   const union = new Map();
@@ -6476,11 +6525,16 @@ function renderShips(snap, allSnaps) {
 // Dynamic scope: for each snapshot, recompute who counted as "this month"
 // on that day (tickets labeled targetMonthLabel OR with End Date in
 // endDateMonthLabel, deduped).
-function renderShipsTrendChart(allSnaps, targetMonthLabel, endDateMonthLabel) {
+function renderShipsTrendChart(allSnaps, targetMonthLabel, endDateMonthLabel, displayName) {
   const svg = document.getElementById("ships-trend-chart");
   const note = document.getElementById("ships-trend-note");
+  const title = document.getElementById("ships-trend-title");
   if (!svg) return;
   svg.innerHTML = "";
+
+  if (title && displayName) {
+    title.textContent = `Pipeline for ${displayName} · over time`;
+  }
 
   // For each snapshot, compute the 4-bucket counts for this-month tickets
   const points = (allSnaps || []).map(s => {
@@ -6638,10 +6692,11 @@ function renderShipsTrendChart(allSnaps, targetMonthLabel, endDateMonthLabel) {
   });
 
   const latest = points[points.length - 1];
+  const monthForNote = displayName || "this month";
   note.textContent =
     `${points.length} snapshot${points.length>1?"s":""} · scope at ${latest.dateIso}: ` +
     `${latest.total} tickets (${latest.delivered} delivered, ${latest.pending} pending release, ${latest.progress} in progress, ${latest.open} open). ` +
-    `Scope is dynamic — total height shifts as tickets are added to or removed from this month's commitment.`;
+    `Scope is dynamic — total height shifts as tickets are added to or removed from ${monthForNote}'s commitment.`;
 }
 
 function populateShipsFilters(rows, monthLabel) {
@@ -6663,26 +6718,77 @@ function populateShipsFilters(rows, monthLabel) {
   ];
 
   // Rebuild dropdown options (preserving current selection)
+  const monthSel = document.getElementById("ships-filter-month");
   const tenantSel = document.getElementById("ships-filter-tenant");
   const stageSel = document.getElementById("ships-filter-stage");
   const boardSel = document.getElementById("ships-filter-board");
 
+  // Month dropdown — grouped: Current, then Past (greyed), then Future
+  populateMonthDropdown(monthSel, _shipsFilterState.month);
   rebuildSelect(tenantSel, ["", ...sortedTenants], _shipsFilterState.tenant, v => v || "All");
   rebuildSelect(boardSel, ["", ...sortedBoards], _shipsFilterState.board, v => v || "All");
   // Stage dropdown is static (already in HTML); just sync state
   stageSel.value = _shipsFilterState.stage;
 
   // Wire up handlers (idempotent — replace any prior handler with current closure)
+  monthSel.onchange = () => {
+    _shipsFilterState.month = monthSel.value;
+    // Reset narrowing filters when month changes (different month = different data)
+    _shipsFilterState.tenant = "";
+    _shipsFilterState.board = "";
+    _shipsFilterState.stage = "";
+    // Full re-render needed since chart and table both depend on the month
+    renderShips(_shipsLatestSnap, _shipsLatestAllSnaps);
+  };
   tenantSel.onchange = () => { _shipsFilterState.tenant = tenantSel.value; applyShipsFilters(monthLabel, null); };
   stageSel.onchange = () => { _shipsFilterState.stage = stageSel.value; applyShipsFilters(monthLabel, null); };
   boardSel.onchange = () => { _shipsFilterState.board = boardSel.value; applyShipsFilters(monthLabel, null); };
 
   const clearBtn = document.getElementById("ships-filter-clear");
   clearBtn.onclick = () => {
-    _shipsFilterState = { tenant: "", stage: "", board: "" };
+    // Clear tenant/stage/board but preserve month (it has no "all" option)
+    _shipsFilterState.tenant = "";
+    _shipsFilterState.stage = "";
+    _shipsFilterState.board = "";
     tenantSel.value = ""; stageSel.value = ""; boardSel.value = "";
     applyShipsFilters(monthLabel, null);
   };
+}
+
+// Populate the Month dropdown with three groups: Current, Past, Future.
+// Past months show as greyed (still selectable), Future months are below.
+function populateMonthDropdown(sel, currentValue) {
+  const todayMonthOpt = getCurrentMonthOption();
+  const past = [];
+  const future = [];
+  let current = null;
+  SHIPS_MONTH_OPTIONS.forEach(o => {
+    if (o.labelShort === todayMonthOpt.labelShort) current = o;
+    else if (o.monthIndex < todayMonthOpt.monthIndex && o.year === todayMonthOpt.year) past.push(o);
+    else future.push(o);
+  });
+
+  let html = "";
+  if (current) {
+    html += `<optgroup label="Current month">`;
+    html += `<option value="${current.labelShort}"${current.labelShort === currentValue ? " selected" : ""}>${current.displayName}</option>`;
+    html += `</optgroup>`;
+  }
+  if (past.length) {
+    html += `<optgroup label="Past months">`;
+    past.forEach(o => {
+      html += `<option value="${o.labelShort}"${o.labelShort === currentValue ? " selected" : ""} style="color: var(--ink-faint);">${o.displayName}</option>`;
+    });
+    html += `</optgroup>`;
+  }
+  if (future.length) {
+    html += `<optgroup label="Future months">`;
+    future.forEach(o => {
+      html += `<option value="${o.labelShort}"${o.labelShort === currentValue ? " selected" : ""}>${o.displayName}</option>`;
+    });
+    html += `</optgroup>`;
+  }
+  sel.innerHTML = html;
 }
 
 function rebuildSelect(sel, values, current, labelFor) {
