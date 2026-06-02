@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T13:18:55Z",
+  "updated_at": "2026-06-02T17:29:02Z",
   "today": "2026-06-02",
   "exported_at": "02 Jun 2026 (auto)",
   "tickets": [
@@ -19,7 +19,7 @@
       ],
       "created": "2025-07-18T15:13:33.063-0400",
       "created_iso": "2025-07-18",
-      "age_days": 318,
+      "age_days": 319,
       "updated": "2026-05-21T15:17:02.871-0400",
       "updated_iso": "2026-05-21",
       "end_date": "",
@@ -59,7 +59,7 @@
       ],
       "created": "2026-04-24T14:55:02.712-0400",
       "created_iso": "2026-04-24",
-      "age_days": 38,
+      "age_days": 39,
       "updated": "2026-05-26T13:57:06.521-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -139,7 +139,7 @@
       ],
       "created": "2026-05-13T16:57:41.854-0400",
       "created_iso": "2026-05-13",
-      "age_days": 19,
+      "age_days": 20,
       "updated": "2026-05-26T09:49:01.005-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -179,7 +179,7 @@
       ],
       "created": "2026-05-13T14:35:43.927-0400",
       "created_iso": "2026-05-13",
-      "age_days": 19,
+      "age_days": 20,
       "updated": "2026-05-26T19:39:21.689-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -204,46 +204,6 @@
       }
     },
     {
-      "key": "VTC-27473",
-      "summary": "Boulder - \"Party Name Type Ahead\" checkbox is missing on several doc Types (OITs) in Verification",
-      "project": "VTC",
-      "issue_type": "Bug",
-      "status": "Open",
-      "status_family": "Open",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "",
-      "tenant_raw": "Boulder CO",
-      "tenants": [
-        "(other)"
-      ],
-      "created": "2026-05-27T05:07:24.475-0400",
-      "created_iso": "2026-05-27",
-      "age_days": 6,
-      "updated": "2026-05-27T06:51:06.310-0400",
-      "updated_iso": "2026-05-27",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "",
-      "comments_count": "",
-      "labels_raw": "June-2026, TXEscalation",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
       "key": "VTC-27382",
       "summary": "Collin County Clerk Search | Additional Party Name Clerk Search",
       "project": "VTC",
@@ -259,7 +219,7 @@
       ],
       "created": "2026-05-15T14:36:41.992-0400",
       "created_iso": "2026-05-15",
-      "age_days": 17,
+      "age_days": 18,
       "updated": "2026-06-01T15:17:43.767-0400",
       "updated_iso": "2026-06-01",
       "end_date": "2026-06-30",
@@ -299,7 +259,7 @@
       ],
       "created": "2026-05-14T13:24:24.670-0400",
       "created_iso": "2026-05-14",
-      "age_days": 18,
+      "age_days": 19,
       "updated": "2026-06-01T17:30:51.226-0400",
       "updated_iso": "2026-06-01",
       "end_date": "2026-06-30",
@@ -419,7 +379,7 @@
       ],
       "created": "2026-05-14T13:34:20.149-0400",
       "created_iso": "2026-05-14",
-      "age_days": 18,
+      "age_days": 19,
       "updated": "2026-06-02T01:04:01.125-0400",
       "updated_iso": "2026-06-02",
       "end_date": "",
@@ -427,46 +387,6 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "6",
-      "labels_raw": "June-2026, TXEscalation",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
-      "key": "VTC-27431",
-      "summary": "Denton County Foreclosures | Remove All Documents Prior to Sale Date March 01, 2026",
-      "project": "VTC",
-      "issue_type": "Story",
-      "status": "Open",
-      "status_family": "Open",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "",
-      "tenant_raw": "Denton",
-      "tenants": [
-        "Denton"
-      ],
-      "created": "2026-05-26T10:30:58.888-0400",
-      "created_iso": "2026-05-26",
-      "age_days": 7,
-      "updated": "2026-05-28T16:15:42.257-0400",
-      "updated_iso": "2026-05-28",
-      "end_date": "2026-06-30",
-      "end_date_iso": "2026-06-30",
-      "ships_month": "Jun 2026",
-      "sprint": "",
-      "comments_count": "4",
       "labels_raw": "June-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -499,7 +419,7 @@
       ],
       "created": "2025-10-28T13:53:51.470-0400",
       "created_iso": "2025-10-28",
-      "age_days": 216,
+      "age_days": 217,
       "updated": "2026-05-25T08:35:10.605-0400",
       "updated_iso": "2026-05-25",
       "end_date": "2026-06-30",
@@ -539,7 +459,7 @@
       ],
       "created": "2025-10-28T13:49:07.178-0400",
       "created_iso": "2025-10-28",
-      "age_days": 216,
+      "age_days": 217,
       "updated": "2026-05-25T08:35:17.832-0400",
       "updated_iso": "2026-05-25",
       "end_date": "2026-06-30",
@@ -548,46 +468,6 @@
       "sprint": "",
       "comments_count": "1",
       "labels_raw": "June-2026, TOP_5, TXEscalation, Top_10",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
-      "key": "PS-7174",
-      "summary": "Denton County Foreclosures | Remove All Documents Prior to Sale Date March 01, 2026",
-      "project": "PS",
-      "issue_type": "Story",
-      "status": "Open",
-      "status_family": "Open",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "",
-      "tenant_raw": "Denton",
-      "tenants": [
-        "Denton"
-      ],
-      "created": "2026-05-26T10:36:35.823-0400",
-      "created_iso": "2026-05-26",
-      "age_days": 7,
-      "updated": "2026-06-02T08:19:14.283-0400",
-      "updated_iso": "2026-06-02",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CS 2026.Q2-6",
-      "comments_count": "2",
-      "labels_raw": "June-2026, TXEscalation",
       "delivery_targets": [
         {
           "label": "Jun-2026",
@@ -644,6 +524,86 @@
       }
     },
     {
+      "key": "VTC-27431",
+      "summary": "Denton County Foreclosures | Remove All Documents Prior to Sale Date March 01, 2026",
+      "project": "VTC",
+      "issue_type": "Story",
+      "status": "Open",
+      "status_family": "Open",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "",
+      "tenant_raw": "Denton",
+      "tenants": [
+        "Denton"
+      ],
+      "created": "2026-05-26T10:30:58.888-0400",
+      "created_iso": "2026-05-26",
+      "age_days": 7,
+      "updated": "2026-06-02T09:52:24.004-0400",
+      "updated_iso": "2026-06-02",
+      "end_date": "2026-06-30",
+      "end_date_iso": "2026-06-30",
+      "ships_month": "Jun 2026",
+      "sprint": "",
+      "comments_count": "4",
+      "labels_raw": "July-2026, TXEscalation",
+      "delivery_targets": [
+        {
+          "label": "Jul-2026",
+          "month_index": 6,
+          "year": 2026,
+          "sortable": 24318
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jul-2026",
+        "month_index": 6,
+        "year": 2026,
+        "sortable": 24318
+      }
+    },
+    {
+      "key": "PS-7174",
+      "summary": "Denton County Foreclosures | Remove All Documents Prior to Sale Date March 01, 2026",
+      "project": "PS",
+      "issue_type": "Story",
+      "status": "Open",
+      "status_family": "Open",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "",
+      "tenant_raw": "Denton",
+      "tenants": [
+        "Denton"
+      ],
+      "created": "2026-05-26T10:36:35.823-0400",
+      "created_iso": "2026-05-26",
+      "age_days": 7,
+      "updated": "2026-06-02T09:52:37.185-0400",
+      "updated_iso": "2026-06-02",
+      "end_date": "",
+      "end_date_iso": null,
+      "ships_month": null,
+      "sprint": "CS 2026.Q2-6",
+      "comments_count": "2",
+      "labels_raw": "July-2026, TXEscalation",
+      "delivery_targets": [
+        {
+          "label": "Jul-2026",
+          "month_index": 6,
+          "year": 2026,
+          "sortable": 24318
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jul-2026",
+        "month_index": 6,
+        "year": 2026,
+        "sortable": 24318
+      }
+    },
+    {
       "key": "VTC-27322",
       "summary": "Johnson County Clerk Search | Additional Party Name Clerk Search",
       "project": "VTC",
@@ -659,7 +619,7 @@
       ],
       "created": "2026-05-13T14:29:15.283-0400",
       "created_iso": "2026-05-13",
-      "age_days": 19,
+      "age_days": 20,
       "updated": "2026-05-26T19:39:25.767-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -859,7 +819,7 @@
       ],
       "created": "2026-04-28T14:15:35.277-0400",
       "created_iso": "2026-04-28",
-      "age_days": 34,
+      "age_days": 35,
       "updated": "2026-05-29T14:06:37.995-0400",
       "updated_iso": "2026-05-29",
       "end_date": "2026-05-29",
@@ -899,7 +859,7 @@
       ],
       "created": "2026-05-04T13:48:40.170-0400",
       "created_iso": "2026-05-04",
-      "age_days": 28,
+      "age_days": 29,
       "updated": "2026-05-29T05:00:43.106-0400",
       "updated_iso": "2026-05-29",
       "end_date": "2026-06-19",
@@ -939,7 +899,7 @@
       ],
       "created": "2025-10-09T17:00:11.441-0400",
       "created_iso": "2025-10-09",
-      "age_days": 235,
+      "age_days": 236,
       "updated": "2026-05-29T14:19:42.573-0400",
       "updated_iso": "2026-05-29",
       "end_date": "2026-05-29",
@@ -1004,6 +964,46 @@
       }
     },
     {
+      "key": "VTC-27478",
+      "summary": "Johnson | Change Notary Fields from required to optional in Verification",
+      "project": "VTC",
+      "issue_type": "Bug",
+      "status": "Testing on UAT",
+      "status_family": "In testing",
+      "delivery_bucket": "in_progress",
+      "is_open": false,
+      "team": "",
+      "tenant_raw": "Johnson",
+      "tenants": [
+        "Johnson"
+      ],
+      "created": "2026-05-27T12:33:10.156-0400",
+      "created_iso": "2026-05-27",
+      "age_days": 6,
+      "updated": "2026-06-02T13:28:43.490-0400",
+      "updated_iso": "2026-06-02",
+      "end_date": "2026-06-30",
+      "end_date_iso": "2026-06-30",
+      "ships_month": "Jun 2026",
+      "sprint": "",
+      "comments_count": "3",
+      "labels_raw": "June-2026, TOP_5, TXEscalation, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
+    },
+    {
       "key": "VTC-24365",
       "summary": "Collin - Resolution User Group Clerks not appearing on assignment list.",
       "project": "VTC",
@@ -1041,46 +1041,6 @@
         "month_index": 4,
         "year": 2026,
         "sortable": 24316
-      }
-    },
-    {
-      "key": "VTC-27478",
-      "summary": "Johnson | Change Notary Fields from required to optional in Verification",
-      "project": "VTC",
-      "issue_type": "Bug",
-      "status": "Ready to test on UAT",
-      "status_family": "In testing",
-      "delivery_bucket": "in_progress",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Johnson",
-      "tenants": [
-        "Johnson"
-      ],
-      "created": "2026-05-27T12:33:10.156-0400",
-      "created_iso": "2026-05-27",
-      "age_days": 6,
-      "updated": "2026-06-01T18:08:57.502-0400",
-      "updated_iso": "2026-06-01",
-      "end_date": "2026-06-30",
-      "end_date_iso": "2026-06-30",
-      "ships_month": "Jun 2026",
-      "sprint": "",
-      "comments_count": "3",
-      "labels_raw": "June-2026, TOP_5, TXEscalation, jira_escalated",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
       }
     },
     {
@@ -1139,7 +1099,7 @@
       ],
       "created": "2024-11-25T15:44:24.911-0500",
       "created_iso": "2024-11-25",
-      "age_days": 553,
+      "age_days": 554,
       "updated": "2026-06-02T08:58:04.630-0400",
       "updated_iso": "2026-06-02",
       "end_date": "2026-06-19",
@@ -1219,7 +1179,7 @@
       ],
       "created": "2026-05-06T16:47:03.206-0400",
       "created_iso": "2026-05-06",
-      "age_days": 26,
+      "age_days": 27,
       "updated": "2026-05-26T19:39:32.764-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -1259,7 +1219,7 @@
       ],
       "created": "2026-03-12T17:13:48.979-0400",
       "created_iso": "2026-03-12",
-      "age_days": 81,
+      "age_days": 82,
       "updated": "2026-05-13T11:40:27.394-0400",
       "updated_iso": "2026-05-13",
       "end_date": "",
@@ -1299,7 +1259,7 @@
       ],
       "created": "2026-02-24T14:28:32.663-0500",
       "created_iso": "2026-02-24",
-      "age_days": 97,
+      "age_days": 98,
       "updated": "2026-05-14T14:56:33.516-0400",
       "updated_iso": "2026-05-14",
       "end_date": "",
@@ -1339,7 +1299,7 @@
       ],
       "created": "2026-04-20T16:56:49.644-0400",
       "created_iso": "2026-04-20",
-      "age_days": 42,
+      "age_days": 43,
       "updated": "2026-05-13T10:38:05.014-0400",
       "updated_iso": "2026-05-13",
       "end_date": "",
@@ -1527,7 +1487,7 @@
       ],
       "created": "2025-02-10T14:06:36.528-0500",
       "created_iso": "2025-02-10",
-      "age_days": 476,
+      "age_days": 477,
       "updated": "2026-05-26T13:56:43.347-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-04",
@@ -1635,7 +1595,7 @@
       ],
       "created": "2026-03-05T13:53:15.489-0500",
       "created_iso": "2026-03-05",
-      "age_days": 88,
+      "age_days": 89,
       "updated": "2026-05-26T14:59:35.502-0400",
       "updated_iso": "2026-05-26",
       "end_date": "",
@@ -1676,14 +1636,14 @@
       "created": "2026-04-22T18:21:14.866-0400",
       "created_iso": "2026-04-22",
       "age_days": 40,
-      "updated": "2026-05-22T13:49:45.988-0400",
-      "updated_iso": "2026-05-22",
+      "updated": "2026-06-02T09:34:53.323-0400",
+      "updated_iso": "2026-06-02",
       "end_date": "2026-06-19",
       "end_date_iso": "2026-06-19",
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "1",
-      "labels_raw": "June-2026, TXEscalation, TriageReady, jira_escalated",
+      "labels_raw": "June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
           "label": "Jun-2026",
@@ -1715,7 +1675,7 @@
       ],
       "created": "2026-03-26T15:04:38.500-0400",
       "created_iso": "2026-03-26",
-      "age_days": 67,
+      "age_days": 68,
       "updated": "2026-05-27T03:24:18.906-0400",
       "updated_iso": "2026-05-27",
       "end_date": "2026-06-19",
@@ -1811,7 +1771,7 @@
       ],
       "created": "2025-09-08T16:18:14.148-0400",
       "created_iso": "2025-09-08",
-      "age_days": 266,
+      "age_days": 267,
       "updated": "2026-05-22T16:20:23.293-0400",
       "updated_iso": "2026-05-22",
       "end_date": "2026-06-19",
@@ -1839,7 +1799,7 @@
       ],
       "created": "2025-10-14T17:11:03.266-0400",
       "created_iso": "2025-10-14",
-      "age_days": 230,
+      "age_days": 231,
       "updated": "2026-05-21T16:31:45.026-0400",
       "updated_iso": "2026-05-21",
       "end_date": "",
@@ -1907,7 +1867,7 @@
       ],
       "created": "2025-12-17T17:17:02.565-0500",
       "created_iso": "2025-12-17",
-      "age_days": 166,
+      "age_days": 167,
       "updated": "2026-05-21T15:12:13.657-0400",
       "updated_iso": "2026-05-21",
       "end_date": "",
@@ -2311,7 +2271,7 @@
       ],
       "created": "2026-04-23T15:58:09.345-0400",
       "created_iso": "2026-04-23",
-      "age_days": 39,
+      "age_days": 40,
       "updated": "2026-06-01T15:18:18.606-0400",
       "updated_iso": "2026-06-01",
       "end_date": "2026-06-30",
@@ -2407,7 +2367,7 @@
       ],
       "created": "2026-04-29T15:30:15.867-0400",
       "created_iso": "2026-04-29",
-      "age_days": 33,
+      "age_days": 34,
       "updated": "2026-06-01T18:19:30.795-0400",
       "updated_iso": "2026-06-01",
       "end_date": "2026-06-19",
@@ -2487,7 +2447,7 @@
       ],
       "created": "2026-05-13T16:15:01.473-0400",
       "created_iso": "2026-05-13",
-      "age_days": 19,
+      "age_days": 20,
       "updated": "2026-05-26T19:39:18.609-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -2647,7 +2607,7 @@
       ],
       "created": "2025-09-22T14:35:04.016-0400",
       "created_iso": "2025-09-22",
-      "age_days": 252,
+      "age_days": 253,
       "updated": "2026-05-21T08:50:08.907-0400",
       "updated_iso": "2026-05-21",
       "end_date": "2026-06-30",
@@ -2847,7 +2807,7 @@
       ],
       "created": "2025-12-22T17:17:35.626-0500",
       "created_iso": "2025-12-22",
-      "age_days": 161,
+      "age_days": 162,
       "updated": "2026-04-30T12:48:01.552-0400",
       "updated_iso": "2026-04-30",
       "end_date": "",
@@ -2900,46 +2860,6 @@
       }
     },
     {
-      "key": "CR-2090005",
-      "summary": "Denton - Remove Foreclosures.",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Waiting for Info",
-      "status_family": "In triage",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "",
-      "tenant_raw": "Denton",
-      "tenants": [
-        "Denton"
-      ],
-      "created": "2026-03-10T13:30:56.601-0400",
-      "created_iso": "2026-03-10",
-      "age_days": 83,
-      "updated": "2026-06-02T08:37:23.516-0400",
-      "updated_iso": "2026-06-02",
-      "end_date": "2026-06-19",
-      "end_date_iso": "2026-06-19",
-      "ships_month": "Jun 2026",
-      "sprint": "CR 2026.Q2-5",
-      "comments_count": "3",
-      "labels_raw": "June-2026, TXEscalation, TriageReady, jira_escalated, jira_update",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
       "key": "CR-2087797",
       "summary": "Jefferson:  add ML applications as attachments",
       "project": "CR",
@@ -2955,7 +2875,7 @@
       ],
       "created": "2025-11-12T17:25:51.945-0500",
       "created_iso": "2025-11-12",
-      "age_days": 201,
+      "age_days": 202,
       "updated": "2026-05-21T15:15:05.596-0400",
       "updated_iso": "2026-05-21",
       "end_date": "2026-07-17",
@@ -3051,7 +2971,7 @@
       ],
       "created": "2026-04-02T15:18:07.655-0400",
       "created_iso": "2026-04-02",
-      "age_days": 60,
+      "age_days": 61,
       "updated": "2026-05-08T17:00:44.388-0400",
       "updated_iso": "2026-05-08",
       "end_date": "",
@@ -3091,7 +3011,7 @@
       ],
       "created": "2025-08-27T16:37:34.002-0400",
       "created_iso": "2025-08-27",
-      "age_days": 278,
+      "age_days": 279,
       "updated": "2026-05-11T07:02:52.282-0400",
       "updated_iso": "2026-05-11",
       "end_date": "2026-02-20",
@@ -3132,27 +3052,67 @@
       "created": "2025-06-17T17:48:05.922-0400",
       "created_iso": "2025-06-17",
       "age_days": 349,
-      "updated": "2026-05-13T11:48:23.858-0400",
-      "updated_iso": "2026-05-13",
+      "updated": "2026-06-02T09:54:26.725-0400",
+      "updated_iso": "2026-06-02",
       "end_date": "2026-02-20",
       "end_date_iso": "2026-02-20",
       "ships_month": "Feb 2026",
       "sprint": "",
-      "comments_count": "7",
-      "labels_raw": "June-2026, On_hold, TOP_5, TXEscalation, TriageReady, jira_escalated",
+      "comments_count": "8",
+      "labels_raw": "July-2026, On_hold, TOP_5, TXEscalation, TriageReady, jira_escalated",
       "delivery_targets": [
         {
-          "label": "Jun-2026",
-          "month_index": 5,
+          "label": "Jul-2026",
+          "month_index": 6,
           "year": 2026,
-          "sortable": 24317
+          "sortable": 24318
         }
       ],
       "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
+        "label": "Jul-2026",
+        "month_index": 6,
         "year": 2026,
-        "sortable": 24317
+        "sortable": 24318
+      }
+    },
+    {
+      "key": "CR-2090005",
+      "summary": "Denton - Remove Foreclosures.",
+      "project": "CR",
+      "issue_type": "Story",
+      "status": "Waiting for Info",
+      "status_family": "In triage",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "team": "",
+      "tenant_raw": "Denton",
+      "tenants": [
+        "Denton"
+      ],
+      "created": "2026-03-10T13:30:56.601-0400",
+      "created_iso": "2026-03-10",
+      "age_days": 84,
+      "updated": "2026-06-02T12:34:19.797-0400",
+      "updated_iso": "2026-06-02",
+      "end_date": "2026-06-19",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
+      "sprint": "",
+      "comments_count": "5",
+      "labels_raw": "July-2026, TXEscalation, jira_escalated, jira_update",
+      "delivery_targets": [
+        {
+          "label": "Jul-2026",
+          "month_index": 6,
+          "year": 2026,
+          "sortable": 24318
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jul-2026",
+        "month_index": 6,
+        "year": 2026,
+        "sortable": 24318
       }
     },
     {
@@ -3251,7 +3211,7 @@
       ],
       "created": "2026-05-06T14:29:29.445-0400",
       "created_iso": "2026-05-06",
-      "age_days": 26,
+      "age_days": 27,
       "updated": "2026-05-18T03:36:56.014-0400",
       "updated_iso": "2026-05-18",
       "end_date": "",
@@ -3332,27 +3292,27 @@
       "created": "2025-12-17T10:09:44.970-0500",
       "created_iso": "2025-12-17",
       "age_days": 167,
-      "updated": "2026-05-29T07:14:05.715-0400",
-      "updated_iso": "2026-05-29",
+      "updated": "2026-06-02T09:53:24.346-0400",
+      "updated_iso": "2026-06-02",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
       "comments_count": "13",
-      "labels_raw": "June-2026, TOP_5, TXEscalation, jira_escalated",
+      "labels_raw": "July-2026, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
-          "label": "Jun-2026",
-          "month_index": 5,
+          "label": "Jul-2026",
+          "month_index": 6,
           "year": 2026,
-          "sortable": 24317
+          "sortable": 24318
         }
       ],
       "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
+        "label": "Jul-2026",
+        "month_index": 6,
         "year": 2026,
-        "sortable": 24317
+        "sortable": 24318
       }
     },
     {
@@ -3372,13 +3332,13 @@
       "created": "2026-05-05T12:17:09.575-0400",
       "created_iso": "2026-05-05",
       "age_days": 28,
-      "updated": "2026-05-27T07:33:02.809-0400",
-      "updated_iso": "2026-05-27",
+      "updated": "2026-06-02T09:37:00.660-0400",
+      "updated_iso": "2026-06-02",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
-      "comments_count": "5",
+      "comments_count": "6",
       "labels_raw": "Investigate, June-2026, TXEscalation, TriageReady, jira_escalated, jira_update, reproduce",
       "delivery_targets": [
         {
@@ -3451,7 +3411,7 @@
       ],
       "created": "2025-07-11T15:01:25.708-0400",
       "created_iso": "2025-07-11",
-      "age_days": 325,
+      "age_days": 326,
       "updated": "2026-05-13T11:36:52.861-0400",
       "updated_iso": "2026-05-13",
       "end_date": "",
@@ -3491,7 +3451,7 @@
       ],
       "created": "2025-02-04T16:20:34.780-0500",
       "created_iso": "2025-02-04",
-      "age_days": 482,
+      "age_days": 483,
       "updated": "2026-05-22T03:56:06.695-0400",
       "updated_iso": "2026-05-22",
       "end_date": "2026-07-17",
@@ -3571,7 +3531,7 @@
       ],
       "created": "2026-02-05T16:00:14.738-0500",
       "created_iso": "2026-02-05",
-      "age_days": 116,
+      "age_days": 117,
       "updated": "2026-05-13T10:37:35.718-0400",
       "updated_iso": "2026-05-13",
       "end_date": "",
@@ -3639,7 +3599,7 @@
       ],
       "created": "2026-02-24T16:02:09.229-0500",
       "created_iso": "2026-02-24",
-      "age_days": 97,
+      "age_days": 98,
       "updated": "2026-05-27T05:20:00.309-0400",
       "updated_iso": "2026-05-27",
       "end_date": "2026-06-19",
@@ -3858,7 +3818,7 @@
       ],
       "created": "2026-05-08T17:22:23.501-0400",
       "created_iso": "2026-05-08",
-      "age_days": 24,
+      "age_days": 25,
       "updated": "2026-06-01T09:13:56.974-0400",
       "updated_iso": "2026-06-01",
       "end_date": "2026-06-19",
@@ -3886,7 +3846,7 @@
       ],
       "created": "2026-03-06T13:40:09.058-0500",
       "created_iso": "2026-03-06",
-      "age_days": 87,
+      "age_days": 88,
       "updated": "2026-06-01T08:55:32.042-0400",
       "updated_iso": "2026-06-01",
       "end_date": "2026-06-19",
@@ -3926,7 +3886,7 @@
       ],
       "created": "2025-10-29T15:41:14.563-0400",
       "created_iso": "2025-10-29",
-      "age_days": 215,
+      "age_days": 216,
       "updated": "2026-05-26T03:46:07.919-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-06-19",
@@ -4046,7 +4006,7 @@
       ],
       "created": "2025-09-22T15:12:57.130-0400",
       "created_iso": "2025-09-22",
-      "age_days": 252,
+      "age_days": 253,
       "updated": "2026-05-26T09:47:51.277-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -4246,7 +4206,7 @@
       ],
       "created": "2025-02-05T14:53:02.586-0500",
       "created_iso": "2025-02-05",
-      "age_days": 481,
+      "age_days": 482,
       "updated": "2026-05-21T15:22:53.563-0400",
       "updated_iso": "2026-05-21",
       "end_date": "2026-07-17",
@@ -4286,7 +4246,7 @@
       ],
       "created": "2026-01-08T13:30:31.508-0500",
       "created_iso": "2026-01-08",
-      "age_days": 144,
+      "age_days": 145,
       "updated": "2026-05-29T17:41:54.079-0400",
       "updated_iso": "2026-05-29",
       "end_date": "2026-07-17",
