@@ -117,7 +117,7 @@ jobs:
         run: |
           set -euo pipefail
           python3 build_aggregator.py \
-              --registry-url "https://${JIRA_HOST}/wiki/pages/${CONFLUENCE_REGISTRY_PAGE_ID}"
+              --registry-url "https://${JIRA_HOST}/wiki/spaces/PRS/pages/${CONFLUENCE_REGISTRY_PAGE_ID}"
 
       - name: Commit and push if changed
         run: |
