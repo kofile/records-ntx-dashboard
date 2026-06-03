@@ -1,0 +1,9 @@
+{
+  "_comment": "Registry of escalation clusters for the dashboard. To add a cluster, add an object with a unique 'id' (Jira filter ID, integer) and 'title' (short display name). To remove a cluster, delete its entry. The scheduled GitHub Action fetches a snapshot for each cluster listed here. Order in this array determines order in the dashboard's preset row.",
+  "clusters": [
+    {
+      "id": 29799,
+      "title": "N TX"
+    }
+  ]
+}
