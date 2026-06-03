@@ -7463,27 +7463,31 @@ async function init() {
     window.__REGISTRY_URL__ = aggregator._registry_url;
   }
 
-  // Step 2: Build the combined cluster list (canonical + local drafts)
+  // Step 2: Build the cluster list from the canonical registry (Confluence-driven)
+  // Note: we used to merge in localStorage drafts here, but the UI no longer
+  // supports creating local clusters. Any leftover localStorage drafts from
+  // an earlier version of the dashboard are dropped on load.
+  const staleLocal = loadLocalClusters();
+  if (staleLocal.length > 0) {
+    console.log(`Clearing ${staleLocal.length} stale local cluster(s) from earlier dashboard version.`);
+    saveLocalClusters([]);
+  }
   const canonical = (aggregator && Array.isArray(aggregator.clusters))
     ? aggregator.clusters
     : [];
-  const local = loadLocalClusters();
-  const allClusters = mergeClusters(canonical, local);
+  const allClusters = canonical.map(c => ({ ...c, _local: false }));
 
   // Step 3: Determine the active cluster
-  // Priority: localStorage value > aggregator default > first canonical > nothing
+  // Priority: localStorage value > aggregator default > first canonical
   let activeId = getActiveClusterId();
   if (activeId && !allClusters.some(c => String(c.id) === String(activeId))) {
-    activeId = null;  // stored ID no longer exists
+    activeId = null;  // stored ID no longer exists (e.g., it was a local draft)
   }
   if (!activeId && aggregator?.default_cluster_id) {
     activeId = String(aggregator.default_cluster_id);
   }
   if (!activeId && canonical.length > 0) {
     activeId = String(canonical[0].id);
-  }
-  if (!activeId && local.length > 0) {
-    activeId = String(local[0].id);
   }
 
   const activeCluster = allClusters.find(c => String(c.id) === String(activeId));
