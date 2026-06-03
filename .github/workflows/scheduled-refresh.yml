@@ -1,19 +1,20 @@
 name: Scheduled dashboard refresh
 
-# Pulls each registered cluster's Jira filter directly from the Atlassian API,
-# transforms the response into the dashboard's snapshot format, and commits the
-# result. Runs twice per business day so the dashboard is never more than
-# ~8 hours stale during working hours.
+# Pulls the cluster registry from a Confluence page, then refreshes each
+# cluster's Jira filter data, and commits the result. Runs twice per
+# business day so the dashboard is never more than ~8 hours stale during
+# working hours.
 #
 # Schedule reference: cron is in UTC. ET is UTC-4 in summer, UTC-5 in winter.
 # Times below target ET business hours using the summer offset.
 #
-# Clusters are defined in clusters.json. To add or remove a cluster:
-#   1. Edit clusters.json (add/remove an object in the "clusters" array)
-#   2. Commit and push
-#   3. Next scheduled run picks up the change automatically
-# Each cluster writes its data to snapshots-<filter_id>.json. The aggregator
-# file snapshots.json is rebuilt after every run.
+# Cluster registry: a Confluence page edited by humans (no code).
+#   - To add a cluster: edit the page, add a row to the table, publish.
+#   - To remove a cluster: delete its row, publish.
+#   - Next scheduled run picks up the change automatically.
+#
+# If Confluence is unreachable, the workflow falls back to the existing
+# clusters.json file (last known good list) and continues normally.
 
 on:
   schedule:
@@ -25,6 +26,14 @@ on:
 permissions:
   contents: write
   issues: write    # needed to open issues on failure
+
+env:
+  # The Confluence page ID for the registry. Find this in the page URL
+  # (the number after /pages/). To move the registry to a different page,
+  # update this value.
+  # Current page: Records Dashboard — Active Clusters (PRS space)
+  # https://neumo.atlassian.net/wiki/spaces/PRS/pages/3891593217
+  CONFLUENCE_REGISTRY_PAGE_ID: '3891593217'
 
 jobs:
   refresh:
@@ -38,18 +47,33 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Read cluster registry
+      - name: Read cluster registry from Confluence
         id: read_registry
+        env:
+          JIRA_USER: ${{ secrets.JIRA_USER }}
+          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          JIRA_HOST: ${{ secrets.JIRA_HOST }}
         run: |
-          set -euo pipefail
-          if [ ! -f clusters.json ]; then
-            echo "ERROR: clusters.json not found. The dashboard cannot refresh." >&2
-            exit 1
+          set +e  # do NOT exit on Confluence failure — fall back to clusters.json
+          python3 read_cluster_registry.py \
+              --host "$JIRA_HOST" \
+              --user "$JIRA_USER" \
+              --token "$JIRA_TOKEN" \
+              --page-id "$CONFLUENCE_REGISTRY_PAGE_ID" \
+              --output clusters.json
+          RC=$?
+          set -e
+          if [ $RC -ne 0 ]; then
+            echo "Registry fetch failed with code $RC — falling back to existing clusters.json"
+            if [ ! -f clusters.json ]; then
+              echo "ERROR: no fallback clusters.json available either. Aborting." >&2
+              exit 1
+            fi
           fi
-          # Extract just the IDs as a space-separated list for the next step
+          # Extract cluster IDs for the next step
           CLUSTER_IDS=$(python3 -c "import json; print(' '.join(str(c['id']) for c in json.load(open('clusters.json'))['clusters']))")
           if [ -z "$CLUSTER_IDS" ]; then
-            echo "ERROR: clusters.json has no clusters registered. Add at least one cluster." >&2
+            echo "ERROR: clusters.json has no clusters registered." >&2
             exit 1
           fi
           echo "Cluster IDs to refresh: $CLUSTER_IDS"
@@ -88,9 +112,12 @@ jobs:
           fi
 
       - name: Rebuild aggregator snapshots.json
+        env:
+          JIRA_HOST: ${{ secrets.JIRA_HOST }}
         run: |
           set -euo pipefail
-          python3 build_aggregator.py
+          python3 build_aggregator.py \
+              --registry-url "https://${JIRA_HOST}/wiki/pages/${CONFLUENCE_REGISTRY_PAGE_ID}"
 
       - name: Commit and push if changed
         run: |
@@ -98,16 +125,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Stage all snapshot files (aggregator + per-cluster)
-          git add snapshots.json snapshots-*.json 2>/dev/null || true
+          # Stage all files that the workflow may have changed
+          git add clusters.json snapshots.json snapshots-*.json 2>/dev/null || true
 
           if git diff --quiet --cached; then
-            echo "No snapshot changes — nothing to commit."
+            echo "No changes — nothing to commit."
             exit 0
           fi
 
-          # Build commit message from what changed
-          CHANGED_FILES=$(git diff --cached --name-only | grep -E '^snapshots' | tr '\n' ' ')
+          CHANGED_FILES=$(git diff --cached --name-only | tr '\n' ' ')
           TODAY=$(date -u +%Y-%m-%d)
           git commit -m "auto: scheduled refresh — $TODAY ($CHANGED_FILES)"
           git push
@@ -132,11 +158,11 @@ jobs:
               '',
               '### Likely causes',
               '',
-              '1. **Jira API token expired or revoked** — most common. Generate a new token at https://id.atlassian.com/manage-profile/security/api-tokens and update the `JIRA_TOKEN` secret in repo Settings → Secrets.',
-              '2. **A filter listed in clusters.json was deleted or its permissions changed** — verify each filter still exists and is accessible to the token-holder.',
-              '3. **Jira API outage** — check https://status.atlassian.com/. If outage, no action needed; will recover automatically.',
-              '4. **Snapshot data parsing failed** — Jira may have introduced new statuses or fields. Review the run logs.',
-              '5. **clusters.json is missing or malformed** — the workflow expects a "clusters" array of objects with "id" and "title".',
+              '1. **Atlassian API token expired or revoked** — most common. Generate a new token at https://id.atlassian.com/manage-profile/security/api-tokens and update the `JIRA_TOKEN` secret in repo Settings → Secrets.',
+              '2. **The Confluence registry page was renamed, moved, or deleted** — verify the page is reachable at the URL containing the page ID in `.github/workflows/scheduled-refresh.yml` (`CONFLUENCE_REGISTRY_PAGE_ID`).',
+              '3. **The cluster table on the registry page is malformed** — check that the table has columns titled exactly "Cluster name" and "Jira filter ID" (case-insensitive but spelling matters). Other columns may be added freely.',
+              '4. **A filter listed in the registry was deleted or its permissions changed** — verify each filter still exists and is accessible to the token-holder.',
+              '5. **Jira/Confluence API outage** — check https://status.atlassian.com/. If outage, no action needed; will recover automatically.',
               '',
               '### Backup workflow still works',
               '',
@@ -147,7 +173,6 @@ jobs:
               'Once the scheduled Action runs successfully again, close this issue manually. (Successful runs do not auto-close issues.)'
             ].join('\n');
 
-            // Check if there's already an open auto-refresh-failed issue — avoid duplicates
             const existing = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -155,7 +180,6 @@ jobs:
               labels: 'auto-refresh-failure'
             });
             if (existing.data.length > 0) {
-              // Comment on the existing issue instead of opening a new one
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
