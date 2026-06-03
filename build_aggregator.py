@@ -39,11 +39,15 @@ def main():
     # If clusters.json carries a Confluence source, derive the page URL for the dashboard's
     # "Manage in Confluence" link. The clusters.json from read_cluster_registry.py records
     # the host + page_id; we build the URL from those. Override with --registry-url if given.
+    # NOTE: Confluence requires a /spaces/<key>/ segment in the page URL — without it, the
+    # link returns a 404. The space key for this registry is hardcoded here; if the page
+    # moves to a different space, update SPACE_KEY below.
+    SPACE_KEY = "PRS"
     registry_url = args.registry_url
     if not registry_url:
         src = registry.get("_source", {})
         if src.get("type") == "confluence_page" and src.get("host") and src.get("page_id"):
-            registry_url = f"https://{src['host']}/wiki/pages/{src['page_id']}"
+            registry_url = f"https://{src['host']}/wiki/spaces/{SPACE_KEY}/pages/{src['page_id']}"
 
     clusters = registry.get("clusters", [])
     if not clusters:
