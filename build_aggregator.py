@@ -1,120 +1,197 @@
-#!/usr/bin/env python3
-"""
-build_aggregator.py — Rebuild the dashboard's entry-point snapshots.json.
+name: Scheduled dashboard refresh
 
-Reads clusters.json to see which clusters are registered, then reads each
-snapshots-<id>.json file and assembles the aggregator.
+# Pulls the cluster registry from a Confluence page, then refreshes each
+# cluster's Jira filter data, and commits the result. Runs twice per
+# business day so the dashboard is never more than ~8 hours stale during
+# working hours.
+#
+# Schedule reference: cron is in UTC. ET is UTC-4 in summer, UTC-5 in winter.
+# Times below target ET business hours using the summer offset.
+#
+# Cluster registry: a Confluence page edited by humans (no code).
+#   - To add a cluster: edit the page, add a row to the table, publish.
+#   - To remove a cluster: delete its row, publish.
+#   - Next scheduled run picks up the change automatically.
+#
+# If Confluence is unreachable, the workflow falls back to the existing
+# clusters.json file (last known good list) and continues normally.
 
-The aggregator file (snapshots.json) is what the dashboard loads on page open.
-It contains:
-  - A list of clusters with their per-cluster snapshot URLs
-  - A backward-compatible mirror of the default cluster's data (so a viewer
-    with a stale cache or an older index.html still sees the N TX dashboard)
+on:
+  schedule:
+    # 8am ET = 12:00 UTC, 4pm ET = 20:00 UTC (Mon-Fri)
+    - cron: '0 12 * * 1-5'
+    - cron: '0 20 * * 1-5'
+  workflow_dispatch:  # allow manual trigger from Actions tab
 
-Usage:
-    python3 build_aggregator.py
-    python3 build_aggregator.py --clusters clusters.json --output snapshots.json
-"""
-import argparse
-import json
-import os
-import sys
-from datetime import datetime, timezone
+permissions:
+  contents: write
+  issues: write    # needed to open issues on failure
 
+env:
+  # The Confluence page ID for the registry. Find this in the page URL
+  # (the number after /pages/). To move the registry to a different page,
+  # update this value.
+  # Current page: Records Dashboard — Active Clusters (PRS space)
+  # https://neumo.atlassian.net/wiki/spaces/PRS/pages/3891593217
+  CONFLUENCE_REGISTRY_PAGE_ID: '3891593217'
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--clusters", default="clusters.json", help="Path to clusters.json")
-    ap.add_argument("--output", default="snapshots.json", help="Path to write aggregator")
-    args = ap.parse_args()
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
 
-    if not os.path.exists(args.clusters):
-        print(f"ERROR: {args.clusters} not found", file=sys.stderr)
-        sys.exit(1)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-    with open(args.clusters) as f:
-        registry = json.load(f)
+      - name: Read cluster registry from Confluence
+        id: read_registry
+        env:
+          JIRA_USER: ${{ secrets.JIRA_USER }}
+          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          JIRA_HOST: ${{ secrets.JIRA_HOST }}
+        run: |
+          set +e  # do NOT exit on Confluence failure — fall back to clusters.json
+          python3 read_cluster_registry.py \
+              --host "$JIRA_HOST" \
+              --user "$JIRA_USER" \
+              --token "$JIRA_TOKEN" \
+              --page-id "$CONFLUENCE_REGISTRY_PAGE_ID" \
+              --output clusters.json
+          RC=$?
+          set -e
+          if [ $RC -ne 0 ]; then
+            echo "Registry fetch failed with code $RC — falling back to existing clusters.json"
+            if [ ! -f clusters.json ]; then
+              echo "ERROR: no fallback clusters.json available either. Aborting." >&2
+              exit 1
+            fi
+          fi
+          # Extract cluster IDs for the next step
+          CLUSTER_IDS=$(python3 -c "import json; print(' '.join(str(c['id']) for c in json.load(open('clusters.json'))['clusters']))")
+          if [ -z "$CLUSTER_IDS" ]; then
+            echo "ERROR: clusters.json has no clusters registered." >&2
+            exit 1
+          fi
+          echo "Cluster IDs to refresh: $CLUSTER_IDS"
+          echo "cluster_ids=$CLUSTER_IDS" >> "$GITHUB_OUTPUT"
 
-    clusters = registry.get("clusters", [])
-    if not clusters:
-        print("ERROR: clusters.json has no clusters registered", file=sys.stderr)
-        sys.exit(1)
+      - name: Fetch Jira filter for each registered cluster
+        id: fetch
+        env:
+          JIRA_USER: ${{ secrets.JIRA_USER }}
+          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          JIRA_HOST: ${{ secrets.JIRA_HOST }}
+        run: |
+          set -euo pipefail
+          FAILED_CLUSTERS=""
+          for CLUSTER_ID in ${{ steps.read_registry.outputs.cluster_ids }}; do
+            echo "===================================="
+            echo "Fetching cluster ID: $CLUSTER_ID"
+            echo "===================================="
+            OUTPUT_FILE="snapshots-${CLUSTER_ID}.json"
+            if python3 fetch_jira_filter.py \
+                --host "$JIRA_HOST" \
+                --user "$JIRA_USER" \
+                --token "$JIRA_TOKEN" \
+                --filter-id "$CLUSTER_ID" \
+                --output "$OUTPUT_FILE"; then
+              echo "OK: $OUTPUT_FILE updated"
+            else
+              echo "FAILED: cluster $CLUSTER_ID"
+              FAILED_CLUSTERS="$FAILED_CLUSTERS $CLUSTER_ID"
+            fi
+          done
+          if [ -n "$FAILED_CLUSTERS" ]; then
+            echo ""
+            echo "WARNING: One or more clusters failed:$FAILED_CLUSTERS"
+            echo "The successful clusters were still updated. Failed clusters keep their last good snapshot."
+          fi
 
-    # The first cluster in the registry is the default — the one whose data
-    # mirrors into the aggregator's top-level fields for backward compatibility.
-    default = clusters[0]
-    default_id = default["id"]
-    default_snap_path = f"snapshots-{default_id}.json"
+      - name: Rebuild aggregator snapshots.json
+        env:
+          JIRA_HOST: ${{ secrets.JIRA_HOST }}
+        run: |
+          set -euo pipefail
+          python3 build_aggregator.py \
+              --registry-url "https://${JIRA_HOST}/wiki/pages/${CONFLUENCE_REGISTRY_PAGE_ID}"
 
-    if not os.path.exists(default_snap_path):
-        print(f"WARNING: {default_snap_path} not found — default cluster has no data yet",
-              file=sys.stderr)
-        default_data = {
-            "today": None,
-            "exported_at": None,
-            "tickets": [],
-            "history": [],
-            "spreadsheet": {},
-            "divergence": {},
-        }
-    else:
-        with open(default_snap_path) as f:
-            default_data = json.load(f)
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-    # Build the cluster manifest — only include clusters whose data file exists
-    cluster_manifest = []
-    for c in clusters:
-        snap_path = f"snapshots-{c['id']}.json"
-        entry = {
-            "id": c["id"],
-            "title": c["title"],
-            "snapshot_url": f"./{snap_path}",
-        }
-        if os.path.exists(snap_path):
-            with open(snap_path) as f:
-                cdata = json.load(f)
-            entry["today"] = cdata.get("today")
-            entry["ticket_count"] = len(cdata.get("tickets", []))
-            entry["updated_at"] = cdata.get("updated_at")
-        else:
-            # Cluster registered but no data yet (next scheduled run will populate)
-            entry["today"] = None
-            entry["ticket_count"] = 0
-            entry["updated_at"] = None
-        cluster_manifest.append(entry)
+          # Stage all files that the workflow may have changed
+          git add clusters.json snapshots.json snapshots-*.json 2>/dev/null || true
 
-    out = {
-        "_schema": "v2-multi-cluster",
-        "_comment": (
-            "Aggregator file. The dashboard loads this first. The 'clusters' "
-            "array tells the dashboard which per-cluster snapshot files to fetch. "
-            "The legacy single-cluster fields (today/tickets/history) mirror the "
-            "default cluster's data for backward compatibility."
-        ),
-        "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "default_cluster_id": default_id,
-        "clusters": cluster_manifest,
-        # Legacy mirror — backward compatibility
-        "today": default_data.get("today"),
-        "exported_at": default_data.get("exported_at"),
-        "tickets": default_data.get("tickets", []),
-        "history": default_data.get("history", []),
-        "spreadsheet": default_data.get("spreadsheet", {}),
-        "divergence": default_data.get("divergence", {}),
-    }
+          if git diff --quiet --cached; then
+            echo "No changes — nothing to commit."
+            exit 0
+          fi
 
-    tmp = args.output + ".tmp"
-    with open(tmp, "w") as f:
-        json.dump(out, f, indent=2)
-    os.replace(tmp, args.output)
+          CHANGED_FILES=$(git diff --cached --name-only | tr '\n' ' ')
+          TODAY=$(date -u +%Y-%m-%d)
+          git commit -m "auto: scheduled refresh — $TODAY ($CHANGED_FILES)"
+          git push
 
-    print(f"OK: wrote {args.output}", file=sys.stderr)
-    print(f"  Default cluster: id={default_id}, title='{default['title']}'", file=sys.stderr)
-    print(f"  Clusters in manifest: {len(cluster_manifest)}", file=sys.stderr)
-    for c in cluster_manifest:
-        status = f"{c['ticket_count']} tickets" if c['today'] else "(no data yet)"
-        print(f"    [{c['id']}] {c['title']}: {status}", file=sys.stderr)
+      - name: On failure, open an issue
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            const now = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '') + ' UTC';
+            const title = `Auto-refresh failed at ${now}`;
+            const body = [
+              '## Scheduled dashboard refresh failed',
+              '',
+              `**When:** ${now}`,
+              `**Run:** ${runUrl}`,
+              '',
+              '### What this means',
+              '',
+              'The scheduled Action that pulls Jira data into the dashboard could not complete. The dashboard will continue showing the last successful snapshot until this is resolved.',
+              '',
+              '### Likely causes',
+              '',
+              '1. **Atlassian API token expired or revoked** — most common. Generate a new token at https://id.atlassian.com/manage-profile/security/api-tokens and update the `JIRA_TOKEN` secret in repo Settings → Secrets.',
+              '2. **The Confluence registry page was renamed, moved, or deleted** — verify the page is reachable at the URL containing the page ID in `.github/workflows/scheduled-refresh.yml` (`CONFLUENCE_REGISTRY_PAGE_ID`).',
+              '3. **The cluster table on the registry page is malformed** — check that the table has columns titled exactly "Cluster name" and "Jira filter ID" (case-insensitive but spelling matters). Other columns may be added freely.',
+              '4. **A filter listed in the registry was deleted or its permissions changed** — verify each filter still exists and is accessible to the token-holder.',
+              '5. **Jira/Confluence API outage** — check https://status.atlassian.com/. If outage, no action needed; will recover automatically.',
+              '',
+              '### Backup workflow still works',
+              '',
+              'While this is broken, anyone can still manually upload a Jira HTML export to the `jira-exports/` folder. The existing manual-update workflow will process it normally (default cluster only).',
+              '',
+              '### How to close this issue',
+              '',
+              'Once the scheduled Action runs successfully again, close this issue manually. (Successful runs do not auto-close issues.)'
+            ].join('\n');
 
-
-if __name__ == "__main__":
-    main()
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'auto-refresh-failure'
+            });
+            if (existing.data.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.data[0].number,
+                body: `Another failure at ${now}. Run: ${runUrl}`
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['auto-refresh-failure']
+              });
+            }
