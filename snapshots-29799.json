@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T14:43:15Z",
+  "updated_at": "2026-06-03T14:57:40Z",
   "today": "2026-06-03",
   "exported_at": "03 Jun 2026 (auto)",
   "tickets": [
@@ -59,7 +59,7 @@
       ],
       "created": "2026-04-24T14:55:02.712-0400",
       "created_iso": "2026-04-24",
-      "age_days": 39,
+      "age_days": 40,
       "updated": "2026-05-26T13:57:06.521-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -700,27 +700,27 @@
       "created": "2026-05-04T10:45:38.807-0400",
       "created_iso": "2026-05-04",
       "age_days": 30,
-      "updated": "2026-05-29T13:53:46.224-0400",
-      "updated_iso": "2026-05-29",
-      "end_date": "2026-05-28",
-      "end_date_iso": "2026-05-28",
-      "ships_month": "May 2026",
+      "updated": "2026-06-03T10:47:33.588-0400",
+      "updated_iso": "2026-06-03",
+      "end_date": "2026-06-18",
+      "end_date_iso": "2026-06-18",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
-      "comments_count": "13",
-      "labels_raw": "May-2026, NorthTX26, TXEscalation, jira_escalated",
+      "comments_count": "14",
+      "labels_raw": "June-2026, NorthTX26, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
-          "label": "May-2026",
-          "month_index": 4,
+          "label": "Jun-2026",
+          "month_index": 5,
           "year": 2026,
-          "sortable": 24316
+          "sortable": 24317
         }
       ],
       "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
+        "label": "Jun-2026",
+        "month_index": 5,
         "year": 2026,
-        "sortable": 24316
+        "sortable": 24317
       }
     },
     {
@@ -765,7 +765,7 @@
     },
     {
       "key": "CR-2091091",
-      "summary": "count corrections and an Escrow auto-refund on order 20260108000073, financial reports are displaying incorrect data.",
+      "summary": "Johnson - count corrections and an Escrow auto-refund on order 20260108000073, financial reports are displaying incorrect data.",
       "project": "CR",
       "issue_type": "Bug",
       "status": "Ready for Production",
@@ -773,34 +773,34 @@
       "delivery_bucket": "pending_release",
       "is_open": false,
       "team": "",
-      "tenant_raw": "",
+      "tenant_raw": "Johnson",
       "tenants": [
-        "(untagged)"
+        "Johnson"
       ],
       "created": "2026-05-04T10:58:47.893-0400",
       "created_iso": "2026-05-04",
       "age_days": 30,
-      "updated": "2026-05-22T03:12:24.365-0400",
-      "updated_iso": "2026-05-22",
-      "end_date": "2026-05-29",
-      "end_date_iso": "2026-05-29",
-      "ships_month": "May 2026",
+      "updated": "2026-06-03T10:49:35.967-0400",
+      "updated_iso": "2026-06-03",
+      "end_date": "2026-06-18",
+      "end_date_iso": "2026-06-18",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "5",
-      "labels_raw": "May-2026, TXEscalation, jira_escalated, sprint.Q2-4",
+      "labels_raw": "June-2026, TXEscalation, jira_escalated, sprint.Q2-4",
       "delivery_targets": [
         {
-          "label": "May-2026",
-          "month_index": 4,
+          "label": "Jun-2026",
+          "month_index": 5,
           "year": 2026,
-          "sortable": 24316
+          "sortable": 24317
         }
       ],
       "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
+        "label": "Jun-2026",
+        "month_index": 5,
         "year": 2026,
-        "sortable": 24316
+        "sortable": 24317
       }
     },
     {
@@ -4218,7 +4218,7 @@
       ],
       "created": "2025-02-05T14:53:02.586-0500",
       "created_iso": "2025-02-05",
-      "age_days": 482,
+      "age_days": 483,
       "updated": "2026-05-21T15:22:53.563-0400",
       "updated_iso": "2026-05-21",
       "end_date": "2026-07-17",
