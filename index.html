@@ -149,21 +149,15 @@
     padding: 1px 5px; border-radius: 2px; margin-left: 2px;
     font-weight: 500;
   }
-  .cluster-pill .remove-x {
-    display: inline-block; opacity: 0; margin-left: 4px;
-    color: var(--danger); font-weight: 500; font-size: 13px;
-    line-height: 1; padding: 0 2px; cursor: pointer;
-    transition: opacity 0.15s;
+  .cluster-manage-link {
+    font-family: var(--sans); font-size: 11px;
+    color: var(--accent); text-decoration: none;
+    padding: 5px 11px; border: 1px solid #DEEBFF;
+    background: #DEEBFF; border-radius: 4px;
+    margin-left: 8px;
+    transition: background 0.1s, color 0.1s;
   }
-  .cluster-pill:hover .remove-x { opacity: 0.6; }
-  .cluster-pill .remove-x:hover { opacity: 1; }
-  .cluster-pill.active .remove-x { color: var(--bg); }
-  .cluster-add {
-    border: 1px dashed var(--line-strong); background: transparent;
-    color: var(--accent); padding: 5px 11px; border-radius: 999px;
-    font-size: 12px; cursor: pointer; font-family: inherit;
-  }
-  .cluster-add:hover { background: var(--neutral-bg); }
+  .cluster-manage-link:hover { background: var(--accent); color: white; }
   .cluster-bar-meta {
     margin-left: auto; font-size: 11px; color: var(--ink-faint);
     font-family: var(--mono);
@@ -765,8 +759,8 @@
   <span class="cluster-bar-label">Cluster</span>
   <!-- Cluster pills inserted by JS -->
   <span id="cluster-pills"></span>
-  <button class="cluster-add" id="cluster-add-btn" title="Add a new escalation cluster">+ New cluster</button>
   <span class="cluster-bar-meta" id="cluster-meta"></span>
+  <a class="cluster-manage-link" id="cluster-manage-link" href="#" target="_blank" rel="noopener" title="Open the cluster registry in Confluence">⚙ Manage clusters in Confluence ↗</a>
 </div>
 
 <nav class="toolbar">
@@ -779,42 +773,6 @@
     <a class="refresh-link" href="javascript:location.reload();" title="Reload to fetch the latest snapshot data">↻ refresh</a>
   </div>
 </nav>
-
-<!-- New cluster modal -->
-<div class="modal-backdrop" id="cluster-modal">
-  <div class="modal">
-    <h3>Add escalation cluster</h3>
-    <div class="modal-sub">Creates a new cluster preset in this dashboard. The Jira filter ID must be correct — the dashboard reads ticket data directly from that filter.</div>
-
-    <div class="field">
-      <label for="cluster-title-input">Cluster title</label>
-      <input type="text" id="cluster-title-input" placeholder="e.g., Wayne, Cuyahoga, Hays TX" />
-      <div class="hint">Shown as a pill on the cluster bar.</div>
-    </div>
-
-    <div class="field">
-      <label for="cluster-filter-input">Jira filter ID</label>
-      <input type="text" class="mono" id="cluster-filter-input" placeholder="e.g., 30214" />
-      <div class="hint">Find this in the filter URL: <code>…/issues?filter=<strong>30214</strong></code>. The dashboard reads data directly from this filter — make sure it's correct.</div>
-    </div>
-
-    <div class="publish-instructions" id="publish-instructions">
-      <strong>To make this cluster visible to everyone, commit this to <code>clusters.json</code>:</strong>
-      <pre id="publish-snippet"></pre>
-      <a href="#" id="open-clusters-json" target="_blank">Open clusters.json on GitHub →</a>
-      <button class="copy-btn" id="copy-snippet">Copy</button>
-      <div style="margin-top: 10px; font-size: 11px; color: var(--ink-soft);">
-        Until published, this cluster is visible only to you (stored in your browser).
-        Once published, the next scheduled refresh (8am or 4pm ET) will populate its data.
-      </div>
-    </div>
-
-    <div class="actions">
-      <button id="modal-cancel">Cancel</button>
-      <button class="primary" id="modal-create">Add cluster</button>
-    </div>
-  </div>
-</div>
 
 <main class="page">
 
@@ -7374,41 +7332,32 @@ async function fetchHostedSnapshots() {
 // =====================================================================
 // MULTI-CLUSTER SUPPORT (added on top of the existing N TX dashboard)
 // =====================================================================
-// The dashboard now supports multiple escalation clusters. Each cluster is
-// a Jira filter ID + a display title. Clusters live in two places:
-//   1. clusters.json — the canonical, shared registry (committed to repo)
-//   2. localStorage — local-only "draft" clusters not yet published
+// The dashboard supports multiple escalation clusters. The cluster registry
+// is maintained in a Confluence page (humans edit the page; the dashboard
+// reads it indirectly via the GitHub Actions workflow on each refresh).
 //
-// Adding a cluster from the UI creates a local draft. To make it shared,
-// the user commits the draft entry to clusters.json. The scheduled refresh
-// then populates that cluster's snapshot file on its next run.
+// To add/remove clusters: click "Manage clusters in Confluence" in the
+// cluster bar. The dashboard itself is a read-only viewer of cluster state.
+//
+// localStorage is still used for one thing: the active cluster ID, so that
+// switching between clusters survives page reloads.
 
-const LOCAL_CLUSTERS_KEY = "dashboard_local_clusters_v1";
+// REGISTRY_URL: the Confluence page URL for the cluster registry. Set by
+// the workflow when it writes snapshots.json so the dashboard's "Manage in
+// Confluence" link points to the right page. If snapshots.json doesn't
+// carry this, the link falls back to a Confluence search.
+// window.__REGISTRY_URL__ is set by the workflow via snapshots.json injection.
+
 const ACTIVE_CLUSTER_KEY = "dashboard_active_cluster_v1";
-
-// REPO_INFO: derived from window.location for the "Open clusters.json on GitHub" link.
-// If hosted on github.io, we can construct the repo URL. Fall back to a generic prompt.
-function repoEditUrl() {
-  // Heuristic: github.io URLs look like https://<user>.github.io/<repo>/...
-  // The matching repo edit URL is https://github.com/<user>/<repo>/edit/main/clusters.json
-  const m = window.location.host.match(/^([^.]+)\.github\.io$/);
-  if (m) {
-    const user = m[1];
-    const pathParts = window.location.pathname.split("/").filter(Boolean);
-    const repo = pathParts[0] || "";
-    if (repo) {
-      return `https://github.com/${user}/${repo}/edit/main/clusters.json`;
-    }
-  }
-  return null;
-}
+const LOCAL_CLUSTERS_KEY = "dashboard_local_clusters_v1";  // legacy, kept for graceful cleanup
 
 function loadLocalClusters() {
+  // Kept only to drain any legacy local clusters from old versions of the
+  // dashboard. Clusters are now managed entirely in Confluence.
   try {
     const raw = localStorage.getItem(LOCAL_CLUSTERS_KEY);
     return raw ? JSON.parse(raw) : [];
   } catch (e) {
-    console.warn("Failed to load local clusters:", e);
     return [];
   }
 }
@@ -7416,9 +7365,7 @@ function loadLocalClusters() {
 function saveLocalClusters(clusters) {
   try {
     localStorage.setItem(LOCAL_CLUSTERS_KEY, JSON.stringify(clusters));
-  } catch (e) {
-    console.warn("Failed to save local clusters:", e);
-  }
+  } catch (e) { /* no-op */ }
 }
 
 function getActiveClusterId() {
@@ -7463,23 +7410,8 @@ function renderClusterPills(clusters, activeId) {
       const badge = document.createElement("span");
       badge.className = "local-badge";
       badge.textContent = "Local";
-      badge.title = "This cluster exists only in your browser. Publish it to clusters.json to share with everyone.";
+      badge.title = "This cluster exists only in your browser. Add it to the Confluence registry to share with everyone.";
       pill.appendChild(badge);
-    }
-    // Remove × — never on the last canonical cluster (must always have one)
-    const isLastCanonical = !c._local && clusters.filter(x => !x._local).length === 1;
-    if (!isLastCanonical) {
-      const x = document.createElement("span");
-      x.className = "remove-x";
-      x.textContent = "×";
-      x.title = c._local
-        ? "Remove this local cluster"
-        : "Remove from your view (to remove for everyone, delete from clusters.json)";
-      x.onclick = (e) => {
-        e.stopPropagation();
-        handleRemoveCluster(c);
-      };
-      pill.appendChild(x);
     }
     pill.onclick = () => handleSwitchCluster(c.id);
     container.appendChild(pill);
@@ -7493,107 +7425,15 @@ function handleSwitchCluster(id) {
   window.location.reload();
 }
 
-function handleRemoveCluster(cluster) {
-  if (cluster._local) {
-    if (!confirm(`Remove the local cluster "${cluster.title}"? It only exists in your browser.`)) return;
-    const local = loadLocalClusters();
-    const filtered = local.filter(c => String(c.id) !== String(cluster.id));
-    saveLocalClusters(filtered);
-    // If we're removing the active cluster, switch to the default
-    if (String(getActiveClusterId()) === String(cluster.id)) {
-      setActiveClusterId(null);
-    }
-    window.location.reload();
-  } else {
-    // Published cluster — show instructions, don't actually remove
-    const url = repoEditUrl();
-    const msg = url
-      ? `To remove "${cluster.title}" for everyone, delete its entry from clusters.json in the repo:\n\n${url}\n\n(Removing here would only hide it from your view temporarily — the next page load would bring it back.)`
-      : `To remove "${cluster.title}" for everyone, delete its entry from clusters.json in the repo.\n\n(Removing here would only hide it from your view temporarily — the next page load would bring it back.)`;
-    alert(msg);
-  }
-}
-
-function openClusterModal() {
-  document.getElementById("cluster-title-input").value = "";
-  document.getElementById("cluster-filter-input").value = "";
-  document.getElementById("publish-instructions").classList.remove("open");
-  document.getElementById("cluster-modal").classList.add("open");
-  setTimeout(() => document.getElementById("cluster-title-input").focus(), 50);
-}
-
-function closeClusterModal() {
-  document.getElementById("cluster-modal").classList.remove("open");
-}
-
-function handleCreateCluster() {
-  const title = document.getElementById("cluster-title-input").value.trim();
-  const filterIdRaw = document.getElementById("cluster-filter-input").value.trim();
-
-  if (!title) {
-    alert("Cluster title is required.");
-    document.getElementById("cluster-title-input").focus();
-    return;
-  }
-  const filterId = parseInt(filterIdRaw, 10);
-  if (!filterId || isNaN(filterId)) {
-    alert("Jira filter ID must be a number.");
-    document.getElementById("cluster-filter-input").focus();
-    return;
-  }
-
-  // Save as a local cluster
-  const local = loadLocalClusters();
-  if (local.some(c => String(c.id) === String(filterId))) {
-    alert(`A local cluster with filter ID ${filterId} already exists.`);
-    return;
-  }
-  local.push({ id: filterId, title: title });
-  saveLocalClusters(local);
-
-  // Show publish instructions
-  const snippet = JSON.stringify({ id: filterId, title: title }, null, 2);
-  document.getElementById("publish-snippet").textContent = snippet;
-  const url = repoEditUrl();
-  const link = document.getElementById("open-clusters-json");
-  if (url) {
-    link.href = url;
-    link.style.display = "";
-  } else {
-    link.style.display = "none";
-  }
-  document.getElementById("publish-instructions").classList.add("open");
-
-  // Update the modal buttons: "Add cluster" becomes "Done"
-  const createBtn = document.getElementById("modal-create");
-  createBtn.textContent = "Done — switch to this cluster";
-  createBtn.onclick = () => {
-    setActiveClusterId(filterId);
-    window.location.reload();
-  };
-}
-
 function setupClusterUI() {
-  document.getElementById("cluster-add-btn").onclick = openClusterModal;
-  document.getElementById("modal-cancel").onclick = closeClusterModal;
-  document.getElementById("modal-create").onclick = handleCreateCluster;
-  // Click backdrop to close
-  document.getElementById("cluster-modal").addEventListener("click", (e) => {
-    if (e.target.id === "cluster-modal") closeClusterModal();
-  });
-  // Escape to close
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeClusterModal();
-  });
-  // Copy snippet
-  document.getElementById("copy-snippet").onclick = () => {
-    const text = document.getElementById("publish-snippet").textContent;
-    navigator.clipboard?.writeText(text);
-    const btn = document.getElementById("copy-snippet");
-    const original = btn.textContent;
-    btn.textContent = "Copied";
-    setTimeout(() => { btn.textContent = original; }, 1500);
-  };
+  // Wire the "Manage in Confluence" link to the registry page URL.
+  // The URL is read from snapshots.json's _registry_url field if present,
+  // or falls back to a generic Atlassian search if not configured yet.
+  const linkEl = document.getElementById("cluster-manage-link");
+  if (linkEl) {
+    const url = window.__REGISTRY_URL__ || "https://neumo.atlassian.net/wiki/search?text=Records+Dashboard+Active+Clusters";
+    linkEl.href = url;
+  }
 }
 
 // Fetch a specific cluster's snapshot file by URL.
@@ -7617,6 +7457,11 @@ async function fetchClusterSnapshot(snapshotUrl) {
 async function init() {
   // Step 1: Load the aggregator (snapshots.json) to discover canonical clusters
   const aggregator = await fetchHostedSnapshots();
+
+  // Capture the Confluence registry URL so the "Manage in Confluence" link works
+  if (aggregator?._registry_url) {
+    window.__REGISTRY_URL__ = aggregator._registry_url;
+  }
 
   // Step 2: Build the combined cluster list (canonical + local drafts)
   const canonical = (aggregator && Array.isArray(aggregator.clusters))
