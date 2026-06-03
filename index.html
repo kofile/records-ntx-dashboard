@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow" />
 <meta name="googlebot" content="noindex, nofollow" />
-<title>Records: North Texas Support Spike</title>
+<title>Records: Escalation &amp; Delivery Dashboard</title>
 <style>
   :root {
     --bg: #FAF8F2;
@@ -120,6 +120,143 @@
     font-size: 11px; color: var(--ink-faint);
     font-family: var(--mono);
   }
+
+  /* Cluster preset row — sits above the toolbar */
+  .cluster-bar {
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    padding: 10px 32px;
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    font-family: var(--sans);
+  }
+  .cluster-bar-label {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px;
+    color: var(--ink-faint); margin-right: 6px;
+  }
+  .cluster-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    border: 1px solid var(--line); background: transparent; color: var(--ink-soft);
+    padding: 5px 11px; border-radius: 999px; font-size: 12px;
+    cursor: pointer; font-family: inherit;
+    transition: border-color 0.1s, color 0.1s, background 0.1s;
+  }
+  .cluster-pill:hover { border-color: var(--line-strong); color: var(--ink); }
+  .cluster-pill.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .cluster-pill.active:hover { background: var(--ink); color: var(--bg); }
+  .cluster-pill .local-badge {
+    font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px;
+    background: var(--warn-bg); color: var(--warn);
+    padding: 1px 5px; border-radius: 2px; margin-left: 2px;
+    font-weight: 500;
+  }
+  .cluster-pill .remove-x {
+    display: inline-block; opacity: 0; margin-left: 4px;
+    color: var(--danger); font-weight: 500; font-size: 13px;
+    line-height: 1; padding: 0 2px; cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .cluster-pill:hover .remove-x { opacity: 0.6; }
+  .cluster-pill .remove-x:hover { opacity: 1; }
+  .cluster-pill.active .remove-x { color: var(--bg); }
+  .cluster-add {
+    border: 1px dashed var(--line-strong); background: transparent;
+    color: var(--accent); padding: 5px 11px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; font-family: inherit;
+  }
+  .cluster-add:hover { background: var(--neutral-bg); }
+  .cluster-bar-meta {
+    margin-left: auto; font-size: 11px; color: var(--ink-faint);
+    font-family: var(--mono);
+  }
+
+  /* Cluster modal */
+  .modal-backdrop {
+    display: none; position: fixed; inset: 0;
+    background: rgba(26, 25, 22, 0.45);
+    z-index: 100;
+    align-items: center; justify-content: center;
+    font-family: var(--sans);
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal {
+    background: var(--surface);
+    border-radius: 6px;
+    padding: 24px 28px;
+    width: 480px;
+    max-width: 92vw;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+  }
+  .modal h3 {
+    margin: 0 0 6px;
+    font-family: var(--serif);
+    font-size: 22px; font-weight: 400;
+    letter-spacing: -0.3px;
+  }
+  .modal .modal-sub {
+    font-size: 12px; color: var(--ink-soft); margin-bottom: 18px;
+  }
+  .modal .field { margin-bottom: 16px; }
+  .modal .field label {
+    display: block;
+    font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px;
+    color: var(--ink-soft); margin-bottom: 5px;
+  }
+  .modal .field input {
+    width: 100%; padding: 8px 10px;
+    font-family: var(--sans); font-size: 14px;
+    border: 1px solid var(--line); border-radius: 3px;
+    background: var(--bg); color: var(--ink);
+  }
+  .modal .field input.mono { font-family: var(--mono); }
+  .modal .field input:focus { outline: none; border-color: var(--accent); }
+  .modal .field .hint {
+    font-size: 11px; color: var(--ink-soft); margin-top: 5px;
+    line-height: 1.5;
+  }
+  .modal .field .hint code {
+    font-family: var(--mono); background: var(--neutral-bg);
+    padding: 1px 4px; border-radius: 2px; font-size: 10.5px;
+  }
+  .modal .publish-instructions {
+    background: var(--warn-bg); border-left: 3px solid var(--warn);
+    padding: 12px 14px; margin-top: 14px;
+    font-size: 12px; color: var(--ink); line-height: 1.55;
+    border-radius: 0 3px 3px 0;
+    display: none;
+  }
+  .modal .publish-instructions.open { display: block; }
+  .modal .publish-instructions strong { display: block; margin-bottom: 6px; }
+  .modal .publish-instructions pre {
+    background: var(--surface); border: 1px solid var(--line);
+    padding: 8px 10px; margin: 8px 0;
+    font-family: var(--mono); font-size: 11px;
+    border-radius: 3px; overflow-x: auto;
+  }
+  .modal .publish-instructions a {
+    color: var(--accent); text-decoration: none; font-weight: 500;
+  }
+  .modal .publish-instructions a:hover { text-decoration: underline; }
+  .modal .actions {
+    display: flex; justify-content: flex-end; gap: 8px; margin-top: 18px;
+  }
+  .modal .actions button {
+    border: 1px solid var(--line); background: var(--surface);
+    color: var(--ink-soft); padding: 8px 14px;
+    font-size: 12px; border-radius: 3px; cursor: pointer;
+    font-family: inherit;
+  }
+  .modal .actions button:hover { border-color: var(--line-strong); color: var(--ink); }
+  .modal .actions button.primary {
+    background: var(--ink); color: var(--bg); border-color: var(--ink);
+  }
+  .modal .actions button.primary:hover { background: var(--ink); color: var(--bg); }
+  .copy-btn {
+    background: transparent; border: 1px solid var(--line); color: var(--ink-soft);
+    padding: 3px 8px; font-size: 10px; border-radius: 3px; cursor: pointer;
+    font-family: inherit; text-transform: uppercase; letter-spacing: 0.5px;
+    margin-left: 6px;
+  }
+  .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
 
   /* Page */
   .page {
@@ -610,18 +747,27 @@
 
 <header class="masthead">
   <div class="masthead-row">
-    <h1 class="title">Records<em> — North Texas support spike</em></h1>
+    <h1 class="title">Records<em> — <span id="masthead-cluster">escalation &amp; delivery</span></em></h1>
     <div class="masthead-meta">
       <span>Vol. 1 · No. <strong id="snap-num">1</strong></span>
       <span>Today is <strong id="today-str">14 May 2026</strong></span>
     </div>
   </div>
   <div class="dateline">
-    <span>Source: Jira filter <a href="https://neumo.atlassian.net/issues/?filter=29799" style="color: inherit;">#29799</a> · Neumo Records, Search, Configuration and Reporting/SSRS</span>
-    <span class="dateline-sep">Scope: Dallas, Denton, Johnson, Collin, Jefferson</span>
+    <span>Source: Jira filter <a id="dateline-filter-link" href="https://neumo.atlassian.net/issues/?filter=29799" style="color: inherit;">#29799</a> · Neumo Records, Search, Configuration and Reporting/SSRS</span>
+    <span class="dateline-sep" id="dateline-scope-wrap">Scope: <span id="dateline-scope">Dallas, Denton, Johnson, Collin, Jefferson</span></span>
     <span class="dateline-sep">Snapshot from <span id="exported-at">—</span></span>
   </div>
 </header>
+
+<!-- Cluster preset bar — added for multi-cluster support -->
+<div class="cluster-bar" id="cluster-bar">
+  <span class="cluster-bar-label">Cluster</span>
+  <!-- Cluster pills inserted by JS -->
+  <span id="cluster-pills"></span>
+  <button class="cluster-add" id="cluster-add-btn" title="Add a new escalation cluster">+ New cluster</button>
+  <span class="cluster-bar-meta" id="cluster-meta"></span>
+</div>
 
 <nav class="toolbar">
   <div class="view-switch">
@@ -633,6 +779,42 @@
     <a class="refresh-link" href="javascript:location.reload();" title="Reload to fetch the latest snapshot data">↻ refresh</a>
   </div>
 </nav>
+
+<!-- New cluster modal -->
+<div class="modal-backdrop" id="cluster-modal">
+  <div class="modal">
+    <h3>Add escalation cluster</h3>
+    <div class="modal-sub">Creates a new cluster preset in this dashboard. The Jira filter ID must be correct — the dashboard reads ticket data directly from that filter.</div>
+
+    <div class="field">
+      <label for="cluster-title-input">Cluster title</label>
+      <input type="text" id="cluster-title-input" placeholder="e.g., Wayne, Cuyahoga, Hays TX" />
+      <div class="hint">Shown as a pill on the cluster bar.</div>
+    </div>
+
+    <div class="field">
+      <label for="cluster-filter-input">Jira filter ID</label>
+      <input type="text" class="mono" id="cluster-filter-input" placeholder="e.g., 30214" />
+      <div class="hint">Find this in the filter URL: <code>…/issues?filter=<strong>30214</strong></code>. The dashboard reads data directly from this filter — make sure it's correct.</div>
+    </div>
+
+    <div class="publish-instructions" id="publish-instructions">
+      <strong>To make this cluster visible to everyone, commit this to <code>clusters.json</code>:</strong>
+      <pre id="publish-snippet"></pre>
+      <a href="#" id="open-clusters-json" target="_blank">Open clusters.json on GitHub →</a>
+      <button class="copy-btn" id="copy-snippet">Copy</button>
+      <div style="margin-top: 10px; font-size: 11px; color: var(--ink-soft);">
+        Until published, this cluster is visible only to you (stored in your browser).
+        Once published, the next scheduled refresh (8am or 4pm ET) will populate its data.
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="modal-cancel">Cancel</button>
+      <button class="primary" id="modal-create">Add cluster</button>
+    </div>
+  </div>
+</div>
 
 <main class="page">
 
@@ -876,7 +1058,7 @@
 
   <div class="footer-note">
     <strong>How this dashboard works.</strong>
-    Data refreshes automatically from Jira filter #29799 four times per business day (8am, 12pm, 4pm, 8pm ET). The "data as of" indicator at the top-right shows the latest refresh — green if fresh, amber if stale, red if the auto-refresh is failing. Daily snapshots accumulate into the trend chart over time. Built for the NTX support spike, May–July 2026.
+    Data refreshes automatically from each cluster's Jira filter twice per business day (8am and 4pm ET). The "data as of" indicator at the top-right shows the latest refresh — green if fresh, amber if stale, red if the auto-refresh is failing. Daily snapshots accumulate into the trend chart over time. Originally built for the NTX support spike (May 2026); generalized for any escalation cluster.
   </div>
 
 </main>
@@ -7189,14 +7371,320 @@ async function fetchHostedSnapshots() {
   }
 }
 
-// INIT
+// =====================================================================
+// MULTI-CLUSTER SUPPORT (added on top of the existing N TX dashboard)
+// =====================================================================
+// The dashboard now supports multiple escalation clusters. Each cluster is
+// a Jira filter ID + a display title. Clusters live in two places:
+//   1. clusters.json — the canonical, shared registry (committed to repo)
+//   2. localStorage — local-only "draft" clusters not yet published
+//
+// Adding a cluster from the UI creates a local draft. To make it shared,
+// the user commits the draft entry to clusters.json. The scheduled refresh
+// then populates that cluster's snapshot file on its next run.
+
+const LOCAL_CLUSTERS_KEY = "dashboard_local_clusters_v1";
+const ACTIVE_CLUSTER_KEY = "dashboard_active_cluster_v1";
+
+// REPO_INFO: derived from window.location for the "Open clusters.json on GitHub" link.
+// If hosted on github.io, we can construct the repo URL. Fall back to a generic prompt.
+function repoEditUrl() {
+  // Heuristic: github.io URLs look like https://<user>.github.io/<repo>/...
+  // The matching repo edit URL is https://github.com/<user>/<repo>/edit/main/clusters.json
+  const m = window.location.host.match(/^([^.]+)\.github\.io$/);
+  if (m) {
+    const user = m[1];
+    const pathParts = window.location.pathname.split("/").filter(Boolean);
+    const repo = pathParts[0] || "";
+    if (repo) {
+      return `https://github.com/${user}/${repo}/edit/main/clusters.json`;
+    }
+  }
+  return null;
+}
+
+function loadLocalClusters() {
+  try {
+    const raw = localStorage.getItem(LOCAL_CLUSTERS_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    console.warn("Failed to load local clusters:", e);
+    return [];
+  }
+}
+
+function saveLocalClusters(clusters) {
+  try {
+    localStorage.setItem(LOCAL_CLUSTERS_KEY, JSON.stringify(clusters));
+  } catch (e) {
+    console.warn("Failed to save local clusters:", e);
+  }
+}
+
+function getActiveClusterId() {
+  return localStorage.getItem(ACTIVE_CLUSTER_KEY);
+}
+
+function setActiveClusterId(id) {
+  if (id == null) {
+    localStorage.removeItem(ACTIVE_CLUSTER_KEY);
+  } else {
+    localStorage.setItem(ACTIVE_CLUSTER_KEY, String(id));
+  }
+}
+
+// Combine canonical (from snapshots.json's clusters[] manifest) + local drafts.
+// Canonical clusters win on ID collisions (i.e., if a local draft has been
+// published, the canonical entry replaces it and we remove the local draft).
+function mergeClusters(canonical, local) {
+  const canonicalIds = new Set(canonical.map(c => String(c.id)));
+  const filteredLocal = local.filter(c => !canonicalIds.has(String(c.id)));
+  // If any local drafts have been published (their ID is now in canonical),
+  // clean them out of localStorage so the "Local" badge disappears.
+  if (filteredLocal.length !== local.length) {
+    saveLocalClusters(filteredLocal);
+  }
+  return [
+    ...canonical.map(c => ({ ...c, _local: false })),
+    ...filteredLocal.map(c => ({ ...c, _local: true })),
+  ];
+}
+
+function renderClusterPills(clusters, activeId) {
+  const container = document.getElementById("cluster-pills");
+  container.innerHTML = "";
+  clusters.forEach(c => {
+    const pill = document.createElement("button");
+    pill.className = "cluster-pill" + (String(c.id) === String(activeId) ? " active" : "");
+    pill.setAttribute("data-cluster-id", c.id);
+    pill.title = `Filter #${c.id}`;
+    pill.innerHTML = escapeHtml(c.title);
+    if (c._local) {
+      const badge = document.createElement("span");
+      badge.className = "local-badge";
+      badge.textContent = "Local";
+      badge.title = "This cluster exists only in your browser. Publish it to clusters.json to share with everyone.";
+      pill.appendChild(badge);
+    }
+    // Remove × — never on the last canonical cluster (must always have one)
+    const isLastCanonical = !c._local && clusters.filter(x => !x._local).length === 1;
+    if (!isLastCanonical) {
+      const x = document.createElement("span");
+      x.className = "remove-x";
+      x.textContent = "×";
+      x.title = c._local
+        ? "Remove this local cluster"
+        : "Remove from your view (to remove for everyone, delete from clusters.json)";
+      x.onclick = (e) => {
+        e.stopPropagation();
+        handleRemoveCluster(c);
+      };
+      pill.appendChild(x);
+    }
+    pill.onclick = () => handleSwitchCluster(c.id);
+    container.appendChild(pill);
+  });
+}
+
+function handleSwitchCluster(id) {
+  setActiveClusterId(id);
+  // Reload the page so the dashboard re-fetches the right snapshot file.
+  // This is the simplest correct path — every tile re-renders cleanly.
+  window.location.reload();
+}
+
+function handleRemoveCluster(cluster) {
+  if (cluster._local) {
+    if (!confirm(`Remove the local cluster "${cluster.title}"? It only exists in your browser.`)) return;
+    const local = loadLocalClusters();
+    const filtered = local.filter(c => String(c.id) !== String(cluster.id));
+    saveLocalClusters(filtered);
+    // If we're removing the active cluster, switch to the default
+    if (String(getActiveClusterId()) === String(cluster.id)) {
+      setActiveClusterId(null);
+    }
+    window.location.reload();
+  } else {
+    // Published cluster — show instructions, don't actually remove
+    const url = repoEditUrl();
+    const msg = url
+      ? `To remove "${cluster.title}" for everyone, delete its entry from clusters.json in the repo:\n\n${url}\n\n(Removing here would only hide it from your view temporarily — the next page load would bring it back.)`
+      : `To remove "${cluster.title}" for everyone, delete its entry from clusters.json in the repo.\n\n(Removing here would only hide it from your view temporarily — the next page load would bring it back.)`;
+    alert(msg);
+  }
+}
+
+function openClusterModal() {
+  document.getElementById("cluster-title-input").value = "";
+  document.getElementById("cluster-filter-input").value = "";
+  document.getElementById("publish-instructions").classList.remove("open");
+  document.getElementById("cluster-modal").classList.add("open");
+  setTimeout(() => document.getElementById("cluster-title-input").focus(), 50);
+}
+
+function closeClusterModal() {
+  document.getElementById("cluster-modal").classList.remove("open");
+}
+
+function handleCreateCluster() {
+  const title = document.getElementById("cluster-title-input").value.trim();
+  const filterIdRaw = document.getElementById("cluster-filter-input").value.trim();
+
+  if (!title) {
+    alert("Cluster title is required.");
+    document.getElementById("cluster-title-input").focus();
+    return;
+  }
+  const filterId = parseInt(filterIdRaw, 10);
+  if (!filterId || isNaN(filterId)) {
+    alert("Jira filter ID must be a number.");
+    document.getElementById("cluster-filter-input").focus();
+    return;
+  }
+
+  // Save as a local cluster
+  const local = loadLocalClusters();
+  if (local.some(c => String(c.id) === String(filterId))) {
+    alert(`A local cluster with filter ID ${filterId} already exists.`);
+    return;
+  }
+  local.push({ id: filterId, title: title });
+  saveLocalClusters(local);
+
+  // Show publish instructions
+  const snippet = JSON.stringify({ id: filterId, title: title }, null, 2);
+  document.getElementById("publish-snippet").textContent = snippet;
+  const url = repoEditUrl();
+  const link = document.getElementById("open-clusters-json");
+  if (url) {
+    link.href = url;
+    link.style.display = "";
+  } else {
+    link.style.display = "none";
+  }
+  document.getElementById("publish-instructions").classList.add("open");
+
+  // Update the modal buttons: "Add cluster" becomes "Done"
+  const createBtn = document.getElementById("modal-create");
+  createBtn.textContent = "Done — switch to this cluster";
+  createBtn.onclick = () => {
+    setActiveClusterId(filterId);
+    window.location.reload();
+  };
+}
+
+function setupClusterUI() {
+  document.getElementById("cluster-add-btn").onclick = openClusterModal;
+  document.getElementById("modal-cancel").onclick = closeClusterModal;
+  document.getElementById("modal-create").onclick = handleCreateCluster;
+  // Click backdrop to close
+  document.getElementById("cluster-modal").addEventListener("click", (e) => {
+    if (e.target.id === "cluster-modal") closeClusterModal();
+  });
+  // Escape to close
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeClusterModal();
+  });
+  // Copy snippet
+  document.getElementById("copy-snippet").onclick = () => {
+    const text = document.getElementById("publish-snippet").textContent;
+    navigator.clipboard?.writeText(text);
+    const btn = document.getElementById("copy-snippet");
+    const original = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(() => { btn.textContent = original; }, 1500);
+  };
+}
+
+// Fetch a specific cluster's snapshot file by URL.
+// If the file doesn't exist (e.g., a just-added local cluster that hasn't
+// been picked up by the scheduler yet), returns null.
+async function fetchClusterSnapshot(snapshotUrl) {
+  try {
+    const res = await fetch(snapshotUrl, { cache: "no-store" });
+    if (!res.ok) {
+      console.warn(`Could not load ${snapshotUrl}: HTTP ${res.status}`);
+      return null;
+    }
+    return await res.json();
+  } catch (e) {
+    console.warn(`Could not load ${snapshotUrl}:`, e.message);
+    return null;
+  }
+}
+
+// INIT — cluster-aware
 async function init() {
-  const remote = await fetchHostedSnapshots();
+  // Step 1: Load the aggregator (snapshots.json) to discover canonical clusters
+  const aggregator = await fetchHostedSnapshots();
+
+  // Step 2: Build the combined cluster list (canonical + local drafts)
+  const canonical = (aggregator && Array.isArray(aggregator.clusters))
+    ? aggregator.clusters
+    : [];
+  const local = loadLocalClusters();
+  const allClusters = mergeClusters(canonical, local);
+
+  // Step 3: Determine the active cluster
+  // Priority: localStorage value > aggregator default > first canonical > nothing
+  let activeId = getActiveClusterId();
+  if (activeId && !allClusters.some(c => String(c.id) === String(activeId))) {
+    activeId = null;  // stored ID no longer exists
+  }
+  if (!activeId && aggregator?.default_cluster_id) {
+    activeId = String(aggregator.default_cluster_id);
+  }
+  if (!activeId && canonical.length > 0) {
+    activeId = String(canonical[0].id);
+  }
+  if (!activeId && local.length > 0) {
+    activeId = String(local[0].id);
+  }
+
+  const activeCluster = allClusters.find(c => String(c.id) === String(activeId));
+
+  // Step 4: Render cluster pills + cluster meta
+  renderClusterPills(allClusters, activeId);
+  setupClusterUI();
+  const metaEl = document.getElementById("cluster-meta");
+  if (activeCluster) {
+    metaEl.textContent = `filter #${activeCluster.id}` +
+      (activeCluster._local ? " · local only" : "");
+    // Update masthead H1 + dateline to reflect active cluster
+    document.getElementById("masthead-cluster").textContent = activeCluster.title;
+    const linkEl = document.getElementById("dateline-filter-link");
+    linkEl.textContent = `#${activeCluster.id}`;
+    linkEl.href = `https://neumo.atlassian.net/issues/?filter=${activeCluster.id}`;
+    // For non-N TX clusters, the hardcoded NTX-5 scope wording is misleading.
+    // Hide it; the cluster's own filter defines its scope.
+    const isNTX = String(activeCluster.id) === "29799";
+    document.getElementById("dateline-scope-wrap").style.display = isNTX ? "" : "none";
+  } else {
+    metaEl.textContent = "";
+  }
+
+  // Step 5: Fetch the active cluster's snapshot data
+  // For the default cluster, the aggregator already has the data inlined
+  // (backward compatibility). For others, we fetch the per-cluster file.
+  let remote = null;
+  if (aggregator) {
+    const isDefault = activeCluster && !activeCluster._local
+      && String(activeCluster.id) === String(aggregator.default_cluster_id);
+    if (isDefault) {
+      // Use the inlined data from the aggregator
+      remote = aggregator;
+    } else if (activeCluster && !activeCluster._local) {
+      // Fetch the cluster's own snapshot file
+      remote = await fetchClusterSnapshot(activeCluster.snapshot_url);
+    }
+    // If activeCluster is local-only, remote stays null → falls back to embedded baseline
+  }
+
+  // Step 6: Render — identical to the legacy code path from here on
   let current, previous, baseline, allSnaps;
   let dataAsOf = null;
 
-  if (remote) {
-    // Hydrate remote into the same shape loadSnapshots() produces
+  if (remote && Array.isArray(remote.tickets)) {
     const currentSnap = {
       id: "remote-current",
       label: remote.exported_at || remote.today || "remote",
@@ -7216,12 +7704,11 @@ async function init() {
     baseline = allSnaps[0];
     dataAsOf = remote.updated_at;
 
-    // Override DATA for tiles that still read from it (spreadsheet, divergence)
     DATA.meta.today = remote.today || DATA.meta.today;
     DATA.spreadsheet = remote.spreadsheet || DATA.spreadsheet;
     DATA.divergence = remote.divergence || recomputeDivergence(current.tickets, DATA.spreadsheet || {});
   } else {
-    // Fallback: use embedded baseline (May 14 data)
+    // Fallback: embedded baseline (May 14 N TX data) — preserves original behavior
     const embedded = {
       id: "embedded",
       label: DATA.meta.exported_at,
@@ -7234,22 +7721,24 @@ async function init() {
     baseline = embedded;
   }
 
-  // Update status line — color-code by freshness
+  // Status line
   const statusEl = document.getElementById("snap-status");
-  if (remote) {
+  if (activeCluster && activeCluster._local && !remote) {
+    statusEl.innerHTML =
+      '<span style="color: var(--warn);">⚠ Local cluster — no data yet. ' +
+      'Publish to clusters.json; next scheduled refresh (8am or 4pm ET) will populate.</span>';
+  } else if (remote) {
     const updatedDisplay = dataAsOf
       ? new Date(dataAsOf).toLocaleString("en-US",
           { day: "numeric", month: "short", year: "numeric",
             hour: "numeric", minute: "2-digit", hour12: true })
       : "unknown";
-
-    // Determine freshness color
-    let freshnessColor = "var(--ink-soft)";  // default neutral
+    let freshnessColor = "var(--ink-soft)";
     let staleNote = "";
     if (dataAsOf) {
       const ageMs = Date.now() - new Date(dataAsOf).getTime();
       const ageHr = ageMs / (1000 * 60 * 60);
-      if (ageHr < 6) {
+      if (ageHr < 10) {
         freshnessColor = "var(--success)";
       } else if (ageHr < 24) {
         freshnessColor = "var(--ink-soft)";
@@ -7261,7 +7750,6 @@ async function init() {
         staleNote = " · auto-refresh failing — see GitHub Actions tab";
       }
     }
-
     statusEl.innerHTML =
       `<span style="color: ${freshnessColor};">data as of ${updatedDisplay}</span>` +
       ` · ${allSnaps.length} snapshot${allSnaps.length>1?"s":""}` +
