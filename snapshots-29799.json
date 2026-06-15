@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15T14:19:03Z",
+  "updated_at": "2026-06-15T14:50:06Z",
   "today": "2026-06-15",
   "exported_at": "15 Jun 2026 (auto)",
   "tickets": [
@@ -139,7 +139,7 @@
       ],
       "created": "2026-05-13T14:35:43.927-0400",
       "created_iso": "2026-05-13",
-      "age_days": 32,
+      "age_days": 33,
       "updated": "2026-05-26T19:39:21.689-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -180,8 +180,8 @@
       "created": "2024-02-19T16:24:19.365-0500",
       "created_iso": "2024-02-19",
       "age_days": 846,
-      "updated": "2026-06-11T08:27:08.515-0400",
-      "updated_iso": "2026-06-11",
+      "updated": "2026-06-15T10:24:40.401-0400",
+      "updated_iso": "2026-06-15",
       "end_date": "2026-06-30",
       "end_date_iso": "2026-06-30",
       "ships_month": "Jun 2026",
@@ -259,7 +259,7 @@
       ],
       "created": "2026-05-15T14:36:41.992-0400",
       "created_iso": "2026-05-15",
-      "age_days": 30,
+      "age_days": 31,
       "updated": "2026-06-04T13:21:54.813-0400",
       "updated_iso": "2026-06-04",
       "end_date": "2026-06-30",
@@ -699,7 +699,7 @@
       ],
       "created": "2026-05-13T14:29:15.283-0400",
       "created_iso": "2026-05-13",
-      "age_days": 32,
+      "age_days": 33,
       "updated": "2026-05-26T19:39:25.767-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -1167,7 +1167,7 @@
       ],
       "created": "2026-02-24T14:28:32.663-0500",
       "created_iso": "2026-02-24",
-      "age_days": 110,
+      "age_days": 111,
       "updated": "2026-06-11T12:20:13.515-0400",
       "updated_iso": "2026-06-11",
       "end_date": "2026-06-30",
@@ -2719,7 +2719,7 @@
       ],
       "created": "2025-09-22T14:35:04.016-0400",
       "created_iso": "2025-09-22",
-      "age_days": 265,
+      "age_days": 266,
       "updated": "2026-06-11T13:46:53.639-0400",
       "updated_iso": "2026-06-11",
       "end_date": "2026-07-31",
@@ -3175,34 +3175,28 @@
       ],
       "created": "2026-05-06T14:29:29.445-0400",
       "created_iso": "2026-05-06",
-      "age_days": 39,
-      "updated": "2026-06-12T15:36:45.468-0400",
-      "updated_iso": "2026-06-12",
+      "age_days": 40,
+      "updated": "2026-06-15T10:32:55.718-0400",
+      "updated_iso": "2026-06-15",
       "end_date": "2026-06-30",
       "end_date_iso": "2026-06-30",
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "9",
-      "labels_raw": "July-2026, June-2026, TXEscalation, jira_escalated, top5_hold",
+      "labels_raw": "June-2026, TXEscalation, jira_escalated, top5_hold",
       "delivery_targets": [
         {
           "label": "Jun-2026",
           "month_index": 5,
           "year": 2026,
           "sortable": 24317
-        },
-        {
-          "label": "Jul-2026",
-          "month_index": 6,
-          "year": 2026,
-          "sortable": 24318
         }
       ],
       "current_delivery_target": {
-        "label": "Jul-2026",
-        "month_index": 6,
+        "label": "Jun-2026",
+        "month_index": 5,
         "year": 2026,
-        "sortable": 24318
+        "sortable": 24317
       }
     },
     {
