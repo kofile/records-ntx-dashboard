@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T19:19:08Z",
+  "updated_at": "2026-06-16T19:53:43Z",
   "today": "2026-06-16",
   "exported_at": "16 Jun 2026 (auto)",
   "tickets": [
@@ -15,7 +15,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-06-15T12:25:48.526-0400",
       "created_iso": "2026-06-15",
@@ -43,7 +43,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-06-12T10:58:35.944-0400",
       "created_iso": "2026-06-12",
@@ -83,7 +83,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-06-10T01:33:24.875-0400",
       "created_iso": "2026-06-10",
@@ -123,7 +123,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-06-10T01:23:59.700-0400",
       "created_iso": "2026-06-10",
@@ -163,7 +163,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-06-08T23:55:19.262-0400",
       "created_iso": "2026-06-08",
@@ -203,7 +203,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-06-08T12:03:06.184-0400",
       "created_iso": "2026-06-08",
@@ -224,25 +224,25 @@
       "summary": "Beaufort SC eRecording |  GRANTOR/GRANTEE Middle Names, Initials Not Mapped to Cloud Records Order Item",
       "project": "VTC",
       "issue_type": "Story",
-      "status": "In Progress",
-      "status_family": "Other",
-      "delivery_bucket": "open",
-      "is_open": true,
+      "status": "Ready to merge to UAT",
+      "status_family": "In testing",
+      "delivery_bucket": "in_progress",
+      "is_open": false,
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-06-03T17:35:39.884-0400",
       "created_iso": "2026-06-03",
       "age_days": 13,
-      "updated": "2026-06-16T15:04:28.295-0400",
+      "updated": "2026-06-16T15:35:57.342-0400",
       "updated_iso": "2026-06-16",
       "end_date": "2026-06-19",
       "end_date_iso": "2026-06-19",
       "ships_month": "Jun 2026",
       "sprint": "",
-      "comments_count": "4",
+      "comments_count": "5",
       "labels_raw": "June-2026, TOP_5",
       "delivery_targets": [
         {
@@ -264,20 +264,20 @@
       "summary": "DATA FIX Beaufort SC | Verification Queue Orders Remain Assigned",
       "project": "VTC",
       "issue_type": "Bug",
-      "status": "Open",
-      "status_family": "Open",
+      "status": "Waiting for Info",
+      "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-06-02T08:55:00.508-0400",
       "created_iso": "2026-06-02",
       "age_days": 14,
-      "updated": "2026-06-02T08:55:00.750-0400",
-      "updated_iso": "2026-06-02",
+      "updated": "2026-06-16T15:22:37.310-0400",
+      "updated_iso": "2026-06-16",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
@@ -299,7 +299,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-05-13T19:09:51.068-0400",
       "created_iso": "2026-05-13",
@@ -327,7 +327,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-05-13T19:04:36.708-0400",
       "created_iso": "2026-05-13",
@@ -355,7 +355,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-05-13T11:26:22.360-0400",
       "created_iso": "2026-05-13",
@@ -383,7 +383,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-05-11T11:01:18.368-0400",
       "created_iso": "2026-05-11",
@@ -411,7 +411,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-05-08T12:40:24.339-0400",
       "created_iso": "2026-05-08",
@@ -439,7 +439,8 @@
       "team": "",
       "tenant_raw": "Beaufort SC, Oconee SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC",
+        "Oconee SC"
       ],
       "created": "2026-05-04T13:04:24.683-0400",
       "created_iso": "2026-05-04",
@@ -479,7 +480,8 @@
       "team": "",
       "tenant_raw": "All, Beaufort SC",
       "tenants": [
-        "(other)"
+        "All",
+        "Beaufort SC"
       ],
       "created": "2026-04-30T15:34:18.654-0400",
       "created_iso": "2026-04-30",
@@ -507,7 +509,7 @@
       "team": "",
       "tenant_raw": "All",
       "tenants": [
-        "(other)"
+        "All"
       ],
       "created": "2026-04-30T15:21:36.082-0400",
       "created_iso": "2026-04-30",
@@ -535,7 +537,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-04-27T14:33:55.347-0400",
       "created_iso": "2026-04-27",
@@ -575,7 +577,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-04-22T11:00:04.257-0400",
       "created_iso": "2026-04-22",
@@ -603,7 +605,8 @@
       "team": "",
       "tenant_raw": "Beaufort SC, Oconee SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC",
+        "Oconee SC"
       ],
       "created": "2026-04-22T08:52:23.662-0400",
       "created_iso": "2026-04-22",
@@ -631,7 +634,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-04-15T20:24:14.754-0400",
       "created_iso": "2026-04-15",
@@ -659,7 +662,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-04-15T13:12:30.552-0400",
       "created_iso": "2026-04-15",
@@ -699,7 +702,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-04-13T12:16:36.741-0400",
       "created_iso": "2026-04-13",
@@ -727,7 +730,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-04-13T11:59:15.978-0400",
       "created_iso": "2026-04-13",
@@ -755,7 +758,8 @@
       "team": "",
       "tenant_raw": "Beaufort SC, Oconee SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC",
+        "Oconee SC"
       ],
       "created": "2026-04-13T10:27:41.397-0400",
       "created_iso": "2026-04-13",
@@ -783,7 +787,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-04-06T12:03:13.073-0400",
       "created_iso": "2026-04-06",
@@ -811,7 +815,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2026-03-27T10:26:32.037-0400",
       "created_iso": "2026-03-27",
@@ -839,7 +843,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-03-19T20:05:05.729-0400",
       "created_iso": "2026-03-19",
@@ -867,7 +871,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-03-09T11:49:26.214-0400",
       "created_iso": "2026-03-09",
@@ -935,7 +939,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-03-03T10:39:35.164-0500",
       "created_iso": "2026-03-03",
@@ -963,7 +967,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-03-02T09:04:53.297-0500",
       "created_iso": "2026-03-02",
@@ -991,7 +995,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-02-25T21:31:13.091-0500",
       "created_iso": "2026-02-25",
@@ -1019,7 +1023,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-02-25T16:49:28.728-0500",
       "created_iso": "2026-02-25",
@@ -1047,7 +1051,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-02-18T17:57:42.411-0500",
       "created_iso": "2026-02-18",
@@ -1075,7 +1079,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-02-06T15:38:36.245-0500",
       "created_iso": "2026-02-06",
@@ -1103,7 +1107,7 @@
       "team": "",
       "tenant_raw": "Lake IL",
       "tenants": [
-        "(other)"
+        "Lake IL"
       ],
       "created": "2026-01-13T18:14:59.849-0500",
       "created_iso": "2026-01-13",
@@ -1131,7 +1135,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-11-29T05:53:19.361-0500",
       "created_iso": "2025-11-29",
@@ -1159,7 +1163,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2025-11-17T20:58:26.241-0500",
       "created_iso": "2025-11-17",
@@ -1187,7 +1191,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2025-11-17T16:55:20.948-0500",
       "created_iso": "2025-11-17",
@@ -1215,7 +1219,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2025-11-14T10:46:33.961-0500",
       "created_iso": "2025-11-14",
@@ -1243,7 +1247,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2025-11-12T14:26:37.055-0500",
       "created_iso": "2025-11-12",
@@ -1271,7 +1275,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2025-11-12T14:24:36.956-0500",
       "created_iso": "2025-11-12",
@@ -1299,7 +1303,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2025-11-03T15:26:59.398-0500",
       "created_iso": "2025-11-03",
@@ -1327,7 +1331,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2025-09-18T14:48:15.883-0400",
       "created_iso": "2025-09-18",
@@ -1355,7 +1359,8 @@
       "team": "",
       "tenant_raw": "Beaufort SC, Lake IL",
       "tenants": [
-        "(other)"
+        "Beaufort SC",
+        "Lake IL"
       ],
       "created": "2019-08-26T14:55:00.000-0400",
       "created_iso": "2019-08-26",

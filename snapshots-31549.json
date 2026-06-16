@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T19:19:07Z",
+  "updated_at": "2026-06-16T19:53:42Z",
   "today": "2026-06-16",
   "exported_at": "16 Jun 2026 (auto)",
   "tickets": [
@@ -43,7 +43,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-06-16T11:03:42.104-0400",
       "created_iso": "2026-06-16",
@@ -71,7 +71,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-06-16T10:44:43.691-0400",
       "created_iso": "2026-06-16",
@@ -99,7 +99,7 @@
       "team": "",
       "tenant_raw": "Kendall",
       "tenants": [
-        "(other)"
+        "Kendall"
       ],
       "created": "2026-06-16T10:00:52.739-0400",
       "created_iso": "2026-06-16",
@@ -155,7 +155,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2026-06-15T16:41:20.951-0400",
       "created_iso": "2026-06-15",
@@ -195,7 +195,7 @@
       "team": "",
       "tenant_raw": "Lake IL",
       "tenants": [
-        "(other)"
+        "Lake IL"
       ],
       "created": "2026-06-15T16:27:16.161-0400",
       "created_iso": "2026-06-15",
@@ -279,7 +279,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2026-06-15T10:12:57.908-0400",
       "created_iso": "2026-06-15",
@@ -307,7 +307,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-06-12T18:04:23.262-0400",
       "created_iso": "2026-06-12",
@@ -391,7 +391,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-06-12T13:06:56.449-0400",
       "created_iso": "2026-06-12",
@@ -447,7 +447,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-06-12T10:58:35.944-0400",
       "created_iso": "2026-06-12",
@@ -487,7 +487,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-06-12T10:22:50.999-0400",
       "created_iso": "2026-06-12",
@@ -707,7 +707,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2026-06-11T12:20:46.062-0400",
       "created_iso": "2026-06-11",
@@ -763,7 +763,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-06-10T16:08:00.476-0400",
       "created_iso": "2026-06-10",
@@ -819,7 +819,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-06-10T14:24:59.293-0400",
       "created_iso": "2026-06-10",
@@ -931,7 +931,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-06-10T10:46:04.432-0400",
       "created_iso": "2026-06-10",
@@ -987,7 +987,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-06-09T17:48:19.316-0400",
       "created_iso": "2026-06-09",
@@ -1015,7 +1015,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-06-09T17:42:23.438-0400",
       "created_iso": "2026-06-09",
@@ -1071,7 +1071,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-06-09T16:25:45.572-0400",
       "created_iso": "2026-06-09",
@@ -1183,7 +1183,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-06-08T14:20:50.301-0400",
       "created_iso": "2026-06-08",
@@ -1335,7 +1335,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2026-06-05T16:27:18.884-0400",
       "created_iso": "2026-06-05",
@@ -1363,7 +1363,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2026-06-05T16:13:06.063-0400",
       "created_iso": "2026-06-05",
@@ -1447,7 +1447,7 @@
       "team": "",
       "tenant_raw": "Jim Wells",
       "tenants": [
-        "(other)"
+        "Jim Wells"
       ],
       "created": "2026-06-05T13:12:09.601-0400",
       "created_iso": "2026-06-05",
@@ -1475,7 +1475,7 @@
       "team": "",
       "tenant_raw": "Kendall",
       "tenants": [
-        "(other)"
+        "Kendall"
       ],
       "created": "2026-06-05T11:04:45.795-0400",
       "created_iso": "2026-06-05",
@@ -1615,7 +1615,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-06-04T15:11:36.322-0400",
       "created_iso": "2026-06-04",
@@ -1643,7 +1643,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-06-04T11:01:38.140-0400",
       "created_iso": "2026-06-04",
@@ -2019,7 +2019,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-06-01T13:37:40.257-0400",
       "created_iso": "2026-06-01",
@@ -2155,7 +2155,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-05-29T09:52:59.093-0400",
       "created_iso": "2026-05-29",
@@ -2183,7 +2183,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-05-29T09:30:47.760-0400",
       "created_iso": "2026-05-29",
@@ -2239,7 +2239,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-05-28T17:27:12.281-0400",
       "created_iso": "2026-05-28",
@@ -2279,7 +2279,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2026-05-28T16:19:48.436-0400",
       "created_iso": "2026-05-28",
@@ -2307,7 +2307,7 @@
       "team": "",
       "tenant_raw": "Gillespie",
       "tenants": [
-        "(other)"
+        "Gillespie"
       ],
       "created": "2026-05-28T13:51:23.161-0400",
       "created_iso": "2026-05-28",
@@ -2335,7 +2335,7 @@
       "team": "",
       "tenant_raw": "Gillespie",
       "tenants": [
-        "(other)"
+        "Gillespie"
       ],
       "created": "2026-05-28T13:49:35.939-0400",
       "created_iso": "2026-05-28",
@@ -2447,7 +2447,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2026-05-27T17:49:05.128-0400",
       "created_iso": "2026-05-27",
@@ -2475,7 +2475,7 @@
       "team": "",
       "tenant_raw": "Lake IL",
       "tenants": [
-        "(other)"
+        "Lake IL"
       ],
       "created": "2026-05-27T17:00:43.950-0400",
       "created_iso": "2026-05-27",
@@ -2571,7 +2571,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2026-05-27T10:28:50.671-0400",
       "created_iso": "2026-05-27",
@@ -2639,7 +2639,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-05-26T17:23:16.671-0400",
       "created_iso": "2026-05-26",
@@ -2751,7 +2751,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2026-05-26T13:34:48.949-0400",
       "created_iso": "2026-05-26",
@@ -2887,7 +2887,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2026-05-22T12:13:15.425-0400",
       "created_iso": "2026-05-22",
@@ -2915,7 +2915,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-05-22T12:05:03.121-0400",
       "created_iso": "2026-05-22",
@@ -2943,7 +2943,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-05-21T17:53:48.233-0400",
       "created_iso": "2026-05-21",
@@ -2971,7 +2971,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2026-05-21T17:42:55.798-0400",
       "created_iso": "2026-05-21",
@@ -2999,7 +2999,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2026-05-21T13:58:31.862-0400",
       "created_iso": "2026-05-21",
@@ -3027,7 +3027,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-05-21T13:40:18.662-0400",
       "created_iso": "2026-05-21",
@@ -3055,7 +3055,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-05-21T13:08:25.916-0400",
       "created_iso": "2026-05-21",
@@ -3083,7 +3083,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-05-21T12:39:17.009-0400",
       "created_iso": "2026-05-21",
@@ -3111,7 +3111,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-05-21T12:35:31.876-0400",
       "created_iso": "2026-05-21",
@@ -3151,7 +3151,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2026-05-20T17:29:38.407-0400",
       "created_iso": "2026-05-20",
@@ -3263,7 +3263,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2026-05-19T12:20:22.438-0400",
       "created_iso": "2026-05-19",
@@ -3375,7 +3375,7 @@
       "team": "",
       "tenant_raw": "Reeves",
       "tenants": [
-        "(other)"
+        "Reeves"
       ],
       "created": "2026-05-18T13:34:03.270-0400",
       "created_iso": "2026-05-18",
@@ -3415,7 +3415,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2026-05-18T12:32:44.400-0400",
       "created_iso": "2026-05-18",
@@ -3523,7 +3523,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-05-14T16:53:22.543-0400",
       "created_iso": "2026-05-14",
@@ -3715,7 +3715,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-05-13T16:00:39.072-0400",
       "created_iso": "2026-05-13",
@@ -3743,7 +3743,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2026-05-13T15:08:08.282-0400",
       "created_iso": "2026-05-13",
@@ -3771,7 +3771,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-05-13T12:41:02.982-0400",
       "created_iso": "2026-05-13",
@@ -3839,7 +3839,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-05-13T11:03:14.822-0400",
       "created_iso": "2026-05-13",
@@ -3951,7 +3951,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-05-12T17:29:47.929-0400",
       "created_iso": "2026-05-12",
@@ -4007,7 +4007,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-05-12T15:30:21.288-0400",
       "created_iso": "2026-05-12",
@@ -4063,7 +4063,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-05-12T12:26:20.476-0400",
       "created_iso": "2026-05-12",
@@ -4159,7 +4159,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-05-11T12:58:07.075-0400",
       "created_iso": "2026-05-11",
@@ -4215,7 +4215,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC",
       "tenants": [
-        "(other)"
+        "Beaufort SC"
       ],
       "created": "2026-05-11T11:01:18.368-0400",
       "created_iso": "2026-05-11",
@@ -4271,7 +4271,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2026-05-08T17:22:22.810-0400",
       "created_iso": "2026-05-08",
@@ -4299,7 +4299,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2026-05-08T16:30:10.463-0400",
       "created_iso": "2026-05-08",
@@ -4327,7 +4327,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-05-08T15:25:40.015-0400",
       "created_iso": "2026-05-08",
@@ -4383,7 +4383,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2026-05-07T15:29:02.642-0400",
       "created_iso": "2026-05-07",
@@ -4411,7 +4411,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2026-05-07T12:29:24.324-0400",
       "created_iso": "2026-05-07",
@@ -4547,7 +4547,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2026-05-06T15:35:23.792-0400",
       "created_iso": "2026-05-06",
@@ -4661,7 +4661,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-05-06T12:17:56.995-0400",
       "created_iso": "2026-05-06",
@@ -4925,7 +4925,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2026-05-05T11:52:55.886-0400",
       "created_iso": "2026-05-05",
@@ -4953,7 +4953,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2026-05-05T11:15:05.685-0400",
       "created_iso": "2026-05-05",
@@ -4981,7 +4981,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2026-05-05T11:02:01.621-0400",
       "created_iso": "2026-05-05",
@@ -5009,7 +5009,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2026-05-05T10:37:52.840-0400",
       "created_iso": "2026-05-05",
@@ -5037,7 +5037,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2026-05-05T10:02:01.430-0400",
       "created_iso": "2026-05-05",
@@ -5161,6 +5161,7 @@
       "team": "",
       "tenant_raw": "Beaufort SC, Jefferson TX",
       "tenants": [
+        "Beaufort SC",
         "Jefferson"
       ],
       "created": "2026-05-04T13:35:18.407-0400",
@@ -5269,7 +5270,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2026-05-01T17:21:33.367-0400",
       "created_iso": "2026-05-01",
@@ -5337,7 +5338,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2026-05-01T15:43:04.353-0400",
       "created_iso": "2026-05-01",
@@ -5461,7 +5462,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2026-04-30T17:04:37.536-0400",
       "created_iso": "2026-04-30",
@@ -5489,7 +5490,7 @@
       "team": "",
       "tenant_raw": "Starr",
       "tenants": [
-        "(other)"
+        "Starr"
       ],
       "created": "2026-04-30T15:27:22.925-0400",
       "created_iso": "2026-04-30",
@@ -5693,7 +5694,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-04-29T16:50:11.451-0400",
       "created_iso": "2026-04-29",
@@ -5789,7 +5790,7 @@
       "team": "",
       "tenant_raw": "[no tenant]",
       "tenants": [
-        "(other)"
+        "[no tenant]"
       ],
       "created": "2026-04-29T14:40:11.086-0400",
       "created_iso": "2026-04-29",
@@ -5845,7 +5846,7 @@
       "team": "",
       "tenant_raw": "San Patricio",
       "tenants": [
-        "(other)"
+        "San Patricio"
       ],
       "created": "2026-04-29T10:44:39.622-0400",
       "created_iso": "2026-04-29",
@@ -5901,7 +5902,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2026-04-29T10:15:24.171-0400",
       "created_iso": "2026-04-29",
@@ -6161,7 +6162,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2026-04-28T12:36:05.986-0400",
       "created_iso": "2026-04-28",
@@ -6189,7 +6190,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-04-28T10:45:44.994-0400",
       "created_iso": "2026-04-28",
@@ -6217,7 +6218,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-04-28T10:32:21.173-0400",
       "created_iso": "2026-04-28",
@@ -6273,7 +6274,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-04-27T18:06:33.281-0400",
       "created_iso": "2026-04-27",
@@ -6301,7 +6302,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2026-04-27T16:32:13.131-0400",
       "created_iso": "2026-04-27",
@@ -6397,7 +6398,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-04-27T09:01:28.284-0400",
       "created_iso": "2026-04-27",
@@ -6493,7 +6494,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-04-24T11:16:58.310-0400",
       "created_iso": "2026-04-24",
@@ -6521,7 +6522,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2026-04-24T10:49:44.070-0400",
       "created_iso": "2026-04-24",
@@ -6549,7 +6550,7 @@
       "team": "",
       "tenant_raw": "Tarrant",
       "tenants": [
-        "(other)"
+        "Tarrant"
       ],
       "created": "2026-04-24T10:20:37.420-0400",
       "created_iso": "2026-04-24",
@@ -6577,7 +6578,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-04-23T18:25:13.005-0400",
       "created_iso": "2026-04-23",
@@ -6753,7 +6754,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2026-04-22T18:20:26.073-0400",
       "created_iso": "2026-04-22",
@@ -6781,7 +6782,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2026-04-22T17:14:59.600-0400",
       "created_iso": "2026-04-22",
@@ -7041,7 +7042,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2026-04-21T15:20:30.309-0400",
       "created_iso": "2026-04-21",
@@ -7069,7 +7070,7 @@
       "team": "",
       "tenant_raw": "Refugio",
       "tenants": [
-        "(other)"
+        "Refugio"
       ],
       "created": "2026-04-21T13:54:34.665-0400",
       "created_iso": "2026-04-21",
@@ -7109,7 +7110,7 @@
       "team": "",
       "tenant_raw": "Refugio",
       "tenants": [
-        "(other)"
+        "Refugio"
       ],
       "created": "2026-04-21T12:54:15.172-0400",
       "created_iso": "2026-04-21",
@@ -7149,7 +7150,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2026-04-21T11:14:15.917-0400",
       "created_iso": "2026-04-21",
@@ -7177,7 +7178,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2026-04-21T09:25:14.996-0400",
       "created_iso": "2026-04-21",
@@ -7425,7 +7426,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-04-17T18:07:26.139-0400",
       "created_iso": "2026-04-17",
@@ -7453,7 +7454,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2026-04-17T15:53:29.506-0400",
       "created_iso": "2026-04-17",
@@ -7493,7 +7494,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2026-04-17T11:24:51.417-0400",
       "created_iso": "2026-04-17",
@@ -7561,7 +7562,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-04-16T14:49:35.910-0400",
       "created_iso": "2026-04-16",
@@ -7645,7 +7646,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-04-16T12:55:02.924-0400",
       "created_iso": "2026-04-16",
@@ -7673,7 +7674,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-04-16T11:39:23.061-0400",
       "created_iso": "2026-04-16",
@@ -7713,7 +7714,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-04-16T09:57:35.547-0400",
       "created_iso": "2026-04-16",
@@ -7741,7 +7742,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-04-16T09:56:01.655-0400",
       "created_iso": "2026-04-16",
@@ -7769,7 +7770,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-04-16T09:33:41.080-0400",
       "created_iso": "2026-04-16",
@@ -7825,7 +7826,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-04-15T17:33:16.714-0400",
       "created_iso": "2026-04-15",
@@ -7937,7 +7938,7 @@
       "team": "",
       "tenant_raw": "Bee",
       "tenants": [
-        "(other)"
+        "Bee"
       ],
       "created": "2026-04-15T12:19:10.366-0400",
       "created_iso": "2026-04-15",
@@ -7965,7 +7966,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-04-15T10:45:41.949-0400",
       "created_iso": "2026-04-15",
@@ -8309,7 +8310,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-04-13T10:16:01.613-0400",
       "created_iso": "2026-04-13",
@@ -8500,7 +8501,7 @@
       "created": "2026-04-10T02:30:54.987-0400",
       "created_iso": "2026-04-10",
       "age_days": 67,
-      "updated": "2026-06-16T09:50:32.586-0400",
+      "updated": "2026-06-16T15:21:21.063-0400",
       "updated_iso": "2026-06-16",
       "end_date": "2026-09-11",
       "end_date_iso": "2026-09-11",
@@ -8535,7 +8536,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-04-09T18:03:49.919-0400",
       "created_iso": "2026-04-09",
@@ -8647,7 +8648,7 @@
       "team": "",
       "tenant_raw": "Green Couty Recorder OH",
       "tenants": [
-        "(other)"
+        "Green Couty Recorder OH"
       ],
       "created": "2026-04-09T17:36:19.823-0400",
       "created_iso": "2026-04-09",
@@ -8675,7 +8676,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2026-04-09T16:47:36.458-0400",
       "created_iso": "2026-04-09",
@@ -8703,7 +8704,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2026-04-09T11:13:45.192-0400",
       "created_iso": "2026-04-09",
@@ -8827,7 +8828,7 @@
       "team": "",
       "tenant_raw": "All",
       "tenants": [
-        "(other)"
+        "All"
       ],
       "created": "2026-04-08T11:17:40.171-0400",
       "created_iso": "2026-04-08",
@@ -8939,7 +8940,7 @@
       "team": "",
       "tenant_raw": "Leon TX",
       "tenants": [
-        "(other)"
+        "Leon"
       ],
       "created": "2026-04-06T18:48:19.234-0400",
       "created_iso": "2026-04-06",
@@ -9007,7 +9008,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2026-04-03T15:59:47.882-0400",
       "created_iso": "2026-04-03",
@@ -9159,7 +9160,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-04-02T12:45:10.222-0400",
       "created_iso": "2026-04-02",
@@ -9299,7 +9300,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-03-31T12:02:34.092-0400",
       "created_iso": "2026-03-31",
@@ -9327,7 +9328,7 @@
       "team": "",
       "tenant_raw": "Oconee SC",
       "tenants": [
-        "(other)"
+        "Oconee SC"
       ],
       "created": "2026-03-30T21:44:02.449-0400",
       "created_iso": "2026-03-30",
@@ -9395,7 +9396,11 @@
       "team": "",
       "tenant_raw": "Anderson, Baldwin AL, Johnson, Lake IL, Nueces",
       "tenants": [
-        "Johnson"
+        "Anderson",
+        "Baldwin AL",
+        "Johnson",
+        "Lake IL",
+        "Nueces"
       ],
       "created": "2026-03-30T10:47:57.844-0400",
       "created_iso": "2026-03-30",
@@ -9535,7 +9540,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-03-26T15:36:27.644-0400",
       "created_iso": "2026-03-26",
@@ -9603,7 +9608,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-03-26T12:28:45.162-0400",
       "created_iso": "2026-03-26",
@@ -9631,7 +9636,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-03-26T11:18:05.470-0400",
       "created_iso": "2026-03-26",
@@ -9687,7 +9692,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-03-25T17:58:09.299-0400",
       "created_iso": "2026-03-25",
@@ -9743,7 +9748,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2026-03-24T17:32:57.035-0400",
       "created_iso": "2026-03-24",
@@ -9771,7 +9776,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2026-03-24T17:25:38.696-0400",
       "created_iso": "2026-03-24",
@@ -9855,7 +9860,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2026-03-23T13:53:58.563-0400",
       "created_iso": "2026-03-23",
@@ -9883,7 +9888,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-03-23T13:13:27.618-0400",
       "created_iso": "2026-03-23",
@@ -9967,7 +9972,7 @@
       "team": "",
       "tenant_raw": "Kendall",
       "tenants": [
-        "(other)"
+        "Kendall"
       ],
       "created": "2026-03-20T00:14:57.726-0400",
       "created_iso": "2026-03-20",
@@ -9995,7 +10000,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-03-19T23:08:20.249-0400",
       "created_iso": "2026-03-19",
@@ -10023,7 +10028,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2026-03-19T22:31:55.068-0400",
       "created_iso": "2026-03-19",
@@ -10051,7 +10056,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2026-03-19T17:42:07.234-0400",
       "created_iso": "2026-03-19",
@@ -10079,7 +10084,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-03-19T17:09:14.447-0400",
       "created_iso": "2026-03-19",
@@ -10135,7 +10140,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-03-18T22:50:28.303-0400",
       "created_iso": "2026-03-18",
@@ -10163,7 +10168,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-03-18T16:16:22.776-0400",
       "created_iso": "2026-03-18",
@@ -10303,7 +10308,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-03-17T17:40:13.888-0400",
       "created_iso": "2026-03-17",
@@ -10331,7 +10336,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2026-03-17T11:06:14.199-0400",
       "created_iso": "2026-03-17",
@@ -10467,7 +10472,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-03-13T15:29:16.893-0400",
       "created_iso": "2026-03-13",
@@ -10495,7 +10500,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2026-03-13T12:00:04.332-0400",
       "created_iso": "2026-03-13",
@@ -10579,7 +10584,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-03-12T18:04:19.228-0400",
       "created_iso": "2026-03-12",
@@ -10607,7 +10612,7 @@
       "team": "",
       "tenant_raw": "Kendall",
       "tenants": [
-        "(other)"
+        "Kendall"
       ],
       "created": "2026-03-12T17:34:55.611-0400",
       "created_iso": "2026-03-12",
@@ -10703,7 +10708,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2026-03-12T14:07:06.441-0400",
       "created_iso": "2026-03-12",
@@ -10731,7 +10736,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-03-12T12:54:48.319-0400",
       "created_iso": "2026-03-12",
@@ -10815,7 +10820,7 @@
       "team": "",
       "tenant_raw": "Jim Wells",
       "tenants": [
-        "(other)"
+        "Jim Wells"
       ],
       "created": "2026-03-10T16:41:13.725-0400",
       "created_iso": "2026-03-10",
@@ -10843,7 +10848,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-03-10T14:34:25.913-0400",
       "created_iso": "2026-03-10",
@@ -10973,7 +10978,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2026-03-06T13:43:17.410-0500",
       "created_iso": "2026-03-06",
@@ -11069,7 +11074,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2026-03-06T12:49:23.817-0500",
       "created_iso": "2026-03-06",
@@ -11137,7 +11142,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-03-05T16:13:15.805-0500",
       "created_iso": "2026-03-05",
@@ -11261,7 +11266,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-03-05T12:04:36.997-0500",
       "created_iso": "2026-03-05",
@@ -11537,7 +11542,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-03-04T14:46:16.248-0500",
       "created_iso": "2026-03-04",
@@ -11565,7 +11570,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2026-03-04T14:44:33.787-0500",
       "created_iso": "2026-03-04",
@@ -11729,7 +11734,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2026-03-03T18:12:54.738-0500",
       "created_iso": "2026-03-03",
@@ -11785,7 +11790,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2026-03-03T16:16:44.999-0500",
       "created_iso": "2026-03-03",
@@ -11813,7 +11818,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-03-03T15:58:58.388-0500",
       "created_iso": "2026-03-03",
@@ -12033,7 +12038,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2026-03-03T13:28:39.105-0500",
       "created_iso": "2026-03-03",
@@ -12117,7 +12122,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-03-03T11:11:05.377-0500",
       "created_iso": "2026-03-03",
@@ -12145,7 +12150,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2026-03-03T10:09:44.380-0500",
       "created_iso": "2026-03-03",
@@ -12201,7 +12206,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2026-03-02T18:23:39.005-0500",
       "created_iso": "2026-03-02",
@@ -12269,7 +12274,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-03-02T16:19:29.544-0500",
       "created_iso": "2026-03-02",
@@ -12309,7 +12314,8 @@
       "team": "",
       "tenant_raw": "Wayne, Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne",
+        "Wayne MI"
       ],
       "created": "2026-03-02T15:40:26.782-0500",
       "created_iso": "2026-03-02",
@@ -12337,7 +12343,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-03-02T14:52:50.166-0500",
       "created_iso": "2026-03-02",
@@ -12393,7 +12399,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-03-02T09:35:53.183-0500",
       "created_iso": "2026-03-02",
@@ -12477,7 +12483,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-27T09:26:00.906-0500",
       "created_iso": "2026-02-27",
@@ -12729,7 +12735,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-02-25T13:58:09.385-0500",
       "created_iso": "2026-02-25",
@@ -12785,7 +12791,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-25T11:26:41.785-0500",
       "created_iso": "2026-02-25",
@@ -12909,7 +12915,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-02-24T15:41:25.450-0500",
       "created_iso": "2026-02-24",
@@ -12937,7 +12943,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-02-24T14:50:21.953-0500",
       "created_iso": "2026-02-24",
@@ -13005,7 +13011,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-02-24T13:43:02.193-0500",
       "created_iso": "2026-02-24",
@@ -13061,7 +13067,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2026-02-24T13:24:17.946-0500",
       "created_iso": "2026-02-24",
@@ -13089,7 +13095,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-02-24T13:17:59.401-0500",
       "created_iso": "2026-02-24",
@@ -13117,7 +13123,7 @@
       "team": "",
       "tenant_raw": "Grimes",
       "tenants": [
-        "(other)"
+        "Grimes"
       ],
       "created": "2026-02-24T12:53:34.028-0500",
       "created_iso": "2026-02-24",
@@ -13434,7 +13440,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-23T10:08:00.208-0500",
       "created_iso": "2026-02-23",
@@ -13462,7 +13468,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-02-23T09:54:01.645-0500",
       "created_iso": "2026-02-23",
@@ -13490,7 +13496,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-20T17:52:26.336-0500",
       "created_iso": "2026-02-20",
@@ -13602,7 +13608,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-02-20T14:20:37.021-0500",
       "created_iso": "2026-02-20",
@@ -13658,7 +13664,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-02-20T12:15:31.304-0500",
       "created_iso": "2026-02-20",
@@ -13714,7 +13720,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-02-20T00:30:21.039-0500",
       "created_iso": "2026-02-20",
@@ -13742,7 +13748,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-19T17:49:18.744-0500",
       "created_iso": "2026-02-19",
@@ -13770,7 +13776,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2026-02-19T16:31:47.352-0500",
       "created_iso": "2026-02-19",
@@ -13966,7 +13972,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2026-02-18T14:30:40.607-0500",
       "created_iso": "2026-02-18",
@@ -14022,7 +14028,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-18T11:32:06.655-0500",
       "created_iso": "2026-02-18",
@@ -14118,7 +14124,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-18T10:20:09.246-0500",
       "created_iso": "2026-02-18",
@@ -14282,7 +14288,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-02-12T17:15:38.273-0500",
       "created_iso": "2026-02-12",
@@ -14394,7 +14400,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-11T10:04:59.461-0500",
       "created_iso": "2026-02-11",
@@ -14478,7 +14484,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-10T18:05:16.894-0500",
       "created_iso": "2026-02-10",
@@ -14506,7 +14512,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-10T17:29:55.265-0500",
       "created_iso": "2026-02-10",
@@ -14534,7 +14540,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-02-10T16:02:32.511-0500",
       "created_iso": "2026-02-10",
@@ -14562,7 +14568,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-10T14:44:28.877-0500",
       "created_iso": "2026-02-10",
@@ -14646,7 +14652,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-09T18:20:59.754-0500",
       "created_iso": "2026-02-09",
@@ -14702,7 +14708,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-09T16:08:12.897-0500",
       "created_iso": "2026-02-09",
@@ -14758,7 +14764,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-06T14:47:27.297-0500",
       "created_iso": "2026-02-06",
@@ -14786,7 +14792,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-06T13:24:17.615-0500",
       "created_iso": "2026-02-06",
@@ -14814,7 +14820,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-06T12:48:51.828-0500",
       "created_iso": "2026-02-06",
@@ -14842,7 +14848,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-06T11:26:42.799-0500",
       "created_iso": "2026-02-06",
@@ -14870,7 +14876,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-06T10:30:26.528-0500",
       "created_iso": "2026-02-06",
@@ -14898,7 +14904,7 @@
       "team": "",
       "tenant_raw": "All",
       "tenants": [
-        "(other)"
+        "All"
       ],
       "created": "2026-02-05T18:55:33.797-0500",
       "created_iso": "2026-02-05",
@@ -14938,7 +14944,7 @@
       "team": "",
       "tenant_raw": "Midland TX",
       "tenants": [
-        "(other)"
+        "Midland"
       ],
       "created": "2026-02-05T16:35:52.119-0500",
       "created_iso": "2026-02-05",
@@ -14966,7 +14972,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-05T16:19:29.626-0500",
       "created_iso": "2026-02-05",
@@ -15078,7 +15084,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-05T15:45:36.239-0500",
       "created_iso": "2026-02-05",
@@ -15106,7 +15112,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-02-05T15:26:03.609-0500",
       "created_iso": "2026-02-05",
@@ -15134,7 +15140,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2026-02-05T15:17:03.643-0500",
       "created_iso": "2026-02-05",
@@ -15162,7 +15168,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-02-05T11:57:20.958-0500",
       "created_iso": "2026-02-05",
@@ -15190,7 +15196,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2026-02-05T10:40:00.288-0500",
       "created_iso": "2026-02-05",
@@ -15218,7 +15224,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2026-02-05T09:43:41.077-0500",
       "created_iso": "2026-02-05",
@@ -15386,7 +15392,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-04T11:08:18.226-0500",
       "created_iso": "2026-02-04",
@@ -15442,7 +15448,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-04T10:17:26.423-0500",
       "created_iso": "2026-02-04",
@@ -15470,7 +15476,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-03T16:06:31.317-0500",
       "created_iso": "2026-02-03",
@@ -15498,7 +15504,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-03T14:52:20.871-0500",
       "created_iso": "2026-02-03",
@@ -15526,7 +15532,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2026-02-03T12:01:04.199-0500",
       "created_iso": "2026-02-03",
@@ -15582,7 +15588,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-02T18:32:14.699-0500",
       "created_iso": "2026-02-02",
@@ -15610,7 +15616,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2026-02-02T14:53:21.923-0500",
       "created_iso": "2026-02-02",
@@ -15638,7 +15644,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-02-02T10:01:27.174-0500",
       "created_iso": "2026-02-02",
@@ -15722,7 +15728,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-30T16:13:31.880-0500",
       "created_iso": "2026-01-30",
@@ -15862,7 +15868,7 @@
       "team": "",
       "tenant_raw": "Lake IL",
       "tenants": [
-        "(other)"
+        "Lake IL"
       ],
       "created": "2026-01-30T12:25:09.423-0500",
       "created_iso": "2026-01-30",
@@ -15890,7 +15896,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-30T10:29:35.666-0500",
       "created_iso": "2026-01-30",
@@ -15919,7 +15925,8 @@
       "tenant_raw": "Dallas, Jefferson TX, San Patricio",
       "tenants": [
         "Dallas",
-        "Jefferson"
+        "Jefferson",
+        "San Patricio"
       ],
       "created": "2026-01-30T10:18:31.140-0500",
       "created_iso": "2026-01-30",
@@ -15975,7 +15982,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-28T12:20:05.613-0500",
       "created_iso": "2026-01-28",
@@ -16003,7 +16010,8 @@
       "team": "",
       "tenant_raw": "Wayne, Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne",
+        "Wayne MI"
       ],
       "created": "2026-01-27T17:43:24.515-0500",
       "created_iso": "2026-01-27",
@@ -16031,7 +16039,7 @@
       "team": "",
       "tenant_raw": "Matagorda",
       "tenants": [
-        "(other)"
+        "Matagorda"
       ],
       "created": "2026-01-27T16:25:27.826-0500",
       "created_iso": "2026-01-27",
@@ -16059,7 +16067,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-27T13:40:01.163-0500",
       "created_iso": "2026-01-27",
@@ -16143,7 +16151,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2026-01-27T11:29:54.513-0500",
       "created_iso": "2026-01-27",
@@ -16199,7 +16207,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-23T12:23:24.903-0500",
       "created_iso": "2026-01-23",
@@ -16227,7 +16235,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2026-01-23T12:00:37.007-0500",
       "created_iso": "2026-01-23",
@@ -16283,7 +16291,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-01-23T09:27:40.028-0500",
       "created_iso": "2026-01-23",
@@ -16395,7 +16403,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-01-22T14:07:22.411-0500",
       "created_iso": "2026-01-22",
@@ -16423,7 +16431,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2026-01-22T13:45:31.630-0500",
       "created_iso": "2026-01-22",
@@ -16479,7 +16487,7 @@
       "team": "",
       "tenant_raw": "Matagorda",
       "tenants": [
-        "(other)"
+        "Matagorda"
       ],
       "created": "2026-01-21T17:07:40.577-0500",
       "created_iso": "2026-01-21",
@@ -16507,7 +16515,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-21T12:42:07.467-0500",
       "created_iso": "2026-01-21",
@@ -16535,7 +16543,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2026-01-20T17:13:46.486-0500",
       "created_iso": "2026-01-20",
@@ -16563,7 +16571,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-01-20T17:09:12.078-0500",
       "created_iso": "2026-01-20",
@@ -16619,7 +16627,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-20T12:26:01.188-0500",
       "created_iso": "2026-01-20",
@@ -16839,7 +16847,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2026-01-15T17:31:03.176-0500",
       "created_iso": "2026-01-15",
@@ -16867,7 +16875,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2026-01-15T17:20:55.579-0500",
       "created_iso": "2026-01-15",
@@ -16951,7 +16959,7 @@
       "team": "",
       "tenant_raw": "Kendall",
       "tenants": [
-        "(other)"
+        "Kendall"
       ],
       "created": "2026-01-14T13:29:41.185-0500",
       "created_iso": "2026-01-14",
@@ -16979,7 +16987,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-01-13T13:39:14.565-0500",
       "created_iso": "2026-01-13",
@@ -17035,7 +17043,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-12T16:59:31.772-0500",
       "created_iso": "2026-01-12",
@@ -17063,7 +17071,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-12T14:12:00.237-0500",
       "created_iso": "2026-01-12",
@@ -17091,7 +17099,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2026-01-12T12:34:35.065-0500",
       "created_iso": "2026-01-12",
@@ -17119,7 +17127,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-01-12T10:23:03.281-0500",
       "created_iso": "2026-01-12",
@@ -17147,7 +17155,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-01-12T09:30:28.578-0500",
       "created_iso": "2026-01-12",
@@ -17175,7 +17183,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-12T09:27:39.175-0500",
       "created_iso": "2026-01-12",
@@ -17203,7 +17211,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-09T17:43:03.372-0500",
       "created_iso": "2026-01-09",
@@ -17259,7 +17267,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-01-09T13:25:05.165-0500",
       "created_iso": "2026-01-09",
@@ -17287,7 +17295,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2026-01-09T10:59:10.803-0500",
       "created_iso": "2026-01-09",
@@ -17427,7 +17435,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2026-01-08T14:30:29.318-0500",
       "created_iso": "2026-01-08",
@@ -17455,7 +17463,8 @@
       "team": "",
       "tenant_raw": "Dallas, Lake IL",
       "tenants": [
-        "Dallas"
+        "Dallas",
+        "Lake IL"
       ],
       "created": "2026-01-08T13:30:31.508-0500",
       "created_iso": "2026-01-08",
@@ -17551,7 +17560,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-01-07T17:04:31.145-0500",
       "created_iso": "2026-01-07",
@@ -17607,7 +17616,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-01-06T17:44:54.005-0500",
       "created_iso": "2026-01-06",
@@ -17703,7 +17712,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-01-06T12:02:59.768-0500",
       "created_iso": "2026-01-06",
@@ -17731,7 +17740,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-01-06T10:29:50.871-0500",
       "created_iso": "2026-01-06",
@@ -17759,7 +17768,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2026-01-06T10:01:38.602-0500",
       "created_iso": "2026-01-06",
@@ -17815,7 +17824,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2026-01-05T13:08:52.339-0500",
       "created_iso": "2026-01-05",
@@ -17843,7 +17852,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2026-01-05T10:19:34.385-0500",
       "created_iso": "2026-01-05",
@@ -17871,7 +17880,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2026-01-02T10:35:08.054-0500",
       "created_iso": "2026-01-02",
@@ -18107,7 +18116,7 @@
       "team": "",
       "tenant_raw": "Gillespie",
       "tenants": [
-        "(other)"
+        "Gillespie"
       ],
       "created": "2025-12-29T11:58:09.083-0500",
       "created_iso": "2025-12-29",
@@ -18135,7 +18144,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-12-29T09:38:23.431-0500",
       "created_iso": "2025-12-29",
@@ -18191,7 +18200,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-12-24T16:55:52.617-0500",
       "created_iso": "2025-12-24",
@@ -18275,7 +18284,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-12-22T17:21:16.604-0500",
       "created_iso": "2025-12-22",
@@ -18359,7 +18368,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-12-22T16:55:33.603-0500",
       "created_iso": "2025-12-22",
@@ -18387,7 +18396,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2025-12-22T16:48:51.588-0500",
       "created_iso": "2025-12-22",
@@ -18471,7 +18480,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-12-22T12:07:04.987-0500",
       "created_iso": "2025-12-22",
@@ -18499,7 +18508,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-12-22T11:09:55.142-0500",
       "created_iso": "2025-12-22",
@@ -18555,7 +18564,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-12-22T10:36:07.217-0500",
       "created_iso": "2025-12-22",
@@ -18667,7 +18676,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-12-22T09:08:39.036-0500",
       "created_iso": "2025-12-22",
@@ -18695,7 +18704,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-12-22T08:32:45.019-0500",
       "created_iso": "2025-12-22",
@@ -18723,7 +18732,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-12-19T16:32:57.957-0500",
       "created_iso": "2025-12-19",
@@ -18751,7 +18760,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-12-19T15:16:09.462-0500",
       "created_iso": "2025-12-19",
@@ -18807,7 +18816,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2025-12-18T17:05:26.365-0500",
       "created_iso": "2025-12-18",
@@ -18835,7 +18844,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-12-18T14:48:23.661-0500",
       "created_iso": "2025-12-18",
@@ -18863,7 +18872,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-12-18T13:53:19.948-0500",
       "created_iso": "2025-12-18",
@@ -18891,7 +18900,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2025-12-18T12:17:11.555-0500",
       "created_iso": "2025-12-18",
@@ -18919,7 +18928,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-12-18T10:24:03.176-0500",
       "created_iso": "2025-12-18",
@@ -18947,7 +18956,7 @@
       "team": "",
       "tenant_raw": "All",
       "tenants": [
-        "(other)"
+        "All"
       ],
       "created": "2025-12-18T09:48:07.068-0500",
       "created_iso": "2025-12-18",
@@ -19043,7 +19052,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2025-12-17T13:14:00.517-0500",
       "created_iso": "2025-12-17",
@@ -19195,7 +19204,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-12-16T13:32:33.869-0500",
       "created_iso": "2025-12-16",
@@ -19251,7 +19260,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-12-16T08:52:02.878-0500",
       "created_iso": "2025-12-16",
@@ -19279,7 +19288,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-12-15T11:13:43.721-0500",
       "created_iso": "2025-12-15",
@@ -19447,7 +19456,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-12-12T10:48:01.461-0500",
       "created_iso": "2025-12-12",
@@ -19643,7 +19652,8 @@
       "team": "",
       "tenant_raw": "Collin, Lake IL",
       "tenants": [
-        "Collin"
+        "Collin",
+        "Lake IL"
       ],
       "created": "2025-12-08T13:16:34.854-0500",
       "created_iso": "2025-12-08",
@@ -19683,7 +19693,7 @@
       "team": "",
       "tenant_raw": "Tarrant",
       "tenants": [
-        "(other)"
+        "Tarrant"
       ],
       "created": "2025-12-08T11:45:22.884-0500",
       "created_iso": "2025-12-08",
@@ -19711,7 +19721,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2025-12-08T11:08:47.915-0500",
       "created_iso": "2025-12-08",
@@ -19739,7 +19749,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-12-08T09:22:01.393-0500",
       "created_iso": "2025-12-08",
@@ -19795,7 +19805,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2025-12-05T10:18:08.629-0500",
       "created_iso": "2025-12-05",
@@ -19823,7 +19833,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-12-04T18:03:57.144-0500",
       "created_iso": "2025-12-04",
@@ -19992,7 +20002,8 @@
       "tenant_raw": "Collin, Denton, Smith",
       "tenants": [
         "Collin",
-        "Denton"
+        "Denton",
+        "Smith"
       ],
       "created": "2025-12-02T02:35:06.361-0500",
       "created_iso": "2025-12-02",
@@ -20020,7 +20031,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-12-01T16:05:28.679-0500",
       "created_iso": "2025-12-01",
@@ -20132,7 +20143,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-11-26T17:07:08.711-0500",
       "created_iso": "2025-11-26",
@@ -20160,7 +20171,7 @@
       "team": "",
       "tenant_raw": "Mecosta",
       "tenants": [
-        "(other)"
+        "Mecosta"
       ],
       "created": "2025-11-26T16:15:59.060-0500",
       "created_iso": "2025-11-26",
@@ -20216,7 +20227,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-11-26T12:34:27.061-0500",
       "created_iso": "2025-11-26",
@@ -20244,7 +20255,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-11-26T09:20:05.542-0500",
       "created_iso": "2025-11-26",
@@ -20272,7 +20283,7 @@
       "team": "",
       "tenant_raw": "Midland",
       "tenants": [
-        "(other)"
+        "Midland"
       ],
       "created": "2025-11-25T17:08:48.286-0500",
       "created_iso": "2025-11-25",
@@ -20300,7 +20311,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2025-11-25T15:51:05.318-0500",
       "created_iso": "2025-11-25",
@@ -20328,7 +20339,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-11-25T15:31:30.992-0500",
       "created_iso": "2025-11-25",
@@ -20384,7 +20395,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2025-11-24T13:46:28.737-0500",
       "created_iso": "2025-11-24",
@@ -20524,7 +20535,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2025-11-21T10:23:46.807-0500",
       "created_iso": "2025-11-21",
@@ -20928,7 +20939,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2025-11-14T15:57:11.141-0500",
       "created_iso": "2025-11-14",
@@ -21040,7 +21051,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-11-13T16:28:04.861-0500",
       "created_iso": "2025-11-13",
@@ -21096,7 +21107,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-11-13T13:15:07.300-0500",
       "created_iso": "2025-11-13",
@@ -21264,7 +21275,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-11-12T09:01:38.902-0500",
       "created_iso": "2025-11-12",
@@ -21292,7 +21303,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-11-12T08:33:03.552-0500",
       "created_iso": "2025-11-12",
@@ -21348,7 +21359,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-11-11T14:37:20.797-0500",
       "created_iso": "2025-11-11",
@@ -21404,7 +21415,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2025-11-11T10:47:06.358-0500",
       "created_iso": "2025-11-11",
@@ -21432,7 +21443,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2025-11-11T10:29:47.118-0500",
       "created_iso": "2025-11-11",
@@ -21460,7 +21471,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2025-11-10T15:27:05.606-0500",
       "created_iso": "2025-11-10",
@@ -21640,7 +21651,11 @@
       "team": "",
       "tenant_raw": "Bexar, Brazos, Chambers, Denton, Jim Wells",
       "tenants": [
-        "Denton"
+        "Bexar",
+        "Brazos",
+        "Chambers",
+        "Denton",
+        "Jim Wells"
       ],
       "created": "2025-11-07T14:27:23.251-0500",
       "created_iso": "2025-11-07",
@@ -21696,7 +21711,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2025-11-07T12:27:54.036-0500",
       "created_iso": "2025-11-07",
@@ -21724,7 +21739,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2025-11-07T10:23:37.384-0500",
       "created_iso": "2025-11-07",
@@ -21752,7 +21767,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2025-11-06T17:04:28.092-0500",
       "created_iso": "2025-11-06",
@@ -21920,7 +21935,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-11-04T12:07:06.048-0500",
       "created_iso": "2025-11-04",
@@ -22032,7 +22047,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2025-11-03T11:42:10.866-0500",
       "created_iso": "2025-11-03",
@@ -22060,7 +22075,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-10-31T11:47:01.660-0400",
       "created_iso": "2025-10-31",
@@ -22088,7 +22103,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-10-31T11:17:48.514-0400",
       "created_iso": "2025-10-31",
@@ -22116,7 +22131,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-10-31T11:01:32.309-0400",
       "created_iso": "2025-10-31",
@@ -22224,7 +22239,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-10-29T09:18:47.985-0400",
       "created_iso": "2025-10-29",
@@ -22252,7 +22267,7 @@
       "team": "",
       "tenant_raw": "All",
       "tenants": [
-        "(other)"
+        "All"
       ],
       "created": "2025-10-28T15:31:44.295-0400",
       "created_iso": "2025-10-28",
@@ -22308,7 +22323,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2025-10-28T09:56:14.456-0400",
       "created_iso": "2025-10-28",
@@ -22392,7 +22407,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2025-10-24T14:52:29.298-0400",
       "created_iso": "2025-10-24",
@@ -22420,7 +22435,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2025-10-24T12:16:03.579-0400",
       "created_iso": "2025-10-24",
@@ -22448,7 +22463,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-10-24T09:38:47.084-0400",
       "created_iso": "2025-10-24",
@@ -22476,7 +22491,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-10-23T16:56:52.256-0400",
       "created_iso": "2025-10-23",
@@ -22504,7 +22519,7 @@
       "team": "",
       "tenant_raw": "Oceana MI",
       "tenants": [
-        "(other)"
+        "Oceana MI"
       ],
       "created": "2025-10-23T16:27:39.793-0400",
       "created_iso": "2025-10-23",
@@ -22532,7 +22547,7 @@
       "team": "",
       "tenant_raw": "Jim Wells",
       "tenants": [
-        "(other)"
+        "Jim Wells"
       ],
       "created": "2025-10-23T15:44:04.716-0400",
       "created_iso": "2025-10-23",
@@ -22644,7 +22659,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-10-23T11:42:28.502-0400",
       "created_iso": "2025-10-23",
@@ -22924,7 +22939,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2025-10-20T15:57:31.056-0400",
       "created_iso": "2025-10-20",
@@ -22952,7 +22967,7 @@
       "team": "",
       "tenant_raw": "Milam",
       "tenants": [
-        "(other)"
+        "Milam"
       ],
       "created": "2025-10-20T09:47:30.601-0400",
       "created_iso": "2025-10-20",
@@ -22980,7 +22995,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-10-17T17:59:43.019-0400",
       "created_iso": "2025-10-17",
@@ -23008,7 +23023,7 @@
       "team": "",
       "tenant_raw": "Tarrant",
       "tenants": [
-        "(other)"
+        "Tarrant"
       ],
       "created": "2025-10-17T15:29:56.408-0400",
       "created_iso": "2025-10-17",
@@ -23092,7 +23107,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-10-17T11:17:47.844-0400",
       "created_iso": "2025-10-17",
@@ -23148,7 +23163,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-10-16T17:48:06.632-0400",
       "created_iso": "2025-10-16",
@@ -23204,7 +23219,7 @@
       "team": "",
       "tenant_raw": "Blanco",
       "tenants": [
-        "(other)"
+        "Blanco"
       ],
       "created": "2025-10-16T12:19:29.235-0400",
       "created_iso": "2025-10-16",
@@ -23288,7 +23303,7 @@
       "team": "",
       "tenant_raw": "Grimes",
       "tenants": [
-        "(other)"
+        "Grimes"
       ],
       "created": "2025-10-15T17:24:43.822-0400",
       "created_iso": "2025-10-15",
@@ -23316,7 +23331,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2025-10-15T16:38:33.742-0400",
       "created_iso": "2025-10-15",
@@ -23400,7 +23415,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2025-10-15T13:11:02.007-0400",
       "created_iso": "2025-10-15",
@@ -23484,7 +23499,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-10-15T09:55:50.469-0400",
       "created_iso": "2025-10-15",
@@ -23732,7 +23747,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2025-10-09T15:37:56.629-0400",
       "created_iso": "2025-10-09",
@@ -23844,7 +23859,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2025-10-08T11:22:16.096-0400",
       "created_iso": "2025-10-08",
@@ -23872,7 +23887,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-10-08T10:25:13.724-0400",
       "created_iso": "2025-10-08",
@@ -23900,7 +23915,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2025-10-07T17:06:24.753-0400",
       "created_iso": "2025-10-07",
@@ -23928,7 +23943,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2025-10-07T16:20:40.415-0400",
       "created_iso": "2025-10-07",
@@ -23956,7 +23971,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2025-10-07T16:16:37.518-0400",
       "created_iso": "2025-10-07",
@@ -24052,7 +24067,7 @@
       "team": "",
       "tenant_raw": "Lake IL",
       "tenants": [
-        "(other)"
+        "Lake IL"
       ],
       "created": "2025-10-06T18:38:16.653-0400",
       "created_iso": "2025-10-06",
@@ -24204,7 +24219,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2025-10-06T10:42:45.307-0400",
       "created_iso": "2025-10-06",
@@ -24260,7 +24275,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2025-10-03T15:48:04.677-0400",
       "created_iso": "2025-10-03",
@@ -24288,7 +24303,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-10-03T12:25:20.908-0400",
       "created_iso": "2025-10-03",
@@ -24316,7 +24331,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-10-03T12:20:39.597-0400",
       "created_iso": "2025-10-03",
@@ -24372,7 +24387,7 @@
       "team": "",
       "tenant_raw": "Grimes",
       "tenants": [
-        "(other)"
+        "Grimes"
       ],
       "created": "2025-10-02T17:11:12.323-0400",
       "created_iso": "2025-10-02",
@@ -24400,7 +24415,7 @@
       "team": "",
       "tenant_raw": "Grimes",
       "tenants": [
-        "(other)"
+        "Grimes"
       ],
       "created": "2025-10-02T16:20:57.476-0400",
       "created_iso": "2025-10-02",
@@ -24456,7 +24471,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2025-10-02T15:13:46.492-0400",
       "created_iso": "2025-10-02",
@@ -24512,7 +24527,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-10-01T17:34:27.442-0400",
       "created_iso": "2025-10-01",
@@ -24540,7 +24555,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-10-01T17:26:40.282-0400",
       "created_iso": "2025-10-01",
@@ -24708,7 +24723,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-10-01T10:49:34.053-0400",
       "created_iso": "2025-10-01",
@@ -24764,7 +24779,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-09-30T15:03:08.112-0400",
       "created_iso": "2025-09-30",
@@ -24792,7 +24807,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-09-30T10:01:13.145-0400",
       "created_iso": "2025-09-30",
@@ -24820,7 +24835,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-09-30T09:16:30.278-0400",
       "created_iso": "2025-09-30",
@@ -25044,7 +25059,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-09-25T10:20:16.900-0400",
       "created_iso": "2025-09-25",
@@ -25128,7 +25143,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-09-23T22:07:09.460-0400",
       "created_iso": "2025-09-23",
@@ -25324,7 +25339,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-09-23T10:39:48.061-0400",
       "created_iso": "2025-09-23",
@@ -25380,7 +25395,7 @@
       "team": "",
       "tenant_raw": "Jim Hogg",
       "tenants": [
-        "(other)"
+        "Jim Hogg"
       ],
       "created": "2025-09-23T10:23:20.203-0400",
       "created_iso": "2025-09-23",
@@ -25408,7 +25423,7 @@
       "team": "",
       "tenant_raw": "Grimes",
       "tenants": [
-        "(other)"
+        "Grimes"
       ],
       "created": "2025-09-23T10:08:09.444-0400",
       "created_iso": "2025-09-23",
@@ -25520,7 +25535,7 @@
       "team": "",
       "tenant_raw": "Milam",
       "tenants": [
-        "(other)"
+        "Milam"
       ],
       "created": "2025-09-22T16:32:34.264-0400",
       "created_iso": "2025-09-22",
@@ -25588,7 +25603,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-09-22T14:55:46.187-0400",
       "created_iso": "2025-09-22",
@@ -25616,7 +25631,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-09-22T14:54:42.697-0400",
       "created_iso": "2025-09-22",
@@ -25684,7 +25699,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2025-09-22T12:06:31.921-0400",
       "created_iso": "2025-09-22",
@@ -25712,7 +25727,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-09-22T10:28:41.846-0400",
       "created_iso": "2025-09-22",
@@ -25768,7 +25783,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-09-19T18:08:09.376-0400",
       "created_iso": "2025-09-19",
@@ -25796,7 +25811,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-09-19T16:37:33.616-0400",
       "created_iso": "2025-09-19",
@@ -25852,7 +25867,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2025-09-19T13:45:42.951-0400",
       "created_iso": "2025-09-19",
@@ -25880,7 +25895,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2025-09-19T13:26:40.861-0400",
       "created_iso": "2025-09-19",
@@ -25908,7 +25923,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-09-19T11:26:25.658-0400",
       "created_iso": "2025-09-19",
@@ -25936,7 +25951,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-09-18T15:56:32.629-0400",
       "created_iso": "2025-09-18",
@@ -25964,7 +25979,7 @@
       "team": "",
       "tenant_raw": "Blanco",
       "tenants": [
-        "(other)"
+        "Blanco"
       ],
       "created": "2025-09-18T13:16:03.295-0400",
       "created_iso": "2025-09-18",
@@ -25992,7 +26007,7 @@
       "team": "",
       "tenant_raw": "San Patricio",
       "tenants": [
-        "(other)"
+        "San Patricio"
       ],
       "created": "2025-09-18T10:23:40.618-0400",
       "created_iso": "2025-09-18",
@@ -26024,7 +26039,7 @@
       ],
       "created": "2025-09-17T19:38:38.311-0400",
       "created_iso": "2025-09-17",
-      "age_days": 271,
+      "age_days": 272,
       "updated": "2025-11-18T20:37:24.036-0500",
       "updated_iso": "2025-11-18",
       "end_date": "",
@@ -26200,7 +26215,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-09-17T10:09:04.412-0400",
       "created_iso": "2025-09-17",
@@ -26368,7 +26383,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-09-16T12:00:47.378-0400",
       "created_iso": "2025-09-16",
@@ -26480,7 +26495,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-09-12T18:17:12.101-0400",
       "created_iso": "2025-09-12",
@@ -26564,7 +26579,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-09-12T17:36:26.694-0400",
       "created_iso": "2025-09-12",
@@ -26592,7 +26607,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2025-09-12T17:34:14.726-0400",
       "created_iso": "2025-09-12",
@@ -26620,7 +26635,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-09-12T17:31:15.594-0400",
       "created_iso": "2025-09-12",
@@ -26648,7 +26663,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-09-12T16:14:03.580-0400",
       "created_iso": "2025-09-12",
@@ -26676,7 +26691,11 @@
       "team": "",
       "tenant_raw": "Baldwin AL, Gillespie, Jefferson TX, Nueces, Wayne MI",
       "tenants": [
-        "Jefferson"
+        "Baldwin AL",
+        "Gillespie",
+        "Jefferson",
+        "Nueces",
+        "Wayne MI"
       ],
       "created": "2025-09-12T13:47:19.401-0400",
       "created_iso": "2025-09-12",
@@ -26872,7 +26891,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2025-09-11T13:17:19.554-0400",
       "created_iso": "2025-09-11",
@@ -26928,7 +26947,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-09-11T09:49:34.212-0400",
       "created_iso": "2025-09-11",
@@ -26956,7 +26975,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-09-10T23:08:03.529-0400",
       "created_iso": "2025-09-10",
@@ -26984,7 +27003,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-09-10T17:50:40.172-0400",
       "created_iso": "2025-09-10",
@@ -27040,7 +27059,7 @@
       "team": "",
       "tenant_raw": "Gillespie",
       "tenants": [
-        "(other)"
+        "Gillespie"
       ],
       "created": "2025-09-10T17:03:46.149-0400",
       "created_iso": "2025-09-10",
@@ -27068,7 +27087,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-09-10T16:04:01.796-0400",
       "created_iso": "2025-09-10",
@@ -27124,7 +27143,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-09-10T09:56:08.572-0400",
       "created_iso": "2025-09-10",
@@ -27208,7 +27227,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-09-09T13:37:53.909-0400",
       "created_iso": "2025-09-09",
@@ -27344,7 +27363,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-09-08T14:57:38.894-0400",
       "created_iso": "2025-09-08",
@@ -27400,7 +27419,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-09-08T08:46:26.640-0400",
       "created_iso": "2025-09-08",
@@ -27484,7 +27503,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-09-05T11:25:44.744-0400",
       "created_iso": "2025-09-05",
@@ -27512,7 +27531,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-09-05T11:05:48.838-0400",
       "created_iso": "2025-09-05",
@@ -27540,7 +27559,7 @@
       "team": "",
       "tenant_raw": "Gillespie",
       "tenants": [
-        "(other)"
+        "Gillespie"
       ],
       "created": "2025-09-04T18:05:05.109-0400",
       "created_iso": "2025-09-04",
@@ -27708,7 +27727,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2025-09-04T09:37:02.185-0400",
       "created_iso": "2025-09-04",
@@ -27764,7 +27783,7 @@
       "team": "",
       "tenant_raw": "Blanco",
       "tenants": [
-        "(other)"
+        "Blanco"
       ],
       "created": "2025-09-03T14:10:02.509-0400",
       "created_iso": "2025-09-03",
@@ -27848,7 +27867,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-09-03T11:02:46.542-0400",
       "created_iso": "2025-09-03",
@@ -27904,7 +27923,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2025-09-03T10:27:38.020-0400",
       "created_iso": "2025-09-03",
@@ -27960,7 +27979,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-09-02T20:35:31.595-0400",
       "created_iso": "2025-09-02",
@@ -27988,7 +28007,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2025-09-02T16:25:25.168-0400",
       "created_iso": "2025-09-02",
@@ -28016,7 +28035,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-09-02T16:09:02.608-0400",
       "created_iso": "2025-09-02",
@@ -28044,7 +28063,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-09-02T14:55:56.785-0400",
       "created_iso": "2025-09-02",
@@ -28072,7 +28091,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-09-02T14:18:27.685-0400",
       "created_iso": "2025-09-02",
@@ -28100,7 +28119,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-09-02T14:01:30.788-0400",
       "created_iso": "2025-09-02",
@@ -28128,7 +28147,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2025-09-02T12:02:23.211-0400",
       "created_iso": "2025-09-02",
@@ -28224,7 +28243,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-08-28T18:00:41.680-0400",
       "created_iso": "2025-08-28",
@@ -28252,7 +28271,7 @@
       "team": "",
       "tenant_raw": "San Patricio",
       "tenants": [
-        "(other)"
+        "San Patricio"
       ],
       "created": "2025-08-28T17:29:43.651-0400",
       "created_iso": "2025-08-28",
@@ -28280,11 +28299,11 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-08-27T19:40:23.391-0400",
       "created_iso": "2025-08-27",
-      "age_days": 292,
+      "age_days": 293,
       "updated": "2025-09-09T19:52:35.755-0400",
       "updated_iso": "2025-09-09",
       "end_date": "",
@@ -28460,7 +28479,7 @@
       "team": "",
       "tenant_raw": "Gillespie",
       "tenants": [
-        "(other)"
+        "Gillespie"
       ],
       "created": "2025-08-27T11:48:10.918-0400",
       "created_iso": "2025-08-27",
@@ -28488,7 +28507,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2025-08-27T10:18:58.217-0400",
       "created_iso": "2025-08-27",
@@ -28544,7 +28563,7 @@
       "team": "",
       "tenant_raw": "Starr",
       "tenants": [
-        "(other)"
+        "Starr"
       ],
       "created": "2025-08-27T09:51:57.274-0400",
       "created_iso": "2025-08-27",
@@ -28572,7 +28591,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2025-08-27T09:36:12.816-0400",
       "created_iso": "2025-08-27",
@@ -28600,7 +28619,7 @@
       "team": "",
       "tenant_raw": "Kendall",
       "tenants": [
-        "(other)"
+        "Kendall"
       ],
       "created": "2025-08-27T09:32:05.529-0400",
       "created_iso": "2025-08-27",
@@ -28628,7 +28647,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2025-08-27T09:15:25.317-0400",
       "created_iso": "2025-08-27",
@@ -28712,7 +28731,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2025-08-22T12:24:06.770-0400",
       "created_iso": "2025-08-22",
@@ -28740,7 +28759,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2025-08-22T11:29:15.880-0400",
       "created_iso": "2025-08-22",
@@ -28768,7 +28787,7 @@
       "team": "",
       "tenant_raw": "Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne MI"
       ],
       "created": "2025-08-22T11:09:11.928-0400",
       "created_iso": "2025-08-22",
@@ -29088,7 +29107,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-08-19T17:57:31.121-0400",
       "created_iso": "2025-08-19",
@@ -29144,7 +29163,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2025-08-19T16:17:32.062-0400",
       "created_iso": "2025-08-19",
@@ -29396,11 +29415,11 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-08-15T19:29:46.035-0400",
       "created_iso": "2025-08-15",
-      "age_days": 304,
+      "age_days": 305,
       "updated": "2025-08-26T09:37:31.174-0400",
       "updated_iso": "2025-08-26",
       "end_date": "",
@@ -29424,7 +29443,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-08-15T18:32:22.989-0400",
       "created_iso": "2025-08-15",
@@ -29564,7 +29583,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-08-14T17:15:39.316-0400",
       "created_iso": "2025-08-14",
@@ -29620,7 +29639,7 @@
       "team": "",
       "tenant_raw": "Blanco",
       "tenants": [
-        "(other)"
+        "Blanco"
       ],
       "created": "2025-08-14T11:46:14.748-0400",
       "created_iso": "2025-08-14",
@@ -29732,7 +29751,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-08-11T17:56:36.892-0400",
       "created_iso": "2025-08-11",
@@ -30040,7 +30059,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-08-07T14:58:18.960-0400",
       "created_iso": "2025-08-07",
@@ -30096,7 +30115,7 @@
       "team": "",
       "tenant_raw": "San Patricio",
       "tenants": [
-        "(other)"
+        "San Patricio"
       ],
       "created": "2025-08-06T10:07:17.981-0400",
       "created_iso": "2025-08-06",
@@ -30124,7 +30143,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-08-06T09:50:52.239-0400",
       "created_iso": "2025-08-06",
@@ -30180,7 +30199,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-08-05T16:14:46.580-0400",
       "created_iso": "2025-08-05",
@@ -30208,7 +30227,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-08-04T15:49:45.395-0400",
       "created_iso": "2025-08-04",
@@ -30236,7 +30255,7 @@
       "team": "",
       "tenant_raw": "Gillespie",
       "tenants": [
-        "(other)"
+        "Gillespie"
       ],
       "created": "2025-08-04T15:21:00.154-0400",
       "created_iso": "2025-08-04",
@@ -30264,7 +30283,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-08-04T15:18:29.283-0400",
       "created_iso": "2025-08-04",
@@ -30404,7 +30423,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-08-01T13:50:48.077-0400",
       "created_iso": "2025-08-01",
@@ -30488,7 +30507,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2025-07-31T17:29:38.150-0400",
       "created_iso": "2025-07-31",
@@ -30572,7 +30591,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2025-07-31T11:58:07.974-0400",
       "created_iso": "2025-07-31",
@@ -30628,7 +30647,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-07-30T15:12:23.889-0400",
       "created_iso": "2025-07-30",
@@ -30752,7 +30771,7 @@
       "team": "",
       "tenant_raw": "Blanco",
       "tenants": [
-        "(other)"
+        "Blanco"
       ],
       "created": "2025-07-29T15:06:40.514-0400",
       "created_iso": "2025-07-29",
@@ -30904,7 +30923,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-07-28T11:24:59.275-0400",
       "created_iso": "2025-07-28",
@@ -30932,7 +30951,7 @@
       "team": "",
       "tenant_raw": "Blanco",
       "tenants": [
-        "(other)"
+        "Blanco"
       ],
       "created": "2025-07-28T09:40:13.130-0400",
       "created_iso": "2025-07-28",
@@ -31044,7 +31063,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-07-25T10:44:44.874-0400",
       "created_iso": "2025-07-25",
@@ -31168,7 +31187,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-07-24T10:29:21.632-0400",
       "created_iso": "2025-07-24",
@@ -31196,7 +31215,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-07-23T15:18:19.207-0400",
       "created_iso": "2025-07-23",
@@ -31252,7 +31271,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-07-22T16:39:49.144-0400",
       "created_iso": "2025-07-22",
@@ -31392,7 +31411,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-07-17T16:55:24.493-0400",
       "created_iso": "2025-07-17",
@@ -31504,7 +31523,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-07-17T15:06:48.651-0400",
       "created_iso": "2025-07-17",
@@ -31588,7 +31607,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-07-16T15:02:17.002-0400",
       "created_iso": "2025-07-16",
@@ -31644,7 +31663,7 @@
       "team": "",
       "tenant_raw": "Milam",
       "tenants": [
-        "(other)"
+        "Milam"
       ],
       "created": "2025-07-16T10:57:13.224-0400",
       "created_iso": "2025-07-16",
@@ -31700,7 +31719,7 @@
       "team": "",
       "tenant_raw": "San Patricio",
       "tenants": [
-        "(other)"
+        "San Patricio"
       ],
       "created": "2025-07-16T09:53:19.590-0400",
       "created_iso": "2025-07-16",
@@ -31728,7 +31747,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-07-16T09:44:45.269-0400",
       "created_iso": "2025-07-16",
@@ -31756,7 +31775,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-07-16T08:34:00.115-0400",
       "created_iso": "2025-07-16",
@@ -31812,7 +31831,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-07-14T17:07:45.131-0400",
       "created_iso": "2025-07-14",
@@ -31992,7 +32011,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-07-11T11:38:50.909-0400",
       "created_iso": "2025-07-11",
@@ -32104,7 +32123,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-07-10T10:56:45.639-0400",
       "created_iso": "2025-07-10",
@@ -32356,7 +32375,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-07-08T14:47:32.095-0400",
       "created_iso": "2025-07-08",
@@ -32452,7 +32471,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-07-02T16:47:11.889-0400",
       "created_iso": "2025-07-02",
@@ -32480,7 +32499,9 @@
       "team": "",
       "tenant_raw": "Dallas, Smith, Tarrant",
       "tenants": [
-        "Dallas"
+        "Dallas",
+        "Smith",
+        "Tarrant"
       ],
       "created": "2025-07-01T12:54:39.499-0400",
       "created_iso": "2025-07-01",
@@ -32620,7 +32641,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2025-06-27T15:28:35.863-0400",
       "created_iso": "2025-06-27",
@@ -32704,7 +32725,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-06-25T16:14:03.533-0400",
       "created_iso": "2025-06-25",
@@ -32816,7 +32837,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-06-23T10:03:13.211-0400",
       "created_iso": "2025-06-23",
@@ -32844,7 +32865,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-06-20T17:13:27.560-0400",
       "created_iso": "2025-06-20",
@@ -32884,7 +32905,7 @@
       "team": "",
       "tenant_raw": "Midland",
       "tenants": [
-        "(other)"
+        "Midland"
       ],
       "created": "2025-06-20T13:05:20.002-0400",
       "created_iso": "2025-06-20",
@@ -32912,7 +32933,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-06-18T17:11:07.787-0400",
       "created_iso": "2025-06-18",
@@ -32940,7 +32961,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-06-18T14:11:09.941-0400",
       "created_iso": "2025-06-18",
@@ -32968,7 +32989,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2025-06-18T11:22:14.094-0400",
       "created_iso": "2025-06-18",
@@ -32996,7 +33017,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2025-06-18T10:36:25.163-0400",
       "created_iso": "2025-06-18",
@@ -33092,7 +33113,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-06-17T16:08:35.307-0400",
       "created_iso": "2025-06-17",
@@ -33120,7 +33141,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-06-17T14:28:45.098-0400",
       "created_iso": "2025-06-17",
@@ -33148,7 +33169,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2025-06-17T10:05:34.719-0400",
       "created_iso": "2025-06-17",
@@ -33260,7 +33281,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2025-06-12T16:41:24.578-0400",
       "created_iso": "2025-06-12",
@@ -33316,7 +33337,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-06-12T15:38:40.834-0400",
       "created_iso": "2025-06-12",
@@ -33372,7 +33393,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-06-11T15:02:49.322-0400",
       "created_iso": "2025-06-11",
@@ -33456,7 +33477,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-06-11T09:41:07.353-0400",
       "created_iso": "2025-06-11",
@@ -33484,7 +33505,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-06-11T09:17:28.240-0400",
       "created_iso": "2025-06-11",
@@ -33540,7 +33561,8 @@
       "team": "",
       "tenant_raw": "Bexar, Smith",
       "tenants": [
-        "(other)"
+        "Bexar",
+        "Smith"
       ],
       "created": "2025-06-10T18:13:01.984-0400",
       "created_iso": "2025-06-10",
@@ -33736,7 +33758,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2025-06-05T12:58:52.920-0400",
       "created_iso": "2025-06-05",
@@ -33792,7 +33814,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-06-05T12:06:19.078-0400",
       "created_iso": "2025-06-05",
@@ -33848,7 +33870,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-06-04T16:32:15.742-0400",
       "created_iso": "2025-06-04",
@@ -33876,7 +33898,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2025-06-04T14:12:28.616-0400",
       "created_iso": "2025-06-04",
@@ -33988,7 +34010,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-06-03T11:11:55.999-0400",
       "created_iso": "2025-06-03",
@@ -34020,7 +34042,7 @@
       ],
       "created": "2025-06-02T19:47:47.708-0400",
       "created_iso": "2025-06-02",
-      "age_days": 378,
+      "age_days": 379,
       "updated": "2025-06-10T21:19:13.048-0400",
       "updated_iso": "2025-06-10",
       "end_date": "",
@@ -34044,7 +34066,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-06-02T17:46:23.108-0400",
       "created_iso": "2025-06-02",
@@ -34072,7 +34094,7 @@
       "team": "",
       "tenant_raw": "Reeves",
       "tenants": [
-        "(other)"
+        "Reeves"
       ],
       "created": "2025-06-02T13:39:16.661-0400",
       "created_iso": "2025-06-02",
@@ -34112,7 +34134,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-06-02T11:45:44.234-0400",
       "created_iso": "2025-06-02",
@@ -34252,7 +34274,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-05-28T12:26:14.802-0400",
       "created_iso": "2025-05-28",
@@ -34308,7 +34330,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2025-05-28T11:25:54.277-0400",
       "created_iso": "2025-05-28",
@@ -34392,7 +34414,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-05-28T08:11:00.489-0400",
       "created_iso": "2025-05-28",
@@ -34476,7 +34498,7 @@
       "team": "",
       "tenant_raw": "Gillespie",
       "tenants": [
-        "(other)"
+        "Gillespie"
       ],
       "created": "2025-05-23T17:18:12.887-0400",
       "created_iso": "2025-05-23",
@@ -34504,7 +34526,7 @@
       "team": "",
       "tenant_raw": "Gillespie",
       "tenants": [
-        "(other)"
+        "Gillespie"
       ],
       "created": "2025-05-23T16:17:06.067-0400",
       "created_iso": "2025-05-23",
@@ -34532,7 +34554,11 @@
       "team": "",
       "tenant_raw": "Bexar, Johnson, Midland TX, Nueces, Smith",
       "tenants": [
-        "Johnson"
+        "Bexar",
+        "Johnson",
+        "Midland",
+        "Nueces",
+        "Smith"
       ],
       "created": "2025-05-23T15:54:37.353-0400",
       "created_iso": "2025-05-23",
@@ -34728,7 +34754,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2025-05-22T13:28:35.377-0400",
       "created_iso": "2025-05-22",
@@ -34840,7 +34866,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-05-21T16:20:45.246-0400",
       "created_iso": "2025-05-21",
@@ -34952,7 +34978,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2025-05-21T10:55:44.724-0400",
       "created_iso": "2025-05-21",
@@ -35036,7 +35062,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-05-19T15:48:24.502-0400",
       "created_iso": "2025-05-19",
@@ -35092,7 +35118,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-05-19T08:31:48.599-0400",
       "created_iso": "2025-05-19",
@@ -35120,7 +35146,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-05-16T13:53:53.664-0400",
       "created_iso": "2025-05-16",
@@ -35176,7 +35202,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-05-16T10:53:20.437-0400",
       "created_iso": "2025-05-16",
@@ -35204,7 +35230,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-05-16T10:39:18.120-0400",
       "created_iso": "2025-05-16",
@@ -35328,7 +35354,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-05-13T14:36:42.805-0400",
       "created_iso": "2025-05-13",
@@ -35384,7 +35410,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-05-13T10:07:27.802-0400",
       "created_iso": "2025-05-13",
@@ -35552,7 +35578,7 @@
       "team": "",
       "tenant_raw": "Chester",
       "tenants": [
-        "(other)"
+        "Chester"
       ],
       "created": "2025-05-08T16:47:57.918-0400",
       "created_iso": "2025-05-08",
@@ -35608,7 +35634,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-05-08T11:59:22.240-0400",
       "created_iso": "2025-05-08",
@@ -35636,7 +35662,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-05-08T11:20:47.324-0400",
       "created_iso": "2025-05-08",
@@ -35804,7 +35830,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2025-05-06T16:56:21.435-0400",
       "created_iso": "2025-05-06",
@@ -35888,7 +35914,7 @@
       "team": "",
       "tenant_raw": "All",
       "tenants": [
-        "(other)"
+        "All"
       ],
       "created": "2025-05-06T10:34:20.916-0400",
       "created_iso": "2025-05-06",
@@ -35916,7 +35942,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2025-05-06T10:08:59.376-0400",
       "created_iso": "2025-05-06",
@@ -35972,7 +35998,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-05-05T09:39:25.826-0400",
       "created_iso": "2025-05-05",
@@ -36028,7 +36054,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-05-01T11:32:46.781-0400",
       "created_iso": "2025-05-01",
@@ -36056,7 +36082,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2025-05-01T10:00:44.033-0400",
       "created_iso": "2025-05-01",
@@ -36084,7 +36110,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-05-01T09:26:16.844-0400",
       "created_iso": "2025-05-01",
@@ -36112,7 +36138,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-05-01T08:30:38.643-0400",
       "created_iso": "2025-05-01",
@@ -36140,7 +36166,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-04-30T15:00:25.129-0400",
       "created_iso": "2025-04-30",
@@ -36168,7 +36194,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2025-04-30T13:52:37.698-0400",
       "created_iso": "2025-04-30",
@@ -36264,7 +36290,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2025-04-30T10:43:40.933-0400",
       "created_iso": "2025-04-30",
@@ -36348,7 +36374,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-04-29T10:44:43.702-0400",
       "created_iso": "2025-04-29",
@@ -36376,7 +36402,7 @@
       "team": "",
       "tenant_raw": "Grimes",
       "tenants": [
-        "(other)"
+        "Grimes"
       ],
       "created": "2025-04-28T17:55:33.126-0400",
       "created_iso": "2025-04-28",
@@ -36460,7 +36486,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-04-25T15:58:21.824-0400",
       "created_iso": "2025-04-25",
@@ -36488,7 +36514,7 @@
       "team": "",
       "tenant_raw": "Roscommon MI",
       "tenants": [
-        "(other)"
+        "Roscommon MI"
       ],
       "created": "2025-04-25T15:29:37.999-0400",
       "created_iso": "2025-04-25",
@@ -36572,7 +36598,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2025-04-24T18:13:23.074-0400",
       "created_iso": "2025-04-24",
@@ -36628,7 +36654,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-04-24T15:03:19.803-0400",
       "created_iso": "2025-04-24",
@@ -36712,7 +36738,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-04-24T11:57:06.248-0400",
       "created_iso": "2025-04-24",
@@ -36740,7 +36766,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2025-04-23T18:03:54.003-0400",
       "created_iso": "2025-04-23",
@@ -36768,7 +36794,7 @@
       "team": "",
       "tenant_raw": "Zapata",
       "tenants": [
-        "(other)"
+        "Zapata"
       ],
       "created": "2025-04-23T17:19:32.230-0400",
       "created_iso": "2025-04-23",
@@ -36936,7 +36962,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-04-21T09:48:06.681-0400",
       "created_iso": "2025-04-21",
@@ -36992,7 +37018,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-04-18T09:59:06.930-0400",
       "created_iso": "2025-04-18",
@@ -37020,7 +37046,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-04-18T09:15:02.992-0400",
       "created_iso": "2025-04-18",
@@ -37104,7 +37130,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2025-04-17T15:43:21.597-0400",
       "created_iso": "2025-04-17",
@@ -37160,7 +37186,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-04-17T13:05:56.236-0400",
       "created_iso": "2025-04-17",
@@ -37216,7 +37242,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-04-17T12:59:59.109-0400",
       "created_iso": "2025-04-17",
@@ -37272,7 +37298,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-04-16T17:29:48.924-0400",
       "created_iso": "2025-04-16",
@@ -37496,7 +37522,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2025-04-14T13:06:50.104-0400",
       "created_iso": "2025-04-14",
@@ -37580,7 +37606,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-04-11T16:19:15.063-0400",
       "created_iso": "2025-04-11",
@@ -37692,7 +37718,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2025-04-11T09:25:31.507-0400",
       "created_iso": "2025-04-11",
@@ -37720,7 +37746,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-04-10T16:46:42.152-0400",
       "created_iso": "2025-04-10",
@@ -37972,7 +37998,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-04-08T16:18:04.873-0400",
       "created_iso": "2025-04-08",
@@ -38028,7 +38054,7 @@
       "team": "",
       "tenant_raw": "Grayson",
       "tenants": [
-        "(other)"
+        "Grayson"
       ],
       "created": "2025-04-08T13:14:03.907-0400",
       "created_iso": "2025-04-08",
@@ -38168,7 +38194,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-04-07T13:21:10.450-0400",
       "created_iso": "2025-04-07",
@@ -38196,7 +38222,9 @@
       "team": "",
       "tenant_raw": "Arlington VA, Collin, Cuyahoga OH",
       "tenants": [
-        "Collin"
+        "Arlington VA",
+        "Collin",
+        "Cuyahoga OH"
       ],
       "created": "2025-04-07T12:51:10.313-0400",
       "created_iso": "2025-04-07",
@@ -38224,7 +38252,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-04-07T11:35:06.566-0400",
       "created_iso": "2025-04-07",
@@ -38252,7 +38280,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2025-04-04T18:16:17.010-0400",
       "created_iso": "2025-04-04",
@@ -38280,7 +38308,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2025-04-04T17:56:56.080-0400",
       "created_iso": "2025-04-04",
@@ -38448,7 +38476,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-04-03T14:21:08.760-0400",
       "created_iso": "2025-04-03",
@@ -38476,7 +38504,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-04-03T14:11:31.742-0400",
       "created_iso": "2025-04-03",
@@ -38532,7 +38560,7 @@
       "team": "",
       "tenant_raw": "Milam",
       "tenants": [
-        "(other)"
+        "Milam"
       ],
       "created": "2025-04-02T14:48:34.210-0400",
       "created_iso": "2025-04-02",
@@ -38560,7 +38588,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-04-02T10:29:56.523-0400",
       "created_iso": "2025-04-02",
@@ -38588,7 +38616,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-04-02T09:24:15.024-0400",
       "created_iso": "2025-04-02",
@@ -38684,7 +38712,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-03-31T18:20:51.002-0400",
       "created_iso": "2025-03-31",
@@ -38712,7 +38740,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2025-03-31T17:35:57.029-0400",
       "created_iso": "2025-03-31",
@@ -38796,7 +38824,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2025-03-28T16:33:57.160-0400",
       "created_iso": "2025-03-28",
@@ -38824,7 +38852,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2025-03-28T16:31:36.242-0400",
       "created_iso": "2025-03-28",
@@ -38908,7 +38936,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2025-03-28T12:23:03.645-0400",
       "created_iso": "2025-03-28",
@@ -38936,7 +38964,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-03-27T18:26:10.134-0400",
       "created_iso": "2025-03-27",
@@ -38992,7 +39020,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2025-03-27T17:23:16.153-0400",
       "created_iso": "2025-03-27",
@@ -39076,7 +39104,7 @@
       "team": "",
       "tenant_raw": "San Patricio",
       "tenants": [
-        "(other)"
+        "San Patricio"
       ],
       "created": "2025-03-27T11:30:38.948-0400",
       "created_iso": "2025-03-27",
@@ -39104,7 +39132,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2025-03-27T11:06:04.514-0400",
       "created_iso": "2025-03-27",
@@ -39160,7 +39188,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-03-26T12:00:00.402-0400",
       "created_iso": "2025-03-26",
@@ -39188,7 +39216,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2025-03-25T17:07:59.880-0400",
       "created_iso": "2025-03-25",
@@ -39608,7 +39636,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2025-03-20T13:35:09.257-0400",
       "created_iso": "2025-03-20",
@@ -39804,7 +39832,7 @@
       "team": "",
       "tenant_raw": "Zapata",
       "tenants": [
-        "(other)"
+        "Zapata"
       ],
       "created": "2025-03-19T17:34:19.991-0400",
       "created_iso": "2025-03-19",
@@ -39860,7 +39888,7 @@
       "team": "",
       "tenant_raw": "Zapata",
       "tenants": [
-        "(other)"
+        "Zapata"
       ],
       "created": "2025-03-19T16:42:28.121-0400",
       "created_iso": "2025-03-19",
@@ -39944,7 +39972,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-03-19T10:45:46.419-0400",
       "created_iso": "2025-03-19",
@@ -40000,7 +40028,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-03-18T09:28:27.260-0400",
       "created_iso": "2025-03-18",
@@ -40112,7 +40140,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-03-14T09:53:04.785-0400",
       "created_iso": "2025-03-14",
@@ -40168,7 +40196,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2025-03-14T09:24:28.229-0400",
       "created_iso": "2025-03-14",
@@ -40252,7 +40280,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-03-13T17:02:00.661-0400",
       "created_iso": "2025-03-13",
@@ -40392,7 +40420,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-03-11T16:20:07.319-0400",
       "created_iso": "2025-03-11",
@@ -40504,11 +40532,11 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-03-10T19:43:06.057-0400",
       "created_iso": "2025-03-10",
-      "age_days": 462,
+      "age_days": 463,
       "updated": "2026-05-07T14:51:05.199-0400",
       "updated_iso": "2026-05-07",
       "end_date": "",
@@ -40536,7 +40564,7 @@
       ],
       "created": "2025-03-10T19:39:57.856-0400",
       "created_iso": "2025-03-10",
-      "age_days": 462,
+      "age_days": 463,
       "updated": "2025-03-19T10:40:59.702-0400",
       "updated_iso": "2025-03-19",
       "end_date": "",
@@ -40756,7 +40784,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-03-07T13:38:47.461-0500",
       "created_iso": "2025-03-07",
@@ -40812,7 +40840,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2025-03-07T12:42:56.980-0500",
       "created_iso": "2025-03-07",
@@ -41020,7 +41048,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-03-06T09:45:12.130-0500",
       "created_iso": "2025-03-06",
@@ -41048,7 +41076,7 @@
       "team": "",
       "tenant_raw": "San Patricio",
       "tenants": [
-        "(other)"
+        "San Patricio"
       ],
       "created": "2025-03-05T15:59:04.171-0500",
       "created_iso": "2025-03-05",
@@ -41076,7 +41104,7 @@
       "team": "",
       "tenant_raw": "Midland TX",
       "tenants": [
-        "(other)"
+        "Midland"
       ],
       "created": "2025-03-04T17:05:25.348-0500",
       "created_iso": "2025-03-04",
@@ -41132,7 +41160,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-03-03T16:15:58.308-0500",
       "created_iso": "2025-03-03",
@@ -41160,7 +41188,7 @@
       "team": "",
       "tenant_raw": "Wilson",
       "tenants": [
-        "(other)"
+        "Wilson"
       ],
       "created": "2025-03-03T14:30:31.015-0500",
       "created_iso": "2025-03-03",
@@ -41188,7 +41216,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-03-01T10:50:33.908-0500",
       "created_iso": "2025-03-01",
@@ -41216,7 +41244,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-03-01T10:42:59.973-0500",
       "created_iso": "2025-03-01",
@@ -41256,7 +41284,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-02-28T16:42:23.530-0500",
       "created_iso": "2025-02-28",
@@ -41424,7 +41452,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-02-25T01:23:07.452-0500",
       "created_iso": "2025-02-25",
@@ -41452,7 +41480,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-02-24T22:51:10.812-0500",
       "created_iso": "2025-02-24",
@@ -41480,7 +41508,7 @@
       "team": "",
       "tenant_raw": "Blanco",
       "tenants": [
-        "(other)"
+        "Blanco"
       ],
       "created": "2025-02-24T22:24:02.080-0500",
       "created_iso": "2025-02-24",
@@ -41508,7 +41536,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-02-24T18:01:08.990-0500",
       "created_iso": "2025-02-24",
@@ -41760,7 +41788,7 @@
       "team": "",
       "tenant_raw": "Grimes",
       "tenants": [
-        "(other)"
+        "Grimes"
       ],
       "created": "2025-02-19T11:20:56.468-0500",
       "created_iso": "2025-02-19",
@@ -41856,7 +41884,8 @@
       "team": "",
       "tenant_raw": "Wayne, Wayne MI",
       "tenants": [
-        "(other)"
+        "Wayne",
+        "Wayne MI"
       ],
       "created": "2025-02-17T01:38:16.767-0500",
       "created_iso": "2025-02-17",
@@ -41884,7 +41913,11 @@
       "team": "",
       "tenant_raw": "All, Anderson, Arlington VA, Boulder CO, San Patricio",
       "tenants": [
-        "(other)"
+        "All",
+        "Anderson",
+        "Arlington VA",
+        "Boulder CO",
+        "San Patricio"
       ],
       "created": "2025-02-16T18:17:59.883-0500",
       "created_iso": "2025-02-16",
@@ -41968,7 +42001,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-02-13T14:35:52.463-0500",
       "created_iso": "2025-02-13",
@@ -42024,7 +42057,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2025-02-12T17:32:40.417-0500",
       "created_iso": "2025-02-12",
@@ -42080,7 +42113,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2025-02-10T17:39:10.951-0500",
       "created_iso": "2025-02-10",
@@ -42148,7 +42181,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-02-10T12:20:19.826-0500",
       "created_iso": "2025-02-10",
@@ -42204,7 +42237,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-02-10T09:19:38.110-0500",
       "created_iso": "2025-02-10",
@@ -42232,7 +42265,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-02-09T20:50:07.758-0500",
       "created_iso": "2025-02-09",
@@ -42260,7 +42293,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-02-08T10:58:43.123-0500",
       "created_iso": "2025-02-08",
@@ -42288,7 +42321,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-02-08T10:09:16.055-0500",
       "created_iso": "2025-02-08",
@@ -42484,7 +42517,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-02-06T09:33:40.939-0500",
       "created_iso": "2025-02-06",
@@ -42664,7 +42697,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-02-04T14:40:13.667-0500",
       "created_iso": "2025-02-04",
@@ -42692,7 +42725,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-02-04T11:22:53.022-0500",
       "created_iso": "2025-02-04",
@@ -42860,7 +42893,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-01-31T11:14:04.498-0500",
       "created_iso": "2025-01-31",
@@ -42916,7 +42949,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-01-30T17:40:51.383-0500",
       "created_iso": "2025-01-30",
@@ -43084,7 +43117,7 @@
       "team": "",
       "tenant_raw": "All",
       "tenants": [
-        "(other)"
+        "All"
       ],
       "created": "2025-01-29T13:12:09.126-0500",
       "created_iso": "2025-01-29",
@@ -43112,7 +43145,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-01-29T10:15:52.307-0500",
       "created_iso": "2025-01-29",
@@ -43168,7 +43201,7 @@
       "team": "",
       "tenant_raw": "Milam",
       "tenants": [
-        "(other)"
+        "Milam"
       ],
       "created": "2025-01-28T13:44:41.537-0500",
       "created_iso": "2025-01-28",
@@ -43196,7 +43229,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2025-01-27T16:27:50.898-0500",
       "created_iso": "2025-01-27",
@@ -43224,7 +43257,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2025-01-27T12:25:40.289-0500",
       "created_iso": "2025-01-27",
@@ -43252,7 +43285,7 @@
       "team": "",
       "tenant_raw": "All",
       "tenants": [
-        "(other)"
+        "All"
       ],
       "created": "2025-01-24T07:21:44.324-0500",
       "created_iso": "2025-01-24",
@@ -43280,7 +43313,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-01-23T15:14:26.424-0500",
       "created_iso": "2025-01-23",
@@ -43308,7 +43341,7 @@
       "team": "",
       "tenant_raw": "Grimes",
       "tenants": [
-        "(other)"
+        "Grimes"
       ],
       "created": "2025-01-23T13:27:15.457-0500",
       "created_iso": "2025-01-23",
@@ -43392,7 +43425,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2025-01-21T10:00:33.764-0500",
       "created_iso": "2025-01-21",
@@ -43532,7 +43565,7 @@
       "team": "",
       "tenant_raw": "Midland",
       "tenants": [
-        "(other)"
+        "Midland"
       ],
       "created": "2025-01-15T17:41:07.070-0500",
       "created_iso": "2025-01-15",
@@ -43740,7 +43773,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2025-01-13T09:41:32.324-0500",
       "created_iso": "2025-01-13",
@@ -43768,7 +43801,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2025-01-10T17:56:16.555-0500",
       "created_iso": "2025-01-10",
@@ -43796,7 +43829,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-01-09T16:53:20.668-0500",
       "created_iso": "2025-01-09",
@@ -43824,7 +43857,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2025-01-09T12:13:39.888-0500",
       "created_iso": "2025-01-09",
@@ -43880,7 +43913,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-01-08T14:33:30.633-0500",
       "created_iso": "2025-01-08",
@@ -43936,7 +43969,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2025-01-08T13:21:08.557-0500",
       "created_iso": "2025-01-08",
@@ -44216,7 +44249,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2025-01-06T16:39:47.213-0500",
       "created_iso": "2025-01-06",
@@ -44244,7 +44277,7 @@
       "team": "",
       "tenant_raw": "Bee",
       "tenants": [
-        "(other)"
+        "Bee"
       ],
       "created": "2025-01-06T10:05:20.035-0500",
       "created_iso": "2025-01-06",
@@ -44272,7 +44305,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2025-01-03T17:56:46.316-0500",
       "created_iso": "2025-01-03",
@@ -44384,7 +44417,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2025-01-02T12:11:17.222-0500",
       "created_iso": "2025-01-02",
@@ -44412,7 +44445,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2024-12-31T16:02:34.341-0500",
       "created_iso": "2024-12-31",
@@ -44440,7 +44473,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2024-12-30T13:55:12.700-0500",
       "created_iso": "2024-12-30",
@@ -44524,7 +44557,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2024-12-20T17:33:45.953-0500",
       "created_iso": "2024-12-20",
@@ -44552,7 +44585,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-12-20T14:27:49.401-0500",
       "created_iso": "2024-12-20",
@@ -44580,7 +44613,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2024-12-20T11:23:42.739-0500",
       "created_iso": "2024-12-20",
@@ -44664,7 +44697,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2024-12-19T12:08:33.065-0500",
       "created_iso": "2024-12-19",
@@ -44748,7 +44781,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2024-12-19T11:13:47.606-0500",
       "created_iso": "2024-12-19",
@@ -44804,7 +44837,9 @@
       "team": "",
       "tenant_raw": "Anderson, Arlington VA, Midland",
       "tenants": [
-        "(other)"
+        "Anderson",
+        "Arlington VA",
+        "Midland"
       ],
       "created": "2024-12-18T17:15:31.288-0500",
       "created_iso": "2024-12-18",
@@ -44832,7 +44867,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-12-16T11:05:33.939-0500",
       "created_iso": "2024-12-16",
@@ -44860,7 +44895,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2024-12-16T09:38:18.806-0500",
       "created_iso": "2024-12-16",
@@ -44916,7 +44951,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2024-12-11T17:35:00.262-0500",
       "created_iso": "2024-12-11",
@@ -44972,7 +45007,7 @@
       "team": "",
       "tenant_raw": "Midland",
       "tenants": [
-        "(other)"
+        "Midland"
       ],
       "created": "2024-12-11T11:09:55.439-0500",
       "created_iso": "2024-12-11",
@@ -45028,11 +45063,11 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2024-12-09T19:31:29.667-0500",
       "created_iso": "2024-12-09",
-      "age_days": 553,
+      "age_days": 554,
       "updated": "2026-03-18T23:01:35.449-0400",
       "updated_iso": "2026-03-18",
       "end_date": "",
@@ -45056,7 +45091,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2024-12-06T09:49:06.042-0500",
       "created_iso": "2024-12-06",
@@ -45084,7 +45119,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2024-12-05T13:33:10.957-0500",
       "created_iso": "2024-12-05",
@@ -45140,7 +45175,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2024-12-03T12:45:29.956-0500",
       "created_iso": "2024-12-03",
@@ -45168,7 +45203,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-12-03T11:16:52.136-0500",
       "created_iso": "2024-12-03",
@@ -45196,7 +45231,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-11-27T12:31:09.899-0500",
       "created_iso": "2024-11-27",
@@ -45313,8 +45348,8 @@
       "created": "2024-11-25T15:44:24.911-0500",
       "created_iso": "2024-11-25",
       "age_days": 568,
-      "updated": "2026-06-11T14:14:54.725-0400",
-      "updated_iso": "2026-06-11",
+      "updated": "2026-06-16T15:21:50.729-0400",
+      "updated_iso": "2026-06-16",
       "end_date": "2026-06-19",
       "end_date_iso": "2026-06-19",
       "ships_month": "Jun 2026",
@@ -45348,7 +45383,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2024-11-25T10:39:28.103-0500",
       "created_iso": "2024-11-25",
@@ -45376,7 +45411,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-11-22T16:38:13.857-0500",
       "created_iso": "2024-11-22",
@@ -45432,7 +45467,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2024-11-21T15:58:15.134-0500",
       "created_iso": "2024-11-21",
@@ -45460,7 +45495,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2024-11-21T13:24:54.335-0500",
       "created_iso": "2024-11-21",
@@ -45488,7 +45523,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-11-21T10:50:52.374-0500",
       "created_iso": "2024-11-21",
@@ -45556,7 +45591,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-11-21T09:58:29.176-0500",
       "created_iso": "2024-11-21",
@@ -45584,7 +45619,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-11-20T14:21:56.800-0500",
       "created_iso": "2024-11-20",
@@ -45640,7 +45675,7 @@
       "team": "",
       "tenant_raw": "City of Del Rio",
       "tenants": [
-        "(other)"
+        "City of Del Rio"
       ],
       "created": "2024-11-20T10:46:17.124-0500",
       "created_iso": "2024-11-20",
@@ -45668,11 +45703,11 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-11-19T19:40:58.044-0500",
       "created_iso": "2024-11-19",
-      "age_days": 573,
+      "age_days": 574,
       "updated": "2025-11-13T00:40:07.540-0500",
       "updated_iso": "2025-11-13",
       "end_date": "",
@@ -45696,7 +45731,7 @@
       "team": "",
       "tenant_raw": "Cameron",
       "tenants": [
-        "(other)"
+        "Cameron"
       ],
       "created": "2024-11-19T16:29:24.102-0500",
       "created_iso": "2024-11-19",
@@ -45724,7 +45759,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-11-19T14:40:24.564-0500",
       "created_iso": "2024-11-19",
@@ -45752,7 +45787,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-11-19T10:48:24.311-0500",
       "created_iso": "2024-11-19",
@@ -45808,7 +45843,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-11-18T11:40:01.984-0500",
       "created_iso": "2024-11-18",
@@ -45836,7 +45871,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-11-15T13:33:34.915-0500",
       "created_iso": "2024-11-15",
@@ -45864,7 +45899,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-11-14T16:31:29.650-0500",
       "created_iso": "2024-11-14",
@@ -45892,7 +45927,8 @@
       "team": "",
       "tenant_raw": "Baldwin AL, Brazos",
       "tenants": [
-        "(other)"
+        "Baldwin AL",
+        "Brazos"
       ],
       "created": "2024-11-14T13:04:14.487-0500",
       "created_iso": "2024-11-14",
@@ -45920,7 +45956,8 @@
       "team": "",
       "tenant_raw": "All, Bexar",
       "tenants": [
-        "(other)"
+        "All",
+        "Bexar"
       ],
       "created": "2024-11-14T08:04:36.597-0500",
       "created_iso": "2024-11-14",
@@ -45948,7 +45985,7 @@
       "team": "",
       "tenant_raw": "All",
       "tenants": [
-        "(other)"
+        "All"
       ],
       "created": "2024-11-12T17:02:07.518-0500",
       "created_iso": "2024-11-12",
@@ -45976,7 +46013,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-11-08T09:32:27.303-0500",
       "created_iso": "2024-11-08",
@@ -46004,7 +46041,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-11-07T18:34:22.896-0500",
       "created_iso": "2024-11-07",
@@ -46032,7 +46069,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-11-07T18:04:48.462-0500",
       "created_iso": "2024-11-07",
@@ -46088,7 +46125,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2024-11-07T12:28:19.699-0500",
       "created_iso": "2024-11-07",
@@ -46144,7 +46181,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2024-11-06T16:15:11.818-0500",
       "created_iso": "2024-11-06",
@@ -46200,7 +46237,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-11-06T12:28:23.764-0500",
       "created_iso": "2024-11-06",
@@ -46228,7 +46265,7 @@
       "team": "",
       "tenant_raw": "San Patricio",
       "tenants": [
-        "(other)"
+        "San Patricio"
       ],
       "created": "2024-11-06T12:13:52.695-0500",
       "created_iso": "2024-11-06",
@@ -46256,7 +46293,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2024-11-05T14:52:57.818-0500",
       "created_iso": "2024-11-05",
@@ -46284,7 +46321,8 @@
       "team": "",
       "tenant_raw": "Arlington VA, Bexar",
       "tenants": [
-        "(other)"
+        "Arlington VA",
+        "Bexar"
       ],
       "created": "2024-11-04T21:50:44.467-0500",
       "created_iso": "2024-11-04",
@@ -46368,7 +46406,7 @@
       "team": "",
       "tenant_raw": "Jim Wells",
       "tenants": [
-        "(other)"
+        "Jim Wells"
       ],
       "created": "2024-11-01T13:31:05.013-0400",
       "created_iso": "2024-11-01",
@@ -46396,7 +46434,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-11-01T13:24:52.957-0400",
       "created_iso": "2024-11-01",
@@ -46424,7 +46462,7 @@
       "team": "",
       "tenant_raw": "Jim Wells",
       "tenants": [
-        "(other)"
+        "Jim Wells"
       ],
       "created": "2024-11-01T10:45:19.317-0400",
       "created_iso": "2024-11-01",
@@ -46452,7 +46490,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-11-01T10:38:12.149-0400",
       "created_iso": "2024-11-01",
@@ -46480,7 +46518,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2024-10-31T16:54:09.180-0400",
       "created_iso": "2024-10-31",
@@ -46536,7 +46574,7 @@
       "team": "",
       "tenant_raw": "Zapata",
       "tenants": [
-        "(other)"
+        "Zapata"
       ],
       "created": "2024-10-30T10:35:49.848-0400",
       "created_iso": "2024-10-30",
@@ -46564,7 +46602,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-10-29T17:21:04.242-0400",
       "created_iso": "2024-10-29",
@@ -46620,7 +46658,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2024-10-25T17:36:43.313-0400",
       "created_iso": "2024-10-25",
@@ -46648,7 +46686,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-10-25T14:50:33.441-0400",
       "created_iso": "2024-10-25",
@@ -46704,7 +46742,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2024-10-23T17:12:12.507-0400",
       "created_iso": "2024-10-23",
@@ -46760,7 +46798,7 @@
       "team": "",
       "tenant_raw": "Smith",
       "tenants": [
-        "(other)"
+        "Smith"
       ],
       "created": "2024-10-22T10:41:08.262-0400",
       "created_iso": "2024-10-22",
@@ -46788,7 +46826,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2024-10-21T15:52:14.158-0400",
       "created_iso": "2024-10-21",
@@ -46816,7 +46854,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-10-17T15:26:40.479-0400",
       "created_iso": "2024-10-17",
@@ -46844,7 +46882,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-10-17T11:34:04.718-0400",
       "created_iso": "2024-10-17",
@@ -46872,7 +46910,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-16T17:09:38.727-0400",
       "created_iso": "2024-10-16",
@@ -46900,7 +46938,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-16T14:18:45.060-0400",
       "created_iso": "2024-10-16",
@@ -46928,7 +46966,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-10-16T11:05:34.334-0400",
       "created_iso": "2024-10-16",
@@ -46956,7 +46994,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-15T14:35:16.063-0400",
       "created_iso": "2024-10-15",
@@ -46984,7 +47022,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-15T13:05:55.180-0400",
       "created_iso": "2024-10-15",
@@ -47012,7 +47050,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2024-10-14T16:57:58.809-0400",
       "created_iso": "2024-10-14",
@@ -47040,7 +47078,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-11T16:08:30.060-0400",
       "created_iso": "2024-10-11",
@@ -47068,7 +47106,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-11T14:26:19.581-0400",
       "created_iso": "2024-10-11",
@@ -47096,7 +47134,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-10-11T13:40:28.933-0400",
       "created_iso": "2024-10-11",
@@ -47208,7 +47246,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2024-10-08T13:48:05.102-0400",
       "created_iso": "2024-10-08",
@@ -47236,7 +47274,7 @@
       "team": "",
       "tenant_raw": "Milam",
       "tenants": [
-        "(other)"
+        "Milam"
       ],
       "created": "2024-10-07T11:23:15.930-0400",
       "created_iso": "2024-10-07",
@@ -47264,7 +47302,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-04T00:15:01.076-0400",
       "created_iso": "2024-10-04",
@@ -47292,7 +47330,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-10-03T17:33:12.874-0400",
       "created_iso": "2024-10-03",
@@ -47320,7 +47358,7 @@
       "team": "",
       "tenant_raw": "Reeves",
       "tenants": [
-        "(other)"
+        "Reeves"
       ],
       "created": "2024-10-03T16:41:15.099-0400",
       "created_iso": "2024-10-03",
@@ -47348,7 +47386,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-03T10:31:10.489-0400",
       "created_iso": "2024-10-03",
@@ -47376,7 +47414,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-03T08:51:56.019-0400",
       "created_iso": "2024-10-03",
@@ -47404,7 +47442,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-02T13:34:19.164-0400",
       "created_iso": "2024-10-02",
@@ -47460,7 +47498,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-10-02T11:49:30.937-0400",
       "created_iso": "2024-10-02",
@@ -47488,7 +47526,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-02T11:41:58.258-0400",
       "created_iso": "2024-10-02",
@@ -47516,7 +47554,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2024-10-02T11:24:51.064-0400",
       "created_iso": "2024-10-02",
@@ -47544,7 +47582,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-10-02T00:08:06.597-0400",
       "created_iso": "2024-10-02",
@@ -47601,7 +47639,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-09-30T15:09:20.959-0400",
       "created_iso": "2024-09-30",
@@ -47629,7 +47667,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-09-27T15:47:05.549-0400",
       "created_iso": "2024-09-27",
@@ -47657,7 +47695,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2024-09-27T14:49:55.869-0400",
       "created_iso": "2024-09-27",
@@ -47685,7 +47723,7 @@
       "team": "",
       "tenant_raw": "Milam",
       "tenants": [
-        "(other)"
+        "Milam"
       ],
       "created": "2024-09-27T12:10:32.838-0400",
       "created_iso": "2024-09-27",
@@ -47769,7 +47807,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2024-09-25T11:08:14.993-0400",
       "created_iso": "2024-09-25",
@@ -47797,7 +47835,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-09-22T15:52:29.490-0400",
       "created_iso": "2024-09-22",
@@ -47853,7 +47891,7 @@
       "team": "",
       "tenant_raw": "Chambers",
       "tenants": [
-        "(other)"
+        "Chambers"
       ],
       "created": "2024-09-18T10:44:46.890-0400",
       "created_iso": "2024-09-18",
@@ -47881,7 +47919,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2024-09-11T16:50:01.942-0400",
       "created_iso": "2024-09-11",
@@ -47909,7 +47947,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2024-09-06T12:14:32.583-0400",
       "created_iso": "2024-09-06",
@@ -47993,7 +48031,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2024-08-29T17:55:18.263-0400",
       "created_iso": "2024-08-29",
@@ -48021,7 +48059,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-08-29T16:45:45.325-0400",
       "created_iso": "2024-08-29",
@@ -48049,7 +48087,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-08-29T13:28:00.181-0400",
       "created_iso": "2024-08-29",
@@ -48077,7 +48115,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-08-29T11:40:20.522-0400",
       "created_iso": "2024-08-29",
@@ -48105,7 +48143,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-08-29T09:47:44.938-0400",
       "created_iso": "2024-08-29",
@@ -48133,7 +48171,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-08-28T11:34:44.769-0400",
       "created_iso": "2024-08-28",
@@ -48161,7 +48199,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-08-28T09:53:01.273-0400",
       "created_iso": "2024-08-28",
@@ -48189,7 +48227,7 @@
       "team": "",
       "tenant_raw": "Bexar",
       "tenants": [
-        "(other)"
+        "Bexar"
       ],
       "created": "2024-08-27T11:11:28.742-0400",
       "created_iso": "2024-08-27",
@@ -48245,7 +48283,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-08-26T11:55:32.620-0400",
       "created_iso": "2024-08-26",
@@ -48273,7 +48311,9 @@
       "team": "",
       "tenant_raw": "Collin, Cuyahoga OH, Travis",
       "tenants": [
-        "Collin"
+        "Collin",
+        "Cuyahoga OH",
+        "Travis"
       ],
       "created": "2024-08-26T10:43:33.577-0400",
       "created_iso": "2024-08-26",
@@ -48301,7 +48341,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2024-08-26T06:10:18.280-0400",
       "created_iso": "2024-08-26",
@@ -48357,7 +48397,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2024-08-22T17:47:02.436-0400",
       "created_iso": "2024-08-22",
@@ -48385,7 +48425,7 @@
       "team": "",
       "tenant_raw": "Freestone",
       "tenants": [
-        "(other)"
+        "Freestone"
       ],
       "created": "2024-08-22T11:23:13.776-0400",
       "created_iso": "2024-08-22",
@@ -48413,7 +48453,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2024-08-20T14:32:47.576-0400",
       "created_iso": "2024-08-20",
@@ -48497,7 +48537,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-08-19T16:24:58.932-0400",
       "created_iso": "2024-08-19",
@@ -48525,7 +48565,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2024-08-16T16:02:23.218-0400",
       "created_iso": "2024-08-16",
@@ -48553,7 +48593,7 @@
       "team": "",
       "tenant_raw": "Reeves",
       "tenants": [
-        "(other)"
+        "Reeves"
       ],
       "created": "2024-08-15T18:00:09.734-0400",
       "created_iso": "2024-08-15",
@@ -48581,7 +48621,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-08-13T15:12:38.899-0400",
       "created_iso": "2024-08-13",
@@ -48609,7 +48649,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2024-08-13T14:38:53.951-0400",
       "created_iso": "2024-08-13",
@@ -48637,7 +48677,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2024-08-13T11:56:46.935-0400",
       "created_iso": "2024-08-13",
@@ -48665,7 +48705,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2024-08-13T11:52:02.788-0400",
       "created_iso": "2024-08-13",
@@ -48721,7 +48761,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-08-09T11:13:05.600-0400",
       "created_iso": "2024-08-09",
@@ -48749,7 +48789,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-08-08T16:18:46.290-0400",
       "created_iso": "2024-08-08",
@@ -48833,7 +48873,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-08-07T15:05:03.004-0400",
       "created_iso": "2024-08-07",
@@ -48917,7 +48957,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2024-08-05T15:11:29.769-0400",
       "created_iso": "2024-08-05",
@@ -48945,7 +48985,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2024-08-01T14:32:24.697-0400",
       "created_iso": "2024-08-01",
@@ -48973,6 +49013,7 @@
       "team": "",
       "tenant_raw": "Anderson, Collin",
       "tenants": [
+        "Anderson",
         "Collin"
       ],
       "created": "2024-07-31T09:38:38.513-0400",
@@ -49097,7 +49138,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2024-07-23T17:14:59.380-0400",
       "created_iso": "2024-07-23",
@@ -49125,7 +49166,7 @@
       "team": "",
       "tenant_raw": "Kendall",
       "tenants": [
-        "(other)"
+        "Kendall"
       ],
       "created": "2024-07-22T09:36:47.376-0400",
       "created_iso": "2024-07-22",
@@ -49181,7 +49222,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-07-19T09:29:17.984-0400",
       "created_iso": "2024-07-19",
@@ -49209,7 +49250,7 @@
       "team": "",
       "tenant_raw": "Matagorda",
       "tenants": [
-        "(other)"
+        "Matagorda"
       ],
       "created": "2024-07-17T17:14:55.708-0400",
       "created_iso": "2024-07-17",
@@ -49237,6 +49278,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL, Collin",
       "tenants": [
+        "Baldwin AL",
         "Collin"
       ],
       "created": "2024-07-17T13:40:27.593-0400",
@@ -49265,7 +49307,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-07-17T12:48:10.945-0400",
       "created_iso": "2024-07-17",
@@ -49389,7 +49431,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-07-11T15:33:45.172-0400",
       "created_iso": "2024-07-11",
@@ -49417,7 +49459,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-07-10T13:28:43.486-0400",
       "created_iso": "2024-07-10",
@@ -49445,7 +49487,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2024-07-09T17:47:34.980-0400",
       "created_iso": "2024-07-09",
@@ -49473,7 +49515,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2024-07-09T17:14:45.506-0400",
       "created_iso": "2024-07-09",
@@ -49501,7 +49543,7 @@
       "team": "",
       "tenant_raw": "Medina",
       "tenants": [
-        "(other)"
+        "Medina"
       ],
       "created": "2024-07-08T17:05:42.793-0400",
       "created_iso": "2024-07-08",
@@ -49529,7 +49571,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2024-07-03T10:00:54.416-0400",
       "created_iso": "2024-07-03",
@@ -49613,7 +49655,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-06-25T13:47:37.884-0400",
       "created_iso": "2024-06-25",
@@ -49641,7 +49683,7 @@
       "team": "",
       "tenant_raw": "Lake IL",
       "tenants": [
-        "(other)"
+        "Lake IL"
       ],
       "created": "2024-06-23T20:34:55.657-0400",
       "created_iso": "2024-06-23",
@@ -49697,7 +49739,8 @@
       "team": "",
       "tenant_raw": "Cameron, Chambers",
       "tenants": [
-        "(other)"
+        "Cameron",
+        "Chambers"
       ],
       "created": "2024-06-20T13:23:15.868-0400",
       "created_iso": "2024-06-20",
@@ -49725,7 +49768,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-06-17T15:04:12.638-0400",
       "created_iso": "2024-06-17",
@@ -49753,7 +49796,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2024-06-12T16:40:15.956-0400",
       "created_iso": "2024-06-12",
@@ -49809,7 +49852,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2024-05-16T13:59:20.426-0400",
       "created_iso": "2024-05-16",
@@ -49837,7 +49880,10 @@
       "team": "",
       "tenant_raw": "Baldwin AL, Boulder CO, Collin, Cuyahoga OH",
       "tenants": [
-        "Collin"
+        "Baldwin AL",
+        "Boulder CO",
+        "Collin",
+        "Cuyahoga OH"
       ],
       "created": "2024-05-14T20:14:58.604-0400",
       "created_iso": "2024-05-14",
@@ -49865,7 +49911,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2024-05-14T15:38:35.094-0400",
       "created_iso": "2024-05-14",
@@ -49893,7 +49939,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-05-09T13:28:23.263-0400",
       "created_iso": "2024-05-09",
@@ -49921,7 +49967,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-05-08T10:36:26.542-0400",
       "created_iso": "2024-05-08",
@@ -49949,7 +49995,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-05-07T13:36:34.187-0400",
       "created_iso": "2024-05-07",
@@ -49977,7 +50023,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2024-05-06T17:43:54.792-0400",
       "created_iso": "2024-05-06",
@@ -50005,7 +50051,7 @@
       "team": "",
       "tenant_raw": "Brazos",
       "tenants": [
-        "(other)"
+        "Brazos"
       ],
       "created": "2024-05-06T17:40:07.180-0400",
       "created_iso": "2024-05-06",
@@ -50033,7 +50079,7 @@
       "team": "",
       "tenant_raw": "Cuyahoga OH",
       "tenants": [
-        "(other)"
+        "Cuyahoga OH"
       ],
       "created": "2024-05-03T10:25:48.666-0400",
       "created_iso": "2024-05-03",
@@ -50089,7 +50135,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-04-29T11:59:53.113-0400",
       "created_iso": "2024-04-29",
@@ -50117,7 +50163,7 @@
       "team": "",
       "tenant_raw": "Baldwin AL",
       "tenants": [
-        "(other)"
+        "Baldwin AL"
       ],
       "created": "2024-04-26T10:24:59.494-0400",
       "created_iso": "2024-04-26",
@@ -50173,7 +50219,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-04-22T14:38:18.516-0400",
       "created_iso": "2024-04-22",
@@ -50201,7 +50247,7 @@
       "team": "",
       "tenant_raw": "Burleson",
       "tenants": [
-        "(other)"
+        "Burleson"
       ],
       "created": "2024-04-19T13:29:59.056-0400",
       "created_iso": "2024-04-19",
@@ -50229,7 +50275,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2024-04-15T14:10:08.189-0400",
       "created_iso": "2024-04-15",
@@ -50313,7 +50359,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-03-27T12:50:18.972-0400",
       "created_iso": "2024-03-27",
@@ -50397,7 +50443,7 @@
       "team": "",
       "tenant_raw": "Hidalgo",
       "tenants": [
-        "(other)"
+        "Hidalgo"
       ],
       "created": "2024-03-22T17:53:02.711-0400",
       "created_iso": "2024-03-22",
@@ -50425,7 +50471,7 @@
       "team": "",
       "tenant_raw": "Refugio",
       "tenants": [
-        "(other)"
+        "Refugio"
       ],
       "created": "2024-03-06T10:07:40.979-0500",
       "created_iso": "2024-03-06",
@@ -50453,7 +50499,8 @@
       "team": "",
       "tenant_raw": "Dallas, Midland",
       "tenants": [
-        "Dallas"
+        "Dallas",
+        "Midland"
       ],
       "created": "2024-03-05T18:03:23.904-0500",
       "created_iso": "2024-03-05",
@@ -50481,7 +50528,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-03-04T17:09:05.333-0500",
       "created_iso": "2024-03-04",
@@ -50509,7 +50556,7 @@
       "team": "",
       "tenant_raw": "Milam",
       "tenants": [
-        "(other)"
+        "Milam"
       ],
       "created": "2024-03-01T14:55:25.085-0500",
       "created_iso": "2024-03-01",
@@ -50537,7 +50584,7 @@
       "team": "",
       "tenant_raw": "Walker",
       "tenants": [
-        "(other)"
+        "Walker"
       ],
       "created": "2024-02-26T13:16:11.645-0500",
       "created_iso": "2024-02-26",
@@ -50565,7 +50612,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-02-23T09:22:57.560-0500",
       "created_iso": "2024-02-23",
@@ -50593,7 +50640,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-02-20T00:59:00.569-0500",
       "created_iso": "2024-02-20",
@@ -50649,7 +50696,7 @@
       "team": "",
       "tenant_raw": "Boulder CO",
       "tenants": [
-        "(other)"
+        "Boulder CO"
       ],
       "created": "2024-02-09T19:55:52.532-0500",
       "created_iso": "2024-02-09",
@@ -50677,7 +50724,7 @@
       "team": "",
       "tenant_raw": "Nacogdoches",
       "tenants": [
-        "(other)"
+        "Nacogdoches"
       ],
       "created": "2024-02-07T12:16:42.510-0500",
       "created_iso": "2024-02-07",
@@ -50705,7 +50752,7 @@
       "team": "",
       "tenant_raw": "Grimes",
       "tenants": [
-        "(other)"
+        "Grimes"
       ],
       "created": "2024-01-26T14:12:51.410-0500",
       "created_iso": "2024-01-26",
@@ -50817,7 +50864,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2023-10-19T10:54:28.401-0400",
       "created_iso": "2023-10-19",
@@ -50845,7 +50892,7 @@
       "team": "",
       "tenant_raw": "Grimes",
       "tenants": [
-        "(other)"
+        "Grimes"
       ],
       "created": "2023-10-17T11:48:49.614-0400",
       "created_iso": "2023-10-17",
@@ -50873,7 +50920,7 @@
       "team": "",
       "tenant_raw": "San Patricio",
       "tenants": [
-        "(other)"
+        "San Patricio"
       ],
       "created": "2023-10-13T14:38:01.606-0400",
       "created_iso": "2023-10-13",
@@ -50901,7 +50948,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2023-09-26T10:25:45.888-0400",
       "created_iso": "2023-09-26",
@@ -50929,7 +50976,10 @@
       "team": "",
       "tenant_raw": "Anderson, Arlington VA, Collin, Smith",
       "tenants": [
-        "Collin"
+        "Anderson",
+        "Arlington VA",
+        "Collin",
+        "Smith"
       ],
       "created": "2023-09-25T08:49:33.826-0400",
       "created_iso": "2023-09-25",
@@ -50957,7 +51007,7 @@
       "team": "",
       "tenant_raw": "Arlington VA",
       "tenants": [
-        "(other)"
+        "Arlington VA"
       ],
       "created": "2023-08-31T10:59:22.300-0400",
       "created_iso": "2023-08-31",
@@ -50985,7 +51035,7 @@
       "team": "",
       "tenant_raw": "Nueces",
       "tenants": [
-        "(other)"
+        "Nueces"
       ],
       "created": "2023-08-22T12:44:25.238-0400",
       "created_iso": "2023-08-22",
@@ -51013,7 +51063,7 @@
       "team": "",
       "tenant_raw": "Anderson",
       "tenants": [
-        "(other)"
+        "Anderson"
       ],
       "created": "2023-06-14T11:11:00.000-0400",
       "created_iso": "2023-06-14",
@@ -51081,6 +51131,7 @@
       "team": "",
       "tenant_raw": "Boulder CO, Collin, Dallas, Denton",
       "tenants": [
+        "Boulder CO",
         "Collin",
         "Dallas",
         "Denton"
@@ -51180,7 +51231,8 @@
       "tenant_raw": "Collin, Denton, Smith",
       "tenants": [
         "Collin",
-        "Denton"
+        "Denton",
+        "Smith"
       ],
       "created": "2023-03-23T16:10:00.000-0400",
       "created_iso": "2023-03-23",
@@ -51208,7 +51260,7 @@
       "team": "",
       "tenant_raw": "Kendall",
       "tenants": [
-        "(other)"
+        "Kendall"
       ],
       "created": "2023-03-22T11:31:00.000-0400",
       "created_iso": "2023-03-22",
@@ -51276,7 +51328,7 @@
       "team": "",
       "tenant_raw": "City of Abilene",
       "tenants": [
-        "(other)"
+        "City of Abilene"
       ],
       "created": "2023-02-23T12:05:00.000-0500",
       "created_iso": "2023-02-23",
@@ -51304,7 +51356,8 @@
       "team": "",
       "tenant_raw": "Chambers, Nacogdoches",
       "tenants": [
-        "(other)"
+        "Chambers",
+        "Nacogdoches"
       ],
       "created": "2023-01-12T08:58:00.000-0500",
       "created_iso": "2023-01-12",
@@ -51484,7 +51537,12 @@
       "team": "",
       "tenant_raw": "Cameron, Cuyahoga OH, Guadalupe, Matagorda, Refugio, Roscommon MI",
       "tenants": [
-        "(other)"
+        "Cameron",
+        "Cuyahoga OH",
+        "Guadalupe",
+        "Matagorda",
+        "Refugio",
+        "Roscommon MI"
       ],
       "created": "2017-03-22T15:44:00.000-0400",
       "created_iso": "2017-03-22",
