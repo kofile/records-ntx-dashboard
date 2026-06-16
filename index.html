@@ -45,7 +45,7 @@
     background: var(--bg);
   }
   .masthead-row {
-    display: flex; align-items: flex-start; justify-content: space-between;
+    display: flex; align-items: baseline; justify-content: space-between;
     gap: 16px;
   }
   .title {
@@ -158,18 +158,8 @@
     transition: background 0.1s, color 0.1s;
   }
   .cluster-manage-link:hover { background: var(--accent); color: white; }
-  .cluster-procedures-link {
-    font-family: var(--sans); font-size: 11px;
-    color: var(--ink-soft); text-decoration: none;
-    padding: 5px 11px;
-    border-right: 1px solid var(--line);
-    margin-left: auto;
-    padding-right: 14px;
-    transition: color 0.1s;
-  }
-  .cluster-procedures-link:hover { color: var(--ink); }
   .cluster-bar-meta {
-    font-size: 11px; color: var(--ink-faint);
+    margin-left: auto; font-size: 11px; color: var(--ink-faint);
     font-family: var(--mono);
   }
 
@@ -693,62 +683,6 @@
   }
   .footer-note strong { color: var(--ink-soft); }
 
-  /* Masthead info icons */
-  .masthead-icons {
-    display: flex; align-items: center; gap: 10px;
-    margin-left: 20px; flex-shrink: 0;
-  }
-  .info-icon-btn {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: none; border: none; cursor: pointer;
-    padding: 0; font-family: var(--sans);
-    position: relative;
-  }
-  .info-icon-circle {
-    width: 24px; height: 24px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px; font-weight: 600; color: #fff;
-    flex-shrink: 0;
-  }
-  .info-icon-circle.blue  { background: #185FA5; }
-  .info-icon-circle.green { background: #3B6D11; }
-  .info-icon-label {
-    font-size: 11px; font-weight: 500; white-space: nowrap;
-  }
-  .info-icon-label.blue  { color: #185FA5; }
-  .info-icon-label.green { color: #3B6D11; }
-  .info-icon-panel {
-    display: none;
-    position: absolute; top: 32px; right: 0;
-    width: 300px; z-index: 50;
-    border-radius: 5px; padding: 11px 14px;
-    font-size: 12px; line-height: 1.6;
-    font-family: var(--sans);
-    text-align: left;
-  }
-  .info-icon-panel.amber {
-    background: var(--warn-bg);
-    border: 1px solid #FAC775;
-    color: #4A2800;
-  }
-  .info-icon-panel.green {
-    background: #EAF3DE;
-    border: 1px solid #C0DD97;
-    color: #1B3A0A;
-  }
-  .info-icon-panel.open { display: block; }
-  .info-icon-panel-label {
-    font-size: 10px; font-weight: 600; letter-spacing: 0.07em;
-    text-transform: uppercase; margin-bottom: 5px;
-  }
-  .info-icon-panel.amber .info-icon-panel-label { color: #854F0B; }
-  .info-icon-panel.green  .info-icon-panel-label { color: #3B6D11; }
-  .masthead-icons-sep {
-    width: 1px; height: 22px;
-    background: var(--line-strong);
-    flex-shrink: 0;
-  }
-
   /* Hide bits per view */
   body.view-customer .exec-only { display: none; }
   body.view-exec .customer-only { display: none; }
@@ -781,36 +715,9 @@
 <header class="masthead">
   <div class="masthead-row">
     <h1 class="title">Records<em> — <span id="masthead-cluster">escalation &amp; delivery</span></em></h1>
-    <div style="display:flex; align-items:flex-start; gap:14px; padding-top:4px;">
-      <div class="masthead-meta" style="flex-direction:column; gap:4px; align-items:flex-end;">
-        <span>Vol. 1 · No. <strong id="snap-num">1</strong></span>
-        <span>Today is <strong id="today-str">14 May 2026</strong></span>
-      </div>
-      <div class="masthead-icons-sep"></div>
-      <div class="masthead-icons">
-        <!-- How this works icon -->
-        <div style="position:relative;">
-          <button class="info-icon-btn" id="btn-how-works" onclick="toggleInfoPanel('panel-how-works', 'panel-what-is')" aria-expanded="false" aria-controls="panel-how-works">
-            <span class="info-icon-circle green">?</span>
-            <span class="info-icon-label green">How this works</span>
-          </button>
-          <div class="info-icon-panel green" id="panel-how-works" role="tooltip" style="right:-10px;">
-            <div class="info-icon-panel-label">How this dashboard works</div>
-            Data refreshes automatically from each cluster's Jira filter twice per business day (8am and 4pm ET). The "data as of" indicator shows the latest refresh — green if fresh, amber if stale, red if auto-refresh is failing. Daily snapshots accumulate into the trend chart over time.
-          </div>
-        </div>
-        <!-- What is this icon -->
-        <div style="position:relative;">
-          <button class="info-icon-btn" id="btn-what-is" onclick="toggleInfoPanel('panel-what-is', 'panel-how-works')" aria-expanded="false" aria-controls="panel-what-is">
-            <span class="info-icon-circle blue">i</span>
-            <span class="info-icon-label blue">What is this?</span>
-          </button>
-          <div class="info-icon-panel amber" id="panel-what-is" role="tooltip" style="right:0;">
-            <div class="info-icon-panel-label">What is this?</div>
-            This is a dashboard for support escalations. It visualizes delivery teams' progress toward resolution of escalated work to inform and prepare leadership and customer-facing teams.
-          </div>
-        </div>
-      </div>
+    <div class="masthead-meta">
+      <span>Vol. 1 · No. <strong id="snap-num">1</strong></span>
+      <span>Today is <strong id="today-str">14 May 2026</strong></span>
     </div>
   </div>
   <div class="dateline">
@@ -826,7 +733,6 @@
   <!-- Cluster pills inserted by JS -->
   <span id="cluster-pills"></span>
   <span class="cluster-bar-meta" id="cluster-meta"></span>
-  <a class="cluster-procedures-link" href="https://neumogov-my.sharepoint.com/:w:/r/personal/gargee_kar_neumo_com/Documents/Microsoft%20Teams%20Chat%20Files/North_Texas_Escalations_Jira%20Handling%20Procedure.docx?d=wfb431f94f17e47d48aef3c4580d626c9&csf=1&web=1&e=xRQctK" target="_blank" rel="noopener">Support Escalation Dashboard Procedures ↗</a>
   <a class="cluster-manage-link" id="cluster-manage-link" href="#" target="_blank" rel="noopener" title="Open the cluster registry in Confluence">⚙ Manage clusters in Confluence ↗</a>
 </div>
 
@@ -6177,7 +6083,6 @@
 "use strict";
 
 const DATA = JSON.parse(document.getElementById("bootstrap-data").textContent);
-const NTX = ["Collin", "Dallas", "Johnson", "Denton", "Jefferson"];
 const STAGE_ORDER = ["In triage", "Open", "In dev", "In testing", "Blocked", "Other"];
 const STAGE_COLOR = {
   "In triage": "#BA7517",
@@ -6372,13 +6277,17 @@ function deliveryBucket(s) {
   return "open";
 }
 function tenantsFor(raw) {
+  // Parse comma-separated tenant strings; strip common suffixes (TX, Texas, County).
+  // Returns the cleaned tenant names. No longer gated by an NTX-5 allowlist —
+  // any tenant present in the data flows through, which lets Customer Prep
+  // surface new tenants dynamically.
   const parts = (raw || "").split(",").map(s => s.trim()).filter(Boolean);
-  const matched = [];
+  const cleaned = [];
   parts.forEach(p => {
     const base = p.replace(/\s+(County\s+)?(TX|Texas)\s*$/i, "").trim();
-    if (NTX.includes(base)) matched.push(base);
+    if (base) cleaned.push(base);
   });
-  return matched.length ? matched : (parts.length ? ["(other)"] : ["(untagged)"]);
+  return cleaned.length ? cleaned : (parts.length ? ["(other)"] : ["(untagged)"]);
 }
 function parseDdmmyy(s) {
   if (!s) return null;
@@ -7108,13 +7017,38 @@ let _prepFilterState = { stage: "", board: "", sort: "delivery", tenant: null };
 // CUSTOMER PREP VIEW
 function renderCustomerPrep(snap) {
   const tabs = document.getElementById("prep-tabs");
-  tabs.innerHTML = NTX.map((t,i) => {
+
+  // Build tenant list dynamically from snapshot data.
+  // Sort: NTX-5 first if present (in canonical order), then any other tenants alphabetically.
+  // Tenants that have zero tickets in the current snapshot are excluded.
+  const NTX_5_PRIMARY = ["Dallas", "Denton", "Johnson", "Collin", "Jefferson"];
+  const tenantsInData = new Set();
+  snap.tickets.forEach(t => (t.tenants || []).forEach(name => {
+    if (name && name !== "(untagged)" && name !== "(other)") {
+      tenantsInData.add(name);
+    }
+  }));
+  const presentTenants = [
+    ...NTX_5_PRIMARY.filter(n => tenantsInData.has(n)),
+    ...[...tenantsInData].filter(n => !NTX_5_PRIMARY.includes(n)).sort(),
+  ];
+
+  if (presentTenants.length === 0) {
+    tabs.innerHTML = "";
+    document.getElementById("prep-body").innerHTML =
+      `<p style="color:var(--ink-soft);font-style:italic;">No tagged tenants in the current snapshot. Confirm the Tenant field is being set on incoming tickets.</p>`;
+    return;
+  }
+
+  tabs.innerHTML = presentTenants.map((t, i) => {
     const cnt = snap.tickets.filter(tk => tk.tenants.includes(t)).length;
-    return `<button class="${i===0?"active":""}" data-tenant="${t}">${t}<span class="count">${cnt||"—"}</span></button>`;
+    return `<button class="${i === 0 ? "active" : ""}" data-tenant="${t}">${t}<span class="count">${cnt || "—"}</span></button>`;
   }).join("");
 
-  // Initial tenant if not yet set
-  if (!_prepFilterState.tenant) _prepFilterState.tenant = NTX[0];
+  // Initial tenant if not yet set OR if the previous selection no longer exists in data
+  if (!_prepFilterState.tenant || !presentTenants.includes(_prepFilterState.tenant)) {
+    _prepFilterState.tenant = presentTenants[0];
+  }
 
   tabs.querySelectorAll("button").forEach(b => {
     if (b.dataset.tenant === _prepFilterState.tenant) {
@@ -7645,31 +7579,6 @@ async function init() {
   renderExec(current, previous, baseline, allSnaps);
   renderCustomerPrep(current);
 }
-
-function toggleInfoPanel(openId, closeId) {
-  const openEl  = document.getElementById(openId);
-  const closeEl = document.getElementById(closeId);
-  const isOpen  = openEl.classList.contains('open');
-  closeEl.classList.remove('open');
-  openEl.classList.toggle('open', !isOpen);
-  const btnOpen  = document.querySelector('[aria-controls="' + openId  + '"]');
-  const btnClose = document.querySelector('[aria-controls="' + closeId + '"]');
-  if (btnOpen)  btnOpen.setAttribute('aria-expanded',  String(!isOpen));
-  if (btnClose) btnClose.setAttribute('aria-expanded', 'false');
-}
-
-document.addEventListener('click', function(e) {
-  ['panel-what-is','panel-how-works'].forEach(function(id) {
-    const panel = document.getElementById(id);
-    const btn   = document.querySelector('[aria-controls="' + id + '"]');
-    if (panel && panel.classList.contains('open')) {
-      if (!panel.contains(e.target) && btn && !btn.contains(e.target)) {
-        panel.classList.remove('open');
-        btn.setAttribute('aria-expanded','false');
-      }
-    }
-  });
-});
 
 init();
 </script>
