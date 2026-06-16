@@ -32,8 +32,6 @@ import urllib.request
 from datetime import datetime, timezone, timedelta
 from collections import defaultdict
 
-NTX = ["Dallas", "Denton", "Johnson", "Collin", "Jefferson"]
-
 # Custom field IDs (from Mandy's Jira tenant)
 CF_END_DATE = "customfield_11476"
 CF_TENANT = "customfield_11465"
@@ -76,14 +74,27 @@ def delivery_bucket(s):
 
 
 def tenants_for(raw):
-    """Normalize tenant strings — accepts 'Jefferson', 'Jefferson TX', 'Jefferson County TX'."""
+    """Parse comma-separated tenant strings; strip common suffixes (TX, Texas, County).
+
+    Mirrors the JS tenantsFor() in index.html. No longer gated by an NTX-5
+    allowlist — any non-empty tenant flows through. This lets Customer Prep
+    surface new tenants dynamically as they appear in the data.
+
+    Examples:
+      "Collin"             -> ["Collin"]
+      "Jefferson TX"       -> ["Jefferson"]
+      "Anderson, Collin"   -> ["Anderson", "Collin"]
+      "Lake County IL"     -> ["Lake County IL"]  (only TX/Texas suffixes stripped)
+      "All"                -> ["All"]
+      ""                   -> ["(untagged)"]
+    """
     parts = [x.strip() for x in (raw or "").split(",") if x.strip()]
-    matched = []
+    cleaned = []
     for p in parts:
         base = re.sub(r"\s+(County\s+)?(TX|Texas)\s*$", "", p, flags=re.IGNORECASE).strip()
-        if base in NTX:
-            matched.append(base)
-    return matched if matched else (["(other)"] if parts else ["(untagged)"])
+        if base:
+            cleaned.append(base)
+    return cleaned if cleaned else (["(other)"] if parts else ["(untagged)"])
 
 
 def parse_iso_to_date(iso):
