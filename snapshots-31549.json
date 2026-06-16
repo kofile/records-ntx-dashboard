@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T19:06:42Z",
+  "updated_at": "2026-06-16T19:19:07Z",
   "today": "2026-06-16",
   "exported_at": "16 Jun 2026 (auto)",
   "tickets": [
@@ -48,13 +48,13 @@
       "created": "2026-06-16T11:03:42.104-0400",
       "created_iso": "2026-06-16",
       "age_days": 0,
-      "updated": "2026-06-16T11:14:10.558-0400",
+      "updated": "2026-06-16T15:15:08.210-0400",
       "updated_iso": "2026-06-16",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
-      "comments_count": "1",
+      "comments_count": "2",
       "labels_raw": "jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null

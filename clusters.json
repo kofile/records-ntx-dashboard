@@ -4,7 +4,7 @@
     "type": "confluence_page",
     "host": "neumo.atlassian.net",
     "page_id": "3891593217",
-    "fetched_at": "2026-06-16T19:06:29Z"
+    "fetched_at": "2026-06-16T19:18:52Z"
   },
   "clusters": [
     {
@@ -16,7 +16,7 @@
       "title": "Escalations & Delivery"
     },
     {
-      "id": 32856,
+      "id": 32721,
       "title": "Beaufort SC"
     }
   ]
