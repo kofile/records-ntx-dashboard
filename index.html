@@ -45,7 +45,7 @@
     background: var(--bg);
   }
   .masthead-row {
-    display: flex; align-items: baseline; justify-content: space-between;
+    display: flex; align-items: flex-start; justify-content: space-between;
     gap: 16px;
   }
   .title {
@@ -158,8 +158,18 @@
     transition: background 0.1s, color 0.1s;
   }
   .cluster-manage-link:hover { background: var(--accent); color: white; }
+  .cluster-procedures-link {
+    font-family: var(--sans); font-size: 11px;
+    color: var(--ink-soft); text-decoration: none;
+    padding: 5px 11px;
+    border-right: 1px solid var(--line);
+    margin-left: auto;
+    padding-right: 14px;
+    transition: color 0.1s;
+  }
+  .cluster-procedures-link:hover { color: var(--ink); }
   .cluster-bar-meta {
-    margin-left: auto; font-size: 11px; color: var(--ink-faint);
+    font-size: 11px; color: var(--ink-faint);
     font-family: var(--mono);
   }
 
@@ -631,8 +641,6 @@
     display: flex; gap: 0;
     border-bottom: 1px solid var(--line);
     margin-bottom: 20px;
-    flex-wrap: wrap;
-    position: relative;
   }
   .customer-prep .tenant-tabs button {
     background: transparent; border: none;
@@ -642,7 +650,6 @@
     cursor: pointer;
     border-bottom: 2px solid transparent;
     margin-bottom: -1px;
-    white-space: nowrap;
   }
   .customer-prep .tenant-tabs button.active {
     color: var(--ink); border-bottom-color: var(--ink);
@@ -651,66 +658,6 @@
   .customer-prep .tenant-tabs .count {
     font-family: var(--mono); font-size: 11px;
     color: var(--ink-faint); margin-left: 6px;
-  }
-  .customer-prep .tenant-tabs .prep-all-tab {
-    font-weight: 500;
-    border-right: 1px solid var(--line);
-    padding-right: 22px;
-  }
-  .customer-prep .tenant-tabs .prep-all-caret {
-    margin-left: 6px; font-size: 10px;
-    color: var(--ink-faint);
-  }
-  .customer-prep .tenant-tabs .prep-all-tab[aria-expanded="true"] .prep-all-caret {
-    color: var(--ink);
-  }
-  .prep-tenant-dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 100;
-    background: var(--bg, #fff);
-    border: 1px solid var(--line-strong);
-    border-radius: 4px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
-    min-width: 260px;
-    max-height: 360px;
-    overflow-y: auto;
-    padding: 4px 0;
-    margin-top: 2px;
-  }
-  .prep-tenant-dropdown-item {
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background: transparent; border: none;
-    padding: 8px 14px !important;
-    font: inherit; font-size: 13px;
-    color: var(--ink);
-    cursor: pointer;
-    text-align: left;
-    border-bottom: none !important;
-    margin-bottom: 0 !important;
-  }
-  .prep-tenant-dropdown-item:hover {
-    background: var(--neutral-bg, #F4F2EC);
-  }
-  .prep-tenant-dropdown-item.active {
-    background: var(--neutral-bg, #F4F2EC);
-    font-weight: 500;
-  }
-  .prep-tenant-dropdown-name {
-    flex: 1;
-  }
-  .prep-tenant-dropdown-count {
-    font-family: var(--mono); font-size: 11px;
-    color: var(--ink-faint); margin-left: 16px;
-  }
-  .prep-tenant-dropdown-divider {
-    height: 1px;
-    background: var(--line);
-    margin: 4px 0;
   }
   .prep-header {
     display: flex; justify-content: space-between; align-items: baseline;
@@ -746,6 +693,62 @@
   }
   .footer-note strong { color: var(--ink-soft); }
 
+  /* Masthead info icons */
+  .masthead-icons {
+    display: flex; align-items: center; gap: 10px;
+    margin-left: 20px; flex-shrink: 0;
+  }
+  .info-icon-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: none; border: none; cursor: pointer;
+    padding: 0; font-family: var(--sans);
+    position: relative;
+  }
+  .info-icon-circle {
+    width: 24px; height: 24px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 600; color: #fff;
+    flex-shrink: 0;
+  }
+  .info-icon-circle.blue  { background: #185FA5; }
+  .info-icon-circle.green { background: #3B6D11; }
+  .info-icon-label {
+    font-size: 11px; font-weight: 500; white-space: nowrap;
+  }
+  .info-icon-label.blue  { color: #185FA5; }
+  .info-icon-label.green { color: #3B6D11; }
+  .info-icon-panel {
+    display: none;
+    position: absolute; top: 32px; right: 0;
+    width: 300px; z-index: 50;
+    border-radius: 5px; padding: 11px 14px;
+    font-size: 12px; line-height: 1.6;
+    font-family: var(--sans);
+    text-align: left;
+  }
+  .info-icon-panel.amber {
+    background: var(--warn-bg);
+    border: 1px solid #FAC775;
+    color: #4A2800;
+  }
+  .info-icon-panel.green {
+    background: #EAF3DE;
+    border: 1px solid #C0DD97;
+    color: #1B3A0A;
+  }
+  .info-icon-panel.open { display: block; }
+  .info-icon-panel-label {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.07em;
+    text-transform: uppercase; margin-bottom: 5px;
+  }
+  .info-icon-panel.amber .info-icon-panel-label { color: #854F0B; }
+  .info-icon-panel.green  .info-icon-panel-label { color: #3B6D11; }
+  .masthead-icons-sep {
+    width: 1px; height: 22px;
+    background: var(--line-strong);
+    flex-shrink: 0;
+  }
+
   /* Hide bits per view */
   body.view-customer .exec-only { display: none; }
   body.view-exec .customer-only { display: none; }
@@ -778,9 +781,36 @@
 <header class="masthead">
   <div class="masthead-row">
     <h1 class="title">Records<em> — <span id="masthead-cluster">escalation &amp; delivery</span></em></h1>
-    <div class="masthead-meta">
-      <span>Vol. 1 · No. <strong id="snap-num">1</strong></span>
-      <span>Today is <strong id="today-str">14 May 2026</strong></span>
+    <div style="display:flex; align-items:flex-start; gap:14px; padding-top:4px;">
+      <div class="masthead-meta" style="flex-direction:column; gap:4px; align-items:flex-end;">
+        <span>Vol. 1 · No. <strong id="snap-num">1</strong></span>
+        <span>Today is <strong id="today-str">14 May 2026</strong></span>
+      </div>
+      <div class="masthead-icons-sep"></div>
+      <div class="masthead-icons">
+        <!-- How this works icon -->
+        <div style="position:relative;">
+          <button class="info-icon-btn" id="btn-how-works" onclick="toggleInfoPanel('panel-how-works', 'panel-what-is')" aria-expanded="false" aria-controls="panel-how-works">
+            <span class="info-icon-circle green">?</span>
+            <span class="info-icon-label green">How this works</span>
+          </button>
+          <div class="info-icon-panel green" id="panel-how-works" role="tooltip" style="right:-10px;">
+            <div class="info-icon-panel-label">How this dashboard works</div>
+            Data refreshes automatically from each cluster's Jira filter twice per business day (8am and 4pm ET). The "data as of" indicator shows the latest refresh — green if fresh, amber if stale, red if auto-refresh is failing. Daily snapshots accumulate into the trend chart over time.
+          </div>
+        </div>
+        <!-- What is this icon -->
+        <div style="position:relative;">
+          <button class="info-icon-btn" id="btn-what-is" onclick="toggleInfoPanel('panel-what-is', 'panel-how-works')" aria-expanded="false" aria-controls="panel-what-is">
+            <span class="info-icon-circle blue">i</span>
+            <span class="info-icon-label blue">What is this?</span>
+          </button>
+          <div class="info-icon-panel amber" id="panel-what-is" role="tooltip" style="right:0;">
+            <div class="info-icon-panel-label">What is this?</div>
+            This is a dashboard for support escalations. It visualizes delivery teams' progress toward resolution of escalated work to inform and prepare leadership and customer-facing teams.
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="dateline">
@@ -796,6 +826,7 @@
   <!-- Cluster pills inserted by JS -->
   <span id="cluster-pills"></span>
   <span class="cluster-bar-meta" id="cluster-meta"></span>
+  <a class="cluster-procedures-link" href="https://neumogov-my.sharepoint.com/:w:/r/personal/gargee_kar_neumo_com/Documents/Microsoft%20Teams%20Chat%20Files/North_Texas_Escalations_Jira%20Handling%20Procedure.docx?d=wfb431f94f17e47d48aef3c4580d626c9&csf=1&web=1&e=xRQctK" target="_blank" rel="noopener">Support Escalation Dashboard Procedures ↗</a>
   <a class="cluster-manage-link" id="cluster-manage-link" href="#" target="_blank" rel="noopener" title="Open the cluster registry in Confluence">⚙ Manage clusters in Confluence ↗</a>
 </div>
 
@@ -6146,6 +6177,7 @@
 "use strict";
 
 const DATA = JSON.parse(document.getElementById("bootstrap-data").textContent);
+const NTX = ["Collin", "Dallas", "Johnson", "Denton", "Jefferson"];
 const STAGE_ORDER = ["In triage", "Open", "In dev", "In testing", "Blocked", "Other"];
 const STAGE_COLOR = {
   "In triage": "#BA7517",
@@ -6340,17 +6372,13 @@ function deliveryBucket(s) {
   return "open";
 }
 function tenantsFor(raw) {
-  // Parse comma-separated tenant strings; strip common suffixes (TX, Texas, County).
-  // Returns the cleaned tenant names. No longer gated by an NTX-5 allowlist —
-  // any tenant present in the data flows through, which lets Customer Prep
-  // surface new tenants dynamically.
   const parts = (raw || "").split(",").map(s => s.trim()).filter(Boolean);
-  const cleaned = [];
+  const matched = [];
   parts.forEach(p => {
     const base = p.replace(/\s+(County\s+)?(TX|Texas)\s*$/i, "").trim();
-    if (base) cleaned.push(base);
+    if (NTX.includes(base)) matched.push(base);
   });
-  return cleaned.length ? cleaned : (parts.length ? ["(other)"] : ["(untagged)"]);
+  return matched.length ? matched : (parts.length ? ["(other)"] : ["(untagged)"]);
 }
 function parseDdmmyy(s) {
   if (!s) return null;
@@ -7078,157 +7106,34 @@ function renderBottleneck(snap) {
 let _prepFilterState = { stage: "", board: "", sort: "delivery", tenant: null };
 
 // CUSTOMER PREP VIEW
-// Number of tenant tabs pinned by ticket count. The rest are accessed via the
-// "[All ▾]" dropdown at the left of the tab row.
-const PREP_PINNED_COUNT = 6;
-
 function renderCustomerPrep(snap) {
   const tabs = document.getElementById("prep-tabs");
+  tabs.innerHTML = NTX.map((t,i) => {
+    const cnt = snap.tickets.filter(tk => tk.tenants.includes(t)).length;
+    return `<button class="${i===0?"active":""}" data-tenant="${t}">${t}<span class="count">${cnt||"—"}</span></button>`;
+  }).join("");
 
-  // Build distinct tenant list with ticket counts. Excludes synthetic markers
-  // like "(untagged)" and "(other)" — those are not customer tenants.
-  const tenantCounts = new Map();
-  snap.tickets.forEach(t => (t.tenants || []).forEach(name => {
-    if (!name || name === "(untagged)" || name === "(other)") return;
-    tenantCounts.set(name, (tenantCounts.get(name) || 0) + 1);
-  }));
+  // Initial tenant if not yet set
+  if (!_prepFilterState.tenant) _prepFilterState.tenant = NTX[0];
 
-  // Sort tenants by ticket count descending, alphabetical as stable tiebreaker
-  const sortedByCount = [...tenantCounts.entries()]
-    .sort((a, b) => (b[1] - a[1]) || a[0].localeCompare(b[0]));
-
-  if (sortedByCount.length === 0) {
-    tabs.innerHTML = "";
-    document.getElementById("prep-body").innerHTML =
-      `<p style="color:var(--ink-soft);font-style:italic;">No tagged tenants in the current snapshot. Confirm the Tenant field is being set on incoming tickets.</p>`;
-    return;
-  }
-
-  // Top N are pinned tabs; the rest go in the [All ▾] dropdown.
-  const pinned = sortedByCount.slice(0, PREP_PINNED_COUNT);
-  const overflow = sortedByCount.slice(PREP_PINNED_COUNT);
-
-  // Default selection: "All" (only if nothing is set; preserve user's choice
-  // across re-renders unless the selection no longer exists in the data).
-  const allValidTenants = sortedByCount.map(([name]) => name);
-  if (!_prepFilterState.tenant ||
-      (_prepFilterState.tenant !== "__ALL__" && !allValidTenants.includes(_prepFilterState.tenant))) {
-    _prepFilterState.tenant = "__ALL__";
-  }
-
-  // Build the tab row: [All ▾] first, then pinned tenants.
-  // The All tab doubles as the dropdown trigger.
-  const allActive = _prepFilterState.tenant === "__ALL__";
-  const totalTickets = sortedByCount.reduce((s, [, c]) => s + c, 0);
-
-  let html = `<button class="prep-all-tab${allActive ? " active" : ""}"
-    id="prep-all-tab" type="button"
-    aria-haspopup="listbox" aria-expanded="false"
-    title="Click for dropdown of all tenants">
-    All<span class="count">${totalTickets}</span>
-    <span class="prep-all-caret" aria-hidden="true">▾</span>
-  </button>`;
-
-  pinned.forEach(([name, count]) => {
-    const active = _prepFilterState.tenant === name;
-    html += `<button class="${active ? "active" : ""}" data-tenant="${name}" type="button">${escapeHtml(name)}<span class="count">${count}</span></button>`;
-  });
-
-  tabs.innerHTML = html;
-
-  // Wire pinned tab clicks
-  tabs.querySelectorAll("button[data-tenant]").forEach(b => {
+  tabs.querySelectorAll("button").forEach(b => {
+    if (b.dataset.tenant === _prepFilterState.tenant) {
+      tabs.querySelectorAll("button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+    }
     b.onclick = () => {
+      tabs.querySelectorAll("button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
       _prepFilterState.tenant = b.dataset.tenant;
-      closePrepDropdown();
-      renderCustomerPrep(snap);  // re-render to update active state
+      drawPrep(snap);
     };
   });
-
-  // Wire the [All ▾] tab to open dropdown (and select All if not already)
-  const allBtn = document.getElementById("prep-all-tab");
-  allBtn.onclick = (e) => {
-    e.stopPropagation();
-    togglePrepDropdown(snap, sortedByCount);
-  };
 
   // Populate Board filter dropdown from data (same approach as Tile 2)
   populatePrepFilters(snap);
 
   // Render with current state
   drawPrep(snap);
-}
-
-function togglePrepDropdown(snap, sortedByCount) {
-  const existing = document.getElementById("prep-tenant-dropdown");
-  if (existing) {
-    closePrepDropdown();
-    return;
-  }
-  // Build the dropdown panel
-  const allBtn = document.getElementById("prep-all-tab");
-  const tabsContainer = document.getElementById("prep-tabs");
-  const overflow = sortedByCount.slice(PREP_PINNED_COUNT);
-
-  const panel = document.createElement("div");
-  panel.id = "prep-tenant-dropdown";
-  panel.className = "prep-tenant-dropdown";
-  panel.setAttribute("role", "listbox");
-
-  const total = sortedByCount.reduce((s, [, c]) => s + c, 0);
-  let html = `<button class="prep-tenant-dropdown-item${_prepFilterState.tenant === "__ALL__" ? " active" : ""}"
-    data-tenant="__ALL__" type="button">
-    <span class="prep-tenant-dropdown-name">All tenants</span>
-    <span class="prep-tenant-dropdown-count">${total}</span>
-  </button>`;
-  if (overflow.length) {
-    html += `<div class="prep-tenant-dropdown-divider"></div>`;
-    // Sort overflow alphabetically for findability in the long tail
-    const overflowAlpha = [...overflow].sort((a, b) => a[0].localeCompare(b[0]));
-    overflowAlpha.forEach(([name, count]) => {
-      const active = _prepFilterState.tenant === name;
-      html += `<button class="prep-tenant-dropdown-item${active ? " active" : ""}"
-        data-tenant="${name}" type="button">
-        <span class="prep-tenant-dropdown-name">${escapeHtml(name)}</span>
-        <span class="prep-tenant-dropdown-count">${count}</span>
-      </button>`;
-    });
-  }
-  panel.innerHTML = html;
-  tabsContainer.appendChild(panel);
-  allBtn.setAttribute("aria-expanded", "true");
-
-  // Wire dropdown items
-  panel.querySelectorAll("button").forEach(item => {
-    item.onclick = (e) => {
-      e.stopPropagation();
-      _prepFilterState.tenant = item.dataset.tenant;
-      closePrepDropdown();
-      renderCustomerPrep(snap);
-    };
-  });
-
-  // Close on click-outside
-  setTimeout(() => {
-    document.addEventListener("click", _prepDropdownOutsideHandler, { once: true });
-  }, 0);
-}
-
-function closePrepDropdown() {
-  const existing = document.getElementById("prep-tenant-dropdown");
-  if (existing) existing.remove();
-  const allBtn = document.getElementById("prep-all-tab");
-  if (allBtn) allBtn.setAttribute("aria-expanded", "false");
-}
-
-function _prepDropdownOutsideHandler(e) {
-  // If click was inside the dropdown or on the All button, do nothing — those have their own handlers
-  if (e.target.closest("#prep-tenant-dropdown") || e.target.closest("#prep-all-tab")) {
-    // re-arm the handler for next outside click
-    document.addEventListener("click", _prepDropdownOutsideHandler, { once: true });
-    return;
-  }
-  closePrepDropdown();
 }
 
 function populatePrepFilters(snap) {
@@ -7264,24 +7169,11 @@ function populatePrepFilters(snap) {
 function drawPrep(snap) {
   const tenant = _prepFilterState.tenant;
   const { stage, board, sort } = _prepFilterState;
-  const isAll = tenant === "__ALL__";
 
-  // Title: "All tenants — current Jira status" when All is selected,
-  // otherwise the specific tenant name.
-  const titleSubject = isAll ? "All tenants" : tenant;
-  document.getElementById("prep-title").textContent = `${titleSubject} — current Jira status`;
+  document.getElementById("prep-title").textContent = `${tenant} — current Jira status`;
 
-  // Filter by tenant first (the tab controls this).
-  // "All" means: include any ticket that has at least one real tenant tag
-  // (i.e., exclude purely "(untagged)" or "(other)" tickets — they aren't
-  // meaningfully attached to a customer).
-  let tickets;
-  if (isAll) {
-    tickets = snap.tickets.filter(t =>
-      (t.tenants || []).some(n => n && n !== "(untagged)" && n !== "(other)"));
-  } else {
-    tickets = snap.tickets.filter(t => (t.tenants || []).includes(tenant));
-  }
+  // Filter by tenant first (the tab controls this)
+  let tickets = snap.tickets.filter(t => t.tenants.includes(tenant));
   const totalForTenant = tickets.length;
 
   // Apply Stage and Board filters
@@ -7292,20 +7184,18 @@ function drawPrep(snap) {
   // Update filter count + clear button
   const countEl = document.getElementById("prep-filter-count");
   const clearBtn = document.getElementById("prep-filter-clear");
-  const subjectForCount = isAll ? "" : ` ${tenant}`;
   if (hasActiveFilter) {
-    countEl.textContent = `showing ${tickets.length} of ${totalForTenant}${subjectForCount} tickets`;
+    countEl.textContent = `showing ${tickets.length} of ${totalForTenant} ${tenant} tickets`;
     clearBtn.hidden = false;
   } else {
-    countEl.textContent = totalForTenant ? `${totalForTenant}${subjectForCount} tickets` : "";
+    countEl.textContent = totalForTenant ? `${totalForTenant} ${tenant} tickets` : "";
     clearBtn.hidden = true;
   }
 
   if (!tickets.length) {
-    const noun = isAll ? "tickets in this filter" : `tickets for ${tenant}`;
     document.getElementById("prep-body").innerHTML = hasActiveFilter
-      ? `<p style="color:var(--ink-soft);font-style:italic;">No ${noun} match the current filters. Try widening your selection or switching to a different tenant.</p>`
-      : `<p style="color:var(--ink-soft);font-style:italic;">No ${noun}. (Worth flagging — is the Tenant field being set?)</p>`;
+      ? `<p style="color:var(--ink-soft);font-style:italic;">No ${tenant} tickets match the current filters. Try widening your selection or switching to a different county.</p>`
+      : `<p style="color:var(--ink-soft);font-style:italic;">No tickets for ${tenant} in this filter. (Worth flagging — is ${tenant} actually being tracked in this filter?)</p>`;
     return;
   }
 
@@ -7755,6 +7645,31 @@ async function init() {
   renderExec(current, previous, baseline, allSnaps);
   renderCustomerPrep(current);
 }
+
+function toggleInfoPanel(openId, closeId) {
+  const openEl  = document.getElementById(openId);
+  const closeEl = document.getElementById(closeId);
+  const isOpen  = openEl.classList.contains('open');
+  closeEl.classList.remove('open');
+  openEl.classList.toggle('open', !isOpen);
+  const btnOpen  = document.querySelector('[aria-controls="' + openId  + '"]');
+  const btnClose = document.querySelector('[aria-controls="' + closeId + '"]');
+  if (btnOpen)  btnOpen.setAttribute('aria-expanded',  String(!isOpen));
+  if (btnClose) btnClose.setAttribute('aria-expanded', 'false');
+}
+
+document.addEventListener('click', function(e) {
+  ['panel-what-is','panel-how-works'].forEach(function(id) {
+    const panel = document.getElementById(id);
+    const btn   = document.querySelector('[aria-controls="' + id + '"]');
+    if (panel && panel.classList.contains('open')) {
+      if (!panel.contains(e.target) && btn && !btn.contains(e.target)) {
+        panel.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      }
+    }
+  });
+});
 
 init();
 </script>
