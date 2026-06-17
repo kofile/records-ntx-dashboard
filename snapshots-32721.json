@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17T14:10:36Z",
+  "updated_at": "2026-06-17T14:15:10Z",
   "today": "2026-06-17",
   "exported_at": "17 Jun 2026 (auto)",
   "tickets": [
@@ -294,16 +294,28 @@
       "created": "2026-04-30T15:21:36.082-0400",
       "created_iso": "2026-04-30",
       "age_days": 47,
-      "updated": "2026-06-12T15:22:42.665-0400",
-      "updated_iso": "2026-06-12",
+      "updated": "2026-06-17T10:14:09.705-0400",
+      "updated_iso": "2026-06-17",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "CS 2026.Q2-6",
       "comments_count": "4",
-      "labels_raw": "Top_10",
-      "delivery_targets": [],
-      "current_delivery_target": null
+      "labels_raw": "June-2026, Top_10",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
     },
     {
       "key": "SSRS-3074",
@@ -820,16 +832,28 @@
       "created": "2026-01-13T18:14:59.849-0500",
       "created_iso": "2026-01-13",
       "age_days": 154,
-      "updated": "2026-06-17T00:04:36.050-0400",
+      "updated": "2026-06-17T10:13:13.642-0400",
       "updated_iso": "2026-06-17",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
-      "labels_raw": "",
-      "delivery_targets": [],
-      "current_delivery_target": null
+      "labels_raw": "September-2026",
+      "delivery_targets": [
+        {
+          "label": "Sep-2026",
+          "month_index": 8,
+          "year": 2026,
+          "sortable": 24320
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Sep-2026",
+        "month_index": 8,
+        "year": 2026,
+        "sortable": 24320
+      }
     },
     {
       "key": "VTC-25968",
