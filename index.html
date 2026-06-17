@@ -641,6 +641,8 @@
     display: flex; gap: 0;
     border-bottom: 1px solid var(--line);
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    position: relative;
   }
   .customer-prep .tenant-tabs button {
     background: transparent; border: none;
@@ -650,6 +652,7 @@
     cursor: pointer;
     border-bottom: 2px solid transparent;
     margin-bottom: -1px;
+    white-space: nowrap;
   }
   .customer-prep .tenant-tabs button.active {
     color: var(--ink); border-bottom-color: var(--ink);
@@ -658,6 +661,66 @@
   .customer-prep .tenant-tabs .count {
     font-family: var(--mono); font-size: 11px;
     color: var(--ink-faint); margin-left: 6px;
+  }
+  .customer-prep .tenant-tabs .prep-all-tab {
+    font-weight: 500;
+    border-right: 1px solid var(--line);
+    padding-right: 22px;
+  }
+  .customer-prep .tenant-tabs .prep-all-caret {
+    margin-left: 6px; font-size: 10px;
+    color: var(--ink-faint);
+  }
+  .customer-prep .tenant-tabs .prep-all-tab[aria-expanded="true"] .prep-all-caret {
+    color: var(--ink);
+  }
+  .prep-tenant-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    background: var(--bg, #fff);
+    border: 1px solid var(--line-strong);
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+    min-width: 260px;
+    max-height: 360px;
+    overflow-y: auto;
+    padding: 4px 0;
+    margin-top: 2px;
+  }
+  .prep-tenant-dropdown-item {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: transparent; border: none;
+    padding: 8px 14px !important;
+    font: inherit; font-size: 13px;
+    color: var(--ink);
+    cursor: pointer;
+    text-align: left;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+  }
+  .prep-tenant-dropdown-item:hover {
+    background: var(--neutral-bg, #F4F2EC);
+  }
+  .prep-tenant-dropdown-item.active {
+    background: var(--neutral-bg, #F4F2EC);
+    font-weight: 500;
+  }
+  .prep-tenant-dropdown-name {
+    flex: 1;
+  }
+  .prep-tenant-dropdown-count {
+    font-family: var(--mono); font-size: 11px;
+    color: var(--ink-faint); margin-left: 16px;
+  }
+  .prep-tenant-dropdown-divider {
+    height: 1px;
+    background: var(--line);
+    margin: 4px 0;
   }
   .prep-header {
     display: flex; justify-content: space-between; align-items: baseline;
@@ -7106,34 +7169,155 @@ function renderBottleneck(snap) {
 let _prepFilterState = { stage: "", board: "", sort: "delivery", tenant: null };
 
 // CUSTOMER PREP VIEW
+const PREP_PINNED_COUNT = 6;
+
 function renderCustomerPrep(snap) {
   const tabs = document.getElementById("prep-tabs");
-  tabs.innerHTML = NTX.map((t,i) => {
-    const cnt = snap.tickets.filter(tk => tk.tenants.includes(t)).length;
-    return `<button class="${i===0?"active":""}" data-tenant="${t}">${t}<span class="count">${cnt||"—"}</span></button>`;
-  }).join("");
 
-  // Initial tenant if not yet set
-  if (!_prepFilterState.tenant) _prepFilterState.tenant = NTX[0];
+  // Build distinct tenant list with ticket counts. Excludes synthetic markers
+  // like "(untagged)" and "(other)" — those are not customer tenants.
+  const tenantCounts = new Map();
+  snap.tickets.forEach(t => (t.tenants || []).forEach(name => {
+    if (!name || name === "(untagged)" || name === "(other)") return;
+    tenantCounts.set(name, (tenantCounts.get(name) || 0) + 1);
+  }));
 
-  tabs.querySelectorAll("button").forEach(b => {
-    if (b.dataset.tenant === _prepFilterState.tenant) {
-      tabs.querySelectorAll("button").forEach(x => x.classList.remove("active"));
-      b.classList.add("active");
-    }
+  // Sort tenants by ticket count descending, alphabetical as stable tiebreaker
+  const sortedByCount = [...tenantCounts.entries()]
+    .sort((a, b) => (b[1] - a[1]) || a[0].localeCompare(b[0]));
+
+  if (sortedByCount.length === 0) {
+    tabs.innerHTML = "";
+    document.getElementById("prep-body").innerHTML =
+      `<p style="color:var(--ink-soft);font-style:italic;">No tagged tenants in the current snapshot. Confirm the Tenant field is being set on incoming tickets.</p>`;
+    return;
+  }
+
+  // Top N are pinned tabs; the rest go in the [All ▾] dropdown.
+  const pinned = sortedByCount.slice(0, PREP_PINNED_COUNT);
+  const overflow = sortedByCount.slice(PREP_PINNED_COUNT);
+
+  // Default selection: "All" (only if nothing is set; preserve user's choice
+  // across re-renders unless the selection no longer exists in the data).
+  const allValidTenants = sortedByCount.map(([name]) => name);
+  if (!_prepFilterState.tenant ||
+      (_prepFilterState.tenant !== "__ALL__" && !allValidTenants.includes(_prepFilterState.tenant))) {
+    _prepFilterState.tenant = "__ALL__";
+  }
+
+  // Build the tab row: [All ▾] first, then pinned tenants.
+  // The All tab doubles as the dropdown trigger.
+  const allActive = _prepFilterState.tenant === "__ALL__";
+  const totalTickets = sortedByCount.reduce((s, [, c]) => s + c, 0);
+
+  let html = `<button class="prep-all-tab${allActive ? " active" : ""}"
+    id="prep-all-tab" type="button"
+    aria-haspopup="listbox" aria-expanded="false"
+    title="Click for dropdown of all tenants">
+    All<span class="count">${totalTickets}</span>
+    <span class="prep-all-caret" aria-hidden="true">▾</span>
+  </button>`;
+
+  pinned.forEach(([name, count]) => {
+    const active = _prepFilterState.tenant === name;
+    html += `<button class="${active ? "active" : ""}" data-tenant="${name}" type="button">${escapeHtml(name)}<span class="count">${count}</span></button>`;
+  });
+
+  tabs.innerHTML = html;
+
+  // Wire pinned tab clicks
+  tabs.querySelectorAll("button[data-tenant]").forEach(b => {
     b.onclick = () => {
-      tabs.querySelectorAll("button").forEach(x => x.classList.remove("active"));
-      b.classList.add("active");
       _prepFilterState.tenant = b.dataset.tenant;
-      drawPrep(snap);
+      closePrepDropdown();
+      renderCustomerPrep(snap);  // re-render to update active state
     };
   });
+
+  // Wire the [All ▾] tab to open dropdown (and select All if not already)
+  const allBtn = document.getElementById("prep-all-tab");
+  allBtn.onclick = (e) => {
+    e.stopPropagation();
+    togglePrepDropdown(snap, sortedByCount);
+  };
 
   // Populate Board filter dropdown from data (same approach as Tile 2)
   populatePrepFilters(snap);
 
   // Render with current state
   drawPrep(snap);
+}
+
+function togglePrepDropdown(snap, sortedByCount) {
+  const existing = document.getElementById("prep-tenant-dropdown");
+  if (existing) {
+    closePrepDropdown();
+    return;
+  }
+  // Build the dropdown panel
+  const allBtn = document.getElementById("prep-all-tab");
+  const tabsContainer = document.getElementById("prep-tabs");
+  const overflow = sortedByCount.slice(PREP_PINNED_COUNT);
+
+  const panel = document.createElement("div");
+  panel.id = "prep-tenant-dropdown";
+  panel.className = "prep-tenant-dropdown";
+  panel.setAttribute("role", "listbox");
+
+  const total = sortedByCount.reduce((s, [, c]) => s + c, 0);
+  let html = `<button class="prep-tenant-dropdown-item${_prepFilterState.tenant === "__ALL__" ? " active" : ""}"
+    data-tenant="__ALL__" type="button">
+    <span class="prep-tenant-dropdown-name">All tenants</span>
+    <span class="prep-tenant-dropdown-count">${total}</span>
+  </button>`;
+  if (overflow.length) {
+    html += `<div class="prep-tenant-dropdown-divider"></div>`;
+    // Sort overflow alphabetically for findability in the long tail
+    const overflowAlpha = [...overflow].sort((a, b) => a[0].localeCompare(b[0]));
+    overflowAlpha.forEach(([name, count]) => {
+      const active = _prepFilterState.tenant === name;
+      html += `<button class="prep-tenant-dropdown-item${active ? " active" : ""}"
+        data-tenant="${name}" type="button">
+        <span class="prep-tenant-dropdown-name">${escapeHtml(name)}</span>
+        <span class="prep-tenant-dropdown-count">${count}</span>
+      </button>`;
+    });
+  }
+  panel.innerHTML = html;
+  tabsContainer.appendChild(panel);
+  allBtn.setAttribute("aria-expanded", "true");
+
+  // Wire dropdown items
+  panel.querySelectorAll("button").forEach(item => {
+    item.onclick = (e) => {
+      e.stopPropagation();
+      _prepFilterState.tenant = item.dataset.tenant;
+      closePrepDropdown();
+      renderCustomerPrep(snap);
+    };
+  });
+
+  // Close on click-outside
+  setTimeout(() => {
+    document.addEventListener("click", _prepDropdownOutsideHandler, { once: true });
+  }, 0);
+}
+
+function closePrepDropdown() {
+  const existing = document.getElementById("prep-tenant-dropdown");
+  if (existing) existing.remove();
+  const allBtn = document.getElementById("prep-all-tab");
+  if (allBtn) allBtn.setAttribute("aria-expanded", "false");
+}
+
+function _prepDropdownOutsideHandler(e) {
+  // If click was inside the dropdown or on the All button, do nothing — those have their own handlers
+  if (e.target.closest("#prep-tenant-dropdown") || e.target.closest("#prep-all-tab")) {
+    // re-arm the handler for next outside click
+    document.addEventListener("click", _prepDropdownOutsideHandler, { once: true });
+    return;
+  }
+  closePrepDropdown();
 }
 
 function populatePrepFilters(snap) {
@@ -7169,11 +7353,24 @@ function populatePrepFilters(snap) {
 function drawPrep(snap) {
   const tenant = _prepFilterState.tenant;
   const { stage, board, sort } = _prepFilterState;
+  const isAll = tenant === "__ALL__";
 
-  document.getElementById("prep-title").textContent = `${tenant} — current Jira status`;
+  // Title: "All tenants — current Jira status" when All is selected,
+  // otherwise the specific tenant name.
+  const titleSubject = isAll ? "All tenants" : tenant;
+  document.getElementById("prep-title").textContent = `${titleSubject} — current Jira status`;
 
-  // Filter by tenant first (the tab controls this)
-  let tickets = snap.tickets.filter(t => t.tenants.includes(tenant));
+  // Filter by tenant first (the tab controls this).
+  // "All" means: include any ticket that has at least one real tenant tag
+  // (i.e., exclude purely "(untagged)" or "(other)" tickets — they aren't
+  // meaningfully attached to a customer).
+  let tickets;
+  if (isAll) {
+    tickets = snap.tickets.filter(t =>
+      (t.tenants || []).some(n => n && n !== "(untagged)" && n !== "(other)"));
+  } else {
+    tickets = snap.tickets.filter(t => (t.tenants || []).includes(tenant));
+  }
   const totalForTenant = tickets.length;
 
   // Apply Stage and Board filters
@@ -7184,18 +7381,20 @@ function drawPrep(snap) {
   // Update filter count + clear button
   const countEl = document.getElementById("prep-filter-count");
   const clearBtn = document.getElementById("prep-filter-clear");
+  const subjectForCount = isAll ? "" : ` ${tenant}`;
   if (hasActiveFilter) {
-    countEl.textContent = `showing ${tickets.length} of ${totalForTenant} ${tenant} tickets`;
+    countEl.textContent = `showing ${tickets.length} of ${totalForTenant}${subjectForCount} tickets`;
     clearBtn.hidden = false;
   } else {
-    countEl.textContent = totalForTenant ? `${totalForTenant} ${tenant} tickets` : "";
+    countEl.textContent = totalForTenant ? `${totalForTenant}${subjectForCount} tickets` : "";
     clearBtn.hidden = true;
   }
 
   if (!tickets.length) {
+    const noun = isAll ? "tickets in this filter" : `tickets for ${tenant}`;
     document.getElementById("prep-body").innerHTML = hasActiveFilter
-      ? `<p style="color:var(--ink-soft);font-style:italic;">No ${tenant} tickets match the current filters. Try widening your selection or switching to a different county.</p>`
-      : `<p style="color:var(--ink-soft);font-style:italic;">No tickets for ${tenant} in this filter. (Worth flagging — is ${tenant} actually being tracked in this filter?)</p>`;
+      ? `<p style="color:var(--ink-soft);font-style:italic;">No ${noun} match the current filters. Try widening your selection or switching to a different tenant.</p>`
+      : `<p style="color:var(--ink-soft);font-style:italic;">No ${noun}. (Worth flagging — is the Tenant field being set?)</p>`;
     return;
   }
 
@@ -7255,6 +7454,7 @@ function drawPrep(snap) {
   });
   document.getElementById("prep-body").innerHTML = html;
 }
+
 
 function sortComparator(mode) {
   if (mode === "end_date") {
