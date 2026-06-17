@@ -7398,24 +7398,16 @@ function drawPrep(snap) {
     return;
   }
 
-  // Compute current month dynamically
-  const today = new Date(DATA.meta.today + "T00:00:00");
-  const targetMonthLabel = today.toLocaleString("en-US", { month: "short" }) + "-" + today.getFullYear();
-  const endDateMonthLabel = today.toLocaleString("en-US", { month: "short" }) + " " + today.getFullYear();
-
+  // Group tickets using the same 4-stage taxonomy as the Executive view
+  // (deliveryBucket function). Action-priority order: Open at top (needs
+  // attention most), Delivered at bottom. Buckets are mutually exclusive
+  // by definition — no de-dup needed.
   const groups = {
-    [`Committed to deliver ${targetMonthLabel}`]: tickets.filter(t =>
-      t.current_delivery_target && t.current_delivery_target.label === targetMonthLabel),
-    [`Production release targeted ${endDateMonthLabel}`]: tickets.filter(t =>
-      t.ships_month === endDateMonthLabel),
-    "In progress (dev or testing)": tickets.filter(t => t.is_open && ["In dev","In testing"].includes(t.status_family)),
-    "In triage or waiting on info": tickets.filter(t => t.is_open && t.status_family === "In triage"),
-    "Open or blocked": tickets.filter(t => t.is_open && ["Open","Blocked","Other"].includes(t.status_family)),
-    "Recently closed": tickets.filter(t => !t.is_open).slice(0, 5),
+    "Open": tickets.filter(t => deliveryBucket(t.status) === "open"),
+    "In Progress": tickets.filter(t => deliveryBucket(t.status) === "in_progress"),
+    "Pending Release": tickets.filter(t => deliveryBucket(t.status) === "pending_release"),
+    "Delivered: In Production": tickets.filter(t => deliveryBucket(t.status) === "delivered"),
   };
-  // De-dup: tickets in the "Committed" group should not also appear in the "Production release" group
-  const committedKeys = new Set((groups[`Committed to deliver ${targetMonthLabel}`] || []).map(t => t.key));
-  groups[`Production release targeted ${endDateMonthLabel}`] = (groups[`Production release targeted ${endDateMonthLabel}`] || []).filter(t => !committedKeys.has(t.key));
 
   // Apply sort within each group
   const sortFn = sortComparator(sort);
