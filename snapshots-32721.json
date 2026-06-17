@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17T14:15:10Z",
+  "updated_at": "2026-06-17T14:19:14Z",
   "today": "2026-06-17",
   "exported_at": "17 Jun 2026 (auto)",
   "tickets": [
@@ -184,14 +184,14 @@
       "created": "2026-05-08T12:40:24.339-0400",
       "created_iso": "2026-05-08",
       "age_days": 40,
-      "updated": "2026-05-29T17:17:37.337-0400",
-      "updated_iso": "2026-05-29",
+      "updated": "2026-06-17T10:18:23.204-0400",
+      "updated_iso": "2026-06-17",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
-      "labels_raw": "2026_Customer",
+      "labels_raw": "2026_Customer, Q3-26",
       "delivery_targets": [],
       "current_delivery_target": null
     },
