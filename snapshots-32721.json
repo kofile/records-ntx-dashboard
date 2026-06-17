@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17T13:47:56Z",
+  "updated_at": "2026-06-17T14:10:36Z",
   "today": "2026-06-17",
   "exported_at": "17 Jun 2026 (auto)",
   "tickets": [
@@ -88,8 +88,8 @@
       "created": "2026-06-08T12:03:06.184-0400",
       "created_iso": "2026-06-08",
       "age_days": 9,
-      "updated": "2026-06-16T10:24:43.963-0400",
-      "updated_iso": "2026-06-16",
+      "updated": "2026-06-17T09:49:33.774-0400",
+      "updated_iso": "2026-06-17",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
@@ -144,16 +144,28 @@
       "created": "2026-05-11T11:01:18.368-0400",
       "created_iso": "2026-05-11",
       "age_days": 37,
-      "updated": "2026-06-14T10:24:27.944-0400",
-      "updated_iso": "2026-06-14",
+      "updated": "2026-06-17T10:09:30.609-0400",
+      "updated_iso": "2026-06-17",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "CS 2026.Q2-6",
-      "comments_count": "7",
-      "labels_raw": "jira_escalated",
-      "delivery_targets": [],
-      "current_delivery_target": null
+      "comments_count": "8",
+      "labels_raw": "June-2026, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
     },
     {
       "key": "CR-2091183",
@@ -242,16 +254,28 @@
       "created": "2026-04-30T15:34:18.654-0400",
       "created_iso": "2026-04-30",
       "age_days": 47,
-      "updated": "2026-06-16T23:06:31.100-0400",
-      "updated_iso": "2026-06-16",
+      "updated": "2026-06-17T10:03:44.851-0400",
+      "updated_iso": "2026-06-17",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "CS 2026.Q2-6",
       "comments_count": "2",
-      "labels_raw": "",
-      "delivery_targets": [],
-      "current_delivery_target": null
+      "labels_raw": "June-2026",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
     },
     {
       "key": "PS-7066",
@@ -604,16 +628,28 @@
       "created": "2026-03-19T20:05:05.729-0400",
       "created_iso": "2026-03-19",
       "age_days": 89,
-      "updated": "2026-06-17T09:27:16.828-0400",
+      "updated": "2026-06-17T10:05:41.056-0400",
       "updated_iso": "2026-06-17",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
-      "comments_count": "10",
-      "labels_raw": "beaufort_sc",
-      "delivery_targets": [],
-      "current_delivery_target": null
+      "comments_count": "11",
+      "labels_raw": "august-2026, beaufort_sc",
+      "delivery_targets": [
+        {
+          "label": "Aug-2026",
+          "month_index": 7,
+          "year": 2026,
+          "sortable": 24319
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Aug-2026",
+        "month_index": 7,
+        "year": 2026,
+        "sortable": 24319
+      }
     },
     {
       "key": "SSRS-2984",
@@ -1037,16 +1073,28 @@
       "created": "2019-08-26T14:55:00.000-0400",
       "created_iso": "2019-08-26",
       "age_days": 2486,
-      "updated": "2026-06-10T02:33:21.655-0400",
-      "updated_iso": "2026-06-10",
+      "updated": "2026-06-17T10:07:08.337-0400",
+      "updated_iso": "2026-06-17",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "CS 2026.Q2-6",
       "comments_count": "2",
-      "labels_raw": "Archive, Top_10",
-      "delivery_targets": [],
-      "current_delivery_target": null
+      "labels_raw": "Archive, June-2026, Top_10",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
     }
   ],
   "history": [
