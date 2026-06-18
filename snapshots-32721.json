@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18T13:23:17Z",
+  "updated_at": "2026-06-18T20:55:42Z",
   "today": "2026-06-18",
   "exported_at": "18 Jun 2026 (auto)",
   "tickets": [
@@ -172,7 +172,7 @@
       "summary": "Beaufort SC Order Entry | Plat Order Item Type Reference",
       "project": "CR",
       "issue_type": "Bug",
-      "status": "Waiting for Info",
+      "status": "Requirements clarification",
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
@@ -184,13 +184,13 @@
       "created": "2026-05-08T12:40:24.339-0400",
       "created_iso": "2026-05-08",
       "age_days": 41,
-      "updated": "2026-06-17T23:28:17.855-0400",
-      "updated_iso": "2026-06-17",
+      "updated": "2026-06-18T15:38:58.410-0400",
+      "updated_iso": "2026-06-18",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "CR 2026.Q2-7",
-      "comments_count": "",
+      "comments_count": "1",
       "labels_raw": "2026_Customer, Q3-26",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -237,87 +237,6 @@
       }
     },
     {
-      "key": "PS-7067",
-      "summary": "Advanced Search No Results Found Not Showing Full Criteria",
-      "project": "PS",
-      "issue_type": "Story",
-      "status": "In Progress",
-      "status_family": "Other",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "",
-      "tenant_raw": "All, Beaufort SC",
-      "tenants": [
-        "All",
-        "Beaufort SC"
-      ],
-      "created": "2026-04-30T15:34:18.654-0400",
-      "created_iso": "2026-04-30",
-      "age_days": 48,
-      "updated": "2026-06-17T10:03:44.851-0400",
-      "updated_iso": "2026-06-17",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CS 2026.Q2-6",
-      "comments_count": "2",
-      "labels_raw": "June-2026",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
-      "key": "PS-7066",
-      "summary": "KSR: Changing Search Results View Mode jumps the scroll position to bottom",
-      "project": "PS",
-      "issue_type": "Bug",
-      "status": "Ready To Test",
-      "status_family": "In testing",
-      "delivery_bucket": "in_progress",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "All",
-      "tenants": [
-        "All"
-      ],
-      "created": "2026-04-30T15:21:36.082-0400",
-      "created_iso": "2026-04-30",
-      "age_days": 48,
-      "updated": "2026-06-17T10:14:09.705-0400",
-      "updated_iso": "2026-06-17",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CS 2026.Q2-6",
-      "comments_count": "4",
-      "labels_raw": "June-2026, Top_10",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
       "key": "SSRS-3074",
       "summary": "Beaufort SC Financial Reports \\ Adjustment Report |  Report Does Not Return Any Rows",
       "project": "SSRS",
@@ -333,7 +252,7 @@
       ],
       "created": "2026-04-27T14:33:55.347-0400",
       "created_iso": "2026-04-27",
-      "age_days": 51,
+      "age_days": 52,
       "updated": "2026-06-17T09:43:10.805-0400",
       "updated_iso": "2026-06-17",
       "end_date": "",
@@ -430,7 +349,7 @@
       ],
       "created": "2026-04-15T20:24:14.754-0400",
       "created_iso": "2026-04-15",
-      "age_days": 63,
+      "age_days": 64,
       "updated": "2026-06-16T14:31:11.814-0400",
       "updated_iso": "2026-06-16",
       "end_date": "2026-06-30",
@@ -639,7 +558,7 @@
       ],
       "created": "2026-03-19T20:05:05.729-0400",
       "created_iso": "2026-03-19",
-      "age_days": 90,
+      "age_days": 91,
       "updated": "2026-06-17T10:05:41.056-0400",
       "updated_iso": "2026-06-17",
       "end_date": "",
@@ -707,7 +626,7 @@
       ],
       "created": "2026-03-06T13:40:09.058-0500",
       "created_iso": "2026-03-06",
-      "age_days": 103,
+      "age_days": 104,
       "updated": "2026-06-17T06:35:05.580-0400",
       "updated_iso": "2026-06-17",
       "end_date": "2026-06-19",
@@ -775,7 +694,7 @@
       ],
       "created": "2026-02-25T16:49:28.728-0500",
       "created_iso": "2026-02-25",
-      "age_days": 112,
+      "age_days": 113,
       "updated": "2026-06-16T16:27:48.946-0400",
       "updated_iso": "2026-06-16",
       "end_date": "",
@@ -803,7 +722,7 @@
       ],
       "created": "2026-02-18T17:57:42.411-0500",
       "created_iso": "2026-02-18",
-      "age_days": 119,
+      "age_days": 120,
       "updated": "2026-02-19T11:29:43.121-0500",
       "updated_iso": "2026-02-19",
       "end_date": "",
@@ -831,7 +750,7 @@
       ],
       "created": "2026-01-13T18:14:59.849-0500",
       "created_iso": "2026-01-13",
-      "age_days": 155,
+      "age_days": 156,
       "updated": "2026-06-17T10:13:13.642-0400",
       "updated_iso": "2026-06-17",
       "end_date": "",
@@ -927,7 +846,7 @@
       ],
       "created": "2025-11-17T16:55:20.948-0500",
       "created_iso": "2025-11-17",
-      "age_days": 212,
+      "age_days": 213,
       "updated": "2026-02-16T10:13:27.668-0500",
       "updated_iso": "2026-02-16",
       "end_date": "",
@@ -983,7 +902,7 @@
       ],
       "created": "2025-11-12T14:26:37.055-0500",
       "created_iso": "2025-11-12",
-      "age_days": 217,
+      "age_days": 218,
       "updated": "2026-06-17T09:39:10.245-0400",
       "updated_iso": "2026-06-17",
       "end_date": "",
@@ -1011,7 +930,7 @@
       ],
       "created": "2025-11-12T14:24:36.956-0500",
       "created_iso": "2025-11-12",
-      "age_days": 217,
+      "age_days": 218,
       "updated": "2026-06-17T09:38:37.678-0400",
       "updated_iso": "2026-06-17",
       "end_date": "",
@@ -1039,7 +958,7 @@
       ],
       "created": "2025-11-03T15:26:59.398-0500",
       "created_iso": "2025-11-03",
-      "age_days": 226,
+      "age_days": 227,
       "updated": "2026-06-16T16:27:53.031-0400",
       "updated_iso": "2026-06-16",
       "end_date": "",
@@ -1067,7 +986,7 @@
       ],
       "created": "2025-09-18T14:48:15.883-0400",
       "created_iso": "2025-09-18",
-      "age_days": 272,
+      "age_days": 273,
       "updated": "2026-03-27T10:59:25.670-0400",
       "updated_iso": "2026-03-27",
       "end_date": "2026-03-13",
@@ -1078,47 +997,6 @@
       "labels_raw": "oconee_sc",
       "delivery_targets": [],
       "current_delivery_target": null
-    },
-    {
-      "key": "PS-1029",
-      "summary": "PS V4: Export Results Report include criteria",
-      "project": "PS",
-      "issue_type": "Story",
-      "status": "Code Review",
-      "status_family": "Other",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "",
-      "tenant_raw": "Beaufort SC, Lake IL",
-      "tenants": [
-        "Beaufort SC",
-        "Lake IL"
-      ],
-      "created": "2019-08-26T14:55:00.000-0400",
-      "created_iso": "2019-08-26",
-      "age_days": 2487,
-      "updated": "2026-06-17T10:07:08.337-0400",
-      "updated_iso": "2026-06-17",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CS 2026.Q2-6",
-      "comments_count": "2",
-      "labels_raw": "Archive, June-2026, Top_10",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
     }
   ],
   "history": [
