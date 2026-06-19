@@ -253,6 +253,9 @@ def transform_issue(issue, today_dt):
     # Reporter
     reporter_field = fields.get("reporter") or {}
     reporter = reporter_field.get("displayName", "") or ""
+
+    # Sprint
+    sprint_raw = fields.get("customfield_10019") or []
     sprint = ""
     if isinstance(sprint_raw, list) and sprint_raw:
         first = sprint_raw[0]
