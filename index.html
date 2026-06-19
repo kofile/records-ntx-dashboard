@@ -6325,7 +6325,7 @@ function parseJiraHtml(html) {
       issue_type: cellAt(cells, "issue type") || cellAt(cells, "issuetype"),
       key: cellAt(cells, "key") || cellAt(cells, "issuekey"),
       summary: cellAt(cells, "summary"),
-      team: cellAt(cells, "team"),
+      reporter: cellAt(cells, "reporter") || cellAt(cells, "team") || "",
       status: cellAt(cells, "status"),
       sprint: cellAt(cells, "sprint"),
       updated: cellAt(cells, "updated"),
@@ -6355,7 +6355,7 @@ function deriveFields(t) {
     issue_type: t.issue_type, status: t.status, status_family: fam,
     delivery_bucket: bucket,
     is_open: bucket === "open",
-    team: t.team || "", tenant_raw: t.tenant_raw, tenants,
+    reporter: t.reporter || t.team || "", tenant_raw: t.tenant_raw, tenants,
     created: t.created, created_iso: created_dt ? created_dt.toISOString().slice(0,10) : null,
     age_days: created_dt ? Math.floor((today - created_dt) / 86400000) : null,
     updated: t.updated, updated_iso: updated_dt ? updated_dt.toISOString().slice(0,10) : null,
@@ -6973,7 +6973,7 @@ function populateShipsFilters(rows, monthLabel) {
   const boardSel = document.getElementById("ships-filter-board");
 
   // Reporter options — built from unique team values present in rows
-  const reportersPresent = [...new Set(rows.map(t => t.team || "").filter(Boolean))].sort();
+  const reportersPresent = [...new Set(rows.map(t => t.reporter || "").filter(Boolean))].sort();
 
   // Month dropdown — grouped: Current, then Past (greyed), then Future
   populateMonthDropdown(monthSel, _shipsFilterState.month);
@@ -7067,7 +7067,7 @@ function applyShipsFilters(endDateMonthLabel, delCovForEmpty) {
     if (tenant && !(t.tenants || []).includes(tenant)) return false;
     if (stage && deliveryBucket(t.status) !== stage) return false;
     if (board && boardOf(t) !== board) return false;
-    if (reporter && (t.team || "") !== reporter) return false;
+    if (reporter && (t.reporter || "") !== reporter) return false;
     return true;
   });
 
@@ -7112,8 +7112,8 @@ function applyShipsFilters(endDateMonthLabel, delCovForEmpty) {
     const endCell = t.end_date
       ? `<span style="font-family: var(--mono); font-size: 11px; color: var(--ink-soft);">${t.end_date}</span>`
       : `<span class="delivery-pill empty">—</span>`;
-    const reporterCell = t.team && t.team !== "None" && t.team !== ""
-      ? `<span style="font-size:11px; color:var(--ink-soft);">${escapeHtml(t.team)}</span>`
+    const reporterCell = t.reporter && t.reporter !== ""
+      ? `<span style="font-size:11px; color:var(--ink-soft);">${escapeHtml(t.reporter)}</span>`
       : `<span class="delivery-pill empty">—</span>`;
     tr.innerHTML = `
       <td class="key-cell"><a href="https://neumo.atlassian.net/browse/${t.key}" target="_blank">${t.key}</a></td>
@@ -7539,7 +7539,7 @@ function normalizeRemoteTicket(t) {
   // Otherwise re-derive
   return deriveFields({
     issue_type: t.issue_type, key: t.key, summary: t.summary,
-    team: t.team, status: t.status, sprint: t.sprint,
+    reporter: t.reporter || t.team || "", status: t.status, sprint: t.sprint,
     updated: t.updated, end_date: t.end_date, created: t.created,
     comments: t.comments_count || t.comments,
     tenant_raw: t.tenant_raw, labels_raw: t.labels_raw,
