@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T13:21:46Z",
+  "updated_at": "2026-06-19T15:24:22Z",
   "today": "2026-06-19",
   "exported_at": "19 Jun 2026 (auto)",
   "tickets": [
@@ -196,47 +196,6 @@
       "current_delivery_target": null
     },
     {
-      "key": "CR-2091098",
-      "summary": "SC eRecordings | GRANTOR and GRANTEE Party Names Missing Middle Name, Initial",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Deployed to UAT",
-      "status_family": "In testing",
-      "delivery_bucket": "pending_release",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Beaufort SC, Oconee SC",
-      "tenants": [
-        "Beaufort SC",
-        "Oconee SC"
-      ],
-      "created": "2026-05-04T13:04:24.683-0400",
-      "created_iso": "2026-05-04",
-      "age_days": 46,
-      "updated": "2026-06-16T14:24:37.901-0400",
-      "updated_iso": "2026-06-16",
-      "end_date": "2026-06-19",
-      "end_date_iso": "2026-06-19",
-      "ships_month": "Jun 2026",
-      "sprint": "CR 2026.Q2-4",
-      "comments_count": "5",
-      "labels_raw": "2026_Customer, CR-External, June-2026, sprint.Q2-4",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
       "key": "SSRS-3074",
       "summary": "Beaufort SC Financial Reports \\ Adjustment Report |  Report Does Not Return Any Rows",
       "project": "SSRS",
@@ -252,7 +211,7 @@
       ],
       "created": "2026-04-27T14:33:55.347-0400",
       "created_iso": "2026-04-27",
-      "age_days": 52,
+      "age_days": 53,
       "updated": "2026-06-17T09:43:10.805-0400",
       "updated_iso": "2026-06-17",
       "end_date": "",
@@ -301,35 +260,6 @@
       "sprint": "",
       "comments_count": "",
       "labels_raw": "beaufort_sc",
-      "delivery_targets": [],
-      "current_delivery_target": null
-    },
-    {
-      "key": "CR-2090849",
-      "summary": "South Carolina Scheduler Job to Update Certification Date | Include Assessor Review Status ",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Deployed to UAT",
-      "status_family": "In testing",
-      "delivery_bucket": "pending_release",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Beaufort SC, Oconee SC",
-      "tenants": [
-        "Beaufort SC",
-        "Oconee SC"
-      ],
-      "created": "2026-04-22T08:52:23.662-0400",
-      "created_iso": "2026-04-22",
-      "age_days": 58,
-      "updated": "2026-06-16T14:23:11.876-0400",
-      "updated_iso": "2026-06-16",
-      "end_date": "2026-06-19",
-      "end_date_iso": "2026-06-19",
-      "ships_month": "Jun 2026",
-      "sprint": "CR 2026.Q2-4",
-      "comments_count": "2",
-      "labels_raw": "2026_Customer, CR-External, sprint.Q2-4",
       "delivery_targets": [],
       "current_delivery_target": null
     },
@@ -426,63 +356,6 @@
       "sprint": "",
       "comments_count": "2",
       "labels_raw": "",
-      "delivery_targets": [],
-      "current_delivery_target": null
-    },
-    {
-      "key": "CR-2090850",
-      "summary": "SC Party Name Typeahead | Disable Party Name Checkbox Visible for Clerk User Group",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Deployed to UAT",
-      "status_family": "In testing",
-      "delivery_bucket": "pending_release",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Beaufort SC",
-      "tenants": [
-        "Beaufort SC"
-      ],
-      "created": "2026-04-13T11:59:15.978-0400",
-      "created_iso": "2026-04-13",
-      "age_days": 67,
-      "updated": "2026-06-16T14:23:57.377-0400",
-      "updated_iso": "2026-06-16",
-      "end_date": "2026-06-19",
-      "end_date_iso": "2026-06-19",
-      "ships_month": "Jun 2026",
-      "sprint": "CR 2026.Q2-4",
-      "comments_count": "2",
-      "labels_raw": "2026_Customer, CR-External, lake_vitals, sprint.Q2-4",
-      "delivery_targets": [],
-      "current_delivery_target": null
-    },
-    {
-      "key": "CR-2090632",
-      "summary": "South Carolina Assessor Review | Enable Save Order Action",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Deployed to UAT",
-      "status_family": "In testing",
-      "delivery_bucket": "pending_release",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Beaufort SC, Oconee SC",
-      "tenants": [
-        "Beaufort SC",
-        "Oconee SC"
-      ],
-      "created": "2026-04-13T10:27:41.397-0400",
-      "created_iso": "2026-04-13",
-      "age_days": 67,
-      "updated": "2026-06-16T14:22:39.174-0400",
-      "updated_iso": "2026-06-16",
-      "end_date": "2026-06-19",
-      "end_date_iso": "2026-06-19",
-      "ships_month": "Jun 2026",
-      "sprint": "CR 2026.Q2-5",
-      "comments_count": "6",
-      "labels_raw": "2026_Customer, CR-Internal, CR2026Q2-5",
       "delivery_targets": [],
       "current_delivery_target": null
     },
@@ -609,46 +482,6 @@
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
-    },
-    {
-      "key": "CR-2090797",
-      "summary": "Request to have receipt print out before cover pages",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "Deployed to UAT",
-      "status_family": "In testing",
-      "delivery_bucket": "pending_release",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Dallas",
-      "tenants": [
-        "Dallas"
-      ],
-      "created": "2026-03-06T13:40:09.058-0500",
-      "created_iso": "2026-03-06",
-      "age_days": 104,
-      "updated": "2026-06-17T06:35:05.580-0400",
-      "updated_iso": "2026-06-17",
-      "end_date": "2026-06-19",
-      "end_date_iso": "2026-06-19",
-      "ships_month": "Jun 2026",
-      "sprint": "CR 2026.Q2-5",
-      "comments_count": "7",
-      "labels_raw": "CR-External, CR2026Q2-5, June-2026, TXEscalation, jira_escalated",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
     },
     {
       "key": "VTC-26693",
@@ -902,7 +735,7 @@
       ],
       "created": "2025-11-12T14:26:37.055-0500",
       "created_iso": "2025-11-12",
-      "age_days": 218,
+      "age_days": 219,
       "updated": "2026-06-17T09:39:10.245-0400",
       "updated_iso": "2026-06-17",
       "end_date": "",
@@ -930,7 +763,7 @@
       ],
       "created": "2025-11-12T14:24:36.956-0500",
       "created_iso": "2025-11-12",
-      "age_days": 218,
+      "age_days": 219,
       "updated": "2026-06-17T09:38:37.678-0400",
       "updated_iso": "2026-06-17",
       "end_date": "",
@@ -986,7 +819,7 @@
       ],
       "created": "2025-09-18T14:48:15.883-0400",
       "created_iso": "2025-09-18",
-      "age_days": 273,
+      "age_days": 274,
       "updated": "2026-03-27T10:59:25.670-0400",
       "updated_iso": "2026-03-27",
       "end_date": "2026-03-13",
