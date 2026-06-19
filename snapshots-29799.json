@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T15:24:07Z",
+  "updated_at": "2026-06-19T17:58:09Z",
   "today": "2026-06-19",
   "exported_at": "19 Jun 2026 (auto)",
   "tickets": [
@@ -12,7 +12,7 @@
       "status_family": "Blocked",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Mandy Miller",
       "tenant_raw": "",
       "tenants": [
         "(untagged)"
@@ -52,7 +52,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Tamara Woodward",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -92,14 +92,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
       ],
       "created": "2026-05-13T16:57:41.854-0400",
       "created_iso": "2026-05-13",
-      "age_days": 36,
+      "age_days": 37,
       "updated": "2026-05-26T09:49:01.005-0400",
       "updated_iso": "2026-05-26",
       "end_date": "2026-05-29",
@@ -132,7 +132,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -164,15 +164,55 @@
       }
     },
     {
+      "key": "VTC-26383",
+      "summary": "Denton request to remove foreclosures from Clerk Search (v3)",
+      "project": "VTC",
+      "issue_type": "Story",
+      "status": "Done",
+      "status_family": "Done",
+      "delivery_bucket": "delivered",
+      "is_open": false,
+      "reporter": "Zendesk Support for Jira",
+      "tenant_raw": "Denton",
+      "tenants": [
+        "Denton"
+      ],
+      "created": "2025-12-17T10:09:44.970-0500",
+      "created_iso": "2025-12-17",
+      "age_days": 184,
+      "updated": "2026-06-19T13:02:12.907-0400",
+      "updated_iso": "2026-06-19",
+      "end_date": "2026-07-31",
+      "end_date_iso": "2026-07-31",
+      "ships_month": "Jul 2026",
+      "sprint": "",
+      "comments_count": "15",
+      "labels_raw": "May-2026, TOP_5, TXEscalation",
+      "delivery_targets": [
+        {
+          "label": "May-2026",
+          "month_index": 4,
+          "year": 2026,
+          "sortable": 24316
+        }
+      ],
+      "current_delivery_target": {
+        "label": "May-2026",
+        "month_index": 4,
+        "year": 2026,
+        "sortable": 24316
+      }
+    },
+    {
       "key": "VTC-27684",
       "summary": "Dallas County Clerk Search | Additional Parties Clerk Search",
       "project": "VTC",
       "issue_type": "Bug",
-      "status": "Ready to test on UAT",
+      "status": "Verified on UAT",
       "status_family": "In testing",
-      "delivery_bucket": "in_progress",
+      "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -180,13 +220,13 @@
       "created": "2026-06-17T15:06:08.452-0400",
       "created_iso": "2026-06-17",
       "age_days": 2,
-      "updated": "2026-06-18T15:12:03.228-0400",
-      "updated_iso": "2026-06-18",
+      "updated": "2026-06-19T11:51:39.599-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
-      "comments_count": "1",
+      "comments_count": "2",
       "labels_raw": "June-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
@@ -212,7 +252,7 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Stella Hovsepyan",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -252,7 +292,7 @@
       "status_family": "Other",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -292,7 +332,7 @@
       "status_family": "In testing",
       "delivery_bucket": "in_progress",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -332,7 +372,7 @@
       "status_family": "Other",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -364,46 +404,6 @@
       }
     },
     {
-      "key": "VTC-27431",
-      "summary": "DATA FIX Denton County Foreclosures | Remove All Documents Prior to Sale Date March 01, 2026",
-      "project": "VTC",
-      "issue_type": "Story",
-      "status": "Done",
-      "status_family": "Done",
-      "delivery_bucket": "delivered",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Denton",
-      "tenants": [
-        "Denton"
-      ],
-      "created": "2026-05-26T10:30:58.888-0400",
-      "created_iso": "2026-05-26",
-      "age_days": 24,
-      "updated": "2026-06-17T23:00:37.294-0400",
-      "updated_iso": "2026-06-17",
-      "end_date": "2026-06-30",
-      "end_date_iso": "2026-06-30",
-      "ships_month": "Jun 2026",
-      "sprint": "",
-      "comments_count": "10",
-      "labels_raw": "June-2026, TXEscalation",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
       "key": "CSC-3028",
       "summary": "Johnson County Cloud Search | Additional Party Name (Notary)",
       "project": "CSC",
@@ -412,7 +412,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -452,14 +452,14 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Connector for Salesforce & Jira",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
       ],
       "created": "2024-02-19T16:24:19.365-0500",
       "created_iso": "2024-02-19",
-      "age_days": 850,
+      "age_days": 851,
       "updated": "2026-06-19T10:08:46.100-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-06-30",
@@ -492,7 +492,7 @@
       "status_family": "Blocked",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Mandy Miller",
       "tenant_raw": "",
       "tenants": [
         "(untagged)"
@@ -532,7 +532,7 @@
       "status_family": "Other",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -540,53 +540,13 @@
       "created": "2026-01-08T13:29:14.096-0500",
       "created_iso": "2026-01-08",
       "age_days": 162,
-      "updated": "2026-06-17T14:42:10.523-0400",
-      "updated_iso": "2026-06-17",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CR 2026.Q2-6",
-      "comments_count": "6",
-      "labels_raw": "July-2026, TXEscalation",
-      "delivery_targets": [
-        {
-          "label": "Jul-2026",
-          "month_index": 6,
-          "year": 2026,
-          "sortable": 24318
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jul-2026",
-        "month_index": 6,
-        "year": 2026,
-        "sortable": 24318
-      }
-    },
-    {
-      "key": "PS-7174",
-      "summary": "Denton County Foreclosures | Remove All Documents Prior to Sale Date March 01, 2026",
-      "project": "PS",
-      "issue_type": "Story",
-      "status": "Done",
-      "status_family": "Done",
-      "delivery_bucket": "delivered",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Denton",
-      "tenants": [
-        "Denton"
-      ],
-      "created": "2026-05-26T10:36:35.823-0400",
-      "created_iso": "2026-05-26",
-      "age_days": 24,
-      "updated": "2026-06-19T10:45:24.012-0400",
+      "updated": "2026-06-19T13:06:50.554-0400",
       "updated_iso": "2026-06-19",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CS 2026.Q2-6",
-      "comments_count": "2",
+      "end_date": "2026-07-16",
+      "end_date_iso": "2026-07-16",
+      "ships_month": "Jul 2026",
+      "sprint": "CR 2026.Q2-7",
+      "comments_count": "6",
       "labels_raw": "July-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -612,7 +572,7 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Stella Hovsepyan",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -652,7 +612,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -692,7 +652,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -724,114 +684,6 @@
       }
     },
     {
-      "key": "CR-2090359",
-      "summary": "Johnson - No distributions for Order#20260130000146",
-      "project": "CR",
-      "issue_type": "Bug",
-      "status": "Transferred to Support",
-      "status_family": "Other",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "",
-      "tenant_raw": "Johnson",
-      "tenants": [
-        "Johnson"
-      ],
-      "created": "2026-03-26T15:04:38.500-0400",
-      "created_iso": "2026-03-26",
-      "age_days": 85,
-      "updated": "2026-06-19T11:02:30.385-0400",
-      "updated_iso": "2026-06-19",
-      "end_date": "2026-06-19",
-      "end_date_iso": "2026-06-19",
-      "ships_month": "Jun 2026",
-      "sprint": "CR 2026.Q2-4",
-      "comments_count": "22",
-      "labels_raw": "June-2026, TXEscalation, Top_10, jira_escalated, supportresponse",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
-      "key": "CR-2091408",
-      "summary": "EOM Issue \u2014 Assumed Name fees did not fully distribute on Order No. 20260513000039 (Jefferson County)",
-      "project": "CR",
-      "issue_type": "Bug",
-      "status": "Ready for UAT",
-      "status_family": "In testing",
-      "delivery_bucket": "in_progress",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "",
-      "tenants": [
-        "(untagged)"
-      ],
-      "created": "2026-05-26T16:39:49.221-0400",
-      "created_iso": "2026-05-26",
-      "age_days": 23,
-      "updated": "2026-06-19T11:06:13.767-0400",
-      "updated_iso": "2026-06-19",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CR 2026.Q2-6",
-      "comments_count": "8",
-      "labels_raw": "TXEscalation, Top_10, TriageReady, jira_escalated",
-      "delivery_targets": [],
-      "current_delivery_target": null
-    },
-    {
-      "key": "CR-2091483",
-      "summary": "Dallas County Clerk Search - Notary field is empty on Archive step",
-      "project": "CR",
-      "issue_type": "Bug",
-      "status": "Deployed to UAT",
-      "status_family": "In testing",
-      "delivery_bucket": "pending_release",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Dallas",
-      "tenants": [
-        "Dallas"
-      ],
-      "created": "2026-05-25T13:29:31.483-0400",
-      "created_iso": "2026-05-25",
-      "age_days": 25,
-      "updated": "2026-06-17T17:23:13.045-0400",
-      "updated_iso": "2026-06-17",
-      "end_date": "2026-06-19",
-      "end_date_iso": "2026-06-19",
-      "ships_month": "Jun 2026",
-      "sprint": "CR 2026.Q2-6",
-      "comments_count": "9",
-      "labels_raw": "June-2026, LateIntoSprint, TOP_5, TXEscalation, jira_escalated",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
       "key": "VTC-25392",
       "summary": "Johnson - Missing option to \"Send Order to Capture Queue\" in the Verification queue",
       "project": "VTC",
@@ -840,7 +692,7 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -880,7 +732,7 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -920,7 +772,7 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Denton",
       "tenants": [
         "Denton"
@@ -960,7 +812,7 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -1000,7 +852,7 @@
       "status_family": "Other",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -1008,12 +860,12 @@
       "created": "2026-04-22T18:21:14.866-0400",
       "created_iso": "2026-04-22",
       "age_days": 57,
-      "updated": "2026-06-18T16:27:58.750-0400",
-      "updated_iso": "2026-06-18",
+      "updated": "2026-06-19T13:07:10.881-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "2026-07-17",
       "end_date_iso": "2026-07-17",
       "ships_month": "Jul 2026",
-      "sprint": "CR 2026.Q2-6",
+      "sprint": "CR 2026.Q2-7",
       "comments_count": "7",
       "labels_raw": "June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
@@ -1040,7 +892,7 @@
       "status_family": "Other",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
@@ -1048,8 +900,8 @@
       "created": "2026-03-05T13:53:15.489-0500",
       "created_iso": "2026-03-05",
       "age_days": 106,
-      "updated": "2026-06-17T11:40:03.716-0400",
-      "updated_iso": "2026-06-17",
+      "updated": "2026-06-19T13:06:49.763-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "2026-09-11",
       "end_date_iso": "2026-09-11",
       "ships_month": "Sep 2026",
@@ -1080,7 +932,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -1120,7 +972,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -1160,14 +1012,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
       ],
       "created": "2026-05-06T16:47:03.206-0400",
       "created_iso": "2026-05-06",
-      "age_days": 43,
+      "age_days": 44,
       "updated": "2026-06-11T12:17:22.298-0400",
       "updated_iso": "2026-06-11",
       "end_date": "2026-05-26",
@@ -1200,14 +1052,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
       ],
       "created": "2026-03-12T17:13:48.979-0400",
       "created_iso": "2026-03-12",
-      "age_days": 98,
+      "age_days": 99,
       "updated": "2026-06-11T12:19:14.520-0400",
       "updated_iso": "2026-06-11",
       "end_date": "2026-06-02",
@@ -1240,7 +1092,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -1280,14 +1132,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
       ],
       "created": "2026-04-20T16:56:49.644-0400",
       "created_iso": "2026-04-20",
-      "age_days": 59,
+      "age_days": 60,
       "updated": "2026-05-13T10:38:05.014-0400",
       "updated_iso": "2026-05-13",
       "end_date": "",
@@ -1308,7 +1160,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -1348,7 +1200,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -1380,6 +1232,46 @@
       }
     },
     {
+      "key": "CR-2091483",
+      "summary": "Dallas County Clerk Search - Notary field is empty on Archive step",
+      "project": "CR",
+      "issue_type": "Bug",
+      "status": "Closed",
+      "status_family": "Done",
+      "delivery_bucket": "delivered",
+      "is_open": false,
+      "reporter": "Ricardo Cuevas",
+      "tenant_raw": "Dallas",
+      "tenants": [
+        "Dallas"
+      ],
+      "created": "2026-05-25T13:29:31.483-0400",
+      "created_iso": "2026-05-25",
+      "age_days": 25,
+      "updated": "2026-06-19T11:33:06.654-0400",
+      "updated_iso": "2026-06-19",
+      "end_date": "2026-06-19",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
+      "sprint": "CR 2026.Q2-6",
+      "comments_count": "10",
+      "labels_raw": "June-2026, LateIntoSprint, TOP_5, TXEscalation, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
+    },
+    {
       "key": "CR-2091099",
       "summary": "Collin County \u2014 Marriage License images not appearing in Clerk Search after scanning \u2014 blocking certified copy issuance",
       "project": "CR",
@@ -1388,7 +1280,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -1428,7 +1320,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -1460,6 +1352,46 @@
       }
     },
     {
+      "key": "CR-2090359",
+      "summary": "Johnson - No distributions for Order#20260130000146",
+      "project": "CR",
+      "issue_type": "Bug",
+      "status": "Closed",
+      "status_family": "Done",
+      "delivery_bucket": "delivered",
+      "is_open": false,
+      "reporter": "Zendesk Support for Jira",
+      "tenant_raw": "Johnson",
+      "tenants": [
+        "Johnson"
+      ],
+      "created": "2026-03-26T15:04:38.500-0400",
+      "created_iso": "2026-03-26",
+      "age_days": 85,
+      "updated": "2026-06-19T11:32:26.402-0400",
+      "updated_iso": "2026-06-19",
+      "end_date": "2026-06-19",
+      "end_date_iso": "2026-06-19",
+      "ships_month": "Jun 2026",
+      "sprint": "CR 2026.Q2-4",
+      "comments_count": "23",
+      "labels_raw": "June-2026, TXEscalation, Top_10, jira_escalated, supportresponse",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
+    },
+    {
       "key": "CR-2084152",
       "summary": "Collin | Latency Issues during Verification",
       "project": "CR",
@@ -1468,7 +1400,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -1500,6 +1432,34 @@
       }
     },
     {
+      "key": "CR-2091408",
+      "summary": "EOM Issue \u2014 Assumed Name fees did not fully distribute on Order No. 20260513000039 (Jefferson County)",
+      "project": "CR",
+      "issue_type": "Bug",
+      "status": "Closed",
+      "status_family": "Done",
+      "delivery_bucket": "delivered",
+      "is_open": false,
+      "reporter": "Zendesk Support for Jira",
+      "tenant_raw": "",
+      "tenants": [
+        "(untagged)"
+      ],
+      "created": "2026-05-26T16:39:49.221-0400",
+      "created_iso": "2026-05-26",
+      "age_days": 24,
+      "updated": "2026-06-19T11:32:46.618-0400",
+      "updated_iso": "2026-06-19",
+      "end_date": "",
+      "end_date_iso": null,
+      "ships_month": null,
+      "sprint": "CR 2026.Q2-6",
+      "comments_count": "9",
+      "labels_raw": "TXEscalation, Top_10, TriageReady, jira_escalated",
+      "delivery_targets": [],
+      "current_delivery_target": null
+    },
+    {
       "key": "CR-2091077",
       "summary": "Boulder (Multiple Counties) | Verification Errors/Issues",
       "project": "CR",
@@ -1508,14 +1468,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Connector for Salesforce & Jira",
       "tenant_raw": "",
       "tenants": [
         "(untagged)"
       ],
       "created": "2024-11-25T15:44:24.911-0500",
       "created_iso": "2024-11-25",
-      "age_days": 570,
+      "age_days": 571,
       "updated": "2026-06-17T22:59:54.240-0400",
       "updated_iso": "2026-06-17",
       "end_date": "2026-06-19",
@@ -1548,7 +1508,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -1588,7 +1548,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Art Martinez",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -1616,7 +1576,7 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
@@ -1624,8 +1584,8 @@
       "created": "2026-02-18T10:36:20.017-0500",
       "created_iso": "2026-02-18",
       "age_days": 121,
-      "updated": "2026-06-11T17:10:18.948-0400",
-      "updated_iso": "2026-06-11",
+      "updated": "2026-06-19T13:10:32.680-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
@@ -1656,16 +1616,16 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
       ],
       "created": "2025-09-08T16:18:14.148-0400",
       "created_iso": "2025-09-08",
-      "age_days": 283,
-      "updated": "2026-06-11T16:49:34.079-0400",
-      "updated_iso": "2026-06-11",
+      "age_days": 284,
+      "updated": "2026-06-19T13:10:31.419-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
@@ -1696,7 +1656,7 @@
       "status_family": "In dev",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "",
       "tenants": [
         "(untagged)"
@@ -1704,8 +1664,8 @@
       "created": "2026-05-07T18:01:45.241-0400",
       "created_iso": "2026-05-07",
       "age_days": 42,
-      "updated": "2026-06-17T15:00:40.576-0400",
-      "updated_iso": "2026-06-17",
+      "updated": "2026-06-19T13:06:56.120-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
@@ -1724,7 +1684,7 @@
       "status_family": "In dev",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "",
       "tenants": [
         "(untagged)"
@@ -1752,7 +1712,7 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Justin Navarre",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -1792,14 +1752,14 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
       ],
       "created": "2025-10-14T17:11:03.266-0400",
       "created_iso": "2025-10-14",
-      "age_days": 247,
+      "age_days": 248,
       "updated": "2026-06-16T17:06:26.820-0400",
       "updated_iso": "2026-06-16",
       "end_date": "2026-07-31",
@@ -1832,14 +1792,14 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "",
       "tenants": [
         "(untagged)"
       ],
       "created": "2025-12-17T17:17:02.565-0500",
       "created_iso": "2025-12-17",
-      "age_days": 183,
+      "age_days": 184,
       "updated": "2026-06-10T14:34:04.027-0400",
       "updated_iso": "2026-06-10",
       "end_date": "",
@@ -1872,7 +1832,7 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -1912,7 +1872,7 @@
       "status_family": "In testing",
       "delivery_bucket": "in_progress",
       "is_open": false,
-      "team": "",
+      "reporter": "Art Martinez",
       "tenant_raw": "Denton",
       "tenants": [
         "Denton"
@@ -1944,46 +1904,6 @@
       }
     },
     {
-      "key": "CSC-3001",
-      "summary": "Dallas County Cloud Search | Additional Party Name (Notary) ",
-      "project": "CSC",
-      "issue_type": "Story",
-      "status": "Ready To Test",
-      "status_family": "In testing",
-      "delivery_bucket": "in_progress",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Dallas",
-      "tenants": [
-        "Dallas"
-      ],
-      "created": "2026-04-20T11:11:15.732-0400",
-      "created_iso": "2026-04-20",
-      "age_days": 60,
-      "updated": "2026-06-19T10:24:17.955-0400",
-      "updated_iso": "2026-06-19",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "",
-      "comments_count": "6",
-      "labels_raw": "June-2026, TXEscalation, jira_escalated",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
       "key": "CR-2089882",
       "summary": "Jefferson - Feature requests for further development.",
       "project": "CR",
@@ -1992,7 +1912,7 @@
       "status_family": "Blocked",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
@@ -2024,92 +1944,6 @@
       }
     },
     {
-      "key": "CR-2090005",
-      "summary": "Denton - Remove Foreclosures.",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "On Hold",
-      "status_family": "Blocked",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "",
-      "tenant_raw": "Denton",
-      "tenants": [
-        "Denton"
-      ],
-      "created": "2026-03-10T13:30:56.601-0400",
-      "created_iso": "2026-03-10",
-      "age_days": 101,
-      "updated": "2026-06-16T10:53:58.685-0400",
-      "updated_iso": "2026-06-16",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "",
-      "comments_count": "9",
-      "labels_raw": "July-2026, September-2026, TXEscalation, jira_escalated, jira_update",
-      "delivery_targets": [
-        {
-          "label": "Jul-2026",
-          "month_index": 6,
-          "year": 2026,
-          "sortable": 24318
-        },
-        {
-          "label": "Sep-2026",
-          "month_index": 8,
-          "year": 2026,
-          "sortable": 24320
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Sep-2026",
-        "month_index": 8,
-        "year": 2026,
-        "sortable": 24320
-      }
-    },
-    {
-      "key": "CR-2077601",
-      "summary": "PENDING Dallas: Disable USPS Zipcode Lookup for Marriages",
-      "project": "CR",
-      "issue_type": "Story",
-      "status": "On Hold",
-      "status_family": "Blocked",
-      "delivery_bucket": "open",
-      "is_open": true,
-      "team": "",
-      "tenant_raw": "Dallas",
-      "tenants": [
-        "Dallas"
-      ],
-      "created": "2021-11-19T11:29:00.000-0500",
-      "created_iso": "2021-11-19",
-      "age_days": 1673,
-      "updated": "2026-06-11T14:26:15.033-0400",
-      "updated_iso": "2026-06-11",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
-      "sprint": "CR 2025.Q4.productStaging",
-      "comments_count": "13",
-      "labels_raw": "June-2026, TXEscalation, jira_escalated, support",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
       "key": "VTC-26725",
       "summary": "Collin - Enable Marriage License Batch Print.",
       "project": "VTC",
@@ -2118,7 +1952,7 @@
       "status_family": "Blocked",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -2158,7 +1992,7 @@
       "status_family": "Blocked",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Mark Nicks",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -2198,7 +2032,7 @@
       "status_family": "Blocked",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Tatevik Sahakyan",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -2206,8 +2040,8 @@
       "created": "2023-03-01T01:50:00.000-0500",
       "created_iso": "2023-03-01",
       "age_days": 1206,
-      "updated": "2026-06-11T13:57:38.187-0400",
-      "updated_iso": "2026-06-11",
+      "updated": "2026-06-19T12:33:02.402-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "2026-07-31",
       "end_date_iso": "2026-07-31",
       "ships_month": "Jul 2026",
@@ -2238,7 +2072,7 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -2278,7 +2112,7 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -2286,8 +2120,8 @@
       "created": "2026-05-14T13:24:24.670-0400",
       "created_iso": "2026-05-14",
       "age_days": 36,
-      "updated": "2026-06-15T18:22:14.215-0400",
-      "updated_iso": "2026-06-15",
+      "updated": "2026-06-19T11:50:48.452-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "2026-06-30",
       "end_date_iso": "2026-06-30",
       "ships_month": "Jun 2026",
@@ -2318,7 +2152,7 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -2358,14 +2192,14 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Denton",
       "tenants": [
         "Denton"
       ],
       "created": "2025-08-27T16:37:34.002-0400",
       "created_iso": "2025-08-27",
-      "age_days": 295,
+      "age_days": 296,
       "updated": "2026-06-11T16:33:18.347-0400",
       "updated_iso": "2026-06-11",
       "end_date": "2026-06-30",
@@ -2398,14 +2232,14 @@
       "status_family": "Other",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
       ],
       "created": "2026-04-23T15:58:09.345-0400",
       "created_iso": "2026-04-23",
-      "age_days": 56,
+      "age_days": 57,
       "updated": "2026-06-18T19:38:58.314-0400",
       "updated_iso": "2026-06-18",
       "end_date": "2026-06-30",
@@ -2438,7 +2272,7 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Art Martinez",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -2478,7 +2312,7 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Sergio Perez",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -2486,8 +2320,8 @@
       "created": "2025-04-30T12:12:54.852-0400",
       "created_iso": "2025-04-30",
       "age_days": 415,
-      "updated": "2026-06-11T10:18:14.999-0400",
-      "updated_iso": "2026-06-11",
+      "updated": "2026-06-19T13:10:34.017-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
@@ -2510,6 +2344,46 @@
       }
     },
     {
+      "key": "CSC-3001",
+      "summary": "Dallas County Cloud Search | Additional Party Name (Notary) ",
+      "project": "CSC",
+      "issue_type": "Story",
+      "status": "Ready to Deploy",
+      "status_family": "Other",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "reporter": "Laura Whaley",
+      "tenant_raw": "Dallas",
+      "tenants": [
+        "Dallas"
+      ],
+      "created": "2026-04-20T11:11:15.732-0400",
+      "created_iso": "2026-04-20",
+      "age_days": 60,
+      "updated": "2026-06-19T11:59:01.597-0400",
+      "updated_iso": "2026-06-19",
+      "end_date": "",
+      "end_date_iso": null,
+      "ships_month": null,
+      "sprint": "",
+      "comments_count": "7",
+      "labels_raw": "June-2026, TXEscalation, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
+    },
+    {
       "key": "VTC-26095",
       "summary": "All - HB1193: Configuration for Texas Informal Marriage License updates",
       "project": "VTC",
@@ -2518,7 +2392,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Tamara Woodward",
       "tenant_raw": "All",
       "tenants": [
         "All"
@@ -2550,6 +2424,46 @@
       }
     },
     {
+      "key": "VTC-27431",
+      "summary": "DATA FIX Denton County Foreclosures | Remove All Documents Prior to Sale Date March 01, 2026",
+      "project": "VTC",
+      "issue_type": "Story",
+      "status": "Done",
+      "status_family": "Done",
+      "delivery_bucket": "delivered",
+      "is_open": false,
+      "reporter": "Laura Whaley",
+      "tenant_raw": "Denton",
+      "tenants": [
+        "Denton"
+      ],
+      "created": "2026-05-26T10:30:58.888-0400",
+      "created_iso": "2026-05-26",
+      "age_days": 24,
+      "updated": "2026-06-19T13:02:20.726-0400",
+      "updated_iso": "2026-06-19",
+      "end_date": "2026-06-30",
+      "end_date_iso": "2026-06-30",
+      "ships_month": "Jun 2026",
+      "sprint": "",
+      "comments_count": "10",
+      "labels_raw": "June-2026, TXEscalation, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
+    },
+    {
       "key": "VTC-27356",
       "summary": "Johnson County Indexing/Verification/ReIndex | Enable Notary Name Indexing, Verification, Re-Index",
       "project": "VTC",
@@ -2558,14 +2472,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
       ],
       "created": "2026-05-13T16:15:01.473-0400",
       "created_iso": "2026-05-13",
-      "age_days": 36,
+      "age_days": 37,
       "updated": "2026-06-04T16:52:32.433-0400",
       "updated_iso": "2026-06-04",
       "end_date": "2026-05-29",
@@ -2590,46 +2504,6 @@
       }
     },
     {
-      "key": "VTC-26383",
-      "summary": "Denton request to remove foreclosures from Clerk Search (v3)",
-      "project": "VTC",
-      "issue_type": "Story",
-      "status": "Done",
-      "status_family": "Done",
-      "delivery_bucket": "delivered",
-      "is_open": false,
-      "team": "",
-      "tenant_raw": "Denton",
-      "tenants": [
-        "Denton"
-      ],
-      "created": "2025-12-17T10:09:44.970-0500",
-      "created_iso": "2025-12-17",
-      "age_days": 184,
-      "updated": "2026-06-17T23:00:37.241-0400",
-      "updated_iso": "2026-06-17",
-      "end_date": "2026-07-31",
-      "end_date_iso": "2026-07-31",
-      "ships_month": "Jul 2026",
-      "sprint": "",
-      "comments_count": "14",
-      "labels_raw": "May-2026, TOP_5, TXEscalation, jira_escalated",
-      "delivery_targets": [
-        {
-          "label": "May-2026",
-          "month_index": 4,
-          "year": 2026,
-          "sortable": 24316
-        }
-      ],
-      "current_delivery_target": {
-        "label": "May-2026",
-        "month_index": 4,
-        "year": 2026,
-        "sortable": 24316
-      }
-    },
-    {
       "key": "VTC-26163",
       "summary": "CANCELLED Collin - Event Year OCR request.",
       "project": "VTC",
@@ -2638,7 +2512,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -2678,7 +2552,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -2718,7 +2592,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -2758,7 +2632,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -2790,6 +2664,46 @@
       }
     },
     {
+      "key": "PS-7174",
+      "summary": "Denton County Foreclosures | Remove All Documents Prior to Sale Date March 01, 2026",
+      "project": "PS",
+      "issue_type": "Story",
+      "status": "Done",
+      "status_family": "Done",
+      "delivery_bucket": "delivered",
+      "is_open": false,
+      "reporter": "Laura Whaley",
+      "tenant_raw": "Denton",
+      "tenants": [
+        "Denton"
+      ],
+      "created": "2026-05-26T10:36:35.823-0400",
+      "created_iso": "2026-05-26",
+      "age_days": 24,
+      "updated": "2026-06-19T13:02:28.163-0400",
+      "updated_iso": "2026-06-19",
+      "end_date": "",
+      "end_date_iso": null,
+      "ships_month": null,
+      "sprint": "CS 2026.Q2-6",
+      "comments_count": "2",
+      "labels_raw": "July-2026, TXEscalation, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jul-2026",
+          "month_index": 6,
+          "year": 2026,
+          "sortable": 24318
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jul-2026",
+        "month_index": 6,
+        "year": 2026,
+        "sortable": 24318
+      }
+    },
+    {
       "key": "CSC-3029",
       "summary": "Johnson Cloud Search-Add File By",
       "project": "CSC",
@@ -2798,7 +2712,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Felix Leon",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -2838,7 +2752,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -2878,14 +2792,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
       ],
       "created": "2025-08-21T17:44:11.855-0400",
       "created_iso": "2025-08-21",
-      "age_days": 301,
+      "age_days": 302,
       "updated": "2026-06-05T03:48:39.243-0400",
       "updated_iso": "2026-06-05",
       "end_date": "2026-05-21",
@@ -2918,7 +2832,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -2958,14 +2872,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Art Martinez",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
       ],
       "created": "2025-12-22T17:17:35.626-0500",
       "created_iso": "2025-12-22",
-      "age_days": 178,
+      "age_days": 179,
       "updated": "2026-06-09T10:22:40.942-0400",
       "updated_iso": "2026-06-09",
       "end_date": "",
@@ -2986,20 +2900,20 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Art Martinez",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
       ],
       "created": "2025-11-12T17:25:51.945-0500",
       "created_iso": "2025-11-12",
-      "age_days": 218,
-      "updated": "2026-06-17T16:46:19.027-0400",
-      "updated_iso": "2026-06-17",
+      "age_days": 219,
+      "updated": "2026-06-19T13:10:32.370-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "2026-07-17",
       "end_date_iso": "2026-07-17",
       "ships_month": "Jul 2026",
-      "sprint": "CR 2026.Q2-6",
+      "sprint": "CR 2026.Q2-7",
       "comments_count": "7",
       "labels_raw": "TXEscalation, Top_10, WAITING_FOR_SUPPORT, jira_escalated, jira_update, supportresponse, swatlog",
       "delivery_targets": [],
@@ -3014,7 +2928,7 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
@@ -3054,14 +2968,14 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
       ],
       "created": "2025-06-17T17:48:05.922-0400",
       "created_iso": "2025-06-17",
-      "age_days": 366,
+      "age_days": 367,
       "updated": "2026-06-19T10:30:23.765-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-07-31",
@@ -3094,7 +3008,7 @@
       "status_family": "In dev",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Mandy Miller",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
@@ -3102,8 +3016,8 @@
       "created": "2025-10-06T12:18:12.772-0400",
       "created_iso": "2025-10-06",
       "age_days": 256,
-      "updated": "2026-06-05T12:33:15.210-0400",
-      "updated_iso": "2026-06-05",
+      "updated": "2026-06-19T13:06:46.244-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "2026-07-17",
       "end_date_iso": "2026-07-17",
       "ships_month": "Jul 2026",
@@ -3134,7 +3048,7 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Stella Hovsepyan",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -3174,7 +3088,7 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -3220,7 +3134,7 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -3260,7 +3174,7 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Mark Nicks",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -3300,7 +3214,7 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -3340,7 +3254,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Mark Nicks",
       "tenant_raw": "Denton",
       "tenants": [
         "Denton"
@@ -3380,7 +3294,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -3420,7 +3334,7 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Mark Nicks",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -3460,7 +3374,7 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Mark Nicks",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -3500,7 +3414,7 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Tatevik Sahakyan",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -3540,7 +3454,7 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -3548,13 +3462,13 @@
       "created": "2026-04-20T10:33:30.363-0400",
       "created_iso": "2026-04-20",
       "age_days": 60,
-      "updated": "2026-06-04T08:50:22.226-0400",
-      "updated_iso": "2026-06-04",
+      "updated": "2026-06-19T12:29:00.857-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
       "sprint": "",
-      "comments_count": "3",
+      "comments_count": "4",
       "labels_raw": "Dec-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -3580,14 +3494,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
       ],
       "created": "2026-02-05T16:00:14.738-0500",
       "created_iso": "2026-02-05",
-      "age_days": 133,
+      "age_days": 134,
       "updated": "2026-05-13T10:37:35.718-0400",
       "updated_iso": "2026-05-13",
       "end_date": "",
@@ -3608,14 +3522,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
       ],
       "created": "2026-02-24T16:02:09.229-0500",
       "created_iso": "2026-02-24",
-      "age_days": 114,
+      "age_days": 115,
       "updated": "2026-05-27T05:20:00.309-0400",
       "updated_iso": "2026-05-27",
       "end_date": "2026-06-19",
@@ -3648,7 +3562,7 @@
       "status_family": "In testing",
       "delivery_bucket": "in_progress",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -3688,7 +3602,7 @@
       "status_family": "In testing",
       "delivery_bucket": "in_progress",
       "is_open": false,
-      "team": "",
+      "reporter": "Mark Nicks",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -3696,13 +3610,13 @@
       "created": "2025-11-18T08:59:44.790-0500",
       "created_iso": "2025-11-18",
       "age_days": 213,
-      "updated": "2026-06-17T14:03:28.643-0400",
-      "updated_iso": "2026-06-17",
+      "updated": "2026-06-19T12:43:59.701-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "2026-06-30",
       "end_date_iso": "2026-06-30",
       "ships_month": "Jun 2026",
       "sprint": "",
-      "comments_count": "22",
+      "comments_count": "23",
       "labels_raw": "Dallas, May-2026, TOP_5, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -3720,6 +3634,46 @@
       }
     },
     {
+      "key": "CR-2077601",
+      "summary": "PENDING Dallas: Disable USPS Zipcode Lookup for Marriages",
+      "project": "CR",
+      "issue_type": "Story",
+      "status": "On Hold",
+      "status_family": "Blocked",
+      "delivery_bucket": "open",
+      "is_open": true,
+      "reporter": "Clint Faulknor",
+      "tenant_raw": "Dallas",
+      "tenants": [
+        "Dallas"
+      ],
+      "created": "2021-11-19T11:29:00.000-0500",
+      "created_iso": "2021-11-19",
+      "age_days": 1673,
+      "updated": "2026-06-19T13:10:31.709-0400",
+      "updated_iso": "2026-06-19",
+      "end_date": "",
+      "end_date_iso": null,
+      "ships_month": null,
+      "sprint": "CR 2025.Q4.productStaging",
+      "comments_count": "14",
+      "labels_raw": "Customer-Feedback, June-2026, TXEscalation, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
+      }
+    },
+    {
       "key": "CR-2091090",
       "summary": "Johnson County \u2014 Cannot access Order Finalize screen to reprint cover pages \u2014 \"Error Occurred\" on order 20260108000073",
       "project": "CR",
@@ -3728,7 +3682,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -3768,7 +3722,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -3808,7 +3762,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -3848,7 +3802,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
@@ -3876,14 +3830,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
       ],
       "created": "2026-04-16T17:37:09.191-0400",
       "created_iso": "2026-04-16",
-      "age_days": 63,
+      "age_days": 64,
       "updated": "2026-06-05T00:49:53.836-0400",
       "updated_iso": "2026-06-05",
       "end_date": "",
@@ -3904,7 +3858,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
@@ -3944,7 +3898,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -3984,14 +3938,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
       ],
       "created": "2025-10-09T17:00:11.441-0400",
       "created_iso": "2025-10-09",
-      "age_days": 252,
+      "age_days": 253,
       "updated": "2026-06-19T10:55:22.622-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-06-18",
@@ -4024,7 +3978,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -4064,7 +4018,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Mandy Miller",
       "tenant_raw": "",
       "tenants": [
         "(untagged)"
@@ -4104,7 +4058,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -4144,7 +4098,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "All",
       "tenants": [
         "All"
@@ -4184,14 +4138,14 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
       ],
       "created": "2026-04-29T15:30:15.867-0400",
       "created_iso": "2026-04-29",
-      "age_days": 50,
+      "age_days": 51,
       "updated": "2026-06-19T10:53:46.081-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-06-19",
@@ -4224,7 +4178,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Mark Nicks",
       "tenant_raw": "Denton",
       "tenants": [
         "Denton"
@@ -4264,14 +4218,14 @@
       "status_family": "In testing",
       "delivery_bucket": "in_progress",
       "is_open": false,
-      "team": "",
+      "reporter": "Mark Nicks",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
       ],
       "created": "2025-10-29T15:41:14.563-0400",
       "created_iso": "2025-10-29",
-      "age_days": 232,
+      "age_days": 233,
       "updated": "2026-06-19T07:40:32.633-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-06-30",
@@ -4304,7 +4258,7 @@
       "status_family": "In testing",
       "delivery_bucket": "in_progress",
       "is_open": false,
-      "team": "",
+      "reporter": "",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -4344,7 +4298,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Collin, Dallas, Denton, Johnson",
       "tenants": [
         "Collin",
@@ -4354,7 +4308,7 @@
       ],
       "created": "2026-05-08T17:22:23.501-0400",
       "created_iso": "2026-05-08",
-      "age_days": 41,
+      "age_days": 42,
       "updated": "2026-06-19T10:53:39.390-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-06-19",
@@ -4387,7 +4341,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Dallas",
       "tenants": [
         "Dallas"
@@ -4427,7 +4381,7 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -4467,7 +4421,7 @@
       "status_family": "In testing",
       "delivery_bucket": "pending_release",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -4507,7 +4461,7 @@
       "status_family": "Open",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -4547,7 +4501,7 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Jefferson TX",
       "tenants": [
         "Jefferson"
@@ -4555,8 +4509,8 @@
       "created": "2026-03-04T18:25:08.433-0500",
       "created_iso": "2026-03-04",
       "age_days": 106,
-      "updated": "2026-06-18T09:19:25.145-0400",
-      "updated_iso": "2026-06-18",
+      "updated": "2026-06-19T13:11:54.019-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "",
       "end_date_iso": null,
       "ships_month": null,
@@ -4587,7 +4541,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Justin Navarre",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -4627,7 +4581,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Johnson",
       "tenants": [
         "Johnson"
@@ -4667,7 +4621,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin, Lake IL",
       "tenants": [
         "Collin",
@@ -4708,7 +4662,7 @@
       "status_family": "In triage",
       "delivery_bucket": "open",
       "is_open": true,
-      "team": "",
+      "reporter": "Zendesk Support for Jira",
       "tenant_raw": "Collin",
       "tenants": [
         "Collin"
@@ -4716,12 +4670,12 @@
       "created": "2025-02-05T14:53:02.586-0500",
       "created_iso": "2025-02-05",
       "age_days": 499,
-      "updated": "2026-06-17T14:54:02.506-0400",
-      "updated_iso": "2026-06-17",
+      "updated": "2026-06-19T13:10:33.702-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "2026-07-17",
       "end_date_iso": "2026-07-17",
       "ships_month": "Jul 2026",
-      "sprint": "CR 2026.Q2-6",
+      "sprint": "CR 2026.Q2-7",
       "comments_count": "14",
       "labels_raw": "2026_Customer, July-2026, NorthTX26, jira_escalated",
       "delivery_targets": [
@@ -4748,7 +4702,7 @@
       "status_family": "Done",
       "delivery_bucket": "delivered",
       "is_open": false,
-      "team": "",
+      "reporter": "Laura Whaley",
       "tenant_raw": "Dallas, Lake IL",
       "tenants": [
         "Dallas",
@@ -4757,13 +4711,13 @@
       "created": "2026-01-08T13:30:31.508-0500",
       "created_iso": "2026-01-08",
       "age_days": 162,
-      "updated": "2026-06-19T10:53:57.847-0400",
+      "updated": "2026-06-19T11:33:58.337-0400",
       "updated_iso": "2026-06-19",
-      "end_date": "2026-07-17",
-      "end_date_iso": "2026-07-17",
-      "ships_month": "Jul 2026",
+      "end_date": "2026-06-18",
+      "end_date_iso": "2026-06-18",
+      "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
-      "comments_count": "7",
+      "comments_count": "8",
       "labels_raw": "2026_Customer, CR-External, July-2026, Keywords, TXEscalation, jira_escalated, jira_update",
       "delivery_targets": [
         {
