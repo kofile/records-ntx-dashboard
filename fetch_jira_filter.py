@@ -285,7 +285,7 @@ def transform_issue(issue, today_dt):
         "status_family": fam,
         "delivery_bucket": bucket,
         "is_open": bucket == "open",
-        "team": reporter,  # Jira reporter displayName
+        "reporter": reporter,
         "tenant_raw": tenant_raw,
         "tenants": tenants_for(tenant_raw),
         "created": created,
