@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T18:08:51Z",
+  "updated_at": "2026-06-19T20:36:21Z",
   "today": "2026-06-19",
   "exported_at": "19 Jun 2026 (auto)",
   "tickets": [
@@ -859,7 +859,7 @@
       ],
       "created": "2026-04-22T18:21:14.866-0400",
       "created_iso": "2026-04-22",
-      "age_days": 57,
+      "age_days": 58,
       "updated": "2026-06-19T13:07:10.881-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-07-17",
@@ -1327,7 +1327,7 @@
       ],
       "created": "2026-04-28T18:08:52.675-0400",
       "created_iso": "2026-04-28",
-      "age_days": 51,
+      "age_days": 52,
       "updated": "2026-06-09T11:58:36.787-0400",
       "updated_iso": "2026-06-09",
       "end_date": "2026-06-19",
@@ -1685,18 +1685,18 @@
       "delivery_bucket": "open",
       "is_open": true,
       "reporter": "Zendesk Support for Jira",
-      "tenant_raw": "",
+      "tenant_raw": "Dallas",
       "tenants": [
-        "(untagged)"
+        "Dallas"
       ],
       "created": "2026-06-03T08:20:27.256-0400",
       "created_iso": "2026-06-03",
       "age_days": 16,
-      "updated": "2026-06-17T12:24:55.078-0400",
-      "updated_iso": "2026-06-17",
-      "end_date": "",
-      "end_date_iso": null,
-      "ships_month": null,
+      "updated": "2026-06-19T14:23:19.345-0400",
+      "updated_iso": "2026-06-19",
+      "end_date": "2026-07-16",
+      "end_date_iso": "2026-07-16",
+      "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q2-7",
       "comments_count": "6",
       "labels_raw": "TXEscalation, jira_escalated",
@@ -3056,8 +3056,8 @@
       "created": "2026-05-13T11:41:18.735-0400",
       "created_iso": "2026-05-13",
       "age_days": 37,
-      "updated": "2026-06-16T11:54:55.276-0400",
-      "updated_iso": "2026-06-16",
+      "updated": "2026-06-19T15:10:58.765-0400",
+      "updated_iso": "2026-06-19",
       "end_date": "2026-06-30",
       "end_date_iso": "2026-06-30",
       "ships_month": "Jun 2026",
@@ -3554,51 +3554,11 @@
       }
     },
     {
-      "key": "VTC-27096",
-      "summary": "Dallas County Clerk Search | Additional Party Name Clerk Search",
-      "project": "VTC",
-      "issue_type": "Story",
-      "status": "Testing on UAT",
-      "status_family": "In testing",
-      "delivery_bucket": "in_progress",
-      "is_open": false,
-      "reporter": "Laura Whaley",
-      "tenant_raw": "Dallas",
-      "tenants": [
-        "Dallas"
-      ],
-      "created": "2026-04-20T10:32:43.346-0400",
-      "created_iso": "2026-04-20",
-      "age_days": 60,
-      "updated": "2026-06-17T15:07:59.452-0400",
-      "updated_iso": "2026-06-17",
-      "end_date": "2026-06-30",
-      "end_date_iso": "2026-06-30",
-      "ships_month": "Jun 2026",
-      "sprint": "",
-      "comments_count": "3",
-      "labels_raw": "Dallas, June-2026, TOP_5, TXEscalation, jira_escalated",
-      "delivery_targets": [
-        {
-          "label": "Jun-2026",
-          "month_index": 5,
-          "year": 2026,
-          "sortable": 24317
-        }
-      ],
-      "current_delivery_target": {
-        "label": "Jun-2026",
-        "month_index": 5,
-        "year": 2026,
-        "sortable": 24317
-      }
-    },
-    {
       "key": "VTC-25814",
       "summary": "Dallas County Order Entry | Enable Notary Name Data Entry",
       "project": "VTC",
       "issue_type": "Story",
-      "status": "Ready to test on UAT",
+      "status": "Testing on UAT",
       "status_family": "In testing",
       "delivery_bucket": "in_progress",
       "is_open": false,
@@ -3610,13 +3570,13 @@
       "created": "2025-11-18T08:59:44.790-0500",
       "created_iso": "2025-11-18",
       "age_days": 213,
-      "updated": "2026-06-19T12:43:59.701-0400",
+      "updated": "2026-06-19T15:57:26.481-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-06-30",
       "end_date_iso": "2026-06-30",
       "ships_month": "Jun 2026",
       "sprint": "",
-      "comments_count": "23",
+      "comments_count": "24",
       "labels_raw": "Dallas, May-2026, TOP_5, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -3631,6 +3591,46 @@
         "month_index": 4,
         "year": 2026,
         "sortable": 24316
+      }
+    },
+    {
+      "key": "VTC-27096",
+      "summary": "Dallas County Clerk Search | Additional Party Name Clerk Search",
+      "project": "VTC",
+      "issue_type": "Story",
+      "status": "Verified on UAT",
+      "status_family": "In testing",
+      "delivery_bucket": "pending_release",
+      "is_open": false,
+      "reporter": "Laura Whaley",
+      "tenant_raw": "Dallas",
+      "tenants": [
+        "Dallas"
+      ],
+      "created": "2026-04-20T10:32:43.346-0400",
+      "created_iso": "2026-04-20",
+      "age_days": 60,
+      "updated": "2026-06-19T15:15:38.517-0400",
+      "updated_iso": "2026-06-19",
+      "end_date": "2026-06-30",
+      "end_date_iso": "2026-06-30",
+      "ships_month": "Jun 2026",
+      "sprint": "",
+      "comments_count": "4",
+      "labels_raw": "Dallas, June-2026, TOP_5, TXEscalation, jira_escalated",
+      "delivery_targets": [
+        {
+          "label": "Jun-2026",
+          "month_index": 5,
+          "year": 2026,
+          "sortable": 24317
+        }
+      ],
+      "current_delivery_target": {
+        "label": "Jun-2026",
+        "month_index": 5,
+        "year": 2026,
+        "sortable": 24317
       }
     },
     {
@@ -3865,7 +3865,7 @@
       ],
       "created": "2025-11-07T18:59:08.489-0500",
       "created_iso": "2025-11-07",
-      "age_days": 223,
+      "age_days": 224,
       "updated": "2026-06-11T15:30:41.166-0400",
       "updated_iso": "2026-06-11",
       "end_date": "",
@@ -4105,7 +4105,7 @@
       ],
       "created": "2026-02-05T18:55:33.797-0500",
       "created_iso": "2026-02-05",
-      "age_days": 133,
+      "age_days": 134,
       "updated": "2026-06-09T15:16:54.265-0400",
       "updated_iso": "2026-06-09",
       "end_date": "2026-06-19",
@@ -4508,7 +4508,7 @@
       ],
       "created": "2026-03-04T18:25:08.433-0500",
       "created_iso": "2026-03-04",
-      "age_days": 106,
+      "age_days": 107,
       "updated": "2026-06-19T13:11:54.019-0400",
       "updated_iso": "2026-06-19",
       "end_date": "",
