@@ -6,26 +6,27 @@
 <meta name="robots" content="noindex, nofollow" />
 <meta name="googlebot" content="noindex, nofollow" />
 <title>Records: Escalation &amp; Delivery Dashboard</title>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 <style>
   :root {
-    --bg: #FAF8F2;
+    --bg: #F7F2F9;
     --surface: #FFFFFF;
-    --ink: #1A1916;
-    --ink-soft: #5F5E5A;
-    --ink-faint: #999791;
-    --line: rgba(26, 25, 22, 0.12);
-    --line-strong: rgba(26, 25, 22, 0.25);
-    --accent: #185FA5;
+    --ink: #0A1128;
+    --ink-soft: #3C3489;
+    --ink-faint: #775ED3;
+    --line: rgba(218, 205, 242, 0.5);
+    --line-strong: #DACDF2;
+    --accent: #775ED3;
     --warn: #BA7517;
     --warn-bg: #FAEEDA;
     --danger: #A32D2D;
     --danger-bg: #FCEBEB;
-    --success: #0F6E56;
-    --success-bg: #E1F5EE;
-    --neutral-bg: #F1EFE8;
+    --success: #775ED3;
+    --success-bg: #EEEDFE;
+    --neutral-bg: #F7F2F9;
     --mono: "SF Mono", "JetBrains Mono", "Menlo", "Consolas", monospace;
     --serif: "Iowan Old Style", "Georgia", "Charter", serif;
-    --sans: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", sans-serif;
+    --sans: "Source Sans 3", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", sans-serif;
   }
   * { box-sizing: border-box; }
   body {
@@ -40,33 +41,36 @@
 
   /* Masthead */
   .masthead {
-    border-bottom: 2px solid var(--ink);
+    border-bottom: 2px solid #775ED3;
     padding: 20px 32px 14px;
-    background: var(--bg);
+    background: #0A1128;
+    color: #DACDF2;
   }
   .masthead-row {
     display: flex; align-items: flex-start; justify-content: space-between;
     gap: 16px;
   }
   .title {
-    font-family: var(--serif);
-    font-size: 34px; font-weight: 400;
+    font-family: var(--sans);
+    font-size: 34px; font-weight: 600;
     letter-spacing: -0.5px;
     margin: 0;
+    color: #FFFFFF;
   }
-  .title em { font-style: italic; color: var(--ink-soft); font-weight: 400; }
+  .title em { font-style: normal; color: #DACDF2; font-weight: 400; }
   .masthead-meta {
     font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px;
-    color: var(--ink-soft);
+    color: #DACDF2;
     display: flex; gap: 18px; align-items: baseline;
   }
-  .masthead-meta strong { color: var(--ink); font-weight: 500; }
+  .masthead-meta strong { color: #FFFFFF; font-weight: 600; }
   .dateline {
     margin-top: 8px;
-    font-size: 12px; color: var(--ink-soft);
+    font-size: 12px; color: #DACDF2;
     display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
   }
-  .dateline-sep::before { content: "·"; margin-right: 14px; color: var(--ink-faint); }
+  .dateline a { color: #FFFFFF; }
+  .dateline-sep::before { content: "·"; margin-right: 14px; color: #775ED3; }
 
   /* Top toolbar */
   .toolbar {
@@ -93,7 +97,7 @@
   }
   .view-switch button:last-child { border-right: none; }
   .view-switch button.active {
-    background: var(--ink); color: var(--bg);
+    background: #775ED3; color: #fff;
   }
   .upload-area {
     margin-left: auto;
@@ -123,26 +127,26 @@
 
   /* Cluster preset row — sits above the toolbar */
   .cluster-bar {
-    background: var(--surface);
-    border-bottom: 1px solid var(--line);
+    background: #0A1128;
+    border-bottom: 1px solid #775ED3;
     padding: 10px 32px;
     display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
     font-family: var(--sans);
   }
   .cluster-bar-label {
     font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px;
-    color: var(--ink-faint); margin-right: 6px;
+    color: #AFA9EC; margin-right: 6px;
   }
   .cluster-pill {
     display: inline-flex; align-items: center; gap: 6px;
-    border: 1px solid var(--line); background: transparent; color: var(--ink-soft);
+    border: 1px solid rgba(218,205,242,0.3); background: transparent; color: #DACDF2;
     padding: 5px 11px; border-radius: 999px; font-size: 12px;
     cursor: pointer; font-family: inherit;
     transition: border-color 0.1s, color 0.1s, background 0.1s;
   }
-  .cluster-pill:hover { border-color: var(--line-strong); color: var(--ink); }
-  .cluster-pill.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-  .cluster-pill.active:hover { background: var(--ink); color: var(--bg); }
+  .cluster-pill:hover { border-color: #DACDF2; color: #fff; }
+  .cluster-pill.active { background: #775ED3; color: #fff; border-color: #775ED3; }
+  .cluster-pill.active:hover { background: #775ED3; color: #fff; }
   .cluster-pill .local-badge {
     font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px;
     background: var(--warn-bg); color: var(--warn);
@@ -151,25 +155,25 @@
   }
   .cluster-manage-link {
     font-family: var(--sans); font-size: 11px;
-    color: var(--accent); text-decoration: none;
-    padding: 5px 11px; border: 1px solid #DEEBFF;
-    background: #DEEBFF; border-radius: 4px;
+    color: #DACDF2; text-decoration: none;
+    padding: 5px 11px; border: 1px solid rgba(218,205,242,0.3);
+    background: transparent; border-radius: 4px;
     margin-left: 8px;
     transition: background 0.1s, color 0.1s;
   }
-  .cluster-manage-link:hover { background: var(--accent); color: white; }
+  .cluster-manage-link:hover { background: #775ED3; color: white; border-color: #775ED3; }
   .cluster-procedures-link {
     font-family: var(--sans); font-size: 11px;
-    color: var(--ink-soft); text-decoration: none;
+    color: #AFA9EC; text-decoration: none;
     padding: 5px 11px;
-    border-right: 1px solid var(--line);
+    border-right: 1px solid rgba(218,205,242,0.2);
     margin-left: auto;
     padding-right: 14px;
     transition: color 0.1s;
   }
-  .cluster-procedures-link:hover { color: var(--ink); }
+  .cluster-procedures-link:hover { color: #DACDF2; }
   .cluster-bar-meta {
-    font-size: 11px; color: var(--ink-faint);
+    font-size: 11px; color: #AFA9EC;
     font-family: var(--mono);
   }
 
@@ -192,8 +196,8 @@
   }
   .modal h3 {
     margin: 0 0 6px;
-    font-family: var(--serif);
-    font-size: 22px; font-weight: 400;
+    font-family: var(--sans);
+    font-size: 22px; font-weight: 600;
     letter-spacing: -0.3px;
   }
   .modal .modal-sub {
@@ -283,7 +287,7 @@
     border-bottom: 1px solid var(--line);
   }
   .tile-num {
-    font-family: var(--serif); font-style: italic;
+    font-family: var(--sans); font-style: normal;
     font-size: 14px; color: var(--ink-faint);
     margin-right: 10px;
   }
@@ -308,8 +312,8 @@
     margin-bottom: 20px;
   }
   .winning-rate {
-    font-family: var(--serif);
-    font-size: 88px; line-height: 1; font-weight: 400;
+    font-family: var(--sans);
+    font-size: 88px; line-height: 1; font-weight: 600;
     letter-spacing: -3px;
   }
   .winning-fraction {
@@ -320,9 +324,9 @@
     background: var(--neutral-bg);
     border-radius: 3px; overflow: hidden;
   }
-  .winning-bar-delivered { background: var(--success); transition: width 0.4s ease; }
-  .winning-bar-pending { background: var(--accent); opacity: 0.55; transition: width 0.4s ease; }
-  .winning-bar-progress { background: var(--warn); opacity: 0.7; transition: width 0.4s ease; }
+  .winning-bar-delivered { background: #0A1128; transition: width 0.4s ease; }
+  .winning-bar-pending { background: #775ED3; opacity: 0.85; transition: width 0.4s ease; }
+  .winning-bar-progress { background: #DACDF2; opacity: 1; transition: width 0.4s ease; }
   .winning-bar-open { background: transparent; transition: width 0.4s ease; }
   .winning-legend {
     display: flex; gap: 18px; font-size: 12px; color: var(--ink-soft);
@@ -333,9 +337,9 @@
     display: inline-block; width: 9px; height: 9px; border-radius: 2px;
     vertical-align: middle; margin-right: 6px;
   }
-  .winning-legend .dot.delivered { background: var(--success); }
-  .winning-legend .dot.pending { background: var(--accent); opacity: 0.55; }
-  .winning-legend .dot.progress { background: var(--warn); opacity: 0.7; }
+  .winning-legend .dot.delivered { background: #0A1128; }
+  .winning-legend .dot.pending { background: #775ED3; opacity: 0.85; }
+  .winning-legend .dot.progress { background: #DACDF2; border: 1px solid #AFA9EC; }
   .winning-legend .dot.open { background: var(--neutral-bg); border: 1px solid var(--line-strong); }
   .winning-deltas {
     display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
@@ -349,10 +353,10 @@
     color: var(--ink-faint); margin: 0 0 6px;
   }
   .delta-value {
-    font-family: var(--serif); font-size: 28px; line-height: 1;
-    font-weight: 400;
+    font-family: var(--sans); font-size: 28px; line-height: 1;
+    font-weight: 600;
   }
-  .delta-value.pending { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+  .delta-value.pending { color: var(--ink-faint); font-style: normal; font-size: 14px; }
   .delta-explain { font-size: 11px; color: var(--ink-soft); margin-top: 4px; }
 
   /* Row 2: mapping panel left, trend chart right */
@@ -394,9 +398,9 @@
     display: inline-block; width: 9px; height: 9px; border-radius: 2px;
     vertical-align: middle; margin-right: 6px;
   }
-  .stage-mapping-list dt .dot.delivered { background: var(--success); }
-  .stage-mapping-list dt .dot.pending { background: var(--accent); opacity: 0.55; }
-  .stage-mapping-list dt .dot.progress { background: var(--warn); opacity: 0.7; }
+  .stage-mapping-list dt .dot.delivered { background: #0A1128; }
+  .stage-mapping-list dt .dot.pending { background: #775ED3; opacity: 0.85; }
+  .stage-mapping-list dt .dot.progress { background: #DACDF2; border: 1px solid #AFA9EC; }
   .stage-mapping-list dt .dot.open { background: var(--neutral-bg); border: 1px solid var(--line-strong); }
   .stage-mapping-list dd {
     margin: 0 0 0 15px;
@@ -429,10 +433,10 @@
     display: inline-block; width: 16px; height: 2px;
     vertical-align: middle; margin-right: 5px;
   }
-  .line-key.total { background: var(--ink); }
-  .line-key.delivered { background: var(--success); }
+  .line-key.total { background: #0A1128; }
+  .line-key.delivered { background: #775ED3; }
   .line-key.gap {
-    background: linear-gradient(90deg, var(--neutral-bg) 50%, transparent 50%);
+    background: linear-gradient(90deg, #DACDF2 50%, transparent 50%);
     height: 6px; border-radius: 1px;
   }
 
@@ -453,9 +457,9 @@
     border-radius: 2px;
     vertical-align: middle; margin-right: 5px;
   }
-  .stack-key.delivered { background: var(--success); }
-  .stack-key.pending { background: var(--accent); opacity: 0.55; }
-  .stack-key.progress { background: var(--warn); opacity: 0.7; }
+  .stack-key.delivered { background: #0A1128; }
+  .stack-key.pending { background: #775ED3; opacity: 0.85; }
+  .stack-key.progress { background: #DACDF2; border: 1px solid #AFA9EC; }
   .stack-key.open { background: var(--neutral-bg); border: 1px solid var(--line-strong); }
 
   .trend-note {
@@ -727,7 +731,7 @@
     margin-bottom: 16px;
   }
   .prep-title {
-    font-family: var(--serif); font-size: 26px; font-weight: 400;
+    font-family: var(--sans); font-size: 26px; font-weight: 600;
     margin: 0;
   }
   .prep-export {
@@ -773,13 +777,13 @@
     font-size: 12px; font-weight: 600; color: #fff;
     flex-shrink: 0;
   }
-  .info-icon-circle.blue  { background: #185FA5; }
-  .info-icon-circle.green { background: #3B6D11; }
+  .info-icon-circle.blue  { background: #775ED3; }
+  .info-icon-circle.green { background: #639922; }
   .info-icon-label {
     font-size: 11px; font-weight: 500; white-space: nowrap;
   }
-  .info-icon-label.blue  { color: #185FA5; }
-  .info-icon-label.green { color: #3B6D11; }
+  .info-icon-label.blue  { color: #DACDF2; }
+  .info-icon-label.green { color: #C0DD97; }
   .info-icon-panel {
     display: none;
     position: absolute; top: 32px; right: 0;
@@ -1046,6 +1050,12 @@
               <option value="">All</option>
             </select>
           </label>
+          <label class="ships-filter">
+            <span class="ships-filter-name">Reporter</span>
+            <select id="ships-filter-reporter" class="ships-filter-select">
+              <option value="">All</option>
+            </select>
+          </label>
           <button class="ships-filter-clear" id="ships-filter-clear" type="button" hidden>clear filters</button>
           <span class="ships-filter-count" id="ships-filter-count"></span>
         </div>
@@ -1057,6 +1067,7 @@
             <th>Summary</th>
             <th style="width:90px;">Delivery</th>
             <th style="width:80px;">End date</th>
+            <th style="width:100px;">Reporter</th>
           </tr></thead>
           <tbody></tbody>
         </table>
@@ -1064,27 +1075,7 @@
       </div>
     </section>
 
-    <!-- TILE 3 -->
-    <section class="tile">
-      <div class="tile-header">
-        <div>
-          <span class="tile-num">№ 3</span>
-          <h2 class="tile-title">Where's the bottleneck</h2>
-        </div>
-        <span class="tile-subtitle">Open tickets by stage</span>
-      </div>
-      <div class="tile-body">
-        <div class="bottleneck-header">
-          <span>Stage</span>
-          <span></span>
-          <span>&gt;30d</span>
-          <span>&gt;90d</span>
-          <span>&gt;1yr</span>
-        </div>
-        <div id="bottleneck-rows"></div>
-        <div class="ancient-call" id="ancient-call"></div>
-      </div>
-    </section>
+    <!-- TILE 3 removed -->
 
     <!-- TILE 4 -->
     <!-- Tile 4 removed: Customer pain by NTX-5 tenant panel retired -->
@@ -6701,7 +6692,7 @@ function boardOf(t) {
 
 // Filter state for Tile 2 — reset on every page load.
 // month is a Jira label like "May-2026"; defaults to current month on first render.
-let _shipsFilterState = { month: null, tenant: "", stage: "", board: "" };
+let _shipsFilterState = { month: null, tenant: "", stage: "", board: "", reporter: "" };
 // The current "union" of delivery + end-date tickets being rendered (recomputed each call)
 let _shipsAllRows = [];
 // Latest snapshot reference so filter handlers can re-render without re-walking the pipeline
@@ -6981,10 +6972,16 @@ function populateShipsFilters(rows, monthLabel) {
   const stageSel = document.getElementById("ships-filter-stage");
   const boardSel = document.getElementById("ships-filter-board");
 
+  // Reporter options — built from unique team values present in rows
+  const reportersPresent = [...new Set(rows.map(t => t.team || "").filter(Boolean))].sort();
+
   // Month dropdown — grouped: Current, then Past (greyed), then Future
   populateMonthDropdown(monthSel, _shipsFilterState.month);
   rebuildSelect(tenantSel, ["", ...sortedTenants], _shipsFilterState.tenant, v => v || "All");
   rebuildSelect(boardSel, ["", ...sortedBoards], _shipsFilterState.board, v => v || "All");
+  const reporterSel = document.getElementById("ships-filter-reporter");
+  rebuildSelect(reporterSel, ["", ...reportersPresent], _shipsFilterState.reporter, v => v || "All");
+
   // Stage dropdown is static (already in HTML); just sync state
   stageSel.value = _shipsFilterState.stage;
 
@@ -6995,25 +6992,28 @@ function populateShipsFilters(rows, monthLabel) {
     _shipsFilterState.tenant = "";
     _shipsFilterState.board = "";
     _shipsFilterState.stage = "";
+    _shipsFilterState.reporter = "";
     // Full re-render needed since chart and table both depend on the month
     renderShips(_shipsLatestSnap, _shipsLatestAllSnaps);
   };
   tenantSel.onchange = () => { _shipsFilterState.tenant = tenantSel.value; applyShipsFilters(monthLabel, null); };
   stageSel.onchange = () => { _shipsFilterState.stage = stageSel.value; applyShipsFilters(monthLabel, null); };
   boardSel.onchange = () => { _shipsFilterState.board = boardSel.value; applyShipsFilters(monthLabel, null); };
+  reporterSel.onchange = () => { _shipsFilterState.reporter = reporterSel.value; applyShipsFilters(monthLabel, null); };
 
   const clearBtn = document.getElementById("ships-filter-clear");
   clearBtn.onclick = () => {
-    // Clear tenant/stage/board but preserve month (it has no "all" option)
+    // Clear tenant/stage/board/reporter but preserve month
     _shipsFilterState.tenant = "";
     _shipsFilterState.stage = "";
     _shipsFilterState.board = "";
-    tenantSel.value = ""; stageSel.value = ""; boardSel.value = "";
+    _shipsFilterState.reporter = "";
+    tenantSel.value = ""; stageSel.value = ""; boardSel.value = ""; reporterSel.value = "";
     applyShipsFilters(monthLabel, null);
   };
 }
 
-// Populate the Month dropdown with three groups: Current, Past, Future.
+// Populate the Month dropdown with three groups: All, Current, Past, Future.
 // Past months show as greyed (still selectable), Future months are below.
 function populateMonthDropdown(sel, currentValue) {
   const todayMonthOpt = getCurrentMonthOption();
@@ -7026,7 +7026,7 @@ function populateMonthDropdown(sel, currentValue) {
     else future.push(o);
   });
 
-  let html = "";
+  let html = `<option value=""${!currentValue ? " selected" : ""}>All months</option>`;
   if (current) {
     html += `<optgroup label="Current month">`;
     html += `<option value="${current.labelShort}"${current.labelShort === currentValue ? " selected" : ""}>${current.displayName}</option>`;
@@ -7059,14 +7059,15 @@ function rebuildSelect(sel, values, current, labelFor) {
 }
 
 function applyShipsFilters(endDateMonthLabel, delCovForEmpty) {
-  const { tenant, stage, board } = _shipsFilterState;
-  const hasActiveFilter = Boolean(tenant || stage || board);
+  const { tenant, stage, board, reporter } = _shipsFilterState;
+  const hasActiveFilter = Boolean(tenant || stage || board || reporter);
 
   // Apply filters as AND
   const filtered = _shipsAllRows.filter(t => {
     if (tenant && !(t.tenants || []).includes(tenant)) return false;
     if (stage && deliveryBucket(t.status) !== stage) return false;
     if (board && boardOf(t) !== board) return false;
+    if (reporter && (t.team || "") !== reporter) return false;
     return true;
   });
 
@@ -7111,6 +7112,9 @@ function applyShipsFilters(endDateMonthLabel, delCovForEmpty) {
     const endCell = t.end_date
       ? `<span style="font-family: var(--mono); font-size: 11px; color: var(--ink-soft);">${t.end_date}</span>`
       : `<span class="delivery-pill empty">—</span>`;
+    const reporterCell = t.team && t.team !== "None" && t.team !== ""
+      ? `<span style="font-size:11px; color:var(--ink-soft);">${escapeHtml(t.team)}</span>`
+      : `<span class="delivery-pill empty">—</span>`;
     tr.innerHTML = `
       <td class="key-cell"><a href="https://neumo.atlassian.net/browse/${t.key}" target="_blank">${t.key}</a></td>
       <td class="tenant-cell">${(t.tenants || []).join(", ")}</td>
@@ -7118,6 +7122,7 @@ function applyShipsFilters(endDateMonthLabel, delCovForEmpty) {
       <td>${escapeHtml(t.summary)}</td>
       <td>${deliveryCell}</td>
       <td>${endCell}</td>
+      <td>${reporterCell}</td>
     `;
     tbody.appendChild(tr);
   });
