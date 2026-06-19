@@ -185,7 +185,7 @@ def fetch_filter_issues(host, user, token, filter_id):
         "issuetype", "summary", "status", "created", "updated",
         "labels", "customfield_10019",  # Sprint
         CF_END_DATE, CF_TENANT,
-        "comment",
+        "comment", "reporter",
     ]
     all_issues = []
     next_token = None
@@ -250,8 +250,9 @@ def transform_issue(issue, today_dt):
     bucket = delivery_bucket(status)
     dts = extract_delivery_targets(labels)
 
-    # Sprint
-    sprint_raw = fields.get("customfield_10019") or []
+    # Reporter
+    reporter_field = fields.get("reporter") or {}
+    reporter = reporter_field.get("displayName", "") or ""
     sprint = ""
     if isinstance(sprint_raw, list) and sprint_raw:
         first = sprint_raw[0]
@@ -284,7 +285,7 @@ def transform_issue(issue, today_dt):
         "status_family": fam,
         "delivery_bucket": bucket,
         "is_open": bucket == "open",
-        "team": "",  # Team field varies; not consistently populated
+        "team": reporter,  # Jira reporter displayName
         "tenant_raw": tenant_raw,
         "tenants": tenants_for(tenant_raw),
         "created": created,
