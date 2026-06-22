@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T13:31:42Z",
+  "updated_at": "2026-06-22T14:04:49Z",
   "today": "2026-06-22",
   "exported_at": "22 Jun 2026 (auto)",
   "tickets": [
@@ -27,6 +27,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "@Sergejus Tumovas this is caused because of incorrect configuration: the OIT is linked to 2 DOC GROUPS. I\u2019ll open a VTC ticket to fix this https://neumo.atlassian.net/browse/VTC-27727 \nCC: @Laura Whaley  @Gegham Mkrtchyan  \n",
       "labels_raw": "June-2026",
       "delivery_targets": [
         {
@@ -67,6 +68,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "@Laura Whaley  - Is triage done? Can it be assigned?\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -95,6 +97,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "12",
+      "latest_comment": "@Laura Whaley  - based on your confirmation that this bug fix is already in production as hot patch, I have updated the end date to 6/15 and label to say June-2026. @Davis Moore  - please take necessary steps and update Jira status to Done.\n",
       "labels_raw": "June-2026, TOP_5, jira_escalated",
       "delivery_targets": [
         {
@@ -135,6 +138,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Laura Whaley  - based on your confirmation that this bug fix is already in production as hot patch, I have updated the end date to 6/15 and label to say June-2026. @Davis Moore  - please take necessary steps and update Jira status to Done.\n",
       "labels_raw": "June-2026",
       "delivery_targets": [
         {
@@ -175,6 +179,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Laura Whaley  - based on your confirmation that this bug fix is already in production as hot patch, I have updated the end date to 6/15 and label to say June-2026. @Davis Moore  - please take necessary steps and update Jira status to Done.\n",
       "labels_raw": "June-2026",
       "delivery_targets": [
         {
@@ -215,6 +220,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Laura Whaley Based on your update that this fix is already deployed to prod as hot patch, I updated the end date to 6/15/2026, added June-2026 Label. @Davis Moore  - please take necessary steps and update the Jira status to Done.\ncc: @Zeena Abidi  @",
       "labels_raw": "June-2026",
       "delivery_targets": [
         {
@@ -255,6 +261,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Deployed to PROD\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -283,6 +290,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Changeset 2574cb3\n",
       "labels_raw": "TOP_5",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -311,6 +319,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Changeset c4ea7de, 2574cb3\n",
       "labels_raw": "TOP_5",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -339,6 +348,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "Verified on UAT-1.\n\n",
       "labels_raw": "June-2026, TOP_5",
       "delivery_targets": [
         {
@@ -379,6 +389,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -407,6 +418,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-2.\n",
       "labels_raw": "TOP_5",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -435,6 +447,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Changeset 3794663\n",
       "labels_raw": "June-2026, TOP_5",
       "delivery_targets": [
         {
@@ -475,6 +488,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Data Fix:  Unassigned Connor and Shirley from above orders, changed verification status to Assessor Review and unlocked orders.  Orders are now FIFO in the Assessor Review queue\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -503,6 +517,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "June-2026, TOP_5",
       "delivery_targets": [
         {
@@ -535,7 +550,7 @@
       ],
       "created": "2026-06-01T14:04:32.008-0400",
       "created_iso": "2026-06-01",
-      "age_days": 20,
+      "age_days": 21,
       "updated": "2026-06-09T00:18:12.914-0400",
       "updated_iso": "2026-06-09",
       "end_date": "",
@@ -543,6 +558,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "Verified on UAT-2.\n",
       "labels_raw": "June-2026, TOP_5",
       "delivery_targets": [
         {
@@ -583,6 +599,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "@Stella Hovsepyan  @Tamara Woodward  Another \u201cArlington County\u201d example whereby User leaves an order open and doesn\u2019t return in time to complete it\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -611,6 +628,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Beaufort County voided/adjusted a total $3,724.50 over the course of 3 months for Simplifile eRecordings. \nVOIDs, financial adjustments do not update VG45013.ACCOUNT_ACTIVITY.ACCT_BALANCE causing the balance to remain higher than it should be.   Unti",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -639,6 +657,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -667,6 +686,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -695,6 +715,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -723,6 +744,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Sergejus Tumovas The IRS request was for the Daily Distribution Report, not the money break down, check the other ticket.\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -751,6 +773,7 @@
       "ships_month": null,
       "sprint": "CS 2026.Q2-6",
       "comments_count": "8",
+      "latest_comment": "@Warren Young @Bill Andrews @Tamara Woodward Is this delivering in the Mon 6/22 release?\n",
       "labels_raw": "June-2026, jira_escalated",
       "delivery_targets": [
         {
@@ -791,6 +814,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q3-1",
       "comments_count": "1",
+      "latest_comment": "@Edgar Delgadillo Looky please!\n",
       "labels_raw": "2026_Customer, Q3-26",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -812,7 +836,7 @@
       ],
       "created": "2026-05-04T13:35:18.407-0400",
       "created_iso": "2026-05-04",
-      "age_days": 48,
+      "age_days": 49,
       "updated": "2026-05-21T15:46:16.347-0400",
       "updated_iso": "2026-05-21",
       "end_date": "",
@@ -820,6 +844,7 @@
       "ships_month": null,
       "sprint": "CS 2026.Q2-4",
       "comments_count": "1",
+      "latest_comment": "Root cause: a 1300 page doc attempted to be purchased. Work is ongoing to deliver better handling of improved documents. Closing. \n",
       "labels_raw": "jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -849,6 +874,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "5",
+      "latest_comment": "@Laura Whaley  - Added End date (6/19) per your commitment from yesterday\u2019s Beaufort call and today\u2019s triage call.\n",
       "labels_raw": "2026_Customer, CR-External, June-2026, sprint.Q2-4",
       "delivery_targets": [
         {
@@ -889,6 +915,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "18",
+      "latest_comment": "Latency issue has been resolved - no action items pending; this is not Dallas specific. \n@Dan Jones this ticket is being closed. If there are any new issues reported, please open a new ticket and escalate for our review. Thank you!\n",
       "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -929,6 +956,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "@Felix Leon Tested, looks good to me - thanks for getting this one done so quickly\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -958,6 +986,7 @@
       "ships_month": null,
       "sprint": "CS 2026.Q2-6",
       "comments_count": "2",
+      "latest_comment": "@Cesar Ojeda  @Tamara Woodward  - If the release of this fix can be prioritized, it would be really appreciated.\ncc: @Vince O'Rourke \n",
       "labels_raw": "June-2026",
       "delivery_targets": [
         {
@@ -998,6 +1027,7 @@
       "ships_month": null,
       "sprint": "CS 2026.Q2-6",
       "comments_count": "4",
+      "latest_comment": "@Rae Ralston Hi Rae - I tried it again and you\u2019re right - if I am logged in, it takes me to the foot of the page on view change (and I didn\u2019t log in on the incognito session, the new regular session in Chrome, or in Comet and Opera)\u2026 I was logged in ",
       "labels_raw": "June-2026, Top_10",
       "delivery_targets": [
         {
@@ -1038,6 +1068,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "Verified in UAT-1.\nOrder finalized and in Verification queue:\nWhen opening CRS as Clerk USer Group the user is not allowed to process order in Verification queue.\n",
       "labels_raw": "May-2026",
       "delivery_targets": [
         {
@@ -1078,6 +1109,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "Verified on UAT-1.\n\n",
       "labels_raw": "May-2026, TOP_5",
       "delivery_targets": [
         {
@@ -1118,6 +1150,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "May-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -1158,6 +1191,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "11",
+      "latest_comment": "@Fernando Diaz reverted the change.\n\n@Tamara Woodward may need some assistance with this one. The configuration is the same as all the others that can use doc references. For some reason its not finding anything for this particular order item type an",
       "labels_raw": "May-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -1198,6 +1232,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "May-2026",
       "delivery_targets": [
         {
@@ -1238,6 +1273,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "verified on uat-1 \n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -1278,6 +1314,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "verified on uat-1 for both oit\u2019s - all workflows 20260427000001 - 20260427000005\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -1318,6 +1355,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "no option in config to make zip city state not required - verified on uat-1 through 27178 & 27174\n",
       "labels_raw": "april-2026",
       "delivery_targets": [
         {
@@ -1358,6 +1396,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1387,6 +1426,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "2",
+      "latest_comment": "@Laura Whaley  - Added End date (6/19) per your commitment from yesterday\u2019s Beaufort call and today\u2019s triage call.\n",
       "labels_raw": "2026_Customer, CR-External, sprint.Q2-4",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1415,6 +1455,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "april-2026, oconee_sc",
       "delivery_targets": [
         {
@@ -1455,6 +1496,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "verified on uat\n\n\n\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -1495,6 +1537,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "april-2026",
       "delivery_targets": [
         {
@@ -1535,6 +1578,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified for walk-in and eRecording on UAT-1.\n",
       "labels_raw": "april-2026",
       "delivery_targets": [
         {
@@ -1575,6 +1619,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "@Arnoldo Sanchez muchas gracias!\n",
       "labels_raw": "april-2026",
       "delivery_targets": [
         {
@@ -1615,6 +1660,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "@Laura Whaley  - based on your comitment during the Triage call, I have updated the end date to 6/30/2026.\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1643,6 +1689,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "april-2026",
       "delivery_targets": [
         {
@@ -1675,7 +1722,7 @@
       ],
       "created": "2026-04-15T13:55:57.598-0400",
       "created_iso": "2026-04-15",
-      "age_days": 67,
+      "age_days": 68,
       "updated": "2026-05-01T09:52:02.679-0400",
       "updated_iso": "2026-05-01",
       "end_date": "",
@@ -1683,6 +1730,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Modified Controls.xml\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -1723,6 +1771,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "11",
+      "latest_comment": "@Laura Whaley  - based on your comitment during the Triage call, I have updated the end date to 6/30/2026.\n",
       "labels_raw": "June-2026, Top_10, beaufort_sc",
       "delivery_targets": [
         {
@@ -1764,6 +1813,7 @@
       "ships_month": null,
       "sprint": "CS 2026.Q2-2",
       "comments_count": "2",
+      "latest_comment": "Here are the last socket counts prior to the code update:\n`ps2-cret-hmdx contentretrievalservice @smithy/node-http-handler:WARN - socket usage at capacity=50 and 13945 additional requests are enqueued.\nps2-cret-5mxb contentretrievalservice @smithy/no",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1792,6 +1842,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\neRecording\nwalk-in\n\n",
       "labels_raw": "april-2026",
       "delivery_targets": [
         {
@@ -1825,7 +1876,7 @@
       ],
       "created": "2026-04-13T14:04:05.392-0400",
       "created_iso": "2026-04-13",
-      "age_days": 69,
+      "age_days": 70,
       "updated": "2026-06-09T15:16:58.348-0400",
       "updated_iso": "2026-06-09",
       "end_date": "",
@@ -1833,6 +1884,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-3",
       "comments_count": "2",
+      "latest_comment": "Verified on QA-1: 48999 with eRecording - Real Estate Transfer SC\n",
       "labels_raw": "2026_Customer, CR-External",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1861,6 +1913,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Laura Whaley  @Orlando Zepeda  - what is the next step to make some progress on it?\ncc: @Zeena Abidi @Vince O'Rourke @Joy Kalajainen-Johnson \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1889,6 +1942,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "2",
+      "latest_comment": "@Laura Whaley  - Added End date (6/19) per your commitment from yesterday\u2019s Beaufort call and today\u2019s triage call.\n",
       "labels_raw": "2026_Customer, CR-External, lake_vitals, sprint.Q2-4",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1918,6 +1972,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-6",
       "comments_count": "5",
+      "latest_comment": "Closing - no longer happening! thank you @Edgar Delgadillo \n",
       "labels_raw": "2026_Customer",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1946,6 +2001,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "May-2026",
       "delivery_targets": [
         {
@@ -1987,6 +2043,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "6",
+      "latest_comment": "@Laura Whaley  - Added End date (6/19) per your commitment from yesterday\u2019s Beaufort call and today\u2019s triage call.\n",
       "labels_raw": "2026_Customer, CR-Internal, CR2026Q2-5",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2015,6 +2072,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1\n\norder step:\nverification step: \n",
       "labels_raw": "Go-Live, april-2026",
       "delivery_targets": [
         {
@@ -2055,6 +2113,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Changeset 991fea2\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2095,6 +2154,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Changeset 87e6e99\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2135,6 +2195,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Changeset 87e6e99\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2175,6 +2236,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Changeset 87e6e99\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2215,6 +2277,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Changeset 87e6e99\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2255,6 +2318,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Changeset 87e6e99\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2295,6 +2359,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Alejandro Acosta   Thank you very, very much!!  CC: @Davis Moore  @Joy Kalajainen-Johnson \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2323,6 +2388,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1.\nwalk-in\neRecording:\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2363,6 +2429,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "12",
+      "latest_comment": "Walk-in Lien added to the DDL, verified on UAT-1.\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2403,6 +2470,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "@Davis Moore  Please do not assign until Beaufort County approves\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2431,6 +2499,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "workflow after changeset 1f83ddf is now order \u2192 index \u2192 verification and clicking the running man in verification throws an unspecified error.  returning to open.\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2459,6 +2528,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "PRODUCTION Hot Patched March 31, 2026 9:30PM CC: @Davis Moore \n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2499,6 +2569,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "12",
+      "latest_comment": "PRODUCTION Hot Patched March 31, 2026 9:30PM  CC: @Davis Moore  @zeena abidi \n",
       "labels_raw": "april-2026",
       "delivery_targets": [
         {
@@ -2539,6 +2610,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2567,6 +2639,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "9",
+      "latest_comment": "Verified on UAT1\nTitles have changed to type/book/page\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2595,6 +2668,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "15",
+      "latest_comment": "@Tamara Woodward As far as I can tell she just wants the case closed and no further action to be taken.\n",
       "labels_raw": "jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2623,6 +2697,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "11",
+      "latest_comment": "6/17 - This is an enhancement request we will address in Q3. @Gargee Kar \n",
       "labels_raw": "august-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2663,6 +2738,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "moving to done based off revert and 26955\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2691,6 +2767,7 @@
       "ships_month": "Mar 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Carlos Cruz they would like to see the changes in Cloud and Clerk Search (VTC-26829) together\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2719,6 +2796,7 @@
       "ships_month": "Apr 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -2759,6 +2837,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Laura Whaley there is one scanner in the office, Scanner ID 14.  all workstations have been assigned Scanner ID 14\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2787,6 +2866,7 @@
       "ships_month": "Feb 2026",
       "sprint": "CR 2026.Q1-6_0316-0326",
       "comments_count": "5",
+      "latest_comment": "Fix validate in QA Database and PASSED, moving it to \u201cReady for UAT\u201d\n\ncc: @Andy Majda \n",
       "labels_raw": "CR-Internal, oconee_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2815,6 +2895,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "verified on uat-1.  thanks! @Gegham Mkrtchyan \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2843,6 +2924,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-5_0302-03-12",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "configuration_not_code",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2871,6 +2953,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-6_0316-0326",
       "comments_count": "1",
+      "latest_comment": "Tested on QA1 48999 scan-first Real Estate Transfer SC OIT.\n",
       "labels_raw": "CR-Internal",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2899,6 +2982,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "@Jeff Rothenberg  Assigning this to myself as I am actively working with the law firm to approve.  Will ask @Sergejus Tumovas  to check in when done.  Thanks!\nCC: @Zeena Abidi  \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2919,7 +3003,7 @@
       ],
       "created": "2026-03-06T13:40:09.058-0500",
       "created_iso": "2026-03-06",
-      "age_days": 107,
+      "age_days": 108,
       "updated": "2026-06-19T10:53:53.860-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-06-19",
@@ -2927,6 +3011,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "7",
+      "latest_comment": "Verified on QA-1: 48999\n",
       "labels_raw": "CR-External, CR2026Q2-5, June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2969,6 +3054,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-6_0316-0326",
       "comments_count": "7",
+      "latest_comment": "Verified on QA-1 48999\n\n\n\n\n",
       "labels_raw": "CR-Internal",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2997,6 +3083,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Laura Whaley Do we need to wait to close till we talk to Patty?\ncc: @Vince O'Rourke  @Zeena Abidi \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3025,6 +3112,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Gegham Mkrtchyan Thanks very much!\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3053,6 +3141,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Sergejus Tumovas This is just fine.  I was overthinking it.\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3081,6 +3170,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3109,6 +3199,7 @@
       "ships_month": "Mar 2026",
       "sprint": "",
       "comments_count": "16",
+      "latest_comment": "",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -3149,6 +3240,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "2,890,570 records updated March 1, 2026 11:35AM CC: @Zeena Abidi @Orlando Zepeda @Elisabeth Niman \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3177,6 +3269,7 @@
       "ships_month": "Mar 2026",
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3205,6 +3298,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-5_0302-03-12",
       "comments_count": "1",
+      "latest_comment": "Verified on QA-1: 48999\n",
       "labels_raw": "CR-Internal",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3233,6 +3327,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\nUG:\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3261,6 +3356,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3289,6 +3385,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "@Jeff Rothenberg Step 5 not necessary.  Image viewer edit stamp (ON, move a tiny bit, OFF) will save stamp changes \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3317,6 +3414,7 @@
       "ships_month": "May 2026",
       "sprint": "CR 2026.Q1-5_0302-03-12",
       "comments_count": "7",
+      "latest_comment": "Closing - Issue was solved with a code and configuration fix last month (May) CC: @Stella Hovsepyan  @Gargee Kar \n",
       "labels_raw": "CR-Internal, configuration_not_code",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3345,6 +3443,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3373,6 +3472,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "@Brandon Luz  Please hold off on this one.  The drop down list should be hidden all together.  I\u2019ll need to research how ..\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3401,6 +3501,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Amounts have to be data fixed as the post finalization edit for Deeds with CITY TAX are causing a rounding error \n@Orlando Zepeda PRODUCTION Data fix applied\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3429,6 +3530,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "closing duplicate https://neumo.atlassian.net/browse/VTC-26618 \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3457,6 +3559,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3485,6 +3588,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "PRODUCTION hot patched Feb 25, 2026 6:50PM\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3513,6 +3617,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "PRODUCTION hot patched Feb 25, 2026 6:50PM\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3541,6 +3646,7 @@
       "ships_month": "Mar 2026",
       "sprint": "",
       "comments_count": "23",
+      "latest_comment": "Closing VTC as this issue is now being worked under: https://neumo.atlassian.net/browse/VTC-26802 \n",
       "labels_raw": "oconee_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3569,6 +3675,7 @@
       "ships_month": "Mar 2026",
       "sprint": "",
       "comments_count": "9",
+      "latest_comment": "Verified on UAT-1\nLine issue is fixed, and the book and page is being worked on a different ticket. Closing this one.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3597,6 +3704,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "@Laura Whaley  please review as discussed in today\u2019s Beaufort call - thanks\ncc: @Orlando Zepeda \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3625,6 +3733,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3653,6 +3762,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3681,6 +3791,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Closing as unable to recreate.  @Orlando Zepeda  Please re-open if you can recreate on UAT1 or UAT2.  Thanks!  CC: @Brandon Luz \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3709,6 +3820,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT1 for different user groups\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3737,6 +3849,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "@zeena abidi  Please find attached  CC: @Orlando Zepeda \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3765,6 +3878,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT1\n\nLabel 1:\n\nLabel 2:\n\nLabel 3:\nLabel 4:\nLabel 5:\n\nEvidences are for DEED, but official records was reviewed to behave as expected, as well\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3793,6 +3907,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-4_0216-0226",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "CR-Internal, configuration_not_code",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3821,6 +3936,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1\nMade different changes a few times on the amount, and still doc type remains blank\n\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3849,6 +3965,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "@Hovhannes Hovsepyan @Stella Hovsepyan Thanks very much!  \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3869,7 +3986,7 @@
       ],
       "created": "2026-02-22T13:49:55.507-0500",
       "created_iso": "2026-02-22",
-      "age_days": 119,
+      "age_days": 120,
       "updated": "2026-02-23T17:26:01.892-0500",
       "updated_iso": "2026-02-23",
       "end_date": "",
@@ -3877,6 +3994,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3905,6 +4023,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "@Laura Whaley should I assign a tester? \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3933,6 +4052,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "oconee_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3961,6 +4081,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Changeset a639222\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3989,6 +4110,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4017,6 +4139,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "@Aimee Gonzalez after retrying a new order i got the Void confirmation normally. Moving to Done.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4045,6 +4168,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Production Hot Patched Friday 2/20 12PM\n",
       "labels_raw": "april-2026, beaufort_sc",
       "delivery_targets": [
         {
@@ -4085,6 +4209,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-4_0216-0226",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "CR-Internal, configuration_not_code",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4113,6 +4238,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-4_0216-0226",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "CR-Internal, configuration_not_code",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4141,6 +4267,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-4_0216-0226",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "CR-Internal",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4169,6 +4296,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "as per the last comments, Laura will be testing this. \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4197,6 +4325,7 @@
       "ships_month": "Mar 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "as per the last comments, Laura will be testing this. \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4217,7 +4346,7 @@
       ],
       "created": "2026-02-19T13:44:13.658-0500",
       "created_iso": "2026-02-19",
-      "age_days": 122,
+      "age_days": 123,
       "updated": "2026-02-23T11:28:35.542-0500",
       "updated_iso": "2026-02-23",
       "end_date": "",
@@ -4225,6 +4354,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4253,6 +4383,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on uat1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4281,6 +4412,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4309,6 +4441,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Workaround was provided - please see relation https://neumo.atlassian.net/jira/polaris/projects/CRD/ideas/view/9588405?selectedIssue=CRD-579   for proposed permanent solution\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4337,6 +4470,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT1\nLAtest ERs include doctypes and # of docs\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4365,6 +4499,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "DMP not required at verification. Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4393,6 +4528,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4421,6 +4557,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-4_0216-0226",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "CR-Internal, configuration_not_code",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4449,6 +4586,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4477,6 +4615,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4505,6 +4644,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4533,6 +4673,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4561,6 +4702,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4589,6 +4731,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Changeset cb4d8bb\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4609,7 +4752,7 @@
       ],
       "created": "2026-02-13T13:53:43.152-0500",
       "created_iso": "2026-02-13",
-      "age_days": 128,
+      "age_days": 129,
       "updated": "2026-02-20T10:46:00.341-0500",
       "updated_iso": "2026-02-20",
       "end_date": "",
@@ -4617,6 +4760,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "@Alejandro Acosta thanks for the clarification. I\u2019ll reach out on the Records Channel, so my team can learn how to test this. :thumbsup: \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4645,6 +4789,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Brandon Luz @Laura Whaley  - who is testing this one? It is still assigned to Bahram. Should that change?\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4673,6 +4818,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1. Export successfully generated a file for all 3 available formats.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4701,6 +4847,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-3_0202-0212",
       "comments_count": "5",
+      "latest_comment": "@Carlos Cruz Thanks. please move to done if you feel it passes QA and you don\u2019t have any doubts. Thanks man!\n",
       "labels_raw": "CR-Internal, DataFix",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4729,6 +4876,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on UAT-2\n\nworks both with tiff and pdf\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4757,6 +4905,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4785,6 +4934,7 @@
       "ships_month": "Mar 2026",
       "sprint": "",
       "comments_count": "13",
+      "latest_comment": "@Nayeli Morales Sure, any time!\n",
       "labels_raw": "oconee_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4813,6 +4963,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Orlando Zepeda  Patsye signed off and originally asked not to have eRecording names imported (she said customers never get them right).  Can you please take the signoff configuration sheet to the next training/implementation and ensure we don\u2019t offe",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4841,6 +4992,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4869,6 +5021,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4897,6 +5050,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "@Laura Whaley No, no new code implementation is needed for Zebra label printing. This was opened to support address label printing on DYMO printer. Closing the story as not actual.\nCC: @Tamara Woodward \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4925,6 +5079,7 @@
       "ships_month": "Feb 2026",
       "sprint": "CR 2026.Q1-3_0202-0212",
       "comments_count": "2",
+      "latest_comment": "Verified on QA1 48999 on documents recorded before 2/12/2026 after full department re-index\n",
       "labels_raw": "CR-Internal, beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4953,6 +5108,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "The \u2018County Transfer Tax\u2019 and \u2018State Transfer Tax\u2019 are removed. Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -4981,6 +5137,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5009,6 +5166,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5037,6 +5195,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5065,6 +5224,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-4_0216-0226",
       "comments_count": "11",
+      "latest_comment": "@Tamara Woodward @Laura Whaley should be gtg. Lemme know if there\u2019s any issues\n",
       "labels_raw": "CR-Internal",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5093,6 +5253,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Closing, please follow Linked work items\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5121,6 +5282,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\nDeed\nOfficial Records - Affidavit\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5149,6 +5311,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5177,6 +5340,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5197,7 +5361,7 @@
       ],
       "created": "2026-01-30T13:34:28.937-0500",
       "created_iso": "2026-01-30",
-      "age_days": 142,
+      "age_days": 143,
       "updated": "2026-02-04T12:01:23.244-0500",
       "updated_iso": "2026-02-04",
       "end_date": "2026-02-06",
@@ -5205,6 +5369,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5233,6 +5398,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-2_0119-0129",
       "comments_count": "14",
+      "latest_comment": "@Tamara Woodward Can you create a data fix ticket and specify the tenant and environment we need this in?\n",
       "labels_raw": "CR-Internal",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5261,6 +5427,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "11",
+      "latest_comment": "@Laura Whaley Kristi is reporting that the Tender Type Journal Report for 1/2/2026 is still incorrect after the data fix was applied.\n",
       "labels_raw": "jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5289,6 +5456,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5317,6 +5485,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5337,7 +5506,7 @@
       ],
       "created": "2026-01-27T14:00:07.661-0500",
       "created_iso": "2026-01-27",
-      "age_days": 145,
+      "age_days": 146,
       "updated": "2026-02-23T11:27:56.317-0500",
       "updated_iso": "2026-02-23",
       "end_date": "2026-02-13",
@@ -5345,6 +5514,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5373,6 +5543,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5401,6 +5572,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5429,6 +5601,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5457,6 +5630,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on uat1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5485,6 +5659,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5513,6 +5688,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "8",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5541,6 +5717,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5569,6 +5746,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Laura Whaley I don\u2019t see any \u201cexpected behavior\u201d for this ticket. This is the label for Deed, can you tell if we can verify the ticket?\nCC: @Brandon Luz \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5597,6 +5775,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\nWalk-in\neRecording\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5625,6 +5804,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "9",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5653,6 +5833,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "Verified on UAT-1.\n\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5681,6 +5862,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "9",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5709,6 +5891,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5737,6 +5920,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5765,6 +5949,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1\n\nAdmin:\nnon-admin:\n\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5793,6 +5978,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\nFront office menu item: NSF names, is only visible for Admin user group\nClerk:\nAdmin:\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5821,6 +6007,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5849,6 +6036,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5877,6 +6065,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n\u2022 Instrument Date is not required anymore\n\u2022 Party Name Typeahead checkbox is now available\n\u2022 GRANTOR FirstMiddle field is not required anymore\n\u2022 PARCEL grid is removed",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5905,6 +6094,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5933,6 +6123,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5961,6 +6152,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -5989,6 +6181,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Syntax Error\nhttps://github.com/kofile/config-beaufort/commit/1141ea51be88befb95d02c0210673627a795a54b \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6017,6 +6210,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "TOP_5, beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6045,6 +6239,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6073,6 +6268,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6101,6 +6297,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6129,6 +6326,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6157,6 +6355,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "This issues is being worked on these, so this ticket will be closed. https://neumo.atlassian.net/browse/VTC-25750 https://neumo.atlassian.net/browse/VTC-26327 \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6185,6 +6384,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6213,6 +6413,7 @@
       "ships_month": "Jan 2026",
       "sprint": "CR 2026.Q1-2_0119-0129",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6241,6 +6442,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6269,6 +6471,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6297,6 +6500,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\nSent the ER packages above, and the addtl fees are triggered\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6325,6 +6529,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6353,6 +6558,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6381,6 +6587,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "@Jeff Rothenberg since training is over, can this be closed or is there something else required here. \n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6409,6 +6616,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6437,6 +6645,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6465,6 +6674,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "per confirmation from Laura, re-index should not have image maintenance, so there\u2019s no need to add the other action buttons\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6493,6 +6703,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Aimee Gonzalez sorry for the confusion, it was a mix up because there is mention of it being required on the Official records story when discussing other OIT\u00b4s.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6513,7 +6724,7 @@
       ],
       "created": "2026-01-21T13:54:38.489-0500",
       "created_iso": "2026-01-21",
-      "age_days": 151,
+      "age_days": 152,
       "updated": "2026-01-23T10:29:15.218-0500",
       "updated_iso": "2026-01-23",
       "end_date": "2026-01-22",
@@ -6521,6 +6732,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Fernando Diaz Hi. Can this be closed?\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6549,6 +6761,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6577,6 +6790,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6605,6 +6819,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6633,6 +6848,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6661,6 +6877,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6689,6 +6906,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6717,6 +6935,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6745,6 +6964,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6773,6 +6993,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6801,6 +7022,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6829,6 +7051,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "20",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6849,7 +7072,7 @@
       ],
       "created": "2026-01-19T13:52:13.353-0500",
       "created_iso": "2026-01-19",
-      "age_days": 153,
+      "age_days": 154,
       "updated": "2026-01-22T10:30:08.117-0500",
       "updated_iso": "2026-01-22",
       "end_date": "2026-01-21",
@@ -6857,6 +7080,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6885,6 +7109,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6913,6 +7138,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6933,7 +7159,7 @@
       ],
       "created": "2026-01-16T13:49:53.324-0500",
       "created_iso": "2026-01-16",
-      "age_days": 156,
+      "age_days": 157,
       "updated": "2026-01-16T18:37:06.807-0500",
       "updated_iso": "2026-01-16",
       "end_date": "2026-01-16",
@@ -6941,6 +7167,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6969,6 +7196,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "Provisioning, beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -6997,6 +7225,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7025,6 +7254,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-1_0108-0115",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7053,6 +7283,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-1_0108-0115",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7081,6 +7312,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-1_0108-0115",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7109,6 +7341,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-1_0108-0115",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7137,6 +7370,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-1_0108-0115",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7165,6 +7399,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-1_0108-0115",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7193,6 +7428,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-1_0108-0115",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7221,6 +7457,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Aimee Gonzalez Thanks Aimee :heart:\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7249,6 +7486,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "VErified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7277,6 +7515,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7305,6 +7544,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7333,6 +7573,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7361,6 +7602,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7389,6 +7631,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7417,6 +7660,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7445,6 +7689,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Fernando Diaz this is ready for you to test. \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7473,6 +7718,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "@Laura Whaley Logged as another use case/option for this 2027 item: https://neumo.atlassian.net/browse/CSD-286 \n",
       "labels_raw": "September-2026",
       "delivery_targets": [
         {
@@ -7513,6 +7759,7 @@
       "ships_month": null,
       "sprint": "CS 2026.Q2-1",
       "comments_count": "4",
+      "latest_comment": "@Tamara Woodward It is not configurable in the exact manner that Lake requests due to Elasticsearch. We have made an update to allow for it to be set and persist doing a session. Product declines doing additional work for this specific request in 202",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7541,6 +7788,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7569,6 +7817,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7597,6 +7846,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified in UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7625,6 +7875,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1\n\nName on both Walk-in and eRecording is changed to Official Records. However, both eRecordings and Walk-in orders are sending an error prior to finalize. Walk-in orders still have a dependency on open ticket https://neumo.atlassian.",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7653,6 +7904,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "8",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7681,6 +7933,7 @@
       "ships_month": "Mar 2026",
       "sprint": "",
       "comments_count": "8",
+      "latest_comment": "Add Page, Space between stamps changeset 54b7eca\nReindex Other Agency 5847137\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7709,6 +7962,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7737,6 +7991,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "11",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7765,6 +8020,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "9",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7793,6 +8049,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7821,6 +8078,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7849,6 +8107,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7877,6 +8136,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7905,6 +8165,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7933,6 +8194,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7961,6 +8223,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -7981,7 +8244,7 @@
       ],
       "created": "2025-12-17T13:38:00.029-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T10:18:40.268-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -7989,6 +8252,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8009,7 +8273,7 @@
       ],
       "created": "2025-12-17T13:37:39.221-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T04:44:59.121-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -8017,6 +8281,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8037,7 +8302,7 @@
       ],
       "created": "2025-12-17T13:37:16.535-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T11:10:04.770-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -8045,6 +8310,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8065,7 +8331,7 @@
       ],
       "created": "2025-12-17T13:36:56.803-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T04:41:38.651-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -8073,6 +8339,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8093,7 +8360,7 @@
       ],
       "created": "2025-12-17T13:36:37.934-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T04:41:25.379-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -8101,6 +8368,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8121,7 +8389,7 @@
       ],
       "created": "2025-12-17T13:36:16.300-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T04:41:10.517-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -8129,6 +8397,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8149,7 +8418,7 @@
       ],
       "created": "2025-12-17T13:35:55.805-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T04:40:56.804-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -8157,6 +8426,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8177,7 +8447,7 @@
       ],
       "created": "2025-12-17T13:35:35.948-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T04:40:42.388-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -8185,6 +8455,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8205,7 +8476,7 @@
       ],
       "created": "2025-12-17T13:35:17.032-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T04:40:26.912-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -8213,6 +8484,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8233,7 +8505,7 @@
       ],
       "created": "2025-12-17T13:34:49.553-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T04:40:12.228-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -8241,6 +8513,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8261,7 +8534,7 @@
       ],
       "created": "2025-12-17T13:34:28.012-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-02-13T04:39:55.959-0500",
       "updated_iso": "2026-02-13",
       "end_date": "",
@@ -8269,6 +8542,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8289,7 +8563,7 @@
       ],
       "created": "2025-12-17T13:33:53.955-0500",
       "created_iso": "2025-12-17",
-      "age_days": 186,
+      "age_days": 187,
       "updated": "2026-04-27T14:52:46.225-0400",
       "updated_iso": "2026-04-27",
       "end_date": "",
@@ -8297,6 +8571,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8325,6 +8600,7 @@
       "ships_month": "Dec 2025",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8353,6 +8629,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Fernando Diaz Deploy hasn\u2019t taken place yet\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8373,7 +8650,7 @@
       ],
       "created": "2025-12-11T14:04:06.611-0500",
       "created_iso": "2025-12-11",
-      "age_days": 192,
+      "age_days": 193,
       "updated": "2026-04-03T15:28:19.872-0400",
       "updated_iso": "2026-04-03",
       "end_date": "",
@@ -8381,6 +8658,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8409,6 +8687,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "13",
+      "latest_comment": "cc @Brandon Luz @Katia Lopez \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8437,6 +8716,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "@Gargee Kar This is done, just waiting to do the final.  I have never seen this ticket before.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8465,6 +8745,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8493,6 +8774,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "14",
+      "latest_comment": "Verified on UAT-1.\nOrder \u2192 Capture (or Capture/Upload) \u2192 Indexing \u2192 Verification\n\n",
       "labels_raw": "oconee_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8521,6 +8803,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8549,6 +8832,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "14",
+      "latest_comment": "this ticket deals with a lot of fee changes that we\u2019re not ready for at this time.  this ticket plus the associated sub-bug fixes have been reverted for the time being.  parking this ticket + 27013 in waiting for info.\n",
       "labels_raw": "VTC-CR_Escalated, Wayne30-60-90, WayneSinceGoLive, top5_hold",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8577,6 +8861,7 @@
       "ships_month": null,
       "sprint": "CR 2025.Q4-5",
       "comments_count": "1",
+      "latest_comment": "This is now fixed in QA: \n@Andy Majda \n",
       "labels_raw": "DataFix, unplanned_work",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8605,6 +8890,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8633,6 +8919,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8661,6 +8948,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8689,6 +8977,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8717,6 +9006,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8745,6 +9035,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8773,6 +9064,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8801,6 +9093,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8829,6 +9122,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Deployed to UAT-1, UAT-2\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8857,6 +9151,7 @@
       "ships_month": "Mar 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Provisioning ticket https://neumo.atlassian.net/browse/CSC-2942 \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8885,6 +9180,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "14",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8905,7 +9201,7 @@
       ],
       "created": "2025-11-04T13:58:11.004-0500",
       "created_iso": "2025-11-04",
-      "age_days": 229,
+      "age_days": 230,
       "updated": "2026-02-16T15:03:24.387-0500",
       "updated_iso": "2026-02-16",
       "end_date": "",
@@ -8913,6 +9209,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "@Stella Hovsepyan  Can you please assign to devs when linked CR story is ready for configuration?\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8933,7 +9230,7 @@
       ],
       "created": "2025-11-04T13:56:55.211-0500",
       "created_iso": "2025-11-04",
-      "age_days": 229,
+      "age_days": 230,
       "updated": "2026-02-18T12:33:55.698-0500",
       "updated_iso": "2026-02-18",
       "end_date": "",
@@ -8941,6 +9238,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Closing ticket, please see full Assessor Review workflow configuration - https://neumo.atlassian.net/browse/VTC-26216\nCC: @Gargee Kar @Tamara Woodward @Brandon Luz \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8969,6 +9267,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "@Gargee Kar I have to defer to @Mandy Miller as I\u2019m not tracking the Cloud Search work. \nWe do have https://neumo.atlassian.net/browse/CR-2089370 on hold to be deployed to Prod pending completion of the work in CS. \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -8997,6 +9296,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "8",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9025,6 +9325,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9053,6 +9354,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "@Arnoldo Sanchez Deed label after latest changes.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9081,6 +9383,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "It will be tested as part of training\u00a0 on UAT2 as per Laura\u2019s comments\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9109,6 +9412,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9137,6 +9441,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "9",
+      "latest_comment": "@Nayeli Morales payment method IRS Direct Deposit not listed in configuration:\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9165,6 +9470,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "14",
+      "latest_comment": "@Gargee Kar ticket verified. \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9193,6 +9499,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9221,6 +9528,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9249,6 +9557,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "@Gargee Kar yes! we are working on it\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9277,6 +9586,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "21",
+      "latest_comment": "Verified on UAT1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9305,6 +9615,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "Verified on UAT-1\n\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9333,6 +9644,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "11",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9353,7 +9665,7 @@
       ],
       "created": "2025-10-30T13:36:45.157-0400",
       "created_iso": "2025-10-30",
-      "age_days": 234,
+      "age_days": 235,
       "updated": "2026-02-23T11:22:35.098-0500",
       "updated_iso": "2026-02-23",
       "end_date": "2026-02-20",
@@ -9361,6 +9673,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "14",
+      "latest_comment": "@Aimee Gonzalez  - all associated tickets are done. Can this be closed now?\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9389,6 +9702,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Testing is pending document creation for related OIT\u00b4s. \ncc @Brandon Luz \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9417,6 +9731,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "pending due to https://govos.atlassian.net/browse/VTC-25938 \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9445,6 +9760,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9473,6 +9789,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9501,6 +9818,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9529,6 +9847,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Waiting for all OITs to be ready, so we can test their number pools.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9557,6 +9876,7 @@
       "ships_month": "Feb 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Landing page:\n\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9585,6 +9905,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9613,6 +9934,7 @@
       "ships_month": "Jan 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1. Receipt was downloaded from spider due to https://neumo.atlassian.net/browse/VTC-26055 \n",
       "labels_raw": "beaufort_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9641,6 +9963,7 @@
       "ships_month": null,
       "sprint": "CR 2025.Q4-6",
       "comments_count": "2",
+      "latest_comment": "Verified on QA-1 48999 on Scan first real Transfer SC OIT and Erecerding Real Transfer SC OIT(oit 393, 394)\n\n\n\n\n\n",
       "labels_raw": "SC_City_Transfer_Tax",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9669,6 +9992,7 @@
       "ships_month": null,
       "sprint": "CR 2025.Q4-5",
       "comments_count": "4",
+      "latest_comment": "@Carlos Cruz Hi Carlos. We didn\u2019t have a story for that assuming it would be done by PS team. However, after conversation with Tamara, I opened a ticket for this https://neumo.atlassian.net/browse/CR-2089138 . Will let you know as soon as it\u2019s ready ",
       "labels_raw": "SC_Parcel_ID",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9697,6 +10021,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q1-1_0108-0115",
       "comments_count": "4",
+      "latest_comment": "The scope of this story is tested  on QA1 48999 scan-first Real Estate Transfer OIT and passed PO review. Changes were requested in the logic of stamp application. Please follow the enhancement stories under the epic.\n",
       "labels_raw": "SC_Assessor_Review",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9725,6 +10050,7 @@
       "ships_month": null,
       "sprint": "CS 2026.Q1-3_0129-0211",
       "comments_count": "3",
+      "latest_comment": "@Mandy Miller \nWill require changes to VW_DOC_LEGALS in CR DB to contain these fields below from DM_LEGAL_DETAILS.\nDISTRICT\nMAP\nSMAP\nPARCEL\nBLOCK\nWEEK\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9753,6 +10079,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "This is not need for South Carolina. Might be required for Pennsylvania. Closing this for now.\n",
       "labels_raw": "",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9781,6 +10108,7 @@
       "ships_month": "Mar 2026",
       "sprint": "",
       "comments_count": "15",
+      "latest_comment": "@Warren Young Can you assist with the following issues, \n1. Unable to test searching of subdivPIN/DMP due to no data in uat-2.\n2. Unable to view Unit/Part data in Summary View, doc# example 4050132 dm_12546Further testing notes: Unable to test Townsh",
       "labels_raw": "oconee_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9810,6 +10138,7 @@
       "ships_month": null,
       "sprint": "CR Q2-5 20250526-20250605_68",
       "comments_count": "1",
+      "latest_comment": "Taking out of sprint as it rolled over due to current board workflow, this item was already finalized\n",
       "labels_raw": "oconee_sc",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -9839,6 +10168,7 @@
       "ships_month": null,
       "sprint": "CS 2026.Q2-6",
       "comments_count": "2",
+      "latest_comment": "@Rae Ralston @Tamara Woodward  This ticket was another marked critical for South Carolina (Beaufort) and seems to have been requested years ago by other clients. Can we also get this assigned and working?\n",
       "labels_raw": "Archive, June-2026, Top_10",
       "delivery_targets": [
         {
@@ -9879,6 +10209,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "17",
+      "latest_comment": "@Laura Whaley checked with devs, it seems this part has not been implemented, there is no configuration for showing disable checkbox per user group. Currently, per user group configuration applies to Front Office maintenance part only.\nCC: @Hovhannes",
       "labels_raw": "8.0Drop11",
       "delivery_targets": [],
       "current_delivery_target": null

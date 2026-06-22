@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T13:31:21Z",
+  "updated_at": "2026-06-22T14:04:30Z",
   "today": "2026-06-22",
   "exported_at": "22 Jun 2026 (auto)",
   "tickets": [
@@ -27,6 +27,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "Oct-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -67,6 +68,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "\nverified 25 max document per task config is added back\nplease note that during QA activities for this ticket we pointed out that the max documents per task configuration was specifically requested by the customer and #not_a_bug\n\n",
       "labels_raw": "May-2026, Not_a_Bug, TOP_5, TXEscalation",
       "delivery_targets": [
         {
@@ -107,6 +109,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "May-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -147,6 +150,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "@Fernando Diaz Yes, this is expected!\n",
       "labels_raw": "May-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
@@ -187,6 +191,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "15",
+      "latest_comment": "@Laura Whaley This is the original ticket linked to zendesk ticket. Going forward, please do not close the original Jira ticket tied to Zendesk ticket and create a duplicate ticket internally. For this, asking support to add those tickets in zendesk ",
       "labels_raw": "May-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
@@ -227,6 +232,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Verified on UAT-1: Additional Names grid has been renamed to \u2018Notary\u2019\n",
       "labels_raw": "June-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
@@ -267,6 +273,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "verified on uat\n\n\nALL OITS!\n",
       "labels_raw": "June-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
@@ -307,6 +314,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "12",
+      "latest_comment": "Verified on UAT-1:\n",
       "labels_raw": "June-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
@@ -340,13 +348,14 @@
       "created": "2026-05-05T18:05:25.930-0400",
       "created_iso": "2026-05-05",
       "age_days": 47,
-      "updated": "2026-06-18T19:37:34.861-0400",
-      "updated_iso": "2026-06-18",
+      "updated": "2026-06-22T09:55:46.086-0400",
+      "updated_iso": "2026-06-22",
       "end_date": "2026-06-30",
       "end_date_iso": "2026-06-30",
       "ships_month": "Jun 2026",
       "sprint": "",
-      "comments_count": "7",
+      "comments_count": "8",
+      "latest_comment": "@Laura Whaley  @Aimee Gonzalez  - when can I expect resolution for it. It absolutely needs to be in Verified in UAT status this week.\ncc: @Brandon Luz \n",
       "labels_raw": "June-2026, On_Hold, TXEscalation",
       "delivery_targets": [
         {
@@ -387,6 +396,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Gargee Kar We will need the CRS VTC work completed and deployed to production before Warren can deploy the Cloud Search peice. TY.\n",
       "labels_raw": "June-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -419,7 +429,7 @@
       ],
       "created": "2026-05-14T13:34:20.149-0400",
       "created_iso": "2026-05-14",
-      "age_days": 38,
+      "age_days": 39,
       "updated": "2026-06-02T01:04:01.125-0400",
       "updated_iso": "2026-06-02",
       "end_date": "",
@@ -427,6 +437,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "This is scheduled for deployment and resync for the night of 6/1/2026. per @Warren Young \n",
       "labels_raw": "June-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -467,6 +478,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "@Stella Hovsepyan  @Laura Whaley  @Hovhannes Hovsepyan  - Once the CR ticket https://neumo.atlassian.net/browse/CR-2066221  gets completed and released to UAT on 6/26, configuration needs to be completed. Still keeping it for June 30 2026 release to ",
       "labels_raw": "June-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -507,6 +519,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "@Gargee Kar @Tamara Woodward I added additional details about the process and format above. Will advise if I get a response from my inquiry.\n",
       "labels_raw": "July-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -547,6 +560,7 @@
       "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q3-1",
       "comments_count": "6",
+      "latest_comment": "Moving ticket back to In Dev due to a couple of defects found during execution: https://neumo.atlassian.net/browse/CR-2091191 \n",
       "labels_raw": "July-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -587,6 +601,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "",
+      "latest_comment": "",
       "labels_raw": "July-2026, TXEscalation, top5_hold",
       "delivery_targets": [
         {
@@ -627,6 +642,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "Johnson, May-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
@@ -667,6 +683,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "@Gargee Kar end date is set for May 29. \n",
       "labels_raw": "Johnson, May-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
@@ -707,6 +724,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "17",
+      "latest_comment": "Verified on UAT-1\n",
       "labels_raw": "June-2026, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -747,6 +765,7 @@
       "ships_month": "Sep 2026",
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "@Gargee Kar @Mark Nicks @Keri Wootton \nThis ticket is one symptom of a larger issue that we are unable to reproduce. (See [CR-2090099] RCA: Indexing Step | Two Users Able to Open Same Order - JIRA)\nUntil we are able to consistently reproduce and trou",
       "labels_raw": "June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -779,7 +798,7 @@
       ],
       "created": "2026-03-05T13:53:15.489-0500",
       "created_iso": "2026-03-05",
-      "age_days": 108,
+      "age_days": 109,
       "updated": "2026-06-19T13:06:49.763-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-09-11",
@@ -787,6 +806,7 @@
       "ships_month": "Sep 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "7",
+      "latest_comment": "@Tamara Woodward CR development is complete as of the work that @Pedro Diaz  just did. We had a convo with plat and cleared up CR dev requirements. What is not done is some huge checklist from plat. They need to shift some things on their end and tes",
       "labels_raw": "June-2026, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -827,6 +847,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "verified on uat - 25 max document per task config is removed again\n\n",
       "labels_raw": "June-2026, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -867,6 +888,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "@Gargee Kar what comment? Do not see anything here. Also, as it was passed to Done, we need a new ticket with the latest comment and or feedback provided. I\u2019m moving it to done and will wait for the new ticket. I\u2019ll link it to this ticket. \n",
       "labels_raw": "June-2026, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -907,6 +929,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "May-2026, TOP_5, TXEscalation, WAITING_FOR_SUPPORT, jira_escalated",
       "delivery_targets": [
         {
@@ -947,6 +970,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Gargee Kar Fernando was also not able to reproduce this. \nAs we discussed during our call with Laura, this can be some sporadic occurrence of generic tabbing and other minor issues. This kind of issues are combined under  https://neumo.atlassian.net",
       "labels_raw": "June-2026, TXEscalation, WAITING_FOR_SUPPORT, jira_escalated",
       "delivery_targets": [
         {
@@ -987,6 +1011,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "16",
+      "latest_comment": "@Gargee Kar Yes I did.\n",
       "labels_raw": "June-2026, TXEscalation, Top_10, jira_escalated, reproduce",
       "delivery_targets": [
         {
@@ -1027,6 +1052,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Deployed to PROD\n",
       "labels_raw": "TXEscalation, jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1055,6 +1081,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "26",
+      "latest_comment": "Customer is very happy with the report. we can close this ticket out. @Gargee Kar @Laura Whaley \n",
       "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -1095,6 +1122,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "18",
+      "latest_comment": "Latency issue has been resolved - no action items pending; this is not Dallas specific. \n@Dan Jones this ticket is being closed. If there are any new issues reported, please open a new ticket and escalate for our review. Thank you!\n",
       "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -1135,6 +1163,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-6",
       "comments_count": "10",
+      "latest_comment": "",
       "labels_raw": "June-2026, LateIntoSprint, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -1175,6 +1204,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "6",
+      "latest_comment": "@Gargee Kar @Laura Whaley i did discuss with County.  They want the option to edit orders in workflow.  They regularly have the need to add attachments to orders after they have been scanned.  They do not want the orders to return to the Capture queu",
       "labels_raw": "June-2026, TXEscalation, WAITING_FOR_SUPPORT, jira_escalated, supportresponse",
       "delivery_targets": [
         {
@@ -1215,6 +1245,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "23",
+      "latest_comment": "",
       "labels_raw": "June-2026, TXEscalation, Top_10, jira_escalated, supportresponse",
       "delivery_targets": [
         {
@@ -1255,6 +1286,7 @@
       "ships_month": "May 2026",
       "sprint": "CR 2025.Q4-1",
       "comments_count": "15",
+      "latest_comment": "The fix for this item is done under https://govos.atlassian.net/browse/CR-2085874  . Please also see video recordings attached to this ticket showing performance of properties.\n\n\nFurther issues will be reported and resolved under the referenced ticke",
       "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -1295,6 +1327,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-6",
       "comments_count": "9",
+      "latest_comment": "",
       "labels_raw": "TXEscalation, Top_10, TriageReady, jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1323,6 +1356,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q3-1",
       "comments_count": "17",
+      "latest_comment": "@Tamara Woodward I\u2019m closing this ticket. Was a VTC created to finish off what\u2019s needed?\n",
       "labels_raw": "June-2026, TXEscalation, jira_escalated, supportresponse",
       "delivery_targets": [
         {
@@ -1363,6 +1397,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "13",
+      "latest_comment": "@Ruben Arzate  @Justin Navarre @Sara Galindo-Gonzalez  - Do we have the new Jira? Can we close this one?\ncc: @Keri Wootton \n",
       "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -1403,6 +1438,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Tamara Woodward  - why is ticket closed? It is one of the TX escalation tickets.\n\ncc: @Keri Wootton @Laura Whaley @Stella Hovsepyan \n",
       "labels_raw": "TXEscalation, jira_escalated, swatlog",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1431,6 +1467,7 @@
       "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q3-1",
       "comments_count": "7",
+      "latest_comment": "@Gargee Kar @Keri Wootton @Mark Nicks \nFYI I just noticed that the End Date on this item is incorrect. Gargee tagged me in it earlier but the date was not updated. It was being worked in the current sprint which means it was never going to be ready f",
       "labels_raw": "June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -1471,6 +1508,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "6",
+      "latest_comment": "6/11 - pending BU follow-up with the customer on option 2 describe in comment below / feature enhancement will be logged to improve customer self-service of these types of naming issues. \n",
       "labels_raw": "June-2026, TXEscalation, Top_10, WAITING_FOR_SUPPORT, jira_escalated",
       "delivery_targets": [
         {
@@ -1511,6 +1549,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "10",
+      "latest_comment": "6/11 - issue unknown - needs clarification from Support and the customer\n",
       "labels_raw": "June-2026, Non-Configurable, TOP_5, TXEscalation, Top_10, WAITING_FOR_SUPPORT, jira_escalated, supportresponse",
       "delivery_targets": [
         {
@@ -1551,6 +1590,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "5",
+      "latest_comment": "cc: @David Hughes \n",
       "labels_raw": "TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1579,6 +1619,7 @@
       "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q3-1",
       "comments_count": "6",
+      "latest_comment": "@Mark Nicks @Joy Kalajainen-Johnson @Gargee Kar @Keri Wootton \nThe timeline for delivery of this work in July\u2019s Prod release was approved by this group via email and was to be communicated to Dallas and the customer by the CSM, per communication from",
       "labels_raw": "TXEscalation, jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -1607,6 +1648,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "20",
+      "latest_comment": "Reason for change in End Date: Dependent on approval of client for June release. 20+ items waiting to be demoed and released.\n",
       "labels_raw": "June-2026, TOP_5, TXEscalation, jira_escalated, top5_hold",
       "delivery_targets": [
         {
@@ -1647,6 +1689,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "@Laura Whaley hey Laura, \n\nI thought it would be the informal marriage for both doc group and doc type \n\n",
       "labels_raw": "July-2026, TXEscalation, Top_10, jira_escalated, top5_hold",
       "delivery_targets": [
         {
@@ -1687,6 +1730,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "4",
+      "latest_comment": "@Stella Hovsepyan @Tamara Woodward Let\u2019s move to row numbering as a feature flag (on/off). This will require planning and engagement with UX (heads up, @Jillian Mara ). I am moving this story to a JPD idea that is tentatively prioritized for Q3. \nCC ",
       "labels_raw": "July-2026, Non-Configurable, TOP_5, TXEscalation, Top_10, UX-dependency, jira_escalated",
       "delivery_targets": [
         {
@@ -1727,6 +1771,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "18",
+      "latest_comment": "@Tamara Woodward @Mandy Miller  - should I remove the June-2026 label? What timeline should be added to reflect it on the graph/chart?\n",
       "labels_raw": "June-2026, TXEscalation, TriageReady, jira_escalated",
       "delivery_targets": [
         {
@@ -1767,6 +1812,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "16",
+      "latest_comment": "@Mark Nicks  - Will wait for your confirmation then.\n",
       "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -1807,6 +1853,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "14",
+      "latest_comment": "Verified on QA-1: Denton with the following steps:\n\n1. Process \u2018Marriage License\u2019 with 2 scanned images to \u2018Archive\u2019\n2. After full document export, do a post-finalize edit, e.g., adding an attachment image\n2. Send 'Marriage License Certified Copy' fr",
       "labels_raw": "June-2026, TXEscalation, TriageReady, jira_escalated, jira_update, reproduce",
       "delivery_targets": [
         {
@@ -1847,6 +1894,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "@Gargee Kar @Mandy Miller This is not workable in its current state. There is not enough information to write feature requests and this should be 3 separate stories. It is marked for DELIVERY IN JULY? :smile:  Please advise. \n",
       "labels_raw": "July-2026, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -1887,6 +1935,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Reason for changing end date:\nThis is on hold because it has a code dependency  and it also needs the previous backlog (including US Imaging changes ) to be released to prod before we can work on it. Moving end date to July 2026.\n",
       "labels_raw": "June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -1927,6 +1976,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "14",
+      "latest_comment": "@Gargee Kar > AFAIK There is no Code Dependency for enabling the Notary Fields.  I am not sure why this is in the status it is in? We are waiting for these fields to be enables just so we can verify the indexing API handles it properly, but we dont e",
       "labels_raw": "May-2026, On_Hold, TOP_5, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -1967,6 +2017,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Updated priority based on customer feedback.\n",
       "labels_raw": "July-2026, TXEscalation, Top_10, TriageReady, jira_escalated, jira_update",
       "delivery_targets": [
         {
@@ -2007,6 +2058,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Verifiefied on UAT-1.\n\n",
       "labels_raw": "June-2026, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2047,6 +2099,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "8",
+      "latest_comment": "Verified on UAT-1: Sub-menu works as intended, Notary infomation can be entred from the sub-menu or by creating an order that has the Notary field\n",
       "labels_raw": "May-2026, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2087,6 +2140,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Reason: All Dallas Tickets will have to be deployed together in June along with Notary Indexing changes. So release was moved from May to June.\n",
       "labels_raw": "May-2026, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2127,6 +2181,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "18",
+      "latest_comment": "@Davis Moore  - can we please deploy this?\n",
       "labels_raw": "June-2026, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2167,6 +2222,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "8",
+      "latest_comment": "waiting for clarification on - https://neumo.atlassian.net/browse/VTC-27505 \n",
       "labels_raw": "May-2026, TOP_5, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -2207,6 +2263,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "@Joe Balfantz @Mandy Miller @Tamara Woodward   Johnson County was needing to know why these two transactions were not showing correctly on the day the transactions took place (3/20), and it was because the transactions/payment took place after 4PM CT",
       "labels_raw": "July-2026, TXEscalation, jira_escalated, jira_update, swatlog",
       "delivery_targets": [
         {
@@ -2247,6 +2304,7 @@
       "ships_month": null,
       "sprint": "CR 2025.Q4-1",
       "comments_count": "18",
+      "latest_comment": "@Tamara Woodward @Mandy Miller  - Based on the Records Cases Spreadsheet and Mandy\u2019s comments below, adding JULY-2026 as the original commitment in Labels field. Please update the End Date field when you know when the actual release can happen.\n",
       "labels_raw": "July-2026, NorthTX26, jira_escalated, jira_update",
       "delivery_targets": [
         {
@@ -2287,6 +2345,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "@Warren Young This is ready to deploy dependant on the associated VTC tickets, currently scheduled for a 6/29/2026 deployment.\n",
       "labels_raw": "June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2327,6 +2386,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "tickets waiting to be deployed to prod. \n",
       "labels_raw": "May-2026, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -2367,6 +2427,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "June 17, 2026 10PM  - 2,460 Foreclosure documents removed from Clerk Search CC: @Gargee Kar \n",
       "labels_raw": "June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2407,6 +2468,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "Verified on UAT-1.\n",
       "labels_raw": "May-2026, TOP_5, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -2447,6 +2509,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "23",
+      "latest_comment": "@Laura Whaley - Can the customer test it in UAT2? Was there any change made recently? Your comment says that it was fixed in 2025. But the customer said the following on March 2026:\nWe were advised by Mark on 3/6/26 that this issue had been fixed and",
       "labels_raw": "May-2026, TOP_5, TXEscalation, Top_10, jira_escalated, jira_update",
       "delivery_targets": [
         {
@@ -2487,6 +2550,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "@Jack Tam  - Please do not remove tags (June-2026 TXEscalation  jira_escalated) when a ticket is done. These are getting tracked against All the TX escalated tickets.\n",
       "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2527,6 +2591,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "13",
+      "latest_comment": "@Jack Tam  @Davis Moore @Laura Whaley @Brandon Luz  - please do not remove the TXEscalation labels. These tickets are all tracked together and I am required to provide daily update on these tickets.  This specific ticket was completed for CR, but not",
       "labels_raw": "June-2026, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -2567,6 +2632,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "43",
+      "latest_comment": "@Gargee Kar I tested on UAT and the 1st issue mentioned works correctly there. I\u2019m not sure if there are any configs that did not reach PROD. Please see results from UAT:\nAs for re-indexing issue, config team should take a look and make sure Notary i",
       "labels_raw": "May-2026, TOP_5, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -2607,6 +2673,7 @@
       "ships_month": null,
       "sprint": "CS 2026.Q2-6",
       "comments_count": "2",
+      "latest_comment": "@Tamara Woodward  @Mandy Miller  - will this be done soon enough so we can have both the cloud search and clerk search part taken care of together? It had May-2026 label but it did not get assigned to any sprint? When can we forecast this data fix de",
       "labels_raw": "July-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2647,6 +2714,7 @@
       "ships_month": "May 2026",
       "sprint": "",
       "comments_count": "1",
+      "latest_comment": "@Warren Young Ready to Deploy\n",
       "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2687,6 +2755,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "13",
+      "latest_comment": "@Gargee Kar There was an initial discrepancy because the requirements were not written correctly. I had to write a supplement ticket in order to get more config changes deployed.\n",
       "labels_raw": "June-2026, TXEscalation, TriageReady, jira_escalated",
       "delivery_targets": [
         {
@@ -2727,6 +2796,7 @@
       "ships_month": "May 2026",
       "sprint": "CR 2026.Q2-3",
       "comments_count": "28",
+      "latest_comment": "VTC ticket created https://neumo.atlassian.net/browse/VTC-27570 , removing triage ready\n",
       "labels_raw": "May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -2767,6 +2837,7 @@
       "ships_month": "May 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "7",
+      "latest_comment": "@Justin Navarre  - can we merge the zendesk ticket with 1124 or close it as duplicate?\n",
       "labels_raw": "May-2026, NorthTX26, jira_escalated, jira_update, supportresponse",
       "delivery_targets": [
         {
@@ -2807,6 +2878,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "6",
+      "latest_comment": "@Tamara Woodward @Mandy Miller  - it seems like the ticket is marked as closed but it needs more action. There is no sprint or timeline commitment for this. Can we get one  added?\ncc: @Mark Nicks  @Keri Wootton \n",
       "labels_raw": "NorthTX26, TXEscalation, Top_10, jira_escalated, swatlog",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2835,6 +2907,7 @@
       "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q3-1",
       "comments_count": "7",
+      "latest_comment": "@Hovhannes Hovsepyan @Stella Hovsepyan Asking customer to confirm, pending customer validation\n",
       "labels_raw": "TXEscalation, Top_10, WAITING_FOR_SUPPORT, jira_escalated, jira_update, supportresponse, swatlog",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -2863,6 +2936,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "@Laura Whaley county is following up for a possible update when anyone has the chance. Thanks in advance. cc: @Gargee Kar \n",
       "labels_raw": "July-2026, TXEscalation, Top_10, TriageReady, jira_escalated, jira_update",
       "delivery_targets": [
         {
@@ -2903,6 +2977,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "Reason - Old supervisor asked for it. It was configured but never demoed. Will need to demo the changes to the new suprvisor next week before we can move forward. Release scheduled for July.\n",
       "labels_raw": "June-2026, On_hold, TOP_5, TXEscalation, TriageReady, jira_escalated",
       "delivery_targets": [
         {
@@ -2943,6 +3018,7 @@
       "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "10",
+      "latest_comment": "@Andy Majda Mandy has requested that we add time for testing with platform for this. See the screenshot/channel link below. \nIs it possible to add a task/few more hours to this spike for next sprint for testing since this spike is likely carrying to ",
       "labels_raw": "July-2026, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -2983,6 +3059,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "12",
+      "latest_comment": "@Laura Whaley @Jack Tam  - please provide an update. What is needed to complete this ticket?\ncc: @Mark Nicks @Keri Wootton \n",
       "labels_raw": "May-2026, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -3023,6 +3100,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "@Gargee Kar  @Joy Kalajainen-Johnson  @Keri Wootton @Mark Nicks  Moving to month of July as the certificate RDLC creation is a full sprints work (10 days) including testing.  This cannot be ready by   Thanks!\n",
       "labels_raw": "July-2026, June-2026, TXEscalation, jira_escalated, top5_hold",
       "delivery_targets": [
         {
@@ -3069,6 +3147,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "7",
+      "latest_comment": "@Davis Moore  - please note, we are not supposed to change  or add a label for release timeline shift. We are only supposed to update the End date field. For End Date field update, please ask @Laura Whaley to make the change. Please refer to this for",
       "labels_raw": "June-2026, On_Hold, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -3109,6 +3188,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "Removing triage ready, assigning to @Davis Moore . Please let me know if there are any questions or any input from our side.\nCC: @Gargee Kar \n",
       "labels_raw": "July-2026, TXEscalation, Top_10, jira_escalated, top5_hold",
       "delivery_targets": [
         {
@@ -3149,6 +3229,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "10",
+      "latest_comment": "Verified in UAT-1. Order is in Archive status and Return Address is still populated.\n\n",
       "labels_raw": "June-2026, TOP_5, TXEscalation, improper_req, jira_escalated, reproduce",
       "delivery_targets": [
         {
@@ -3189,6 +3270,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "9",
+      "latest_comment": "The requirement has  changed.  https://neumo.atlassian.net/browse/VTC-27162 solves their needs.  Closing this ticket.\n",
       "labels_raw": "June-2026, TOP_5, TXEscalation, Top_10, implementation",
       "delivery_targets": [
         {
@@ -3229,6 +3311,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "This is not considered done until Kiosk search is corrected.\n",
       "labels_raw": "June-2026, TXEscalation, implementation, jira_escalated",
       "delivery_targets": [
         {
@@ -3261,7 +3344,7 @@
       ],
       "created": "2025-10-28T13:53:51.470-0400",
       "created_iso": "2025-10-28",
-      "age_days": 236,
+      "age_days": 237,
       "updated": "2026-06-16T14:16:36.342-0400",
       "updated_iso": "2026-06-16",
       "end_date": "2026-07-31",
@@ -3269,6 +3352,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "3",
+      "latest_comment": "@Gargee Kar , if we get started with the esub for Dallas, we will block the other tickets being worked on for their release (notary). Are you ok with us proceeding? thanks. \n",
       "labels_raw": "July-2026, TXEscalation, Top_10, implementation, top5_hold",
       "delivery_targets": [
         {
@@ -3301,7 +3385,7 @@
       ],
       "created": "2025-10-28T13:49:07.178-0400",
       "created_iso": "2025-10-28",
-      "age_days": 236,
+      "age_days": 237,
       "updated": "2026-06-16T14:16:35.302-0400",
       "updated_iso": "2026-06-16",
       "end_date": "2026-07-31",
@@ -3309,6 +3393,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "@Gargee Kar same as here https://neumo.atlassian.net/browse/VTC-25689?focusedCommentId=1719628  \n",
       "labels_raw": "July-2026, TXEscalation, Top_10, implementation, top5_hold",
       "delivery_targets": [
         {
@@ -3349,6 +3434,7 @@
       "ships_month": "Jul 2026",
       "sprint": "12.24.24-01.06.25",
       "comments_count": "33",
+      "latest_comment": "Reason for Change of End Date: Dependent on client approval for current June release to be deployed to Production.\n",
       "labels_raw": "HealDesk, May-2026, On_hold, TOP_5, TXEscalation, TriageReady, jira_escalated",
       "delivery_targets": [
         {
@@ -3389,6 +3475,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Reason for No End Date - This is a new feature request and the LOE is large. End Date is TBD.\n",
       "labels_raw": "Dec-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -3429,6 +3516,7 @@
       "ships_month": null,
       "sprint": "",
       "comments_count": "21",
+      "latest_comment": "this is good to close. thank you!\n",
       "labels_raw": "DataFix, TXEscalation, jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3457,6 +3545,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "8",
+      "latest_comment": "Closing based on info provided to customer. \n",
       "labels_raw": "DataFix, June-2026, TXEscalation, WAITING_FOR_SUPPORT, jira_escalated",
       "delivery_targets": [
         {
@@ -3497,6 +3586,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "4",
+      "latest_comment": "Verified on UAT-1: Search by Notary name works as intended\n",
       "labels_raw": "Dallas, June-2026, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -3537,6 +3627,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "25",
+      "latest_comment": "Both test case 1 & 2 failed as Notary data is not visible on Clerk Search when walk-in and eRecording orders reaches Archive step, this can be circumvented by Re-Indexing the orders manually and re-entering the Notary data once again, but otherwise t",
       "labels_raw": "Dallas, May-2026, TOP_5, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -3577,6 +3668,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "22",
+      "latest_comment": "This one is ready for Customer demo on UAT2. We hope to release by end of June. @Laura Whaley  please schedule demo with Collin. cc: @Mark Nicks \n",
       "labels_raw": "Customer-Feedback, May-2026, Non-Configurable, Not_a_Bug, TOP_5, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -3617,6 +3709,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-5",
       "comments_count": "7",
+      "latest_comment": "Reason for Change in End Date: Put on hold by Mark since KDI is getting replaced by USI. Will talk to customer before closing it. \n",
       "labels_raw": "Customer-Feedback, May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -3649,7 +3742,7 @@
       ],
       "created": "2026-05-04T13:48:40.170-0400",
       "created_iso": "2026-05-04",
-      "age_days": 48,
+      "age_days": 49,
       "updated": "2026-06-22T08:10:35.879-0400",
       "updated_iso": "2026-06-22",
       "end_date": "2026-06-19",
@@ -3657,6 +3750,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-6",
       "comments_count": "10",
+      "latest_comment": "To be included in the discussion with Collin when @Laura Whaley  is ready to demo other Collin items. Ticket will be closed after the discussion.\n",
       "labels_raw": "Customer-Feedback, June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -3697,6 +3791,7 @@
       "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q3-1",
       "comments_count": "31",
+      "latest_comment": "Reason for change in End Date: Need customer feedback if this change is needed at all. Issue changed to Request for triage after customer discussion.\n",
       "labels_raw": "Customer-Feedback, On_hold, TXEscalation, Top_10, improper_req, jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3725,6 +3820,7 @@
       "ships_month": null,
       "sprint": "CR 2025.Q4.productStaging",
       "comments_count": "14",
+      "latest_comment": "Reason for end date change - Needs feature assessment and product prioritization and high LOE. @Mark Nicks  to talk to customer on 6/23\n",
       "labels_raw": "Customer-Feedback, June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -3765,6 +3861,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "14",
+      "latest_comment": "Based on discussion with the triage/support team updated labels to June-2026 and updated end date on 6/18.\n",
       "labels_raw": "CR-Internal, May-2026, NorthTX26, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -3805,6 +3902,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "5",
+      "latest_comment": "Data fix for this order and configuration to turn off order splitting is completed on this ticket but all work is dependent on existing bug. \nReprinting cover page is not complete - still in progress:  https://neumo.atlassian.net/browse/CR-2091090 \n\u2022",
       "labels_raw": "CR-Internal, May-2026, TXEscalation, jira_escalated, sprint.Q2-4",
       "delivery_targets": [
         {
@@ -3845,6 +3943,7 @@
       "ships_month": "May 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "4",
+      "latest_comment": "@Stella Hovsepyan @Mandy Miller Customer stated that this is resolved and they closed the support ticket.  Jira can be closed. \n",
       "labels_raw": "CR-Internal, DataFix, May-2026, TXEscalation, jira_escalated, sprint.Q2-4",
       "delivery_targets": [
         {
@@ -3885,6 +3984,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-1",
       "comments_count": "5",
+      "latest_comment": "Confirmed by County: \n",
       "labels_raw": "CR-Internal, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3913,6 +4013,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "1",
+      "latest_comment": "@Mandy Miller , @Tamara Woodward , @Stella Hovsepyan , @Joy Kalajainen-Johnson , @Gargee Kar It\u2019s done , moving status to done.\n\n\n",
       "labels_raw": "CR-Internal, DataFix, TXEscalation, Top_10, jira_escalated, sprint.Q2-4",
       "delivery_targets": [],
       "current_delivery_target": null
@@ -3941,6 +4042,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "3",
+      "latest_comment": "@Sara Galindo-Gonzalez  - can you please test it in prod and close out the zendesk ticket?\n",
       "labels_raw": "CR-Internal, May-2026, TXEscalation, Top_10, jira_escalated, supportresponse",
       "delivery_targets": [
         {
@@ -3981,6 +4083,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "4",
+      "latest_comment": "Since it is ready for Production but not yet in production, moving label from May-2026 release to June 2026 release. Changing end date too.\n",
       "labels_raw": "CR-External, June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -4021,6 +4124,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "10",
+      "latest_comment": "Per @Tamara Woodward 's comment below keeping the Label as May-2026 (original commitment) and updating the end date from May 29, 2026 to .  @Shawn Beeson@Stella Hovsepyan \n",
       "labels_raw": "CR-External, May-2026, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -4061,6 +4165,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "11",
+      "latest_comment": "Per discussion with @Stella Hovsepyan  this is scheduled to be released on June 18. So keeping the Label as May-2026 (original committment) and updating the end date from May 29, 2026 to . @Tamara Woodward @Shawn Beeson \n@Shawn Beeson  - Hovahnes con",
       "labels_raw": "CR-External, May-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -4101,6 +4206,7 @@
       "ships_month": "May 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "2",
+      "latest_comment": "@Shawn Beeson  Please update the status of this ticket since it is deployed to prod on 5/29.\n",
       "labels_raw": "CR-External, May-2026, NorthTX26, sprint.Q2-4",
       "delivery_targets": [
         {
@@ -4141,6 +4247,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "3",
+      "latest_comment": "Verified on QA1 Collin\n",
       "labels_raw": "CR-External, June-2026, TXEscalation, jira_escalated, sprint.Q2-4",
       "delivery_targets": [
         {
@@ -4181,6 +4288,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-2",
       "comments_count": "26",
+      "latest_comment": "Was this part of May release? Why is the status not closed but Deployed to UAT? I added June 2026 label based on Mandy\u2019s update on Record Cases spreadsheet. If it is in production, please mark it as closed. @Shawn Beeson  @Hovhannes Hovsepyan @Mandy ",
       "labels_raw": "CR-External, June-2026, TXEscalation, Top_10, jira_escalated",
       "delivery_targets": [
         {
@@ -4221,6 +4329,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "9",
+      "latest_comment": "@Diego Gaspar hi. I was not able to submit eform on Dallas to show on their form. However, \u201cOther Address\u201d option should be available in Order Item tab \u2192 Mail Executed License to section, like in the example below:\nPlease make \u201cAddress Line 2\u201d field ",
       "labels_raw": "CR-External, June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -4261,6 +4370,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "30",
+      "latest_comment": "6/11 - no dev work / BU needs to follow up with customer based on TW comment on this issue from 6/5 at 10:02 am EST. Pending conversation, a VTC may need to be created. Mandy is closing this issue. \n",
       "labels_raw": "CR2026Q2-5, Investigate, June-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -4301,6 +4411,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-6",
       "comments_count": "13",
+      "latest_comment": "Verified on QA-1: 48999\n",
       "labels_raw": "CR2026Q2-5, June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -4341,6 +4452,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-6",
       "comments_count": "32",
+      "latest_comment": "@artyom.shchokin @Tamara Woodward  - is it possible to push to UAT so the associated VTC ticket can be addressed and released in June?\n\ncc: @Laura Whaley  @Mark Nicks \n",
       "labels_raw": "CR-NA, CR2026Q2-5, June-2026, NorthTX26, TXEscalation, jira_escalated, support",
       "delivery_targets": [
         {
@@ -4384,6 +4496,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "2",
+      "latest_comment": "Verified on QA-1: 48999\n",
       "labels_raw": "CR-External, CR2026Q2-5, June-2026, TXEscalation",
       "delivery_targets": [
         {
@@ -4416,7 +4529,7 @@
       ],
       "created": "2026-03-06T13:40:09.058-0500",
       "created_iso": "2026-03-06",
-      "age_days": 107,
+      "age_days": 108,
       "updated": "2026-06-19T10:53:53.860-0400",
       "updated_iso": "2026-06-19",
       "end_date": "2026-06-19",
@@ -4424,6 +4537,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "7",
+      "latest_comment": "Verified on QA-1: 48999\n",
       "labels_raw": "CR-External, CR2026Q2-5, June-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -4464,6 +4578,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "5",
+      "latest_comment": "@Fernando Diaz Error reproduction details are poor.\nWhat\u2019s the specific step-by-step process you followed in order to reproduce the error?\nI\u2019ve performed several tests on my end and haven\u2019t been able to repro:\nRP-Misc\nBirth\nIn first video I just appe",
       "labels_raw": "Collin, June-2026, TOP_5, TXEscalation",
       "delivery_targets": [
         {
@@ -4504,6 +4619,7 @@
       "ships_month": "Jun 2026",
       "sprint": "",
       "comments_count": "9",
+      "latest_comment": "@Laura Whaley  please schedule a demo with Collin to demo this the week of 6/15 so we can release it to prod by 6/30. cc: @Mark Nicks \n",
       "labels_raw": "Collin, May-2026, TOP_5, TXEscalation, Top_10, jira_escalated, jira_update",
       "delivery_targets": [
         {
@@ -4544,6 +4660,7 @@
       "ships_month": "Jul 2026",
       "sprint": "",
       "comments_count": "2",
+      "latest_comment": "Added config instructions, assigning to @Davis Moore for further processing. Please let us know if any info is missing.\n@Gargee Kar @Laura Whaley \n",
       "labels_raw": "Collin, July-2026, TXEscalation, jira_escalated",
       "delivery_targets": [
         {
@@ -4584,6 +4701,7 @@
       "ships_month": null,
       "sprint": "CR 2026.Q2-4",
       "comments_count": "11",
+      "latest_comment": "@Ruben Arzate  @Gargee Kar I\u2019m not sure I understand what\u2019s the ask here. I don\u2019t have access on PROD, but here\u2019s what I can see on UAT1 Johnson:\n1. I log into the system\n2. I check Account Balance (which shows the current total balance) of Simplifil",
       "labels_raw": "TXEscalation, Top_10, WAITING_FOR_SUPPORT, august-2026, jira_escalated, supportresponse",
       "delivery_targets": [
         {
@@ -4624,6 +4742,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-6",
       "comments_count": "15",
+      "latest_comment": "@Justin Navarre Incorrect steps - Must click on Next Order\nIn the video you clicked on Save Order which suspends the order \nThis is functioning as designed and we are unable to reproduce any error. \nI am closing this ticket - if there is a bug, we ne",
       "labels_raw": "June-2026, TXEscalation, as_designed, jira_escalated, supportresponse",
       "delivery_targets": [
         {
@@ -4664,6 +4783,7 @@
       "ships_month": "Apr 2026",
       "sprint": "",
       "comments_count": "9",
+      "latest_comment": "@Gargee Kar Aimee was the one that worked this, so you should ask her. \n",
       "labels_raw": "TXEscalation, Top_10, april-2026, jira_escalated",
       "delivery_targets": [
         {
@@ -4705,6 +4825,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-4",
       "comments_count": "5",
+      "latest_comment": "Fix validated in PM and Collin Tenant and PASSED, moving it to \u201cReady for UAT\u201d\n",
       "labels_raw": "2026_Customer, CR-External, June-2026, TXEscalation, WAITING_FOR_SUPPORT, jira_escalated, top5_hold",
       "delivery_targets": [
         {
@@ -4745,6 +4866,7 @@
       "ships_month": "Jul 2026",
       "sprint": "CR 2026.Q3-1",
       "comments_count": "14",
+      "latest_comment": "@Laura Whaley @Gargee Kar  Apologies, just checking for an update on this situation. \n",
       "labels_raw": "2026_Customer, July-2026, NorthTX26, jira_escalated",
       "delivery_targets": [
         {
@@ -4786,6 +4908,7 @@
       "ships_month": "Jun 2026",
       "sprint": "CR 2026.Q2-5",
       "comments_count": "8",
+      "latest_comment": "",
       "labels_raw": "2026_Customer, CR-External, July-2026, Keywords, TXEscalation, jira_escalated, jira_update",
       "delivery_targets": [
         {
