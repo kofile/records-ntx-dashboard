@@ -948,6 +948,7 @@
           <div class="winning-headline">
             <div class="winning-rate" id="winning-rate">—%</div>
             <div class="winning-fraction" id="winning-fraction">— of — delivered</div>
+            <div id="baseline-scope-note" style="display:none; font-size:11px; color:var(--ink-faint); margin: 2px 0 6px; font-style:italic;"></div>
             <div class="winning-bar">
               <div class="winning-bar-delivered" id="winning-bar-delivered" style="width:0;" title="Delivered: In Production"></div>
               <div class="winning-bar-pending" id="winning-bar-pending" style="width:0;" title="Pending Production Release"></div>
@@ -6475,14 +6476,26 @@ function renderExec(current, previous, baseline, allSnaps) {
   document.getElementById("today-str").textContent = formatToday(new Date().toISOString().slice(0,10));
   document.getElementById("exported-at").textContent = current.label || DATA.meta.exported_at;
 
-  // Buckets — 4 stages
+  // Option A baseline scoping: exclude tickets already delivered before the baseline snapshot.
+  // When a cluster has a configured baseline_date, only tickets that were NOT yet delivered
+  // at the baseline snapshot count toward the % and bar. Pre-baseline delivered tickets are
+  // excluded from scope entirely — the dashboard measures escalation progress, not all-time history.
+  const hasBaseline = baseline && baseline !== current;
+  const baselineDeliveredKeys = hasBaseline
+    ? new Set(baseline.tickets.filter(t => deliveryBucket(t.status) === "delivered").map(t => t.key))
+    : new Set();
+  const scopedTickets = hasBaseline
+    ? current.tickets.filter(t => !baselineDeliveredKeys.has(t.key))
+    : current.tickets;
+  const preBaselineCount = current.tickets.length - scopedTickets.length;
+
+  // Buckets — 4 stages (on scoped tickets only)
   const buckets = { delivered: 0, pending_release: 0, in_progress: 0, open: 0 };
-  current.tickets.forEach(t => {
-    // Re-derive bucket from status to handle stale data with old "pending" string
+  scopedTickets.forEach(t => {
     const b = deliveryBucket(t.status);
     buckets[b] = (buckets[b] || 0) + 1;
   });
-  const total = current.tickets.length;
+  const total = scopedTickets.length;
   const delivered = buckets.delivered;
   const pending = buckets.pending_release;
   const inProgress = buckets.in_progress;
@@ -6495,6 +6508,16 @@ function renderExec(current, previous, baseline, allSnaps) {
   document.getElementById("winning-rate").textContent = pct + "%";
   document.getElementById("winning-fraction").textContent =
     `${delivered} of ${total} in production · ${pending} pending release`;
+
+  // Baseline scope note
+  const noteEl = document.getElementById("baseline-scope-note");
+  if (hasBaseline && preBaselineCount > 0) {
+    noteEl.style.display = "block";
+    noteEl.textContent =
+      `Scoped to escalation work since ${formatToday(baseline.captured)} — ${preBaselineCount} pre-escalation delivered ticket${preBaselineCount === 1 ? "" : "s"} excluded`;
+  } else {
+    noteEl.style.display = "none";
+  }
   document.getElementById("winning-bar-delivered").style.width = pct + "%";
   document.getElementById("winning-bar-pending").style.width = pctPending + "%";
   document.getElementById("winning-bar-progress").style.width = pctProgress + "%";
@@ -6506,7 +6529,10 @@ function renderExec(current, previous, baseline, allSnaps) {
 
   // Deltas — measured by delivered count (winning = more in production)
   if (previous) {
-    const prev_delivered = previous.tickets.filter(t => deliveryBucket(t.status) === "delivered").length;
+    const prev_scoped = hasBaseline
+      ? previous.tickets.filter(t => !baselineDeliveredKeys.has(t.key))
+      : previous.tickets;
+    const prev_delivered = prev_scoped.filter(t => deliveryBucket(t.status) === "delivered").length;
     const d = delivered - prev_delivered;
     const el = document.getElementById("delta-day");
     el.classList.remove("pending");
@@ -6519,8 +6545,11 @@ function renderExec(current, previous, baseline, allSnaps) {
       `+${newly_added.length} new logged`;
   }
   if (baseline && baseline !== current) {
-    const base_delivered = baseline.tickets.filter(t => deliveryBucket(t.status) === "delivered").length;
-    const d = delivered - base_delivered;
+    // baseline delta: delivered in scoped set now vs delivered in scoped set at baseline
+    const base_scoped_delivered = baseline.tickets
+      .filter(t => !baselineDeliveredKeys.has(t.key))
+      .filter(t => deliveryBucket(t.status) === "delivered").length;
+    const d = delivered - base_scoped_delivered;
     const el = document.getElementById("delta-baseline");
     el.classList.remove("pending");
     el.innerHTML = (d >= 0 ? "+" : "") + d;
