@@ -230,6 +230,15 @@ def main():
         sys.exit(2)
 
     print(f"Got page HTML: {len(page_html)} chars. Parsing cluster table...", file=sys.stderr)
+    # DEBUG: print raw parsed headers so we can see exactly what Confluence sends
+    import html.parser as _hp
+    _dbg = ClusterTableParser()
+    _dbg.feed(page_html)
+    _tbl = _dbg.find_cluster_table()
+    if _tbl:
+        print(f"DEBUG parsed headers: {_tbl['headers']}", file=sys.stderr)
+    else:
+        print(f"DEBUG: no cluster table found. All table headers: {[t['headers'] for t in _dbg.tables]}", file=sys.stderr)
     try:
         clusters = extract_clusters(page_html)
     except Exception as e:
