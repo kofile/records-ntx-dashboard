@@ -83,6 +83,7 @@ def main():
             "id": c["id"],
             "title": c["title"],
             "snapshot_url": f"./{snap_path}",
+            "baseline_date": c.get("baseline_date", "") or "",
         }
         if os.path.exists(snap_path):
             with open(snap_path) as f:
