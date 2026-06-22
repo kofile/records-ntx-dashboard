@@ -160,6 +160,8 @@ def extract_clusters(page_html: str) -> list:
 
     name_idx = table["headers"].index("cluster name")
     id_idx = table["headers"].index("jira filter id")
+    # Baseline date column is optional — gracefully absent for older registry pages
+    baseline_idx = table["headers"].index("baseline date") if "baseline date" in table["headers"] else None
 
     clusters = []
     skipped = []
@@ -179,7 +181,18 @@ def extract_clusters(page_html: str) -> list:
         except ValueError:
             skipped.append({"row": row, "reason": f"non-integer id: {id_raw!r}"})
             continue
-        clusters.append({"id": filter_id, "title": title})
+
+        # Extract baseline_date if column exists — validate YYYY-MM-DD format
+        baseline_date = ""
+        if baseline_idx is not None and len(row) > baseline_idx:
+            raw_bd = row[baseline_idx].strip()
+            if re.match(r"^\d{4}-\d{2}-\d{2}$", raw_bd):
+                baseline_date = raw_bd
+            elif raw_bd:
+                print(f"WARNING: baseline date {raw_bd!r} for {title!r} is not YYYY-MM-DD — ignoring",
+                      file=sys.stderr)
+
+        clusters.append({"id": filter_id, "title": title, "baseline_date": baseline_date})
 
     if skipped:
         print(f"WARNING: skipped {len(skipped)} row(s) while parsing:", file=sys.stderr)
@@ -226,7 +239,8 @@ def main():
 
     print(f"Parsed {len(clusters)} cluster(s):", file=sys.stderr)
     for c in clusters:
-        print(f"  - id={c['id']:<6} title={c['title']!r}", file=sys.stderr)
+        bd = f"  baseline={c['baseline_date']}" if c.get("baseline_date") else ""
+        print(f"  - id={c['id']:<6} title={c['title']!r}{bd}", file=sys.stderr)
 
     output = {
         "_comment": (
