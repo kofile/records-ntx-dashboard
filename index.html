@@ -543,6 +543,26 @@
     font-family: var(--sans); font-style: italic;
   }
 
+  /* Comment cell — Customer Prep table */
+  .prep-comments-cell { vertical-align: top; padding-top: 6px; }
+  .comment-cell-wrap { display: flex; flex-direction: column; gap: 4px; }
+  .comment-icon-link {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 11px; font-weight: 500; color: var(--accent);
+    text-decoration: none; white-space: nowrap;
+    background: var(--neutral-bg); border: 1px solid var(--line-strong);
+    padding: 2px 7px; border-radius: 8px;
+    width: fit-content;
+  }
+  .comment-icon-link:hover { background: var(--line-strong); }
+  .comment-preview {
+    font-size: 11px; color: var(--ink-soft);
+    line-height: 1.45; max-width: 340px;
+    white-space: pre-wrap; word-break: break-word;
+    display: -webkit-box; -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+
   table.records {
     width: 100%; border-collapse: collapse;
     font-size: 13px;
@@ -863,7 +883,7 @@
           </button>
           <div class="info-icon-panel green" id="panel-how-works" role="tooltip" style="right:-10px;">
             <div class="info-icon-panel-label">How this dashboard works</div>
-            Data refreshes automatically from each cluster's Jira filter twice per business day (8am and 4pm ET). The "data as of" indicator shows the latest refresh — green if fresh, amber if stale, red if auto-refresh is failing. Daily snapshots accumulate into the trend chart over time.
+            Data refreshes automatically from each cluster's Jira filter twice per business day (8am and 4pm ET). The "data as of" indicator shows the latest refresh — green if fresh, amber if stale, red if auto-refresh is failing. Daily snapshots accumulate into the trend chart over time. The "Delivered since baseline" stat counts tickets moved to production on or after each cluster's configured escalation start date — set per cluster in the Confluence registry. If no baseline date is set, the count measures from the oldest available snapshot.
           </div>
         </div>
         <!-- What is this icon -->
@@ -6363,6 +6383,7 @@ function deriveFields(t) {
     end_date_iso: end_dt ? end_dt.toISOString().slice(0,10) : null,
     ships_month: end_dt ? end_dt.toLocaleString("en-US",{month:"short",year:"numeric"}) : null,
     sprint: t.sprint, comments_count: t.comments,
+    latest_comment: t.latest_comment || "",
     labels_raw: t.labels_raw || "",
     delivery_targets: deliveryTargets,
     current_delivery_target: deliveryTargets.length ? deliveryTargets[deliveryTargets.length-1] : null,
@@ -7432,6 +7453,7 @@ function drawPrep(snap) {
           <th style="width: 130px;">Status</th>
           <th style="width: 90px;">Delivery</th>
           <th style="width: 80px;">End date</th>
+          <th style="width: 110px;">Comments</th>
         </tr></thead>
         <tbody>${group.map(t => {
           const dt = t.current_delivery_target;
@@ -7445,6 +7467,7 @@ function drawPrep(snap) {
             <td><span class="pill ${FAMILY_PILL_CLASS[t.status_family]}">${t.status}</span></td>
             <td>${deliveryCell}</td>
             <td style="font-size:11px; color: var(--ink-soft); font-family: var(--mono);">${t.end_date || "—"}</td>
+            <td class="prep-comments-cell">${buildCommentCell(t)}</td>
           </tr>`;
         }).join("")}</tbody></table>
     </div>`;
@@ -7471,6 +7494,21 @@ function sortComparator(mode) {
 }
 
 // UTIL
+// Build the comments cell for Customer Prep — icon+count linked to Jira comments
+// section, plus latest comment text truncated to 500 chars.
+function buildCommentCell(t) {
+  const count = t.comments_count || "";
+  const latest = (t.latest_comment || "").slice(0, 250);
+  const commentsUrl = `https://neumo.atlassian.net/browse/${t.key}?focusedCommentId=last#comment-last`;
+  const iconLink = count
+    ? `<a href="${commentsUrl}" target="_blank" class="comment-icon-link" title="View comments in Jira">💬 ${escapeHtml(count)}</a>`
+    : `<span class="delivery-pill empty">—</span>`;
+  const preview = latest
+    ? `<div class="comment-preview">${escapeHtml(latest.trim())}</div>`
+    : "";
+  return `<div class="comment-cell-wrap">${iconLink}${preview}</div>`;
+}
+
 function escapeHtml(s) {
   return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 }
@@ -7542,6 +7580,7 @@ function normalizeRemoteTicket(t) {
     reporter: t.reporter || t.team || "", status: t.status, sprint: t.sprint,
     updated: t.updated, end_date: t.end_date, created: t.created,
     comments: t.comments_count || t.comments,
+    latest_comment: t.latest_comment || "",
     tenant_raw: t.tenant_raw, labels_raw: t.labels_raw,
   });
 }
@@ -7781,7 +7820,17 @@ async function init() {
       (a.captured || "").localeCompare(b.captured || ""));
     current = currentSnap;
     previous = allSnaps.length > 1 ? allSnaps[allSnaps.length - 2] : null;
-    baseline = allSnaps[0];
+
+    // Baseline: if the cluster has a configured baseline_date, find the
+    // nearest snapshot on or after that date. Falls back to allSnaps[0]
+    // (oldest available) if no date is configured or no snapshot qualifies.
+    const baselineDate = (activeCluster && activeCluster.baseline_date) || "";
+    if (baselineDate) {
+      const onOrAfter = allSnaps.filter(s => (s.captured || "") >= baselineDate);
+      baseline = onOrAfter.length ? onOrAfter[0] : allSnaps[0];
+    } else {
+      baseline = allSnaps[0];
+    }
     dataAsOf = remote.updated_at;
 
     DATA.meta.today = remote.today || DATA.meta.today;
