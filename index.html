@@ -6472,15 +6472,15 @@ function switchView(v) {
 }
 
 // RENDERING - EXEC
-function renderExec(current, previous, baseline, allSnaps) {
+function renderExec(current, previous, baseline, allSnaps, baselineDate) {
   document.getElementById("today-str").textContent = formatToday(new Date().toISOString().slice(0,10));
   document.getElementById("exported-at").textContent = current.label || DATA.meta.exported_at;
 
   // Option A baseline scoping: exclude tickets already delivered before the baseline snapshot.
-  // When a cluster has a configured baseline_date, only tickets that were NOT yet delivered
-  // at the baseline snapshot count toward the % and bar. Pre-baseline delivered tickets are
-  // excluded from scope entirely — the dashboard measures escalation progress, not all-time history.
-  const hasBaseline = baseline && baseline !== current;
+  // hasBaseline is true whenever a baseline_date is configured — even if baseline === current
+  // (which happens when all snapshots postdate the escalation start). In that case, tickets
+  // already delivered in the oldest available snapshot are treated as pre-escalation.
+  const hasBaseline = Boolean(baselineDate);
   const baselineDeliveredKeys = hasBaseline
     ? new Set(baseline.tickets.filter(t => deliveryBucket(t.status) === "delivered").map(t => t.key))
     : new Set();
@@ -7831,6 +7831,7 @@ async function init() {
   // Step 6: Render — identical to the legacy code path from here on
   let current, previous, baseline, allSnaps;
   let dataAsOf = null;
+  let baselineDate = (activeCluster && activeCluster.baseline_date) || "";
 
   if (remote && Array.isArray(remote.tickets)) {
     const currentSnap = {
@@ -7853,7 +7854,6 @@ async function init() {
     // Baseline: if the cluster has a configured baseline_date, find the
     // nearest snapshot on or after that date. Falls back to allSnaps[0]
     // (oldest available) if no date is configured or no snapshot qualifies.
-    const baselineDate = (activeCluster && activeCluster.baseline_date) || "";
     if (baselineDate) {
       const onOrAfter = allSnaps.filter(s => (s.captured || "") >= baselineDate);
       baseline = onOrAfter.length ? onOrAfter[0] : allSnaps[0];
@@ -7917,7 +7917,7 @@ async function init() {
   }
   document.getElementById("snap-num").textContent = allSnaps.length;
 
-  renderExec(current, previous, baseline, allSnaps);
+  renderExec(current, previous, baseline, allSnaps, baselineDate);
   renderCustomerPrep(current);
 }
 
