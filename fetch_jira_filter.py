@@ -209,6 +209,47 @@ def fetch_filter_issues(host, user, token, filter_id):
     return all_issues
 
 
+def flatten_adf(node):
+    """Flatten an Atlassian Document Format (ADF) node tree to plain text.
+
+    Handles the most common node types found in Jira comments:
+    paragraph, text, hardBreak, bulletList, orderedList, listItem,
+    heading, codeBlock, blockquote, mention, emoji, inlineCard.
+    Unknown nodes recurse into their content children.
+    """
+    if not node or not isinstance(node, dict):
+        return ""
+    ntype = node.get("type", "")
+    content = node.get("content", [])
+
+    if ntype == "text":
+        return node.get("text", "")
+    if ntype == "hardBreak":
+        return "\n"
+    if ntype == "mention":
+        return "@" + node.get("attrs", {}).get("text", "user").lstrip("@")
+    if ntype == "emoji":
+        return node.get("attrs", {}).get("shortName", "")
+    if ntype == "inlineCard":
+        return node.get("attrs", {}).get("url", "")
+    if ntype == "codeBlock":
+        inner = "".join(flatten_adf(c) for c in content)
+        return f"`{inner.strip()}`"
+    if ntype in ("bulletList", "orderedList"):
+        items = []
+        for i, item in enumerate(content):
+            prefix = "• " if ntype == "bulletList" else f"{i+1}. "
+            items.append(prefix + flatten_adf(item).strip())
+        return "\n".join(items)
+    if ntype == "listItem":
+        return "".join(flatten_adf(c) for c in content)
+    if ntype in ("paragraph", "heading", "blockquote"):
+        inner = "".join(flatten_adf(c) for c in content)
+        return inner + "\n"
+    # Default: recurse into content
+    return "".join(flatten_adf(c) for c in content)
+
+
 # --------------------------------------------------------------------------
 # Transformation: Jira issue → dashboard ticket
 # --------------------------------------------------------------------------
@@ -270,6 +311,15 @@ def transform_issue(issue, today_dt):
     comment_block = fields.get("comment") or {}
     comments_count = comment_block.get("total", 0) if isinstance(comment_block, dict) else 0
 
+    # Latest comment — extract most recent body, flatten ADF to plain text, truncate
+    latest_comment = ""
+    if isinstance(comment_block, dict):
+        comments_list = comment_block.get("comments", [])
+        if comments_list:
+            last = comments_list[-1]
+            body = last.get("body", {})
+            latest_comment = flatten_adf(body)[:250]
+
     # Ships-month for Tile 2
     ships_month = None
     if end_date_clean:
@@ -301,6 +351,7 @@ def transform_issue(issue, today_dt):
         "ships_month": ships_month,
         "sprint": sprint,
         "comments_count": str(comments_count) if comments_count else "",
+        "latest_comment": latest_comment,
         "labels_raw": labels_raw,
         "delivery_targets": dts,
         "current_delivery_target": dts[-1] if dts else None,
